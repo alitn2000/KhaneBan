@@ -16,4 +16,5 @@ public interface ISubCategoryRepository
     Task<bool> CreateAsync(SubCategory subCategory, CancellationToken cancellationToken);
     Task<bool> DeleteAsync(int id, CancellationToken cancellationToken);
     Task<bool> UpdateAsync(SubCategory subCategory, CancellationToken cancellationToken);
+    Task<bool> IsDelete(int subCategoryId, CancellationToken cancellationToken);
 }

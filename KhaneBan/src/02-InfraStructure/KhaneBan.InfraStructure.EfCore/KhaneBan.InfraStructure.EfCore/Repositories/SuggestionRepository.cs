@@ -1,6 +1,7 @@
 ﻿using KhaneBan.Domain.Core.Contracts.Repository;
 using KhaneBan.Domain.Core.Entites.User;
 using KhaneBan.Domain.Core.Entites.UserRequests;
+using KhaneBan.Domain.Core.Enums;
 using KhaneBan.InfraStructure.EfCore.Common;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -79,6 +80,17 @@ public class SuggestionRepository : ISuggestionRepository
          .ThenInclude(s => s.User)
         .FirstOrDefaultAsync(s => s.ExpertId == expertId && s.Id == suggestionId, cancellationToken);
 
+    public async Task<bool> ChangeStatus(StatusEnum status, int suggestionId, CancellationToken cancellationToken)
+    {
+        var existSuggestion =await _appDbContext.Suggestions.FirstOrDefaultAsync(s => s.Id == suggestionId);
+        if (existSuggestion == null)
+            return false;
+        existSuggestion.SuggestionStatus = status;
+
+        await _appDbContext.SaveChangesAsync(cancellationToken);
+        return true;
+    }
+
     public async Task<bool> CreateAsync(Suggestion suggestion, CancellationToken cancellationToken)
     {
         try
@@ -108,6 +120,15 @@ public class SuggestionRepository : ISuggestionRepository
         }
     }
 
+    public async Task<bool> IsDelete(int suggestionId, CancellationToken cancellationToken)
+    {
+        var existSuggestion = await _appDbContext.Suggestions.FirstOrDefaultAsync(r => r.Id == suggestionId, cancellationToken);
+        if (existSuggestion == null)
+            return false;
+        existSuggestion.IsDeleted = true;
+        await _appDbContext.SaveChangesAsync(cancellationToken);
+        return true;
+    }
     public async Task<bool> UpdateAsync(Suggestion suggestion, CancellationToken cancellationToken)
     {
         try

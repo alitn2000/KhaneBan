@@ -3,6 +3,94 @@
   "WorkspaceRootPath": "D:\\c#\\KhaneBan\\KhaneBan\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F2F211BF-3C8A-4114-879B-4A37C2FD5F69}|src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore.csproj|d:\\c#\\khaneban\\khaneban\\src\\02-infrastructure\\khaneban.infrastructure.efcore\\khaneban.infrastructure.efcore\\repositories\\suggestionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2F211BF-3C8A-4114-879B-4A37C2FD5F69}|src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore.csproj|solutionrelative:src\\02-infrastructure\\khaneban.infrastructure.efcore\\khaneban.infrastructure.efcore\\repositories\\suggestionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7C5F3CF-969B-43B1-8C00-6D0695B61B87}|src\\01-Domain\\Core\\KhaneBan.Domain.Core\\KhaneBan.Domain.Core.csproj|d:\\c#\\khaneban\\khaneban\\src\\01-domain\\core\\khaneban.domain.core\\contracts\\repository\\irequestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7C5F3CF-969B-43B1-8C00-6D0695B61B87}|src\\01-Domain\\Core\\KhaneBan.Domain.Core\\KhaneBan.Domain.Core.csproj|solutionrelative:src\\01-domain\\core\\khaneban.domain.core\\contracts\\repository\\irequestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F211BF-3C8A-4114-879B-4A37C2FD5F69}|src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore.csproj|d:\\c#\\khaneban\\khaneban\\src\\02-infrastructure\\khaneban.infrastructure.efcore\\khaneban.infrastructure.efcore\\repositories\\requestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2F211BF-3C8A-4114-879B-4A37C2FD5F69}|src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore.csproj|solutionrelative:src\\02-infrastructure\\khaneban.infrastructure.efcore\\khaneban.infrastructure.efcore\\repositories\\requestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F211BF-3C8A-4114-879B-4A37C2FD5F69}|src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore.csproj|d:\\c#\\khaneban\\khaneban\\src\\02-infrastructure\\khaneban.infrastructure.efcore\\khaneban.infrastructure.efcore\\repositories\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2F211BF-3C8A-4114-879B-4A37C2FD5F69}|src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore.csproj|solutionrelative:src\\02-infrastructure\\khaneban.infrastructure.efcore\\khaneban.infrastructure.efcore\\repositories\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7C5F3CF-969B-43B1-8C00-6D0695B61B87}|src\\01-Domain\\Core\\KhaneBan.Domain.Core\\KhaneBan.Domain.Core.csproj|d:\\c#\\khaneban\\khaneban\\src\\01-domain\\core\\khaneban.domain.core\\contracts\\repository\\isuggestionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7C5F3CF-969B-43B1-8C00-6D0695B61B87}|src\\01-Domain\\Core\\KhaneBan.Domain.Core\\KhaneBan.Domain.Core.csproj|solutionrelative:src\\01-domain\\core\\khaneban.domain.core\\contracts\\repository\\isuggestionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F211BF-3C8A-4114-879B-4A37C2FD5F69}|src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore.csproj|d:\\c#\\khaneban\\khaneban\\src\\02-infrastructure\\khaneban.infrastructure.efcore\\khaneban.infrastructure.efcore\\repositories\\homeservicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2F211BF-3C8A-4114-879B-4A37C2FD5F69}|src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore.csproj|solutionrelative:src\\02-infrastructure\\khaneban.infrastructure.efcore\\khaneban.infrastructure.efcore\\repositories\\homeservicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7C5F3CF-969B-43B1-8C00-6D0695B61B87}|src\\01-Domain\\Core\\KhaneBan.Domain.Core\\KhaneBan.Domain.Core.csproj|d:\\c#\\khaneban\\khaneban\\src\\01-domain\\core\\khaneban.domain.core\\entites\\userrequests\\suggestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7C5F3CF-969B-43B1-8C00-6D0695B61B87}|src\\01-Domain\\Core\\KhaneBan.Domain.Core\\KhaneBan.Domain.Core.csproj|solutionrelative:src\\01-domain\\core\\khaneban.domain.core\\entites\\userrequests\\suggestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7C5F3CF-969B-43B1-8C00-6D0695B61B87}|src\\01-Domain\\Core\\KhaneBan.Domain.Core\\KhaneBan.Domain.Core.csproj|d:\\c#\\khaneban\\khaneban\\src\\01-domain\\core\\khaneban.domain.core\\entites\\baseentities\\city.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7C5F3CF-969B-43B1-8C00-6D0695B61B87}|src\\01-Domain\\Core\\KhaneBan.Domain.Core\\KhaneBan.Domain.Core.csproj|solutionrelative:src\\01-domain\\core\\khaneban.domain.core\\entites\\baseentities\\city.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F211BF-3C8A-4114-879B-4A37C2FD5F69}|src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore.csproj|d:\\c#\\khaneban\\khaneban\\src\\02-infrastructure\\khaneban.infrastructure.efcore\\khaneban.infrastructure.efcore\\repositories\\ratingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2F211BF-3C8A-4114-879B-4A37C2FD5F69}|src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore.csproj|solutionrelative:src\\02-infrastructure\\khaneban.infrastructure.efcore\\khaneban.infrastructure.efcore\\repositories\\ratingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F211BF-3C8A-4114-879B-4A37C2FD5F69}|src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore.csproj|d:\\c#\\khaneban\\khaneban\\src\\02-infrastructure\\khaneban.infrastructure.efcore\\khaneban.infrastructure.efcore\\repositories\\subcategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2F211BF-3C8A-4114-879B-4A37C2FD5F69}|src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore.csproj|solutionrelative:src\\02-infrastructure\\khaneban.infrastructure.efcore\\khaneban.infrastructure.efcore\\repositories\\subcategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F211BF-3C8A-4114-879B-4A37C2FD5F69}|src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore.csproj|d:\\c#\\khaneban\\khaneban\\src\\02-infrastructure\\khaneban.infrastructure.efcore\\khaneban.infrastructure.efcore\\repositories\\expertrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2F211BF-3C8A-4114-879B-4A37C2FD5F69}|src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore.csproj|solutionrelative:src\\02-infrastructure\\khaneban.infrastructure.efcore\\khaneban.infrastructure.efcore\\repositories\\expertrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F211BF-3C8A-4114-879B-4A37C2FD5F69}|src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore.csproj|d:\\c#\\khaneban\\khaneban\\src\\02-infrastructure\\khaneban.infrastructure.efcore\\khaneban.infrastructure.efcore\\repositories\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2F211BF-3C8A-4114-879B-4A37C2FD5F69}|src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore.csproj|solutionrelative:src\\02-infrastructure\\khaneban.infrastructure.efcore\\khaneban.infrastructure.efcore\\repositories\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7C5F3CF-969B-43B1-8C00-6D0695B61B87}|src\\01-Domain\\Core\\KhaneBan.Domain.Core\\KhaneBan.Domain.Core.csproj|d:\\c#\\khaneban\\khaneban\\src\\01-domain\\core\\khaneban.domain.core\\contracts\\repository\\ihomeservicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7C5F3CF-969B-43B1-8C00-6D0695B61B87}|src\\01-Domain\\Core\\KhaneBan.Domain.Core\\KhaneBan.Domain.Core.csproj|solutionrelative:src\\01-domain\\core\\khaneban.domain.core\\contracts\\repository\\ihomeservicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7C5F3CF-969B-43B1-8C00-6D0695B61B87}|src\\01-Domain\\Core\\KhaneBan.Domain.Core\\KhaneBan.Domain.Core.csproj|d:\\c#\\khaneban\\khaneban\\src\\01-domain\\core\\khaneban.domain.core\\contracts\\repository\\isubcategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7C5F3CF-969B-43B1-8C00-6D0695B61B87}|src\\01-Domain\\Core\\KhaneBan.Domain.Core\\KhaneBan.Domain.Core.csproj|solutionrelative:src\\01-domain\\core\\khaneban.domain.core\\contracts\\repository\\isubcategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7C5F3CF-969B-43B1-8C00-6D0695B61B87}|src\\01-Domain\\Core\\KhaneBan.Domain.Core\\KhaneBan.Domain.Core.csproj|d:\\c#\\khaneban\\khaneban\\src\\01-domain\\core\\khaneban.domain.core\\entites\\userrequests\\subcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7C5F3CF-969B-43B1-8C00-6D0695B61B87}|src\\01-Domain\\Core\\KhaneBan.Domain.Core\\KhaneBan.Domain.Core.csproj|solutionrelative:src\\01-domain\\core\\khaneban.domain.core\\entites\\userrequests\\subcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7C5F3CF-969B-43B1-8C00-6D0695B61B87}|src\\01-Domain\\Core\\KhaneBan.Domain.Core\\KhaneBan.Domain.Core.csproj|d:\\c#\\khaneban\\khaneban\\src\\01-domain\\core\\khaneban.domain.core\\contracts\\repository\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7C5F3CF-969B-43B1-8C00-6D0695B61B87}|src\\01-Domain\\Core\\KhaneBan.Domain.Core\\KhaneBan.Domain.Core.csproj|solutionrelative:src\\01-domain\\core\\khaneban.domain.core\\contracts\\repository\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7C5F3CF-969B-43B1-8C00-6D0695B61B87}|src\\01-Domain\\Core\\KhaneBan.Domain.Core\\KhaneBan.Domain.Core.csproj|d:\\c#\\khaneban\\khaneban\\src\\01-domain\\core\\khaneban.domain.core\\entites\\userrequests\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7C5F3CF-969B-43B1-8C00-6D0695B61B87}|src\\01-Domain\\Core\\KhaneBan.Domain.Core\\KhaneBan.Domain.Core.csproj|solutionrelative:src\\01-domain\\core\\khaneban.domain.core\\entites\\userrequests\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7C5F3CF-969B-43B1-8C00-6D0695B61B87}|src\\01-Domain\\Core\\KhaneBan.Domain.Core\\KhaneBan.Domain.Core.csproj|d:\\c#\\khaneban\\khaneban\\src\\01-domain\\core\\khaneban.domain.core\\contracts\\repository\\iratingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7C5F3CF-969B-43B1-8C00-6D0695B61B87}|src\\01-Domain\\Core\\KhaneBan.Domain.Core\\KhaneBan.Domain.Core.csproj|solutionrelative:src\\01-domain\\core\\khaneban.domain.core\\contracts\\repository\\iratingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7C5F3CF-969B-43B1-8C00-6D0695B61B87}|src\\01-Domain\\Core\\KhaneBan.Domain.Core\\KhaneBan.Domain.Core.csproj|d:\\c#\\khaneban\\khaneban\\src\\01-domain\\core\\khaneban.domain.core\\entites\\userrequests\\rating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7C5F3CF-969B-43B1-8C00-6D0695B61B87}|src\\01-Domain\\Core\\KhaneBan.Domain.Core\\KhaneBan.Domain.Core.csproj|solutionrelative:src\\01-domain\\core\\khaneban.domain.core\\entites\\userrequests\\rating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7C5F3CF-969B-43B1-8C00-6D0695B61B87}|src\\01-Domain\\Core\\KhaneBan.Domain.Core\\KhaneBan.Domain.Core.csproj|d:\\c#\\khaneban\\khaneban\\src\\01-domain\\core\\khaneban.domain.core\\entites\\userrequests\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7C5F3CF-969B-43B1-8C00-6D0695B61B87}|src\\01-Domain\\Core\\KhaneBan.Domain.Core\\KhaneBan.Domain.Core.csproj|solutionrelative:src\\01-domain\\core\\khaneban.domain.core\\entites\\userrequests\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7C5F3CF-969B-43B1-8C00-6D0695B61B87}|src\\01-Domain\\Core\\KhaneBan.Domain.Core\\KhaneBan.Domain.Core.csproj|d:\\c#\\khaneban\\khaneban\\src\\01-domain\\core\\khaneban.domain.core\\entites\\user\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7C5F3CF-969B-43B1-8C00-6D0695B61B87}|src\\01-Domain\\Core\\KhaneBan.Domain.Core\\KhaneBan.Domain.Core.csproj|solutionrelative:src\\01-domain\\core\\khaneban.domain.core\\entites\\user\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F211BF-3C8A-4114-879B-4A37C2FD5F69}|src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore.csproj|d:\\c#\\khaneban\\khaneban\\src\\02-infrastructure\\khaneban.infrastructure.efcore\\khaneban.infrastructure.efcore\\migrations\\20250214070858_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2F211BF-3C8A-4114-879B-4A37C2FD5F69}|src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore.csproj|solutionrelative:src\\02-infrastructure\\khaneban.infrastructure.efcore\\khaneban.infrastructure.efcore\\migrations\\20250214070858_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F2F211BF-3C8A-4114-879B-4A37C2FD5F69}|src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore.csproj|d:\\c#\\khaneban\\khaneban\\src\\02-infrastructure\\khaneban.infrastructure.efcore\\khaneban.infrastructure.efcore\\khaneban.infrastructure.efcore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{F2F211BF-3C8A-4114-879B-4A37C2FD5F69}|src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore.csproj|solutionrelative:src\\02-infrastructure\\khaneban.infrastructure.efcore\\khaneban.infrastructure.efcore\\khaneban.infrastructure.efcore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
@@ -51,48 +139,12 @@
       "RelativeMoniker": "D:0:0:{F2F211BF-3C8A-4114-879B-4A37C2FD5F69}|src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore.csproj|solutionrelative:src\\02-infrastructure\\khaneban.infrastructure.efcore\\khaneban.infrastructure.efcore\\configurations\\adminconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F2F211BF-3C8A-4114-879B-4A37C2FD5F69}|src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore.csproj|d:\\c#\\khaneban\\khaneban\\src\\02-infrastructure\\khaneban.infrastructure.efcore\\khaneban.infrastructure.efcore\\repositories\\requestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2F211BF-3C8A-4114-879B-4A37C2FD5F69}|src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore.csproj|solutionrelative:src\\02-infrastructure\\khaneban.infrastructure.efcore\\khaneban.infrastructure.efcore\\repositories\\requestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2F211BF-3C8A-4114-879B-4A37C2FD5F69}|src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore.csproj|d:\\c#\\khaneban\\khaneban\\src\\02-infrastructure\\khaneban.infrastructure.efcore\\khaneban.infrastructure.efcore\\repositories\\ratingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2F211BF-3C8A-4114-879B-4A37C2FD5F69}|src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore.csproj|solutionrelative:src\\02-infrastructure\\khaneban.infrastructure.efcore\\khaneban.infrastructure.efcore\\repositories\\ratingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B7C5F3CF-969B-43B1-8C00-6D0695B61B87}|src\\01-Domain\\Core\\KhaneBan.Domain.Core\\KhaneBan.Domain.Core.csproj|d:\\c#\\khaneban\\khaneban\\src\\01-domain\\core\\khaneban.domain.core\\entites\\user\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7C5F3CF-969B-43B1-8C00-6D0695B61B87}|src\\01-Domain\\Core\\KhaneBan.Domain.Core\\KhaneBan.Domain.Core.csproj|solutionrelative:src\\01-domain\\core\\khaneban.domain.core\\entites\\user\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B7C5F3CF-969B-43B1-8C00-6D0695B61B87}|src\\01-Domain\\Core\\KhaneBan.Domain.Core\\KhaneBan.Domain.Core.csproj|d:\\c#\\khaneban\\khaneban\\src\\01-domain\\core\\khaneban.domain.core\\entites\\user\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B7C5F3CF-969B-43B1-8C00-6D0695B61B87}|src\\01-Domain\\Core\\KhaneBan.Domain.Core\\KhaneBan.Domain.Core.csproj|solutionrelative:src\\01-domain\\core\\khaneban.domain.core\\entites\\user\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B7C5F3CF-969B-43B1-8C00-6D0695B61B87}|src\\01-Domain\\Core\\KhaneBan.Domain.Core\\KhaneBan.Domain.Core.csproj|d:\\c#\\khaneban\\khaneban\\src\\01-domain\\core\\khaneban.domain.core\\entites\\userrequests\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7C5F3CF-969B-43B1-8C00-6D0695B61B87}|src\\01-Domain\\Core\\KhaneBan.Domain.Core\\KhaneBan.Domain.Core.csproj|solutionrelative:src\\01-domain\\core\\khaneban.domain.core\\entites\\userrequests\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B7C5F3CF-969B-43B1-8C00-6D0695B61B87}|src\\01-Domain\\Core\\KhaneBan.Domain.Core\\KhaneBan.Domain.Core.csproj|d:\\c#\\khaneban\\khaneban\\src\\01-domain\\core\\khaneban.domain.core\\entites\\userrequests\\suggestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7C5F3CF-969B-43B1-8C00-6D0695B61B87}|src\\01-Domain\\Core\\KhaneBan.Domain.Core\\KhaneBan.Domain.Core.csproj|solutionrelative:src\\01-domain\\core\\khaneban.domain.core\\entites\\userrequests\\suggestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2F211BF-3C8A-4114-879B-4A37C2FD5F69}|src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore.csproj|d:\\c#\\khaneban\\khaneban\\src\\02-infrastructure\\khaneban.infrastructure.efcore\\khaneban.infrastructure.efcore\\repositories\\suggestionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2F211BF-3C8A-4114-879B-4A37C2FD5F69}|src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore.csproj|solutionrelative:src\\02-infrastructure\\khaneban.infrastructure.efcore\\khaneban.infrastructure.efcore\\repositories\\suggestionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2F211BF-3C8A-4114-879B-4A37C2FD5F69}|src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore.csproj|d:\\c#\\khaneban\\khaneban\\src\\02-infrastructure\\khaneban.infrastructure.efcore\\khaneban.infrastructure.efcore\\repositories\\subcategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2F211BF-3C8A-4114-879B-4A37C2FD5F69}|src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore.csproj|solutionrelative:src\\02-infrastructure\\khaneban.infrastructure.efcore\\khaneban.infrastructure.efcore\\repositories\\subcategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2F211BF-3C8A-4114-879B-4A37C2FD5F69}|src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore.csproj|d:\\c#\\khaneban\\khaneban\\src\\02-infrastructure\\khaneban.infrastructure.efcore\\khaneban.infrastructure.efcore\\repositories\\expertrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2F211BF-3C8A-4114-879B-4A37C2FD5F69}|src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore.csproj|solutionrelative:src\\02-infrastructure\\khaneban.infrastructure.efcore\\khaneban.infrastructure.efcore\\repositories\\expertrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F2F211BF-3C8A-4114-879B-4A37C2FD5F69}|src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore.csproj|d:\\c#\\khaneban\\khaneban\\src\\02-infrastructure\\khaneban.infrastructure.efcore\\khaneban.infrastructure.efcore\\repositories\\cityrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F2F211BF-3C8A-4114-879B-4A37C2FD5F69}|src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore.csproj|solutionrelative:src\\02-infrastructure\\khaneban.infrastructure.efcore\\khaneban.infrastructure.efcore\\repositories\\cityrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2F211BF-3C8A-4114-879B-4A37C2FD5F69}|src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore.csproj|d:\\c#\\khaneban\\khaneban\\src\\02-infrastructure\\khaneban.infrastructure.efcore\\khaneban.infrastructure.efcore\\repositories\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2F211BF-3C8A-4114-879B-4A37C2FD5F69}|src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore.csproj|solutionrelative:src\\02-infrastructure\\khaneban.infrastructure.efcore\\khaneban.infrastructure.efcore\\repositories\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Migrations\\20250214070514_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -107,44 +159,8 @@
       "RelativeMoniker": "D:0:0:{B7C5F3CF-969B-43B1-8C00-6D0695B61B87}|src\\01-Domain\\Core\\KhaneBan.Domain.Core\\KhaneBan.Domain.Core.csproj|solutionrelative:src\\01-domain\\core\\khaneban.domain.core\\entites\\user\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B7C5F3CF-969B-43B1-8C00-6D0695B61B87}|src\\01-Domain\\Core\\KhaneBan.Domain.Core\\KhaneBan.Domain.Core.csproj|d:\\c#\\khaneban\\khaneban\\src\\01-domain\\core\\khaneban.domain.core\\entites\\userrequests\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7C5F3CF-969B-43B1-8C00-6D0695B61B87}|src\\01-Domain\\Core\\KhaneBan.Domain.Core\\KhaneBan.Domain.Core.csproj|solutionrelative:src\\01-domain\\core\\khaneban.domain.core\\entites\\userrequests\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B7C5F3CF-969B-43B1-8C00-6D0695B61B87}|src\\01-Domain\\Core\\KhaneBan.Domain.Core\\KhaneBan.Domain.Core.csproj|d:\\c#\\khaneban\\khaneban\\src\\01-domain\\core\\khaneban.domain.core\\entites\\userrequests\\subcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7C5F3CF-969B-43B1-8C00-6D0695B61B87}|src\\01-Domain\\Core\\KhaneBan.Domain.Core\\KhaneBan.Domain.Core.csproj|solutionrelative:src\\01-domain\\core\\khaneban.domain.core\\entites\\userrequests\\subcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{45A8FC8E-62B2-4ACB-A298-E65FB2F6DA0F}|src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\KhaneBan.EndPoints.MVC.csproj|d:\\c#\\khaneban\\khaneban\\src\\03-endpoints\\khaneban.endpoints.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{45A8FC8E-62B2-4ACB-A298-E65FB2F6DA0F}|src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\KhaneBan.EndPoints.MVC.csproj|solutionrelative:src\\03-endpoints\\khaneban.endpoints.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B7C5F3CF-969B-43B1-8C00-6D0695B61B87}|src\\01-Domain\\Core\\KhaneBan.Domain.Core\\KhaneBan.Domain.Core.csproj|d:\\c#\\khaneban\\khaneban\\src\\01-domain\\core\\khaneban.domain.core\\contracts\\repository\\isuggestionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7C5F3CF-969B-43B1-8C00-6D0695B61B87}|src\\01-Domain\\Core\\KhaneBan.Domain.Core\\KhaneBan.Domain.Core.csproj|solutionrelative:src\\01-domain\\core\\khaneban.domain.core\\contracts\\repository\\isuggestionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B7C5F3CF-969B-43B1-8C00-6D0695B61B87}|src\\01-Domain\\Core\\KhaneBan.Domain.Core\\KhaneBan.Domain.Core.csproj|d:\\c#\\khaneban\\khaneban\\src\\01-domain\\core\\khaneban.domain.core\\contracts\\repository\\irequestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7C5F3CF-969B-43B1-8C00-6D0695B61B87}|src\\01-Domain\\Core\\KhaneBan.Domain.Core\\KhaneBan.Domain.Core.csproj|solutionrelative:src\\01-domain\\core\\khaneban.domain.core\\contracts\\repository\\irequestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B7C5F3CF-969B-43B1-8C00-6D0695B61B87}|src\\01-Domain\\Core\\KhaneBan.Domain.Core\\KhaneBan.Domain.Core.csproj|d:\\c#\\khaneban\\khaneban\\src\\01-domain\\core\\khaneban.domain.core\\contracts\\repository\\iratingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7C5F3CF-969B-43B1-8C00-6D0695B61B87}|src\\01-Domain\\Core\\KhaneBan.Domain.Core\\KhaneBan.Domain.Core.csproj|solutionrelative:src\\01-domain\\core\\khaneban.domain.core\\contracts\\repository\\iratingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2F211BF-3C8A-4114-879B-4A37C2FD5F69}|src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore.csproj|d:\\c#\\khaneban\\khaneban\\src\\02-infrastructure\\khaneban.infrastructure.efcore\\khaneban.infrastructure.efcore\\repositories\\homeservicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2F211BF-3C8A-4114-879B-4A37C2FD5F69}|src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore.csproj|solutionrelative:src\\02-infrastructure\\khaneban.infrastructure.efcore\\khaneban.infrastructure.efcore\\repositories\\homeservicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B7C5F3CF-969B-43B1-8C00-6D0695B61B87}|src\\01-Domain\\Core\\KhaneBan.Domain.Core\\KhaneBan.Domain.Core.csproj|d:\\c#\\khaneban\\khaneban\\src\\01-domain\\core\\khaneban.domain.core\\contracts\\repository\\ihomeservicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7C5F3CF-969B-43B1-8C00-6D0695B61B87}|src\\01-Domain\\Core\\KhaneBan.Domain.Core\\KhaneBan.Domain.Core.csproj|solutionrelative:src\\01-domain\\core\\khaneban.domain.core\\contracts\\repository\\ihomeservicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2F211BF-3C8A-4114-879B-4A37C2FD5F69}|src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore.csproj|d:\\c#\\khaneban\\khaneban\\src\\02-infrastructure\\khaneban.infrastructure.efcore\\khaneban.infrastructure.efcore\\repositories\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2F211BF-3C8A-4114-879B-4A37C2FD5F69}|src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore.csproj|solutionrelative:src\\02-infrastructure\\khaneban.infrastructure.efcore\\khaneban.infrastructure.efcore\\repositories\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2F211BF-3C8A-4114-879B-4A37C2FD5F69}|src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore.csproj|d:\\c#\\khaneban\\khaneban\\src\\02-infrastructure\\khaneban.infrastructure.efcore\\khaneban.infrastructure.efcore\\migrations\\20250214070858_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2F211BF-3C8A-4114-879B-4A37C2FD5F69}|src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore.csproj|solutionrelative:src\\02-infrastructure\\khaneban.infrastructure.efcore\\khaneban.infrastructure.efcore\\migrations\\20250214070858_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -162,19 +178,295 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "HomeService.cs",
-              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\UserRequests\\HomeService.cs",
-              "RelativeDocumentMoniker": "src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\UserRequests\\HomeService.cs",
-              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\UserRequests\\HomeService.cs",
-              "RelativeToolTip": "src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\UserRequests\\HomeService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "City.cs",
+              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\BaseEntities\\City.cs",
+              "RelativeDocumentMoniker": "src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\BaseEntities\\City.cs",
+              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\BaseEntities\\City.cs",
+              "RelativeToolTip": "src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\BaseEntities\\City.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T08:21:45.58Z"
+              "WhenOpened": "2025-02-14T09:23:39.654Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "SuggestionRepository.cs",
+              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\SuggestionRepository.cs",
+              "RelativeDocumentMoniker": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\SuggestionRepository.cs",
+              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\SuggestionRepository.cs",
+              "RelativeToolTip": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\SuggestionRepository.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAzwFoAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T22:51:23.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Suggestion.cs",
+              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\UserRequests\\Suggestion.cs",
+              "RelativeDocumentMoniker": "src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\UserRequests\\Suggestion.cs",
+              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\UserRequests\\Suggestion.cs",
+              "RelativeToolTip": "src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\UserRequests\\Suggestion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T05:11:29.548Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ISuggestionRepository.cs",
+              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Contracts\\Repository\\ISuggestionRepository.cs",
+              "RelativeDocumentMoniker": "src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Contracts\\Repository\\ISuggestionRepository.cs",
+              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Contracts\\Repository\\ISuggestionRepository.cs",
+              "RelativeToolTip": "src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Contracts\\Repository\\ISuggestionRepository.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAxwBgAAABmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T05:32:25.36Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RequestRepository.cs",
+              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\RequestRepository.cs",
+              "RelativeDocumentMoniker": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\RequestRepository.cs",
+              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\RequestRepository.cs",
+              "RelativeToolTip": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\RequestRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T22:52:52.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeServiceRepository.cs",
+              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\HomeServiceRepository.cs",
+              "RelativeDocumentMoniker": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\HomeServiceRepository.cs",
+              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\HomeServiceRepository.cs",
+              "RelativeToolTip": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\HomeServiceRepository.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAAAFIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T22:19:31.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CategoryRepository.cs",
+              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\CategoryRepository.cs",
+              "RelativeDocumentMoniker": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\CategoryRepository.cs",
+              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\CategoryRepository.cs",
+              "RelativeToolTip": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\CategoryRepository.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAuwF4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T05:41:13.651Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IRequestRepository.cs",
+              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Contracts\\Repository\\IRequestRepository.cs",
+              "RelativeDocumentMoniker": "src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Contracts\\Repository\\IRequestRepository.cs",
+              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Contracts\\Repository\\IRequestRepository.cs",
+              "RelativeToolTip": "src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Contracts\\Repository\\IRequestRepository.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAqwBgAAABjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T23:12:35.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RatingRepository.cs",
+              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\RatingRepository.cs",
+              "RelativeDocumentMoniker": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\RatingRepository.cs",
+              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\RatingRepository.cs",
+              "RelativeToolTip": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\RatingRepository.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAAAFkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T22:40:40.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SubCategoryRepository.cs",
+              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\SubCategoryRepository.cs",
+              "RelativeDocumentMoniker": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\SubCategoryRepository.cs",
+              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\SubCategoryRepository.cs",
+              "RelativeToolTip": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\SubCategoryRepository.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAuwFgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T22:51:14.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ExpertRepository.cs",
+              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\ExpertRepository.cs",
+              "RelativeDocumentMoniker": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\ExpertRepository.cs",
+              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\ExpertRepository.cs",
+              "RelativeToolTip": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\ExpertRepository.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAA2wCoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T22:51:41.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CustomerRepository.cs",
+              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\CustomerRepository.cs",
+              "RelativeDocumentMoniker": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\CustomerRepository.cs",
+              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\CustomerRepository.cs",
+              "RelativeToolTip": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\CustomerRepository.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwB8AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T22:41:34.72Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "SubCategory.cs",
+              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\UserRequests\\SubCategory.cs",
+              "RelativeDocumentMoniker": "src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\UserRequests\\SubCategory.cs",
+              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\UserRequests\\SubCategory.cs",
+              "RelativeToolTip": "src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\UserRequests\\SubCategory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T05:38:44.406Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ISubCategoryRepository.cs",
+              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Contracts\\Repository\\ISubCategoryRepository.cs",
+              "RelativeDocumentMoniker": "src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Contracts\\Repository\\ISubCategoryRepository.cs",
+              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Contracts\\Repository\\ISubCategoryRepository.cs",
+              "RelativeToolTip": "src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Contracts\\Repository\\ISubCategoryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T09:12:38.506Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IHomeServiceRepository.cs",
+              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Contracts\\Repository\\IHomeServiceRepository.cs",
+              "RelativeDocumentMoniker": "src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Contracts\\Repository\\IHomeServiceRepository.cs",
+              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Contracts\\Repository\\IHomeServiceRepository.cs",
+              "RelativeToolTip": "src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Contracts\\Repository\\IHomeServiceRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T22:52:25.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ICategoryRepository.cs",
+              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Contracts\\Repository\\ICategoryRepository.cs",
+              "RelativeDocumentMoniker": "src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Contracts\\Repository\\ICategoryRepository.cs",
+              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Contracts\\Repository\\ICategoryRepository.cs",
+              "RelativeToolTip": "src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Contracts\\Repository\\ICategoryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T09:11:15.038Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Category.cs",
+              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\UserRequests\\Category.cs",
+              "RelativeDocumentMoniker": "src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\UserRequests\\Category.cs",
+              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\UserRequests\\Category.cs",
+              "RelativeToolTip": "src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\UserRequests\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T05:59:11.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IRatingRepository.cs",
+              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Contracts\\Repository\\IRatingRepository.cs",
+              "RelativeDocumentMoniker": "src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Contracts\\Repository\\IRatingRepository.cs",
+              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Contracts\\Repository\\IRatingRepository.cs",
+              "RelativeToolTip": "src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Contracts\\Repository\\IRatingRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBMAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T22:58:22.517Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Rating.cs",
+              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\UserRequests\\Rating.cs",
+              "RelativeDocumentMoniker": "src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\UserRequests\\Rating.cs",
+              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\UserRequests\\Rating.cs",
+              "RelativeToolTip": "src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\UserRequests\\Rating.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T08:35:21.383Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Request.cs",
+              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\UserRequests\\Request.cs",
+              "RelativeDocumentMoniker": "src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\UserRequests\\Request.cs",
+              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\UserRequests\\Request.cs",
+              "RelativeToolTip": "src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\UserRequests\\Request.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T05:07:50.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\User\\Customer.cs",
+              "RelativeDocumentMoniker": "src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\User\\Customer.cs",
+              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\User\\Customer.cs",
+              "RelativeToolTip": "src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\User\\Customer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T05:53:44.901Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "20250214070858_init.cs",
+              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Migrations\\20250214070858_init.cs",
+              "RelativeDocumentMoniker": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Migrations\\20250214070858_init.cs",
+              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Migrations\\20250214070858_init.cs",
+              "RelativeToolTip": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Migrations\\20250214070858_init.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T07:08:58.855Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
               "Title": "KhaneBan.InfraStructure.EfCore.csproj",
               "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore.csproj",
               "RelativeDocumentMoniker": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore.csproj",
@@ -182,60 +474,11 @@
               "RelativeToolTip": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-02-14T08:21:20.731Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-14T08:21:20.731Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "SuggestionConfiguration.cs",
-              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Configurations\\SuggestionConfiguration.cs",
-              "RelativeDocumentMoniker": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Configurations\\SuggestionConfiguration.cs",
-              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Configurations\\SuggestionConfiguration.cs",
-              "RelativeToolTip": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Configurations\\SuggestionConfiguration.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T08:09:43.008Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "RatingConfiguration.cs",
-              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Configurations\\RatingConfiguration.cs",
-              "RelativeDocumentMoniker": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Configurations\\RatingConfiguration.cs",
-              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Configurations\\RatingConfiguration.cs",
-              "RelativeToolTip": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Configurations\\RatingConfiguration.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAA1wBgAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T08:04:38.186Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "HomeServiceConfiguration.cs",
-              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Configurations\\HomeServiceConfiguration.cs",
-              "RelativeDocumentMoniker": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Configurations\\HomeServiceConfiguration.cs",
-              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Configurations\\HomeServiceConfiguration.cs",
-              "RelativeToolTip": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Configurations\\HomeServiceConfiguration.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAiwBIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T07:59:38.961Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CustomerConfiguration.cs",
-              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Configurations\\CustomerConfiguration.cs",
-              "RelativeDocumentMoniker": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Configurations\\CustomerConfiguration.cs",
-              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Configurations\\CustomerConfiguration.cs",
-              "RelativeToolTip": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Configurations\\CustomerConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T07:59:30.02Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 24,
               "Title": "ExpertConfiguration.cs",
               "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Configurations\\ExpertConfiguration.cs",
               "RelativeDocumentMoniker": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Configurations\\ExpertConfiguration.cs",
@@ -247,7 +490,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 31,
+              "Title": "CustomerConfiguration.cs",
+              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Configurations\\CustomerConfiguration.cs",
+              "RelativeDocumentMoniker": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Configurations\\CustomerConfiguration.cs",
+              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Configurations\\CustomerConfiguration.cs",
+              "RelativeToolTip": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Configurations\\CustomerConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T07:59:30.02Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "HomeServiceConfiguration.cs",
+              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Configurations\\HomeServiceConfiguration.cs",
+              "RelativeDocumentMoniker": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Configurations\\HomeServiceConfiguration.cs",
+              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Configurations\\HomeServiceConfiguration.cs",
+              "RelativeToolTip": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Configurations\\HomeServiceConfiguration.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAiwBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T07:59:38.961Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "RatingConfiguration.cs",
+              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Configurations\\RatingConfiguration.cs",
+              "RelativeDocumentMoniker": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Configurations\\RatingConfiguration.cs",
+              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Configurations\\RatingConfiguration.cs",
+              "RelativeToolTip": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Configurations\\RatingConfiguration.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA1wBgAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T08:04:38.186Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "SuggestionConfiguration.cs",
+              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Configurations\\SuggestionConfiguration.cs",
+              "RelativeDocumentMoniker": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Configurations\\SuggestionConfiguration.cs",
+              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Configurations\\SuggestionConfiguration.cs",
+              "RelativeToolTip": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Configurations\\SuggestionConfiguration.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T08:09:43.008Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "HomeService.cs",
+              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\UserRequests\\HomeService.cs",
+              "RelativeDocumentMoniker": "src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\UserRequests\\HomeService.cs",
+              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\UserRequests\\HomeService.cs",
+              "RelativeToolTip": "src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\UserRequests\\HomeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T08:21:45.58Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
               "Title": "PictureConfiguration.cs",
               "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Configurations\\PictureConfiguration.cs",
               "RelativeDocumentMoniker": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Configurations\\PictureConfiguration.cs",
@@ -259,7 +562,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 29,
               "Title": "UserConfiguration.cs",
               "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Configurations\\UserConfiguration.cs",
               "RelativeDocumentMoniker": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Configurations\\UserConfiguration.cs",
@@ -271,7 +574,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 30,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Common\\AppDbContext.cs",
               "RelativeDocumentMoniker": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Common\\AppDbContext.cs",
@@ -283,7 +586,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 32,
               "Title": "CategoryConfiguration.cs",
               "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Configurations\\CategoryConfiguration.cs",
               "RelativeDocumentMoniker": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Configurations\\CategoryConfiguration.cs",
@@ -295,7 +598,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 33,
               "Title": "AdminConfiguration.cs",
               "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Configurations\\AdminConfiguration.cs",
               "RelativeDocumentMoniker": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Configurations\\AdminConfiguration.cs",
@@ -307,31 +610,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "RequestRepository.cs",
-              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\RequestRepository.cs",
-              "RelativeDocumentMoniker": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\RequestRepository.cs",
-              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\RequestRepository.cs",
-              "RelativeToolTip": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\RequestRepository.cs",
-              "ViewState": "AgIAAH0AAAAAAAAAAADwvyYAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T22:52:52.165Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "RatingRepository.cs",
-              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\RatingRepository.cs",
-              "RelativeDocumentMoniker": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\RatingRepository.cs",
-              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\RatingRepository.cs",
-              "RelativeToolTip": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\RatingRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE8AAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T22:40:40.513Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 34,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\User\\User.cs",
               "RelativeDocumentMoniker": "src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\User\\User.cs",
@@ -343,91 +622,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Customer.cs",
-              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\User\\Customer.cs",
-              "RelativeDocumentMoniker": "src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\User\\Customer.cs",
-              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\User\\Customer.cs",
-              "RelativeToolTip": "src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\User\\Customer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T05:53:44.901Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Suggestion.cs",
-              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\UserRequests\\Suggestion.cs",
-              "RelativeDocumentMoniker": "src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\UserRequests\\Suggestion.cs",
-              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\UserRequests\\Suggestion.cs",
-              "RelativeToolTip": "src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\UserRequests\\Suggestion.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T05:11:29.548Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "SuggestionRepository.cs",
-              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\SuggestionRepository.cs",
-              "RelativeDocumentMoniker": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\SuggestionRepository.cs",
-              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\SuggestionRepository.cs",
-              "RelativeToolTip": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\SuggestionRepository.cs",
-              "ViewState": "AgIAAGoAAAAAAAAAAAAmwHoAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T22:51:23.016Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 35,
-              "Title": "20250214070858_init.cs",
-              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Migrations\\20250214070858_init.cs",
-              "RelativeDocumentMoniker": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Migrations\\20250214070858_init.cs",
-              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Migrations\\20250214070858_init.cs",
-              "RelativeToolTip": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Migrations\\20250214070858_init.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T07:08:58.855Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "SubCategoryRepository.cs",
-              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\SubCategoryRepository.cs",
-              "RelativeDocumentMoniker": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\SubCategoryRepository.cs",
-              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\SubCategoryRepository.cs",
-              "RelativeToolTip": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\SubCategoryRepository.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwE0AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T22:51:14.319Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Request.cs",
-              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\UserRequests\\Request.cs",
-              "RelativeDocumentMoniker": "src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\UserRequests\\Request.cs",
-              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\UserRequests\\Request.cs",
-              "RelativeToolTip": "src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\UserRequests\\Request.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T05:07:50.823Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "ExpertRepository.cs",
-              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\ExpertRepository.cs",
-              "RelativeDocumentMoniker": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\ExpertRepository.cs",
-              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\ExpertRepository.cs",
-              "RelativeToolTip": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\ExpertRepository.cs",
-              "ViewState": "AgIAAFIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T22:51:41.279Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
               "Title": "CityRepository.cs",
               "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\CityRepository.cs",
               "RelativeDocumentMoniker": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\CityRepository.cs",
@@ -439,19 +634,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "CategoryRepository.cs",
-              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\CategoryRepository.cs",
-              "RelativeDocumentMoniker": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\CategoryRepository.cs",
-              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\CategoryRepository.cs",
-              "RelativeToolTip": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\CategoryRepository.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwB8AAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T05:41:13.651Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 36,
               "Title": "20250214070514_init.cs",
               "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Migrations\\20250214070514_init.cs",
               "RelativeDocumentMoniker": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Migrations\\20250214070514_init.cs",
@@ -463,7 +646,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 37,
               "Title": "Expert.cs",
               "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\User\\Expert.cs",
               "RelativeDocumentMoniker": "src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\User\\Expert.cs",
@@ -475,7 +658,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 38,
               "Title": "Admin.cs",
               "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\User\\Admin.cs",
               "RelativeDocumentMoniker": "src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\User\\Admin.cs",
@@ -487,31 +670,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "Category.cs",
-              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\UserRequests\\Category.cs",
-              "RelativeDocumentMoniker": "src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\UserRequests\\Category.cs",
-              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\UserRequests\\Category.cs",
-              "RelativeToolTip": "src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\UserRequests\\Category.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T05:59:11.245Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "SubCategory.cs",
-              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\UserRequests\\SubCategory.cs",
-              "RelativeDocumentMoniker": "src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\UserRequests\\SubCategory.cs",
-              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\UserRequests\\SubCategory.cs",
-              "RelativeToolTip": "src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Entites\\UserRequests\\SubCategory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T05:38:44.406Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 39,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Program.cs",
               "RelativeDocumentMoniker": "src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Program.cs",
@@ -520,82 +679,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-14T05:33:01.387Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "ISuggestionRepository.cs",
-              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Contracts\\Repository\\ISuggestionRepository.cs",
-              "RelativeDocumentMoniker": "src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Contracts\\Repository\\ISuggestionRepository.cs",
-              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Contracts\\Repository\\ISuggestionRepository.cs",
-              "RelativeToolTip": "src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Contracts\\Repository\\ISuggestionRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T05:32:25.36Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "IRequestRepository.cs",
-              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Contracts\\Repository\\IRequestRepository.cs",
-              "RelativeDocumentMoniker": "src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Contracts\\Repository\\IRequestRepository.cs",
-              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Contracts\\Repository\\IRequestRepository.cs",
-              "RelativeToolTip": "src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Contracts\\Repository\\IRequestRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAwwBUAAABRAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T23:12:35.272Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "IRatingRepository.cs",
-              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Contracts\\Repository\\IRatingRepository.cs",
-              "RelativeDocumentMoniker": "src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Contracts\\Repository\\IRatingRepository.cs",
-              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Contracts\\Repository\\IRatingRepository.cs",
-              "RelativeToolTip": "src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Contracts\\Repository\\IRatingRepository.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBEAAABPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T22:58:22.517Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "IHomeServiceRepository.cs",
-              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Contracts\\Repository\\IHomeServiceRepository.cs",
-              "RelativeDocumentMoniker": "src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Contracts\\Repository\\IHomeServiceRepository.cs",
-              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Contracts\\Repository\\IHomeServiceRepository.cs",
-              "RelativeToolTip": "src\\01-Domain\\Core\\KhaneBan.Domain.Core\\Contracts\\Repository\\IHomeServiceRepository.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T22:52:25.284Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "HomeServiceRepository.cs",
-              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\HomeServiceRepository.cs",
-              "RelativeDocumentMoniker": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\HomeServiceRepository.cs",
-              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\HomeServiceRepository.cs",
-              "RelativeToolTip": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\HomeServiceRepository.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAcwAcAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T22:19:31.381Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "CustomerRepository.cs",
-              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\CustomerRepository.cs",
-              "RelativeDocumentMoniker": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\CustomerRepository.cs",
-              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\CustomerRepository.cs",
-              "RelativeToolTip": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\CustomerRepository.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T22:41:34.72Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             }
           ]
         }

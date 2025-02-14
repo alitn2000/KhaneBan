@@ -1,6 +1,7 @@
 ﻿using KhaneBan.Domain.Core.Contracts.Repository;
 using KhaneBan.Domain.Core.Entites.BaseEntities;
 using KhaneBan.Domain.Core.Entites.UserRequests;
+using KhaneBan.Domain.Core.Enums;
 using KhaneBan.InfraStructure.EfCore.Common;
 using Microsoft.EntityFrameworkCore;
 
@@ -109,6 +110,27 @@ public class RequestRepository : IRequestRepository
             throw new Exception("Logic Errorr");
         }
 
+    }
+
+    public async Task<bool> IsDelete(int requestId, CancellationToken cancellationToken)
+    {
+        var existRequest = await _appDbContext.Requests.FirstOrDefaultAsync(r => r.Id == requestId, cancellationToken);
+        if (existRequest == null)
+            return false;
+        existRequest.IsDeleted = true;
+        await _appDbContext.SaveChangesAsync(cancellationToken);
+        return true;
+    }
+
+    public async Task<bool> ChangeStatus(StatusEnum status, int requestId, CancellationToken cancellationToken)
+    {
+        var existRequest = await _appDbContext.Requests.FirstOrDefaultAsync(s => s.Id == requestId);
+        if (existRequest == null)
+            return false;
+        existRequest.RequestStatus = status;
+
+        await _appDbContext.SaveChangesAsync(cancellationToken);
+        return true;
     }
 
     public async Task<bool> UpdateAsync(Request request, CancellationToken cancellationToken)

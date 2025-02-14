@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KhaneBan.EndPoints.MVC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+baa52dacc9fe315d9b780ce4a73f55d5ba6646f4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a8a457768b65b76f42b608392ab1fab4fa54a88a")]
 [assembly: System.Reflection.AssemblyProductAttribute("KhaneBan.EndPoints.MVC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KhaneBan.EndPoints.MVC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

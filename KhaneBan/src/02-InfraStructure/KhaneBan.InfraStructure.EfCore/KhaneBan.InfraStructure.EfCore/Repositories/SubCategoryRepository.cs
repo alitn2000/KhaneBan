@@ -78,6 +78,16 @@ public class SubCategoryRepository : ISubCategoryRepository
         }
     }
 
+    public async Task<bool> IsDelete(int subCategoryId, CancellationToken cancellationToken)
+    {
+        var existSubCategory = await _appDbContext.SubCategories.FirstOrDefaultAsync(r => r.Id == subCategoryId, cancellationToken);
+        if (existSubCategory == null)
+            return false;
+        existSubCategory.IsDeleted = true;
+        await _appDbContext.SaveChangesAsync(cancellationToken);
+        return true;
+    }
+
     public async Task<bool> UpdateAsync(SubCategory subCategory, CancellationToken cancellationToken)
     {
         try

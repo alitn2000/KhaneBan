@@ -16,5 +16,6 @@ public interface IRatingRepository
     Task<bool> CreateAsync(Rating rating, CancellationToken cancellationToken);
     Task<bool> DeleteAsync(Rating rating, CancellationToken cancellationToken);
     Task<bool> UpdateAsync(Rating rating, CancellationToken cancellationToken);
-    Task UpdateStatus(Rating rating, bool newStatus, CancellationToken cancellationToken);
+    Task<bool> UpdateStatusAsync(int ratingId, bool newStatus, CancellationToken cancellationToken);
+    Task<bool> IsDelete(int ratingId, CancellationToken cancellationToken);
 }

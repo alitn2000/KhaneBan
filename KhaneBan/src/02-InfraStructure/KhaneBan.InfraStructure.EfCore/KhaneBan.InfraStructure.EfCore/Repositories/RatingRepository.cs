@@ -39,11 +39,17 @@ public class RatingRepository : IRatingRepository
            .FirstOrDefaultAsync(e => e.Id == id, cancellationToken);
 
 
-    public async Task UpdateStatus(Rating rating,bool newStatus, CancellationToken cancellationToken)
+    public async Task<bool> UpdateStatusAsync(int ratingId, bool newStatus, CancellationToken cancellationToken)
     {
+        var rating = await _appDbContext.Ratings.FirstOrDefaultAsync(r => r.Id == ratingId, cancellationToken);
+
+        if (rating == null)
+            return false;
+
         rating.Status = newStatus;
 
         await _appDbContext.SaveChangesAsync(cancellationToken);
+        return true;
     }
 
     public async Task<bool> CreateAsync(Rating rating, CancellationToken cancellationToken)
@@ -72,6 +78,15 @@ public class RatingRepository : IRatingRepository
         {
             return false;
         }
+    }
+    public async Task<bool> IsDelete(int ratingId, CancellationToken cancellationToken)
+    {
+        var existRating = await _appDbContext.Ratings.FirstOrDefaultAsync(r => r.Id == ratingId, cancellationToken);
+        if(existRating == null)
+            return false;
+        existRating.IsDeleted = true;
+        await _appDbContext.SaveChangesAsync(cancellationToken);
+        return true;
     }
 
     public async Task<bool> UpdateAsync(Rating rating, CancellationToken cancellationToken)

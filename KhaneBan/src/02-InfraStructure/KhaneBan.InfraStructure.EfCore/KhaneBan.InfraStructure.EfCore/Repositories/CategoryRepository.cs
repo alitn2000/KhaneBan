@@ -84,6 +84,16 @@ public class CategoryRepository : ICategoryRepository
 
     }
 
+    public async Task<bool> IsDelete(int categoryId, CancellationToken cancellationToken)
+    {
+        var existCategory = await _appDbContext.Categories.FirstOrDefaultAsync(r => r.Id == categoryId, cancellationToken);
+        if (existCategory == null)
+            return false;
+        existCategory.IsDeleted = true;
+        await _appDbContext.SaveChangesAsync(cancellationToken);
+        return true;
+    }
+
     public async Task<bool> UpdateAsync(Category category, CancellationToken cancellationToken)
     {
         try

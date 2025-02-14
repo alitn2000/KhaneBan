@@ -72,6 +72,15 @@ public class HomeServiceRepository : IHomeServiceRepository
         }
     }
 
+    public async Task<bool> IsDelete(int homeServiceId, CancellationToken cancellationToken)
+    {
+        var existHomeService = await _appDbContext.HomeServices.FirstOrDefaultAsync(r => r.Id == homeServiceId, cancellationToken);
+        if (existHomeService == null)
+            return false;
+        existHomeService.IsDeleted = true;
+        await _appDbContext.SaveChangesAsync(cancellationToken);
+        return true;
+    }
     public async Task<bool> UpdateAsync(HomeService homeService, CancellationToken cancellationToken)
     {
         try
