@@ -146,8 +146,8 @@ D:\c#\KhaneBan\KhaneBan\src\03-EndPoints\KhaneBan.EndPoints.MVC\bin\Debug\net9.0
 D:\c#\KhaneBan\KhaneBan\src\03-EndPoints\KhaneBan.EndPoints.MVC\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 D:\c#\KhaneBan\KhaneBan\src\03-EndPoints\KhaneBan.EndPoints.MVC\bin\Debug\net9.0\KhaneBan.Domain.Core.dll
 D:\c#\KhaneBan\KhaneBan\src\03-EndPoints\KhaneBan.EndPoints.MVC\bin\Debug\net9.0\KhaneBan.InfraStructure.EfCore.dll
-D:\c#\KhaneBan\KhaneBan\src\03-EndPoints\KhaneBan.EndPoints.MVC\bin\Debug\net9.0\KhaneBan.InfraStructure.EfCore.pdb
 D:\c#\KhaneBan\KhaneBan\src\03-EndPoints\KhaneBan.EndPoints.MVC\bin\Debug\net9.0\KhaneBan.Domain.Core.pdb
+D:\c#\KhaneBan\KhaneBan\src\03-EndPoints\KhaneBan.EndPoints.MVC\bin\Debug\net9.0\KhaneBan.InfraStructure.EfCore.pdb
 D:\c#\KhaneBan\KhaneBan\src\03-EndPoints\KhaneBan.EndPoints.MVC\obj\Debug\net9.0\KhaneBan.EndPoints.MVC.csproj.AssemblyReference.cache
 D:\c#\KhaneBan\KhaneBan\src\03-EndPoints\KhaneBan.EndPoints.MVC\obj\Debug\net9.0\KhaneBan.EndPoints.MVC.GeneratedMSBuildEditorConfig.editorconfig
 D:\c#\KhaneBan\KhaneBan\src\03-EndPoints\KhaneBan.EndPoints.MVC\obj\Debug\net9.0\KhaneBan.EndPoints.MVC.AssemblyInfoInputs.cache
@@ -156,6 +156,7 @@ D:\c#\KhaneBan\KhaneBan\src\03-EndPoints\KhaneBan.EndPoints.MVC\obj\Debug\net9.0
 D:\c#\KhaneBan\KhaneBan\src\03-EndPoints\KhaneBan.EndPoints.MVC\obj\Debug\net9.0\KhaneBan.EndPoints.MVC.MvcApplicationPartsAssemblyInfo.cache
 D:\c#\KhaneBan\KhaneBan\src\03-EndPoints\KhaneBan.EndPoints.MVC\obj\Debug\net9.0\KhaneBan.EndPoints.MVC.RazorAssemblyInfo.cache
 D:\c#\KhaneBan\KhaneBan\src\03-EndPoints\KhaneBan.EndPoints.MVC\obj\Debug\net9.0\KhaneBan.EndPoints.MVC.RazorAssemblyInfo.cs
+D:\c#\KhaneBan\KhaneBan\src\03-EndPoints\KhaneBan.EndPoints.MVC\obj\Debug\net9.0\KhaneBan.EndPoints.MVC.sourcelink.json
 D:\c#\KhaneBan\KhaneBan\src\03-EndPoints\KhaneBan.EndPoints.MVC\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 D:\c#\KhaneBan\KhaneBan\src\03-EndPoints\KhaneBan.EndPoints.MVC\obj\Debug\net9.0\scopedcss\bundle\KhaneBan.EndPoints.MVC.styles.css
 D:\c#\KhaneBan\KhaneBan\src\03-EndPoints\KhaneBan.EndPoints.MVC\obj\Debug\net9.0\scopedcss\projectbundle\KhaneBan.EndPoints.MVC.bundle.scp.css

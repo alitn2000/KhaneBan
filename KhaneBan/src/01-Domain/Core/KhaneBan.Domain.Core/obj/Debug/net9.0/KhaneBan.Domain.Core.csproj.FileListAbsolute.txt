@@ -1,12 +1,13 @@
+D:\c#\KhaneBan\KhaneBan\src\01-Domain\Core\KhaneBan.Domain.Core\bin\Debug\net9.0\KhaneBan.Domain.Core.deps.json
+D:\c#\KhaneBan\KhaneBan\src\01-Domain\Core\KhaneBan.Domain.Core\bin\Debug\net9.0\KhaneBan.Domain.Core.dll
+D:\c#\KhaneBan\KhaneBan\src\01-Domain\Core\KhaneBan.Domain.Core\bin\Debug\net9.0\KhaneBan.Domain.Core.pdb
+D:\c#\KhaneBan\KhaneBan\src\01-Domain\Core\KhaneBan.Domain.Core\obj\Debug\net9.0\KhaneBan.Domain.Core.csproj.AssemblyReference.cache
 D:\c#\KhaneBan\KhaneBan\src\01-Domain\Core\KhaneBan.Domain.Core\obj\Debug\net9.0\KhaneBan.Domain.Core.GeneratedMSBuildEditorConfig.editorconfig
 D:\c#\KhaneBan\KhaneBan\src\01-Domain\Core\KhaneBan.Domain.Core\obj\Debug\net9.0\KhaneBan.Domain.Core.AssemblyInfoInputs.cache
 D:\c#\KhaneBan\KhaneBan\src\01-Domain\Core\KhaneBan.Domain.Core\obj\Debug\net9.0\KhaneBan.Domain.Core.AssemblyInfo.cs
 D:\c#\KhaneBan\KhaneBan\src\01-Domain\Core\KhaneBan.Domain.Core\obj\Debug\net9.0\KhaneBan.Domain.Core.csproj.CoreCompileInputs.cache
-D:\c#\KhaneBan\KhaneBan\src\01-Domain\Core\KhaneBan.Domain.Core\bin\Debug\net9.0\KhaneBan.Domain.Core.deps.json
-D:\c#\KhaneBan\KhaneBan\src\01-Domain\Core\KhaneBan.Domain.Core\bin\Debug\net9.0\KhaneBan.Domain.Core.dll
-D:\c#\KhaneBan\KhaneBan\src\01-Domain\Core\KhaneBan.Domain.Core\bin\Debug\net9.0\KhaneBan.Domain.Core.pdb
+D:\c#\KhaneBan\KhaneBan\src\01-Domain\Core\KhaneBan.Domain.Core\obj\Debug\net9.0\KhaneBan.Domain.Core.sourcelink.json
 D:\c#\KhaneBan\KhaneBan\src\01-Domain\Core\KhaneBan.Domain.Core\obj\Debug\net9.0\KhaneBan.Domain.Core.dll
 D:\c#\KhaneBan\KhaneBan\src\01-Domain\Core\KhaneBan.Domain.Core\obj\Debug\net9.0\refint\KhaneBan.Domain.Core.dll
 D:\c#\KhaneBan\KhaneBan\src\01-Domain\Core\KhaneBan.Domain.Core\obj\Debug\net9.0\KhaneBan.Domain.Core.pdb
 D:\c#\KhaneBan\KhaneBan\src\01-Domain\Core\KhaneBan.Domain.Core\obj\Debug\net9.0\ref\KhaneBan.Domain.Core.dll
-D:\c#\KhaneBan\KhaneBan\src\01-Domain\Core\KhaneBan.Domain.Core\obj\Debug\net9.0\KhaneBan.Domain.Core.csproj.AssemblyReference.cache

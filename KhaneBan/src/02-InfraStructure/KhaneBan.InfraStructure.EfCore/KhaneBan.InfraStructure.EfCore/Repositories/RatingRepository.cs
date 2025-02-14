@@ -2,6 +2,7 @@
 using KhaneBan.Domain.Core.Entites.UserRequests;
 using KhaneBan.InfraStructure.EfCore.Common;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking.Internal;
 
 namespace KhaneBan.InfraStructure.EfCore.Repositories;
 
@@ -36,6 +37,14 @@ public class RatingRepository : IRatingRepository
            .Include(r => r.Expert)
            .Include(r => r.Customer)
            .FirstOrDefaultAsync(e => e.Id == id, cancellationToken);
+
+
+    public async Task UpdateStatus(Rating rating,bool newStatus, CancellationToken cancellationToken)
+    {
+        rating.Status = newStatus;
+
+        await _appDbContext.SaveChangesAsync(cancellationToken);
+    }
 
     public async Task<bool> CreateAsync(Rating rating, CancellationToken cancellationToken)
     {

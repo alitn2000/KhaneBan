@@ -40,13 +40,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\KhaneBan.EndPoints.MVC.mbyk5tu729.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Prx\u002B4/FBX9X3DXltWafmog32OO0JoWgTxLJCuU7hNTE="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1140"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Prx\u002B4/FBX9X3DXltWafmog32OO0JoWgTxLJCuU7hNTE=\u0022"},{"Name":"Last-Modified","Value":"Wed, 12 Feb 2025 23:26:23 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1140"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Prx\u002B4/FBX9X3DXltWafmog32OO0JoWgTxLJCuU7hNTE=\u0022"},{"Name":"Last-Modified","Value":"Fri, 14 Feb 2025 08:24:33 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/KhaneBan.EndPoints.MVC/KhaneBan.EndPoints.MVC.mbyk5tu729.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\KhaneBan.EndPoints.MVC.mbyk5tu729.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"mbyk5tu729"},{"Name":"integrity","Value":"sha256-Prx\u002B4/FBX9X3DXltWafmog32OO0JoWgTxLJCuU7hNTE="},{"Name":"label","Value":"_content/KhaneBan.EndPoints.MVC/KhaneBan.EndPoints.MVC.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1140"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Prx\u002B4/FBX9X3DXltWafmog32OO0JoWgTxLJCuU7hNTE=\u0022"},{"Name":"Last-Modified","Value":"Wed, 12 Feb 2025 23:26:23 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1140"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Prx\u002B4/FBX9X3DXltWafmog32OO0JoWgTxLJCuU7hNTE=\u0022"},{"Name":"Last-Modified","Value":"Fri, 14 Feb 2025 08:24:33 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/KhaneBan.EndPoints.MVC/lib/bootstrap/dist/css/bootstrap-grid.bqjiyaj88i.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap-grid.css'))</AssetFile>
