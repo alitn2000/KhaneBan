@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\KhaneBan.EndPoints.MVC.props" />
+</Project>

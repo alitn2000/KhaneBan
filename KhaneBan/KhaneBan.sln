@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35506.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0A6A0D30-E4F7-4FB0-BE83-07F92C3F31CD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01-Domain", "01-Domain", "{2665B24B-B40A-48EB-A577-36ACDA2F9B5A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02-InfraStructure", "02-InfraStructure", "{3BACFD20-8311-45E3-9955-3E25F4BAEBD7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03-EndPoints", "03-EndPoints", "{96C6ABE3-A67A-43F0-8ABB-9BB5F2E3D881}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{B4E61CCC-525C-4240-9A92-26685A7318A7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{E349C54A-C7E2-40B4-8F46-CA3F2A7C1DF6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KhaneBan.Domain.Core", "src\01-Domain\Core\KhaneBan.Domain.Core\KhaneBan.Domain.Core.csproj", "{B7C5F3CF-969B-43B1-8C00-6D0695B61B87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KhaneBan.InfraStructure.EfCore", "src\02-InfraStructure\KhaneBan.InfraStructure.EfCore\KhaneBan.InfraStructure.EfCore\KhaneBan.InfraStructure.EfCore.csproj", "{F2F211BF-3C8A-4114-879B-4A37C2FD5F69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KhaneBan.EndPoints.MVC", "src\03-EndPoints\KhaneBan.EndPoints.MVC\KhaneBan.EndPoints.MVC.csproj", "{45A8FC8E-62B2-4ACB-A298-E65FB2F6DA0F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7C5F3CF-969B-43B1-8C00-6D0695B61B87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7C5F3CF-969B-43B1-8C00-6D0695B61B87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7C5F3CF-969B-43B1-8C00-6D0695B61B87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7C5F3CF-969B-43B1-8C00-6D0695B61B87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2F211BF-3C8A-4114-879B-4A37C2FD5F69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2F211BF-3C8A-4114-879B-4A37C2FD5F69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2F211BF-3C8A-4114-879B-4A37C2FD5F69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2F211BF-3C8A-4114-879B-4A37C2FD5F69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45A8FC8E-62B2-4ACB-A298-E65FB2F6DA0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45A8FC8E-62B2-4ACB-A298-E65FB2F6DA0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45A8FC8E-62B2-4ACB-A298-E65FB2F6DA0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45A8FC8E-62B2-4ACB-A298-E65FB2F6DA0F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2665B24B-B40A-48EB-A577-36ACDA2F9B5A} = {0A6A0D30-E4F7-4FB0-BE83-07F92C3F31CD}
+		{3BACFD20-8311-45E3-9955-3E25F4BAEBD7} = {0A6A0D30-E4F7-4FB0-BE83-07F92C3F31CD}
+		{96C6ABE3-A67A-43F0-8ABB-9BB5F2E3D881} = {0A6A0D30-E4F7-4FB0-BE83-07F92C3F31CD}
+		{B4E61CCC-525C-4240-9A92-26685A7318A7} = {2665B24B-B40A-48EB-A577-36ACDA2F9B5A}
+		{E349C54A-C7E2-40B4-8F46-CA3F2A7C1DF6} = {2665B24B-B40A-48EB-A577-36ACDA2F9B5A}
+		{B7C5F3CF-969B-43B1-8C00-6D0695B61B87} = {B4E61CCC-525C-4240-9A92-26685A7318A7}
+		{F2F211BF-3C8A-4114-879B-4A37C2FD5F69} = {3BACFD20-8311-45E3-9955-3E25F4BAEBD7}
+		{45A8FC8E-62B2-4ACB-A298-E65FB2F6DA0F} = {96C6ABE3-A67A-43F0-8ABB-9BB5F2E3D881}
+	EndGlobalSection
+EndGlobal

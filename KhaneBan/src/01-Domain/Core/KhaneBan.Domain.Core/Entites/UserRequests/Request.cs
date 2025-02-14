@@ -1,0 +1,32 @@
+﻿using KhaneBan.Domain.Core.Entites.BaseEntities;
+using KhaneBan.Domain.Core.Entites.User;
+using KhaneBan.Domain.Core.Enums;
+using static System.Net.Mime.MediaTypeNames;
+
+namespace KhaneBan.Domain.Core.Entites.UserRequests;
+
+public class Request
+{
+    #region Properties
+    public int Id { get; set; }
+    public string Title { get; set; }
+    public string Description { get; set; }
+    public DateTime RegisterDate { get; set; }  = DateTime.Now;
+    public DateTime StartTime { get; set; }
+    public DateTime? EndTime { get; set; }
+    public StatusEnum RequestStatus { get; set; }
+    public bool IsDeleted { get; set; } = false;
+    public int CityId { get; set; }
+    public int CustomerId { get; set; }
+    public int HomeServiceId { get; set; }
+
+    #endregion
+
+    #region NavigationProperties
+    public HomeService HomeService { get; set; }
+    public City City { get; set; }
+    public Customer Customer  { get; set; }
+    public List<Picture>? Pictures { get; set; }
+    public List<Suggestion>? Suggestions { get; set; }
+    #endregion
+}
