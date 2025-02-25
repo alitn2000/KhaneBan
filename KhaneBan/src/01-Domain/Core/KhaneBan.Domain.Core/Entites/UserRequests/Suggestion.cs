@@ -13,7 +13,7 @@ public class Suggestion
     #region Properties
     public int Id { get; set; }
     public double Price { get; set; }
-    public DateTime DeliveryDate { get; set; } 
+    public DateTime StartDate { get; set; } 
     public DateTime RegisterDate { get; set; } = DateTime.Now;
     public string Description { get; set; }
     public StatusEnum SuggestionStatus { get; set; }

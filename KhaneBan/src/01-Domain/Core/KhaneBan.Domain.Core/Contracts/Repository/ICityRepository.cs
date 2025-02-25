@@ -1,4 +1,5 @@
 ﻿using KhaneBan.Domain.Core.Entites.BaseEntities;
+using KhaneBan.Domain.Core.Entites.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,7 @@ namespace KhaneBan.Domain.Core.Contracts.Repository;
 
 public interface ICityRepository
 {
-    Task<List<City>> GetCitiesAsync(CancellationToken cancellationToken);
+    Task<List<CityDTO>> GetCitiesAsync(CancellationToken cancellationToken);
     Task<City?> GetCityByIdAsync(int id, CancellationToken cancellationToken);
     Task<City?> GetCityByName(string title, CancellationToken cancellationToken);
     Task<bool> CreateAsync(City city, CancellationToken cancellationToken);

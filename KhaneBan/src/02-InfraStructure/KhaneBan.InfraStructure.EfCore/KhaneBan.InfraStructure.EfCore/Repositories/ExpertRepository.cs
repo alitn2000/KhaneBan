@@ -24,6 +24,15 @@ public class ExpertRepository : IExpertRepository
         => await _appDbContext.Experts.AsNoTracking()
         .ToListAsync(cancellationToken);
 
+    public async Task<List<Expert>> GetExpertInfoAsync(CancellationToken cancellationToken)
+       => await _appDbContext.Experts.Include(e => e.User).ToListAsync(cancellationToken);
+
+    public async Task<Expert?> GetExpertInfoByIdAsync(int id, CancellationToken cancellationToken)
+     => await _appDbContext
+     .Experts
+     .Include(c => c.User)
+     .FirstOrDefaultAsync(c => c.Id == id, cancellationToken);
+
     public async Task<Expert?> GetExpertByIdAsync(int id, CancellationToken cancellationToken)
      => await _appDbContext
      .Experts
@@ -49,6 +58,10 @@ public class ExpertRepository : IExpertRepository
         .Include(e => e.Suggestions)
         .FirstOrDefaultAsync(e => e.Id == id, cancellationToken);
 
+    public async Task<int> GetCountExpertAsync(CancellationToken cancellationToken)
+       => await _appDbContext
+       .Experts.AsNoTracking().CountAsync(cancellationToken);
+
 
 
     public async Task<bool> CreateAsync(Expert expert, CancellationToken cancellationToken)
@@ -65,17 +78,43 @@ public class ExpertRepository : IExpertRepository
         }
     }
 
-    public async Task<bool> DeleteAsync(Expert expert, CancellationToken cancellationToken)
+    public async Task<bool> DeleteAsync(int userId, CancellationToken cancellationToken)
     {
         try
         {
-            _appDbContext.Experts.Remove(expert);
+            var existExpert = await _appDbContext
+                .Experts.Include(u => u.User)
+                .FirstOrDefaultAsync(u => u.UserId == userId, cancellationToken);
+
+            if (existExpert == null)
+                return false;
+
+            existExpert.User.IsDeleted = true;
             await _appDbContext.SaveChangesAsync(cancellationToken);
             return true;
         }
-        catch
+        catch (Exception ex)
         {
-            return false;
+            throw new Exception($"{ex.Message} ---------Logic Errorr!!!");
+        }
+    }
+
+    public async Task ActiveExpert(int userId, CancellationToken cancellationToken)
+    {
+
+        try
+        {
+            var existExpert = await _appDbContext
+            .Experts
+            .Include(u => u.User)
+            .FirstOrDefaultAsync(c => c.Id == userId, cancellationToken);
+
+            existExpert.User.IsDeleted = false;
+            await _appDbContext.SaveChangesAsync(cancellationToken);
+        }
+        catch (Exception ex)
+        {
+            throw new Exception($"{ex.Message} ---------Logic Errorr!!!");
         }
     }
 

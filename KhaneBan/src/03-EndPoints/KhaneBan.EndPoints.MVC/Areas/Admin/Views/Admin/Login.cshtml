@@ -1,0 +1,136 @@
+﻿@model AdminViewModel
+
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ورود ادمین</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+	<style>
+		body {
+			direction: rtl;
+			background: linear-gradient(135deg, #4e54c8, #8f94fb);
+			font-family: 'Tajawal', sans-serif;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			margin: 0;
+			color: #2c3e50;
+		}
+
+		.login-container {
+			background: rgba(255, 255, 255, 0.9);
+			padding: 50px;
+			border-radius: 20px;
+			text-align: center;
+			box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+			max-width: 400px;
+			width: 100%;
+			backdrop-filter: blur(15px);
+		}
+
+			.login-container h2 {
+				margin-bottom: 20px;
+				font-size: 2rem;
+				font-weight: 700;
+				letter-spacing: 2px;
+				color: #34495e;
+				font-family: 'Tajawal', sans-serif;
+			}
+
+		.admin-icon {
+			font-size: 80px;
+			color: #3498db;
+			margin-bottom: 20px;
+		}
+
+		.form-control {
+			border-radius: 30px;
+			padding: 20px;
+			font-size: 1.1rem;
+			border: 2px solid #ddd;
+			margin-bottom: 20px;
+			transition: all 0.3s;
+			font-family: 'Tajawal', sans-serif;
+		}
+
+			.form-control:focus {
+				border-color: #3498db;
+				box-shadow: 0 0 5px rgba(52, 152, 219, 0.7);
+			}
+
+		.btn-login {
+			background: #3498db;
+			border: none;
+			color: white;
+			padding: 15px;
+			border-radius: 30px;
+			font-size: 1.2rem;
+			width: 100%;
+			cursor: pointer;
+			transition: all 0.3s;
+			box-shadow: 0px 6px 20px rgba(52, 152, 219, 0.2);
+			font-family: 'Tajawal', sans-serif;
+		}
+
+			.btn-login:hover {
+				background: #2980b9;
+				box-shadow: 0px 8px 25px rgba(52, 152, 219, 0.3);
+			}
+
+			.btn-login:active {
+				background: #1d6e94;
+				box-shadow: 0px 4px 15px rgba(52, 152, 219, 0.4);
+			}
+			
+		
+
+		
+
+		.alert {
+			font-size: 1rem;
+			text-align: center;
+			font-weight: bold;
+			color: #e74c3c;
+			background-color: rgba(231, 76, 60, 0.1);
+			border: 1px solid #e74c3c;
+			padding: 10px;
+			margin-top: 20px;
+			border-radius: 10px;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="login-container">
+		<i class="fas fa-user-shield admin-icon"></i>
+		<h2>ورود ادمین</h2>
+		<form method="post" asp-area="Admin" asp-action="Login" id="loginForm">
+			<div class="mb-4">
+				<input asp-for="UserName" class="form-control" >
+				<label asp-for="UserName"></label>
+				<span id="error-message" class="alert "  asp-validation-for="Password"></span>
+			</div>
+			<div class="mb-4">
+				<input asp-for="Password" class="form-control">
+				<label asp-for="Password"></label>
+				<span id="error-message" class="alert" asp-validation-for="Password"></span>
+			</div>
+			<button type="submit" class="btn btn-login">ورود</button>
+			<a asp-area="Admin" asp-controller="Admin" asp-action="Logout" class="btn btn-danger">خروج</a>
+		</form>
+	
+	</div>
+
+
+</body>
+
+@section Scripts
+{
+	<partial name="_validationScriptsPartial" />
+}
+
+</html>

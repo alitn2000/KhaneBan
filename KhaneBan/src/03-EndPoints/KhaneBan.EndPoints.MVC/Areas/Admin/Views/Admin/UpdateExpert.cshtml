@@ -1,0 +1,79 @@
+﻿@model UpdateCustomerViewModel
+
+
+<div class="container px-5 my-5">
+    <form asp-area="Admin" asp-controller="Admin" method="post" asp-action="UpdateExpert">
+
+        <input type="hidden" asp-for="Id" />
+
+        <div class="form-floating mb-3">
+            <input class="form-control" asp-for="FirstName" />
+            <label asp-for="FirstName"></label>
+            <span class="text-danger" asp-validation-for="FirstName"></span>
+        </div>
+
+
+
+        <div class="form-floating mb-3">
+            <input class="form-control" asp-for="LastName" />
+            <label asp-for="LastName"></label>
+            <span class="text-danger" asp-validation-for="LastName"></span>
+        </div>
+
+
+        <div class="form-floating mb-3">
+            <input class="form-control" asp-for="Email" />
+            <label asp-for="Email"></label>
+            <span class="text-danger" asp-validation-for="Email"> </span>
+        </div>
+
+        @* <div class="form-floating mb-3"> *@
+        @*     <input class="form-control" asp-for="Address" /> *@
+        @*     <label asp-for="Address"></label> *@
+        @*     <span class="text-danger" asp-validation-for="Address"> </span> *@
+        @* </div> *@
+
+        @* <div class="form-floating mb-3"> *@
+        @*     <input class="form-control" asp-for="UserName" /> *@
+        @*     <label asp-for="UserName"></label> *@
+        @*     <span class="text-danger" asp-validation-for="UserName"> </span> *@
+        @* </div> *@
+
+
+        @* <div class="form-floating mb-3"> *@
+        @*     <input class="form-control" asp-for="Password" /> *@
+        @*     <label asp-for="Password"></label> *@
+        @*     <span class="text-danger" asp-validation-for="Password"> </span> *@
+        @* </div> *@
+
+        @* <div class="form-control form-floating mb-3 "> *@
+
+        @*     <select class="form-select" asp-for="CityId" aria-label="Cities"> *@
+        @*         @foreach (var city in (List<City>)TempData["Cities"]) *@
+        @*         { *@
+
+        @*             <option value="@city.Id">@city.Title</option> *@
+        @*         } *@
+        @*     </select> *@
+        @*     <label asp-for="CityId"></label> *@
+        @*     <span class="text-danger" asp-validation-for="CityId"> </span> *@
+
+        @* </div> *@
+
+
+        <div class="d-none" id="submitErrorMessage">
+            <div class="text-center text-danger mb-3">Error sending message!</div>
+        </div>
+        <div class="d-grid">
+            <button class="btn btn-primary btn-lg " id="submitButton" type="submit">Submit</button>
+        </div>
+    </form>
+</div>
+
+@section Scripts
+{
+    <partial name="_validationScriptsPartial" />
+}
+
+
+

@@ -1,0 +1,12 @@
+D:\c#\KhaneBan\KhaneBan\src\00-FrameWork\FrameWork\bin\Debug\net9.0\FrameWork.deps.json
+D:\c#\KhaneBan\KhaneBan\src\00-FrameWork\FrameWork\bin\Debug\net9.0\FrameWork.dll
+D:\c#\KhaneBan\KhaneBan\src\00-FrameWork\FrameWork\bin\Debug\net9.0\FrameWork.pdb
+D:\c#\KhaneBan\KhaneBan\src\00-FrameWork\FrameWork\obj\Debug\net9.0\FrameWork.GeneratedMSBuildEditorConfig.editorconfig
+D:\c#\KhaneBan\KhaneBan\src\00-FrameWork\FrameWork\obj\Debug\net9.0\FrameWork.AssemblyInfoInputs.cache
+D:\c#\KhaneBan\KhaneBan\src\00-FrameWork\FrameWork\obj\Debug\net9.0\FrameWork.AssemblyInfo.cs
+D:\c#\KhaneBan\KhaneBan\src\00-FrameWork\FrameWork\obj\Debug\net9.0\FrameWork.csproj.CoreCompileInputs.cache
+D:\c#\KhaneBan\KhaneBan\src\00-FrameWork\FrameWork\obj\Debug\net9.0\FrameWork.sourcelink.json
+D:\c#\KhaneBan\KhaneBan\src\00-FrameWork\FrameWork\obj\Debug\net9.0\FrameWork.dll
+D:\c#\KhaneBan\KhaneBan\src\00-FrameWork\FrameWork\obj\Debug\net9.0\refint\FrameWork.dll
+D:\c#\KhaneBan\KhaneBan\src\00-FrameWork\FrameWork\obj\Debug\net9.0\FrameWork.pdb
+D:\c#\KhaneBan\KhaneBan\src\00-FrameWork\FrameWork\obj\Debug\net9.0\ref\FrameWork.dll

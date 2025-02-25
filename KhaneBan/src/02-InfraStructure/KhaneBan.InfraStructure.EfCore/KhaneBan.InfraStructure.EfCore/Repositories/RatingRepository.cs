@@ -15,9 +15,8 @@ public class RatingRepository : IRatingRepository
         _appDbContext = appDbContext;
     }
 
-    public async Task<List<Rating>?> GetRatingsAsync(CancellationToken cancellationToken)
-     => await _appDbContext.Ratings
-     .ToListAsync(cancellationToken);
+
+
 
     public async Task<Rating?> GetRatingByIdAsync(int id, CancellationToken cancellationToken)
      => await _appDbContext
@@ -27,29 +26,85 @@ public class RatingRepository : IRatingRepository
     public async Task<List<Rating>> GetRatingsWithDetailsAsync(CancellationToken cancellationToken)
           => await _appDbContext
            .Ratings
+           .Where(r => r.IsAccepted == null)
            .Include(r => r.Expert)
-           .Include(r => r.Customer)
+           .ThenInclude(r => r.User)
            .ToListAsync(cancellationToken);
 
     public async Task<Rating?> GetRatingByIdWithDetailsAsync(int id, CancellationToken cancellationToken)
           => await _appDbContext
            .Ratings
            .Include(r => r.Expert)
-           .Include(r => r.Customer)
+           .ThenInclude(r => r.User)
            .FirstOrDefaultAsync(e => e.Id == id, cancellationToken);
 
-
-    public async Task<bool> UpdateStatusAsync(int ratingId, bool newStatus, CancellationToken cancellationToken)
+    public async Task<bool> RatingSet(int expertId, int rate, CancellationToken cancellationToken)
     {
-        var rating = await _appDbContext.Ratings.FirstOrDefaultAsync(r => r.Id == ratingId, cancellationToken);
+        try
+        {
+            var existingReview = await _appDbContext.Ratings.FirstOrDefaultAsync(x => x.ExpertId == expertId, cancellationToken);
 
-        if (rating == null)
-            return false;
+            if (existingReview == null)
+                return false;
 
-        rating.Status = newStatus;
+            existingReview.Rate = rate;
 
-        await _appDbContext.SaveChangesAsync(cancellationToken);
-        return true;
+            await _appDbContext.SaveChangesAsync(cancellationToken);
+            return true;
+        }
+
+        catch
+        {
+            throw new Exception("Logic error");
+        }
+
+
+    }
+
+
+
+
+    public async Task<bool> Accept(int id, CancellationToken cancellationToken)
+    {
+        try
+        {
+            var existRating = await _appDbContext.Ratings.FirstOrDefaultAsync(x => x.Id == id);
+
+            if (existRating == null)
+                return false;
+
+            existRating.IsAccepted = true;
+
+            await _appDbContext.SaveChangesAsync(cancellationToken);
+            return true;
+        }
+        catch
+        {
+            throw new Exception("Logic Error");
+        }
+       
+    }
+
+    public async Task<bool> Reject(int id, CancellationToken cancellationToken)
+    {
+        try
+        {
+            var existingreview = await _appDbContext.Ratings.FirstOrDefaultAsync(x => x.Id == id);
+            if (existingreview == null)
+                return false;
+
+            existingreview.IsAccepted = false;
+            existingreview.IsDeleted = true;
+
+            await _appDbContext.SaveChangesAsync(cancellationToken);
+            return true;
+        }
+        catch
+        {
+            throw new Exception("Logic error");
+        }
+
+
     }
 
     public async Task<bool> CreateAsync(Rating rating, CancellationToken cancellationToken)
@@ -82,7 +137,7 @@ public class RatingRepository : IRatingRepository
     public async Task<bool> IsDelete(int ratingId, CancellationToken cancellationToken)
     {
         var existRating = await _appDbContext.Ratings.FirstOrDefaultAsync(r => r.Id == ratingId, cancellationToken);
-        if(existRating == null)
+        if (existRating == null)
             return false;
         existRating.IsDeleted = true;
         await _appDbContext.SaveChangesAsync(cancellationToken);
@@ -99,7 +154,7 @@ public class RatingRepository : IRatingRepository
 
             existRating.Rate = rating.Rate;
             existRating.Comment = rating.Comment;
-            existRating.Status = rating.Status;
+            existRating.IsAccepted = rating.IsAccepted;
 
             await _appDbContext.SaveChangesAsync(cancellationToken);
             return true;
@@ -108,6 +163,8 @@ public class RatingRepository : IRatingRepository
         {
             return false;
         }
-        
+
     }
+
+
 }

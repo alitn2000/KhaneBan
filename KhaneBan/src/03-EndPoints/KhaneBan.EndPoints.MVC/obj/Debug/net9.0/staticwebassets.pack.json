@@ -2,7 +2,875 @@
   "Files": [
     {
       "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\KhaneBan.EndPoints.MVC.bundle.scp.css",
-      "PackagePath": "staticwebassets\\KhaneBan.EndPoints.MVC.mbyk5tu729.bundle.scp.css"
+      "PackagePath": "staticwebassets\\KhaneBan.EndPoints.MVC.oknjd5rshm.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\bundles\\c3.bundle.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\bundles\\c3.bundle.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\bundles\\countTo.bundle.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\bundles\\countTo.bundle.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\bundles\\datatablescripts.bundle.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\bundles\\datatablescripts.bundle.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\bundles\\flotscripts.bundle.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\bundles\\flotscripts.bundle.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\bundles\\footable.bundle.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\bundles\\footable.bundle.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\bundles\\fullcalendarscripts.bundle.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\bundles\\fullcalendarscripts.bundle.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\bundles\\jvectormap.bundle.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\bundles\\jvectormap.bundle.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\bundles\\knob.bundle.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\bundles\\knob.bundle.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\bundles\\libscripts.bundle.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\bundles\\libscripts.bundle.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\bundles\\mainscripts.bundle.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\bundles\\mainscripts.bundle.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\bundles\\morrisscripts.bundle.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\bundles\\morrisscripts.bundle.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\bundles\\sparkline.bundle.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\bundles\\sparkline.bundle.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\bundles\\vendorscripts.bundle.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\bundles\\vendorscripts.bundle.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\css\\style.min.css",
+      "PackagePath": "staticwebassets\\AdminTemplate\\css\\style.min.css"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\css\\weather-icons.min.css",
+      "PackagePath": "staticwebassets\\AdminTemplate\\css\\weather-icons.min.css"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\fonts\\Material-Design-Iconic-Fontd1f1.ttf",
+      "PackagePath": "staticwebassets\\AdminTemplate\\fonts\\Material-Design-Iconic-Fontd1f1.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\fonts\\Material-Design-Iconic-Fontd1f1.woff",
+      "PackagePath": "staticwebassets\\AdminTemplate\\fonts\\Material-Design-Iconic-Fontd1f1.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\fonts\\Material-Design-Iconic-Fontd1f1.woff2",
+      "PackagePath": "staticwebassets\\AdminTemplate\\fonts\\Material-Design-Iconic-Fontd1f1.woff2"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\fonts\\iransansdn.ttf",
+      "PackagePath": "staticwebassets\\AdminTemplate\\fonts\\iransansdn.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\fonts\\themify9f24.eot",
+      "PackagePath": "staticwebassets\\AdminTemplate\\fonts\\themify9f24.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\fonts\\themify9f24.svg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\fonts\\themify9f24.svg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\fonts\\themify9f24.ttf",
+      "PackagePath": "staticwebassets\\AdminTemplate\\fonts\\themify9f24.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\fonts\\themify9f24.woff",
+      "PackagePath": "staticwebassets\\AdminTemplate\\fonts\\themify9f24.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\fonts\\themifyd41d.eot",
+      "PackagePath": "staticwebassets\\AdminTemplate\\fonts\\themifyd41d.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\fonts\\weathericons-regular-webfont.eot",
+      "PackagePath": "staticwebassets\\AdminTemplate\\fonts\\weathericons-regular-webfont.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\fonts\\weathericons-regular-webfont.svg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\fonts\\weathericons-regular-webfont.svg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\fonts\\weathericons-regular-webfont.ttf",
+      "PackagePath": "staticwebassets\\AdminTemplate\\fonts\\weathericons-regular-webfont.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\fonts\\weathericons-regular-webfont.woff",
+      "PackagePath": "staticwebassets\\AdminTemplate\\fonts\\weathericons-regular-webfont.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\fonts\\weathericons-regular-webfont.woff2",
+      "PackagePath": "staticwebassets\\AdminTemplate\\fonts\\weathericons-regular-webfont.woff2"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\fonts\\weathericons-regular-webfontd41d.eot",
+      "PackagePath": "staticwebassets\\AdminTemplate\\fonts\\weathericons-regular-webfontd41d.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\404.svg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\404.svg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\blog\\05-img.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\blog\\05-img.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\blog\\06-img.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\blog\\06-img.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\blog\\07-img.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\blog\\07-img.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\blog\\08-img.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\blog\\08-img.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\blog\\09-img.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\blog\\09-img.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\blog\\10-img.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\blog\\10-img.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\blog\\11-img.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\blog\\11-img.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\blog\\12-img.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\blog\\12-img.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\blog\\13-img.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\blog\\13-img.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\ecommerce\\1.png",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\ecommerce\\1.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\ecommerce\\10.png",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\ecommerce\\10.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\ecommerce\\11.png",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\ecommerce\\11.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\ecommerce\\2.png",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\ecommerce\\2.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\ecommerce\\3.png",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\ecommerce\\3.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\ecommerce\\4.png",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\ecommerce\\4.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\ecommerce\\5.png",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\ecommerce\\5.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\ecommerce\\6.png",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\ecommerce\\6.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\ecommerce\\7.png",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\ecommerce\\7.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\ecommerce\\8.png",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\ecommerce\\8.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\ecommerce\\9.png",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\ecommerce\\9.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\image-gallery\\1.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\image-gallery\\1.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\image-gallery\\10.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\image-gallery\\10.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\image-gallery\\11.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\image-gallery\\11.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\image-gallery\\12.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\image-gallery\\12.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\image-gallery\\13.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\image-gallery\\13.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\image-gallery\\14.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\image-gallery\\14.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\image-gallery\\15.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\image-gallery\\15.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\image-gallery\\2.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\image-gallery\\2.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\image-gallery\\3.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\image-gallery\\3.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\image-gallery\\4.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\image-gallery\\4.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\image-gallery\\5.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\image-gallery\\5.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\image-gallery\\6.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\image-gallery\\6.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\image-gallery\\7.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\image-gallery\\7.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\image-gallery\\8.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\image-gallery\\8.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\image-gallery\\9.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\image-gallery\\9.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\lg\\avatar1.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\lg\\avatar1.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\lg\\avatar2.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\lg\\avatar2.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\lg\\avatar3.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\lg\\avatar3.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\lg\\avatar4.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\lg\\avatar4.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\loader.svg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\loader.svg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\logo.svg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\logo.svg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\maintanance.svg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\maintanance.svg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\profile_av.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\profile_av.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\signin.svg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\signin.svg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\signup.svg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\signup.svg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\sm\\avatar1.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\sm\\avatar1.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\sm\\avatar2.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\sm\\avatar2.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\sm\\avatar3.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\sm\\avatar3.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\sm\\avatar4.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\sm\\avatar4.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\sm\\avatar5.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\sm\\avatar5.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\sm\\avatar6.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\sm\\avatar6.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\xs\\avatar1.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\xs\\avatar1.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\xs\\avatar10.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\xs\\avatar10.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\xs\\avatar2.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\xs\\avatar2.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\xs\\avatar3.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\xs\\avatar3.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\xs\\avatar4.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\xs\\avatar4.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\xs\\avatar5.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\xs\\avatar5.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\xs\\avatar6.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\xs\\avatar6.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\xs\\avatar7.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\xs\\avatar7.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\xs\\avatar8.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\xs\\avatar8.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\images\\xs\\avatar9.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\xs\\avatar9.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\js\\pages\\blog\\blog.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\js\\pages\\blog\\blog.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\js\\pages\\calendar\\calendar.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\js\\pages\\calendar\\calendar.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\js\\pages\\charts\\c3.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\js\\pages\\charts\\c3.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\js\\pages\\charts\\chartjs.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\js\\pages\\charts\\chartjs.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\js\\pages\\charts\\flot.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\js\\pages\\charts\\flot.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\js\\pages\\charts\\jquery-knob.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\js\\pages\\charts\\jquery-knob.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\js\\pages\\charts\\jquery-knob.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\js\\pages\\charts\\jquery-knob.min.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\js\\pages\\charts\\morris.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\js\\pages\\charts\\morris.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\js\\pages\\charts\\polar_area_chart.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\js\\pages\\charts\\polar_area_chart.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\js\\pages\\charts\\sparkline.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\js\\pages\\charts\\sparkline.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\js\\pages\\ecommerce.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\js\\pages\\ecommerce.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\js\\pages\\forms\\advanced-form-elements.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\js\\pages\\forms\\advanced-form-elements.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\js\\pages\\forms\\basic-form-elements.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\js\\pages\\forms\\basic-form-elements.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\js\\pages\\forms\\dropify.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\js\\pages\\forms\\dropify.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\js\\pages\\forms\\editors.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\js\\pages\\forms\\editors.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\js\\pages\\forms\\form-validation.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\js\\pages\\forms\\form-validation.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\js\\pages\\forms\\form-wizard.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\js\\pages\\forms\\form-wizard.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\js\\pages\\index.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\js\\pages\\index.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\js\\pages\\maps\\google.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\js\\pages\\maps\\google.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\js\\pages\\maps\\jvectormap.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\js\\pages\\maps\\jvectormap.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\js\\pages\\medias\\image-gallery.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\js\\pages\\medias\\image-gallery.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\js\\pages\\tables\\editable-table.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\js\\pages\\tables\\editable-table.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\js\\pages\\tables\\footable.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\js\\pages\\tables\\footable.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\js\\pages\\tables\\jquery-datatable.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\js\\pages\\tables\\jquery-datatable.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\js\\pages\\ticket-page.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\js\\pages\\ticket-page.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\js\\pages\\todo-js.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\js\\pages\\todo-js.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\js\\pages\\ui\\notifications.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\js\\pages\\ui\\notifications.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\js\\pages\\ui\\range-sliders.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\js\\pages\\ui\\range-sliders.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\js\\pages\\ui\\sortable-nestable.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\js\\pages\\ui\\sortable-nestable.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\js\\pages\\ui\\sweetalert.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\js\\pages\\ui\\sweetalert.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\js\\pages\\widgets\\infobox\\infobox-1.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\js\\pages\\widgets\\infobox\\infobox-1.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\bootstrap-colorpicker\\css\\bootstrap-colorpicker.css",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\bootstrap-colorpicker\\css\\bootstrap-colorpicker.css"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\bootstrap-colorpicker\\img\\bootstrap-colorpicker\\alpha-horizontal.png",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\bootstrap-colorpicker\\img\\bootstrap-colorpicker\\alpha-horizontal.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\bootstrap-colorpicker\\img\\bootstrap-colorpicker\\alpha.png",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\bootstrap-colorpicker\\img\\bootstrap-colorpicker\\alpha.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\bootstrap-colorpicker\\img\\bootstrap-colorpicker\\hue-horizontal.png",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\bootstrap-colorpicker\\img\\bootstrap-colorpicker\\hue-horizontal.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\bootstrap-colorpicker\\img\\bootstrap-colorpicker\\hue.png",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\bootstrap-colorpicker\\img\\bootstrap-colorpicker\\hue.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\bootstrap-colorpicker\\img\\bootstrap-colorpicker\\saturation.png",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\bootstrap-colorpicker\\img\\bootstrap-colorpicker\\saturation.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\bootstrap-colorpicker\\js\\bootstrap-colorpicker.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\bootstrap-colorpicker\\js\\bootstrap-colorpicker.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\bootstrap-material-datetimepicker\\css\\bootstrap-material-datetimepicker.css",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\bootstrap-material-datetimepicker\\css\\bootstrap-material-datetimepicker.css"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\bootstrap-material-datetimepicker\\js\\bootstrap-material-datetimepicker.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\bootstrap-material-datetimepicker\\js\\bootstrap-material-datetimepicker.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\bootstrap-notify\\bootstrap-notify.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\bootstrap-notify\\bootstrap-notify.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\bootstrap-select\\css\\bootstrap-select.css",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\bootstrap-select\\css\\bootstrap-select.css"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\bootstrap-tagsinput\\bootstrap-tagsinput.css",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\bootstrap-tagsinput\\bootstrap-tagsinput.css"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\bootstrap-tagsinput\\bootstrap-tagsinput.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\bootstrap-tagsinput\\bootstrap-tagsinput.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\bootstrap\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\bootstrap\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\chartjs\\Chart.bundle.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\chartjs\\Chart.bundle.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\chartjs\\polar_area_chart.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\chartjs\\polar_area_chart.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\charts-c3\\fonts\\iransansdn.ttf",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\charts-c3\\fonts\\iransansdn.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\charts-c3\\plugin.css",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\charts-c3\\plugin.css"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\ckeditor\\ckeditor.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\ckeditor\\ckeditor.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\ckeditor\\config.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\ckeditor\\config.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\ckeditor\\lang\\en.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\ckeditor\\lang\\en.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\ckeditor\\skins\\moono\\editor.css",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\ckeditor\\skins\\moono\\editor.css"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\ckeditor\\skins\\moono\\icons.png",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\ckeditor\\skins\\moono\\icons.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\ckeditor\\styles.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\ckeditor\\styles.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\dropify\\css\\dropify.min.css",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\dropify\\css\\dropify.min.css"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\dropify\\fonts\\dropify.eot",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\dropify\\fonts\\dropify.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\dropify\\fonts\\dropify.svg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\dropify\\fonts\\dropify.svg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\dropify\\fonts\\dropify.ttf",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\dropify\\fonts\\dropify.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\dropify\\fonts\\dropify.woff",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\dropify\\fonts\\dropify.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\dropify\\fonts\\iransansdn.ttf",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\dropify\\fonts\\iransansdn.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\dropify\\js\\dropify.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\dropify\\js\\dropify.min.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\dropzone\\dropzone.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\dropzone\\dropzone.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\editable-table\\mindmup-editabletable.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\editable-table\\mindmup-editabletable.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\footable-bootstrap\\css\\footable.bootstrap.min.css",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\footable-bootstrap\\css\\footable.bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\footable-bootstrap\\css\\footable.standalone.min.css",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\footable-bootstrap\\css\\footable.standalone.min.css"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\fullcalendar\\fullcalendar.min.css",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\fullcalendar\\fullcalendar.min.css"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\gmaps\\gmaps.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\gmaps\\gmaps.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\ion-rangeslider\\css\\ion.rangeSlider.css",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\ion-rangeslider\\css\\ion.rangeSlider.css"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\ion-rangeslider\\js\\ion.rangeSlider.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\ion-rangeslider\\js\\ion.rangeSlider.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\jquery-datatable\\buttons\\buttons.bootstrap4.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\jquery-datatable\\buttons\\buttons.bootstrap4.min.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\jquery-datatable\\buttons\\buttons.colVis.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\jquery-datatable\\buttons\\buttons.colVis.min.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\jquery-datatable\\buttons\\buttons.flash.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\jquery-datatable\\buttons\\buttons.flash.min.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\jquery-datatable\\buttons\\buttons.html5.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\jquery-datatable\\buttons\\buttons.html5.min.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\jquery-datatable\\buttons\\buttons.print.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\jquery-datatable\\buttons\\buttons.print.min.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\jquery-datatable\\buttons\\dataTables.buttons.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\jquery-datatable\\buttons\\dataTables.buttons.min.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\jquery-datatable\\dataTables.bootstrap4.min.css",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\jquery-datatable\\dataTables.bootstrap4.min.css"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\jquery-inputmask\\jquery.inputmask.bundle.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\jquery-inputmask\\jquery.inputmask.bundle.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\jquery-knob\\jquery.knob.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\jquery-knob\\jquery.knob.min.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\jquery-sparkline\\jquery.sparkline.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\jquery-sparkline\\jquery.sparkline.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\jquery-spinner\\css\\bootstrap-spinner.css",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\jquery-spinner\\css\\bootstrap-spinner.css"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\jquery-spinner\\js\\jquery.spinner.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\jquery-spinner\\js\\jquery.spinner.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\jquery-steps\\jquery.steps.css",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\jquery-steps\\jquery.steps.css"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\jquery-steps\\jquery.steps.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\jquery-steps\\jquery.steps.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\jquery-validation\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\jquery-validation\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\jvectormap\\jquery-jvectormap-2.0.3.css",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\jvectormap\\jquery-jvectormap-2.0.3.css"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\jvectormap\\jquery-jvectormap-2.0.3.min.css",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\jvectormap\\jquery-jvectormap-2.0.3.min.css"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\jvectormap\\jquery-jvectormap-au-mill.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\jvectormap\\jquery-jvectormap-au-mill.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\jvectormap\\jquery-jvectormap-in-mill.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\jvectormap\\jquery-jvectormap-in-mill.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\jvectormap\\jquery-jvectormap-uk-mill-en.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\jvectormap\\jquery-jvectormap-uk-mill-en.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\jvectormap\\jquery-jvectormap-us-aea-en.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\jvectormap\\jquery-jvectormap-us-aea-en.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\jvectormap\\jquery-jvectormap-world-mill-en.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\jvectormap\\jquery-jvectormap-world-mill-en.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\light-gallery\\css\\lightgallery.css",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\light-gallery\\css\\lightgallery.css"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\light-gallery\\fonts\\lgd41d.eot",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\light-gallery\\fonts\\lgd41d.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\light-gallery\\fonts\\lgd641.eot",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\light-gallery\\fonts\\lgd641.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\light-gallery\\fonts\\lgd641.svg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\light-gallery\\fonts\\lgd641.svg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\light-gallery\\fonts\\lgd641.ttf",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\light-gallery\\fonts\\lgd641.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\light-gallery\\fonts\\lgd641.woff",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\light-gallery\\fonts\\lgd641.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\light-gallery\\img\\loading.gif",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\light-gallery\\img\\loading.gif"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\light-gallery\\img\\video-play.png",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\light-gallery\\img\\video-play.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\light-gallery\\img\\vimeo-play.png",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\light-gallery\\img\\vimeo-play.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\light-gallery\\img\\youtube-play.png",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\light-gallery\\img\\youtube-play.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\light-gallery\\js\\lightgallery-all.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\light-gallery\\js\\lightgallery-all.min.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\momentjs\\moment.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\momentjs\\moment.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\morrisjs\\morris.css",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\morrisjs\\morris.css"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\morrisjs\\morris.min.css",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\morrisjs\\morris.min.css"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\multi-select\\css\\multi-select.css",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\multi-select\\css\\multi-select.css"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\multi-select\\img\\switch.png",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\multi-select\\img\\switch.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\multi-select\\js\\jquery.multi-select.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\multi-select\\js\\jquery.multi-select.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\nestable\\jquery.nestable.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\nestable\\jquery.nestable.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\nouislider\\nouislider.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\nouislider\\nouislider.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\nouislider\\nouislider.min.css",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\nouislider\\nouislider.min.css"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\select2\\select2-spinner.gif",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\select2\\select2-spinner.gif"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\select2\\select2.css",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\select2\\select2.css"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\select2\\select2.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\select2\\select2.min.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\select2\\select2.png",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\select2\\select2.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\select2\\select2x2.png",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\select2\\select2x2.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\summernote\\dist\\font\\summernoted41d.eot",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\summernote\\dist\\font\\summernoted41d.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\summernote\\dist\\font\\summernotef534.eot",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\summernote\\dist\\font\\summernotef534.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\summernote\\dist\\font\\summernotef534.ttf",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\summernote\\dist\\font\\summernotef534.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\summernote\\dist\\font\\summernotef534.woff",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\summernote\\dist\\font\\summernotef534.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\summernote\\dist\\summernote.css",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\summernote\\dist\\summernote.css"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\summernote\\dist\\summernote.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\summernote\\dist\\summernote.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\sweetalert\\sweetalert.css",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\sweetalert\\sweetalert.css"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\sweetalert\\sweetalert.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\sweetalert\\sweetalert.min.js"
     },
     {
       "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\css\\site.css",

@@ -13,7 +13,11 @@ public interface ICustomerRepository
     Task<Customer?> GetCustomerByIdAsync(int id, CancellationToken cancellationToken);
     Task<List<Customer>> GetCustomersWithDetailsAsync(CancellationToken cancellationToken);
     Task<Customer?> GetCustomerByIdWithDetailsAsync(int userId, CancellationToken cancellationToken);
+    Task<Customer?> GetCustomerInfoByIdAsync(int id, CancellationToken cancellationToken);
     Task<bool> CreateAsync(Customer customer, CancellationToken cancellationToken);
-    Task<bool> DeleteAsync(Customer customer, CancellationToken cancellationToken);
+    Task<bool> DeleteAsync(int userId, CancellationToken cancellationToken);
+    Task ActiveCustomer(int userId, CancellationToken cancellationToken);
     Task<bool> UpdateAsync(Customer customer, CancellationToken cancellationToken);
+    Task<int> GetCountCustomerAsync(CancellationToken cancellationToken);
+    Task<List<Customer>> GetCustomerInfoAsync();
 }

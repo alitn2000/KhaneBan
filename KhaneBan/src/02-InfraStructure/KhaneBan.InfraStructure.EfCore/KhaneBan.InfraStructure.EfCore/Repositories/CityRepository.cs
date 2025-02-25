@@ -1,5 +1,6 @@
 ﻿using KhaneBan.Domain.Core.Contracts.Repository;
 using KhaneBan.Domain.Core.Entites.BaseEntities;
+using KhaneBan.Domain.Core.Entites.DTOs;
 using KhaneBan.Domain.Core.Entites.User;
 using KhaneBan.InfraStructure.EfCore.Common;
 using Microsoft.EntityFrameworkCore;
@@ -22,8 +23,17 @@ public class CityRepository : ICityRepository
         _appDbContext = appDbContext;
     }
 
-    public async Task<List<City>> GetCitiesAsync(CancellationToken cancellationToken)
-        => await _appDbContext.Cities.AsNoTracking().ToListAsync(cancellationToken);
+    public async Task<List<CityDTO>> GetCitiesAsync(CancellationToken cancellationToken)
+    {
+               var cities = await _appDbContext.Cities.AsNoTracking().Select(c => new CityDTO
+               {
+                   Id = c.Id,
+                   Title = c.Title,
+               }).ToListAsync(cancellationToken);
+
+        return cities;
+    }
+
 
 
     public async Task<City?> GetCityByIdAsync(int id, CancellationToken cancellationToken)

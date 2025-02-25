@@ -39,7 +39,6 @@ public class RatingConfiguration : IEntityTypeConfiguration<Rating>
                Rate = 5,
                CustomerId = 1,
                ExpertId = 1,
-               Status = true,
                Comment = "اوکی",
                IsDeleted = false,
                RegisterDate = new DateTime(2025, 2, 2, 0, 0, 0)
@@ -51,7 +50,6 @@ public class RatingConfiguration : IEntityTypeConfiguration<Rating>
                 Rate = 5,
                 CustomerId = 2,
                 ExpertId = 1,
-                Status = true,
                 Comment = "اوکی",
                 IsDeleted = false,
                 RegisterDate = new DateTime(2025, 2, 2, 0, 0, 0)

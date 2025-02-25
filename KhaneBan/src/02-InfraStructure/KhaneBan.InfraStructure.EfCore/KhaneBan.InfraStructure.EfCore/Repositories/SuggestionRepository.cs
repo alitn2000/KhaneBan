@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -30,6 +31,13 @@ public class SuggestionRepository : ISuggestionRepository
         .Where(s => s.ExpertId == expertId)
         .ToListAsync(cancellationToken);
 
+    public async Task<List<Suggestion>?> GetRequestSuggestions(int requestId, CancellationToken cancellationToken)
+        => await _appDbContext.Suggestions
+        .Include(c => c.Request)
+        .Include( c => c.Expert)                                        ////////// dorostish barresi shavad
+        .ThenInclude(c => c.User)
+        .Where(r => r.Request.Id == requestId)
+        .ToListAsync(cancellationToken);
 
     public async Task<Suggestion?> GetSuggestionByIdAsync(int suggestionId, CancellationToken cancellationToken)
      => await _appDbContext
@@ -140,7 +148,7 @@ public class SuggestionRepository : ISuggestionRepository
             
                 existSuggestion.RegisterDate = suggestion.RegisterDate;
                 existSuggestion.Description = suggestion.Description;
-                existSuggestion.DeliveryDate = suggestion.DeliveryDate;
+                existSuggestion.StartDate = suggestion.StartDate;
                 existSuggestion.Price = suggestion.Price;
                 existSuggestion.RequestId = suggestion.RequestId;
 

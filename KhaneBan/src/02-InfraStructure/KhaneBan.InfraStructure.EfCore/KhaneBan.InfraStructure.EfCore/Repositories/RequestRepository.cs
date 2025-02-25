@@ -30,6 +30,14 @@ public class RequestRepository : IRequestRepository
      .Requests
      .FirstOrDefaultAsync(s => s.Id == requestId, cancellationToken);
 
+    public async Task<List<Request>> GetRequestsInfo (CancellationToken cancellationToken)
+        => await _appDbContext.Requests
+        .Where(r => r.IsDeleted == false)
+        .Include(c => c.Customer)
+        .ThenInclude(c => c.User)
+        .Include(h => h.HomeService)
+        .ToListAsync(cancellationToken);
+
     public async Task<Request?> GetUserRequestByIdAsync(int customerId,int requestId, CancellationToken cancellationToken)
     => await _appDbContext
     .Requests
@@ -72,8 +80,21 @@ public class RequestRepository : IRequestRepository
            .Include(r => r.Suggestions)
            .FirstOrDefaultAsync(r => r.CustomerId == customerId && r.Id == requestId, cancellationToken);
 
+    public async Task ChangeStatus(int requestId, StatusEnum status, CancellationToken cancellationToken)
+    {
+        try
+        {
+            var request = await _appDbContext.Requests.FirstOrDefaultAsync(r => r.Id == requestId);
 
-
+            request.RequestStatus = status;
+            await _appDbContext.SaveChangesAsync(cancellationToken);
+        }
+        catch
+        {
+            throw new Exception("Logic Error");
+        }
+       
+    }
     public async Task<bool> CreateAsync(Request request, CancellationToken cancellationToken)
     {
         try
@@ -94,14 +115,12 @@ public class RequestRepository : IRequestRepository
         try
         {
             var request = await _appDbContext.Requests
-            .Include(x => x.Pictures)
-            .Include(x => x.Suggestions)
             .FirstOrDefaultAsync(x => x.Id == requestId, cancellationToken);
 
             if (request == null)
                 return false;
 
-            _appDbContext.Requests.Remove(request);
+            request.IsDeleted = true;
             await _appDbContext.SaveChangesAsync();
             return true;
         }
@@ -112,7 +131,7 @@ public class RequestRepository : IRequestRepository
 
     }
 
-    public async Task<bool> IsDelete(int requestId, CancellationToken cancellationToken)
+    public async Task<bool> IsDelete(int requestId, CancellationToken cancellationToken)   //////////////hazf shavad
     {
         var existRequest = await _appDbContext.Requests.FirstOrDefaultAsync(r => r.Id == requestId, cancellationToken);
         if (existRequest == null)
@@ -144,7 +163,6 @@ public class RequestRepository : IRequestRepository
             existRequest.Title = request.Title;
             existRequest.Description = request.Description;
             existRequest.StartTime = request.StartTime;
-            existRequest.EndTime = request.EndTime;
             existRequest.RequestStatus = request.RequestStatus;
             existRequest.CityId = request.CityId;
 

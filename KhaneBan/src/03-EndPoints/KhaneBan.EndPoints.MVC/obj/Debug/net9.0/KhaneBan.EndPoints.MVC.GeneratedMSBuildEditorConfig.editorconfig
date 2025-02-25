@@ -28,6 +28,70 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
+[D:/c\#/KhaneBan/KhaneBan/src/03-EndPoints/KhaneBan.EndPoints.MVC/Areas/Admin/Views/Admin/CreateCustomer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cQ3JlYXRlQ3VzdG9tZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/c\#/KhaneBan/KhaneBan/src/03-EndPoints/KhaneBan.EndPoints.MVC/Areas/Admin/Views/Admin/CreateExpert.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cQ3JlYXRlRXhwZXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/c\#/KhaneBan/KhaneBan/src/03-EndPoints/KhaneBan.EndPoints.MVC/Areas/Admin/Views/Admin/CustomerList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cQ3VzdG9tZXJMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/c\#/KhaneBan/KhaneBan/src/03-EndPoints/KhaneBan.EndPoints.MVC/Areas/Admin/Views/Admin/ExpertList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cRXhwZXJ0TGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/c\#/KhaneBan/KhaneBan/src/03-EndPoints/KhaneBan.EndPoints.MVC/Areas/Admin/Views/Admin/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/c\#/KhaneBan/KhaneBan/src/03-EndPoints/KhaneBan.EndPoints.MVC/Areas/Admin/Views/Admin/RatingList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cUmF0aW5nTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/c\#/KhaneBan/KhaneBan/src/03-EndPoints/KhaneBan.EndPoints.MVC/Areas/Admin/Views/Admin/RequestList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cUmVxdWVzdExpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/c\#/KhaneBan/KhaneBan/src/03-EndPoints/KhaneBan.EndPoints.MVC/Areas/Admin/Views/Admin/RequestsSuggestions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cUmVxdWVzdHNTdWdnZXN0aW9ucy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/c\#/KhaneBan/KhaneBan/src/03-EndPoints/KhaneBan.EndPoints.MVC/Areas/Admin/Views/Admin/UpdateCustomer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cVXBkYXRlQ3VzdG9tZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/c\#/KhaneBan/KhaneBan/src/03-EndPoints/KhaneBan.EndPoints.MVC/Areas/Admin/Views/Admin/UpdateExpert.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cVXBkYXRlRXhwZXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/c\#/KhaneBan/KhaneBan/src/03-EndPoints/KhaneBan.EndPoints.MVC/Areas/Admin/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/c\#/KhaneBan/KhaneBan/src/03-EndPoints/KhaneBan.EndPoints.MVC/Areas/Admin/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/c\#/KhaneBan/KhaneBan/src/03-EndPoints/KhaneBan.EndPoints.MVC/Areas/Admin/Views/Shared/_header.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9oZWFkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/c\#/KhaneBan/KhaneBan/src/03-EndPoints/KhaneBan.EndPoints.MVC/Areas/Admin/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/c\#/KhaneBan/KhaneBan/src/03-EndPoints/KhaneBan.EndPoints.MVC/Areas/Admin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/c\#/KhaneBan/KhaneBan/src/03-EndPoints/KhaneBan.EndPoints.MVC/Areas/Admin/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/c\#/KhaneBan/KhaneBan/src/03-EndPoints/KhaneBan.EndPoints.MVC/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -51,6 +115,10 @@ build_metadata.AdditionalFiles.CssScope =
 [D:/c\#/KhaneBan/KhaneBan/src/03-EndPoints/KhaneBan.EndPoints.MVC/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
+
+[D:/c\#/KhaneBan/KhaneBan/src/03-EndPoints/KhaneBan.EndPoints.MVC/Areas/Admin/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-e9u1w4ijgu
 
 [D:/c\#/KhaneBan/KhaneBan/src/03-EndPoints/KhaneBan.EndPoints.MVC/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s

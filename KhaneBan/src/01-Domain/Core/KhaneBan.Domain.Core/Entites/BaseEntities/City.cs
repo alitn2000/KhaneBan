@@ -16,8 +16,8 @@ namespace KhaneBan.Domain.Core.Entites.BaseEntities
         #endregion
 
         #region NavigationProperties
-        public List<User.User>? Users { get; set; }
-        public List<Request>? Requests { get; set; }
+        public  List<User.User>? Users { get; set; } = new List<User.User>();
+        public List<Request>? Requests { get; set; } = new List<Request> ();
         #endregion
     }
 }

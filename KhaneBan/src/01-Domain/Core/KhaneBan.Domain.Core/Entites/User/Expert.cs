@@ -17,8 +17,8 @@ public class Expert
 
     #region NavigationProperties
     public User User { get; set; }
-    public List<HomeService>? HomeServices { get; set; }   
-    public List<Suggestion>? Suggestions { get; set; } 
-    public List<Rating>? Ratings { get; set; }
+    public List<HomeService>? HomeServices { get; set; }   =new List<HomeService>();
+    public List<Suggestion>? Suggestions { get; set; }  = new List<Suggestion>();
+    public List<Rating>? Ratings { get; set; } = new List<Rating> ();
     #endregion
 }

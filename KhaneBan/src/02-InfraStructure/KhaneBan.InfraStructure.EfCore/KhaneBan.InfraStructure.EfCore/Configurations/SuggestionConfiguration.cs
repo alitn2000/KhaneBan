@@ -38,7 +38,7 @@ public class SuggestionConfiguration : IEntityTypeConfiguration<Suggestion>
         {
             Id = 1,
             Price = 5000,
-            DeliveryDate = new DateTime(2025, 2, 2, 0, 0, 0),
+            StartDate = new DateTime(2025, 2, 2, 0, 0, 0),
             RegisterDate = new DateTime(2025, 2, 2, 0, 0, 0),
             Description = "ارزون",
             SuggestionStatus  = StatusEnum.WatingForChoosingExpert,
@@ -50,7 +50,7 @@ public class SuggestionConfiguration : IEntityTypeConfiguration<Suggestion>
         {
             Id = 2,
             Price = 6000,
-            DeliveryDate = new DateTime(2025, 2, 2, 0, 0, 0),
+            StartDate = new DateTime(2025, 2, 2, 0, 0, 0),
             RegisterDate = new DateTime(2025, 2, 2, 0, 0, 0),
             Description = "گرون",
             SuggestionStatus = StatusEnum.WatingForChoosingExpert,

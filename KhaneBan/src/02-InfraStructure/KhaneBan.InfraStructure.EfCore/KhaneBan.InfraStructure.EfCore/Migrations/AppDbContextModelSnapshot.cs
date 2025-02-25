@@ -329,6 +329,9 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                     b.Property<string>("FirstName")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
                     b.Property<string>("LastName")
                         .HasColumnType("nvarchar(max)");
 
@@ -397,11 +400,12 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             Email = "Admin@gmail.com",
                             EmailConfirmed = false,
                             FirstName = "Admin",
+                            IsDeleted = false,
                             LastName = "Admin",
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@GMAIL.COM",
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAIAAYagAAAAEOmDtcVs3Rkk6RMUA+5z0wZ9Neipy/C5IXwjy+nfg7U75/p+PU0vuQqooMhZXmxITA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEIXLEm46RkH6fXwCGP5tGUZIaSn4mYQIGHPeEURJ5JBu7dqolo+4Lpm9TeTdI811pA==",
                             PhoneNumber = "09102123542",
                             PhoneNumberConfirmed = false,
                             PicturePath = "desktop",
@@ -421,11 +425,12 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             Email = "alitn2000@gmail.com",
                             EmailConfirmed = false,
                             FirstName = "Ali",
+                            IsDeleted = false,
                             LastName = "Tahmasebinia",
                             LockoutEnabled = false,
                             NormalizedEmail = "ALITN2000@GMAIL.COM",
                             NormalizedUserName = "ALITN2000",
-                            PasswordHash = "AQAAAAIAAYagAAAAEPeBBZ4pQC4H/DOwgQDeTtJR2rsxmD8X8X53Lc/AeSYrOpLaV2z6D5zt0J7YMukCfA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEBiTX3t2L4KuPdP2wrEDSh8rtG+q0Cq2RV6ksv4v01ynxUFYZ9vQCw76fZJYCoQ+sA==",
                             PhoneNumber = "09022004453",
                             PhoneNumberConfirmed = false,
                             PicturePath = "desktop1",
@@ -445,11 +450,12 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             Email = "reza2000@gmail.com",
                             EmailConfirmed = false,
                             FirstName = "Reza",
+                            IsDeleted = false,
                             LastName = "Rezaei",
                             LockoutEnabled = false,
                             NormalizedEmail = "REZA2000@GMAIL.COM",
                             NormalizedUserName = "REZA2000",
-                            PasswordHash = "AQAAAAIAAYagAAAAEL7r3uolUUXIJfES5jnSuZkpCilWHgO+Ask3O7jCxtsyExzzITOWDM2BpVzTU9SR2Q==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEMI0I5CQ5xtC+zAf8ZG1NRDYFpeqQ2QEjeynHaZVG1g3xEl6E3SB3UH8zavrhnQsGw==",
                             PhoneNumber = "09102123543",
                             PhoneNumberConfirmed = false,
                             PicturePath = "desktop2",
@@ -469,11 +475,12 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             Email = "sara2000@gmail.com",
                             EmailConfirmed = false,
                             FirstName = "Sara",
+                            IsDeleted = false,
                             LastName = "Saraei",
                             LockoutEnabled = false,
                             NormalizedEmail = "SARA2000@GMAIL.COM",
                             NormalizedUserName = "SARA2000",
-                            PasswordHash = "AQAAAAIAAYagAAAAEBvbRpxi0eHTD1AdIhIuTfwobiHa6wrspUVi4L3RvZ0aemhApxbK+c35pfH8Ozn5rQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEK2q3Z6RpePXubbcChzaBLnD8er+NOo279d4llekIrqwOKlTNXx3ziF00O4O1/Q4Bw==",
                             PhoneNumber = "09102123545",
                             PhoneNumberConfirmed = false,
                             PicturePath = "desktop3",
@@ -1015,17 +1022,17 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                     b.Property<int>("ExpertId")
                         .HasColumnType("int");
 
+                    b.Property<bool?>("IsAccepted")
+                        .HasColumnType("bit");
+
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
-                    b.Property<int>("Rate")
-                        .HasColumnType("int");
+                    b.Property<double>("Rate")
+                        .HasColumnType("float");
 
                     b.Property<DateTime>("RegisterDate")
                         .HasColumnType("datetime2");
-
-                    b.Property<bool>("Status")
-                        .HasColumnType("bit");
 
                     b.HasKey("Id");
 
@@ -1043,9 +1050,8 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             CustomerId = 1,
                             ExpertId = 1,
                             IsDeleted = false,
-                            Rate = 5,
-                            RegisterDate = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Status = true
+                            Rate = 5.0,
+                            RegisterDate = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
                         {
@@ -1054,9 +1060,8 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             CustomerId = 2,
                             ExpertId = 1,
                             IsDeleted = false,
-                            Rate = 5,
-                            RegisterDate = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Status = true
+                            Rate = 5.0,
+                            RegisterDate = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         });
                 });
 
@@ -1079,14 +1084,14 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
 
-                    b.Property<DateTime?>("EndTime")
-                        .HasColumnType("datetime2");
-
                     b.Property<int>("HomeServiceId")
                         .HasColumnType("int");
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
+
+                    b.Property<int?>("RatingId")
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("RegisterDate")
                         .HasColumnType("datetime2");
@@ -1094,7 +1099,10 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                     b.Property<int>("RequestStatus")
                         .HasColumnType("int");
 
-                    b.Property<DateTime>("StartTime")
+                    b.Property<DateTime>("RequestedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("StartTime")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Title")
@@ -1109,6 +1117,10 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
 
                     b.HasIndex("HomeServiceId");
 
+                    b.HasIndex("RatingId")
+                        .IsUnique()
+                        .HasFilter("[RatingId] IS NOT NULL");
+
                     b.ToTable("Requests");
 
                     b.HasData(
@@ -1118,12 +1130,12 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             CityId = 1,
                             CustomerId = 1,
                             Description = "نقاشی 4 طبقه",
-                            EndTime = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             HomeServiceId = 1,
                             IsDeleted = false,
+                            RatingId = 1,
                             RegisterDate = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            RequestStatus = 2,
-                            StartTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            RequestStatus = 6,
+                            RequestedDate = new DateTime(2025, 2, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "نقاشی"
                         },
                         new
@@ -1132,12 +1144,12 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             CityId = 1,
                             CustomerId = 2,
                             Description = "نقاشی 2 طبقه",
-                            EndTime = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             HomeServiceId = 1,
                             IsDeleted = false,
+                            RatingId = 2,
                             RegisterDate = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            RequestStatus = 2,
-                            StartTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            RequestStatus = 6,
+                            RequestedDate = new DateTime(2025, 2, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "نقاشی"
                         });
                 });
@@ -1376,9 +1388,6 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<DateTime>("DeliveryDate")
-                        .HasColumnType("datetime2");
-
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasMaxLength(500)
@@ -1399,6 +1408,9 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                     b.Property<int>("RequestId")
                         .HasColumnType("int");
 
+                    b.Property<DateTime>("StartDate")
+                        .HasColumnType("datetime2");
+
                     b.Property<int>("SuggestionStatus")
                         .HasColumnType("int");
 
@@ -1414,25 +1426,25 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                         new
                         {
                             Id = 1,
-                            DeliveryDate = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "ارزون",
                             ExpertId = 1,
                             IsDeleted = false,
                             Price = 5000.0,
                             RegisterDate = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             RequestId = 1,
+                            StartDate = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SuggestionStatus = 2
                         },
                         new
                         {
                             Id = 2,
-                            DeliveryDate = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "گرون",
                             ExpertId = 1,
                             IsDeleted = false,
                             Price = 6000.0,
                             RegisterDate = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             RequestId = 2,
+                            StartDate = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SuggestionStatus = 2
                         });
                 });
@@ -1723,7 +1735,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                     b.HasOne("KhaneBan.Domain.Core.Entites.User.Customer", "Customer")
                         .WithMany("Requests")
                         .HasForeignKey("CustomerId")
-                        .OnDelete(DeleteBehavior.NoAction)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("KhaneBan.Domain.Core.Entites.UserRequests.HomeService", "HomeService")
@@ -1732,11 +1744,18 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("KhaneBan.Domain.Core.Entites.UserRequests.Rating", "Rating")
+                        .WithOne("Request")
+                        .HasForeignKey("KhaneBan.Domain.Core.Entites.UserRequests.Request", "RatingId")
+                        .OnDelete(DeleteBehavior.NoAction);
+
                     b.Navigation("City");
 
                     b.Navigation("Customer");
 
                     b.Navigation("HomeService");
+
+                    b.Navigation("Rating");
                 });
 
             modelBuilder.Entity("KhaneBan.Domain.Core.Entites.UserRequests.SubCategory", b =>
@@ -1858,6 +1877,12 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
             modelBuilder.Entity("KhaneBan.Domain.Core.Entites.UserRequests.HomeService", b =>
                 {
                     b.Navigation("Requests");
+                });
+
+            modelBuilder.Entity("KhaneBan.Domain.Core.Entites.UserRequests.Rating", b =>
+                {
+                    b.Navigation("Request")
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("KhaneBan.Domain.Core.Entites.UserRequests.Request", b =>

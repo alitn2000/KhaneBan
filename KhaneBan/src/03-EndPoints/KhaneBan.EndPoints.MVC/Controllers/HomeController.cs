@@ -15,6 +15,9 @@ namespace KhaneBan.EndPoints.MVC.Controllers
 
         public IActionResult Index()
         {
+            _logger.LogInformation("About page visited at {Time} by User {UserId}", DateTime.UtcNow.ToLongTimeString(), 5);
+           // _logger.LogInformation("About page visited at" + DateTime.UtcNow.ToLongTimeString());
+
             return View();
         }
 

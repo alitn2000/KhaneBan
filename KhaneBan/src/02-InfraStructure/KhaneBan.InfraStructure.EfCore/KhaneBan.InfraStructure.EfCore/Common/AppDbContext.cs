@@ -19,6 +19,13 @@ public class AppDbContext : IdentityDbContext<User, IdentityRole<int>, int>
 {
 
     public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    {
+        optionsBuilder.ConfigureWarnings(warnings =>
+        warnings.Ignore(RelationalEventId.PendingModelChangesWarning));
+        base.OnConfiguring(optionsBuilder);
+
+    }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

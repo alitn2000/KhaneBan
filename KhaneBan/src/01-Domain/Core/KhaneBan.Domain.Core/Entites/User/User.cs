@@ -14,6 +14,7 @@ public class User : IdentityUser<int>
     public DateTime RegisterDate { get; set; } = DateTime.Now;
     public int CityId { get; set; }
     public string? PicturePath { get; set; }
+    public bool IsDeleted { get; set; } = false;
 
     #endregion
 
