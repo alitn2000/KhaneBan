@@ -1,4 +1,5 @@
 ﻿using KhaneBan.Domain.Core.Entites.User;
+using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,5 +17,7 @@ public interface IExpertAppService
     Task<Expert?> GetExpertInfoByIdAsync(int id, CancellationToken cancellationToken);
     Task<bool> UpdateAsync(Expert expert, CancellationToken cancellationToken);
     Task<bool> ActiveExpertAsync(int userId, CancellationToken cancellationToken);
+    Task<IdentityResult> RegisterAsync(User user, string pass);
+    Task<IdentityResult> UpdateAsync(User user);
 }
 

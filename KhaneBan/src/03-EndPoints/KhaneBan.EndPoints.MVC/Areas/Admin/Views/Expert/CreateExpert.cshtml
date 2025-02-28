@@ -1,0 +1,105 @@
+﻿@using KhaneBan.Domain.Core.Entites.BaseEntities
+@using Newtonsoft.Json
+@model CreateCustomerViewModel
+
+@{
+    var citiesJson = ViewData["Cities"] as string;
+    var cityList = !string.IsNullOrEmpty(citiesJson)
+        ? JsonConvert.DeserializeObject<List<SelectListItem>>(citiesJson)
+        : new List<SelectListItem>();
+}
+
+
+<div class="container px-5 my-5">
+
+    @if (TempData["Message"] is not null)
+    {
+        <div class="alert alert-info">@TempData["Message"]</div>
+    }
+    <form asp-area="Admin" asp-controller="Expert" method="post" asp-action="CreateExpert" enctype="multipart/form-data">
+
+
+		<div class="mb-3 row">
+			<label asp-for="FirstName" class="col-sm-3 col-form-label text-end">نام</label>
+			<div class="col-sm-9">
+				<input class="form-control" asp-for="FirstName" />
+				<span class="text-danger" asp-validation-for="FirstName"></span>
+			</div>
+		</div>
+
+		<div class="mb-3 row">
+			<label asp-for="LastName" class="col-sm-3 col-form-label text-end">نام خانوادگی</label>
+			<div class="col-sm-9">
+				<input class="form-control" asp-for="LastName" />
+				<span class="text-danger" asp-validation-for="LastName"></span>
+			</div>
+		</div>
+
+		<div class="mb-3 row">
+			<label asp-for="Address" class="col-sm-3 col-form-label text-end">آدرس</label>
+			<div class="col-sm-9">
+				<input class="form-control" asp-for="Address" />
+				<span class="text-danger" asp-validation-for="Address"></span>
+			</div>
+		</div>
+
+		<div class="mb-3 row">
+			<label asp-for="UserName" class="col-sm-3 col-form-label text-end">نام کاربری</label>
+			<div class="col-sm-9">
+				<input class="form-control" asp-for="UserName" />
+				<span class="text-danger" asp-validation-for="UserName"></span>
+			</div>
+		</div>
+
+		<div class="mb-3 row">
+			<label asp-for="Email" class="col-sm-3 col-form-label text-end">ایمیل</label>
+			<div class="col-sm-9">
+				<input class="form-control" asp-for="Email" />
+				<span class="text-danger" asp-validation-for="Email"></span>
+			</div>
+		</div>
+
+		<div class="mb-3 row">
+			<label asp-for="Password" class="col-sm-3 col-form-label text-end">رمز عبور</label>
+			<div class="col-sm-9">
+				<input type="password" class="form-control" asp-for="Password" />
+				<span class="text-danger" asp-validation-for="Password"></span>
+			</div>
+		</div>
+
+		<div class="mb-3 row">
+			<label class="col-sm-3 col-form-label text-end">انتخاب شهر</label>
+			<div class="col-sm-9">
+				<select class="form-select" asp-for="CityId">
+					@foreach (var city in cityList)
+					{
+						<option value="@city.Value">@city.Text</option>
+					}
+				</select>
+				<span class="text-danger" asp-validation-for="CityId"></span>
+			</div>
+		</div>
+
+		<div class="mb-3 row">
+			<label asp-for="ProfileImgFile" class="col-sm-3 col-form-label text-end">انتخاب عکس پروفایل</label>
+			<div class="col-sm-9">
+				<input type="file" class="form-control" asp-for="ProfileImgFile" accept="image/*">
+				<span class="text-danger" asp-validation-for="ProfileImgFile"></span>
+			</div>
+		</div>
+
+		<div class="d-none" id="submitErrorMessage">
+			<div class="text-center text-danger mb-3">Error sending message!</div>
+		</div>
+
+		<div class="d-grid">
+			<button class="btn btn-primary btn-lg" id="submitButton" type="submit">ثبت نام</button>
+		</div>
+	</form>
+
+</div>
+
+@section Scripts
+    {
+    <partial name="_validationScriptsPartial" />
+}

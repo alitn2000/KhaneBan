@@ -1,19 +1,377 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\c#\\KhaneBan\\KhaneBan\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{45A8FC8E-62B2-4ACB-A298-E65FB2F6DA0F}|src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\KhaneBan.EndPoints.MVC.csproj|d:\\c#\\khaneban\\khaneban\\src\\03-endpoints\\khaneban.endpoints.mvc\\areas\\admin\\controllers\\expertcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45A8FC8E-62B2-4ACB-A298-E65FB2F6DA0F}|src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\KhaneBan.EndPoints.MVC.csproj|solutionrelative:src\\03-endpoints\\khaneban.endpoints.mvc\\areas\\admin\\controllers\\expertcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45A8FC8E-62B2-4ACB-A298-E65FB2F6DA0F}|src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\KhaneBan.EndPoints.MVC.csproj|d:\\c#\\khaneban\\khaneban\\src\\03-endpoints\\khaneban.endpoints.mvc\\areas\\admin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45A8FC8E-62B2-4ACB-A298-E65FB2F6DA0F}|src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\KhaneBan.EndPoints.MVC.csproj|solutionrelative:src\\03-endpoints\\khaneban.endpoints.mvc\\areas\\admin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45A8FC8E-62B2-4ACB-A298-E65FB2F6DA0F}|src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\KhaneBan.EndPoints.MVC.csproj|d:\\c#\\khaneban\\khaneban\\src\\03-endpoints\\khaneban.endpoints.mvc\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{45A8FC8E-62B2-4ACB-A298-E65FB2F6DA0F}|src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\KhaneBan.EndPoints.MVC.csproj|solutionrelative:src\\03-endpoints\\khaneban.endpoints.mvc\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45A8FC8E-62B2-4ACB-A298-E65FB2F6DA0F}|src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\KhaneBan.EndPoints.MVC.csproj|d:\\c#\\khaneban\\khaneban\\src\\03-endpoints\\khaneban.endpoints.mvc\\areas\\admin\\views\\request\\requestssuggestions.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{45A8FC8E-62B2-4ACB-A298-E65FB2F6DA0F}|src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\KhaneBan.EndPoints.MVC.csproj|solutionrelative:src\\03-endpoints\\khaneban.endpoints.mvc\\areas\\admin\\views\\request\\requestssuggestions.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45A8FC8E-62B2-4ACB-A298-E65FB2F6DA0F}|src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\KhaneBan.EndPoints.MVC.csproj|d:\\c#\\khaneban\\khaneban\\src\\03-endpoints\\khaneban.endpoints.mvc\\areas\\admin\\views\\shared\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{45A8FC8E-62B2-4ACB-A298-E65FB2F6DA0F}|src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\KhaneBan.EndPoints.MVC.csproj|solutionrelative:src\\03-endpoints\\khaneban.endpoints.mvc\\areas\\admin\\views\\shared\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45A8FC8E-62B2-4ACB-A298-E65FB2F6DA0F}|src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\KhaneBan.EndPoints.MVC.csproj|d:\\c#\\khaneban\\khaneban\\src\\03-endpoints\\khaneban.endpoints.mvc\\areas\\admin\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{45A8FC8E-62B2-4ACB-A298-E65FB2F6DA0F}|src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\KhaneBan.EndPoints.MVC.csproj|solutionrelative:src\\03-endpoints\\khaneban.endpoints.mvc\\areas\\admin\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2F211BF-3C8A-4114-879B-4A37C2FD5F69}|src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore.csproj|d:\\c#\\khaneban\\khaneban\\src\\02-infrastructure\\khaneban.infrastructure.efcore\\khaneban.infrastructure.efcore\\repositories\\homeservicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2F211BF-3C8A-4114-879B-4A37C2FD5F69}|src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore.csproj|solutionrelative:src\\02-infrastructure\\khaneban.infrastructure.efcore\\khaneban.infrastructure.efcore\\repositories\\homeservicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45A8FC8E-62B2-4ACB-A298-E65FB2F6DA0F}|src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\KhaneBan.EndPoints.MVC.csproj|d:\\c#\\khaneban\\khaneban\\src\\03-endpoints\\khaneban.endpoints.mvc\\areas\\admin\\controllers\\homeservicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45A8FC8E-62B2-4ACB-A298-E65FB2F6DA0F}|src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\KhaneBan.EndPoints.MVC.csproj|solutionrelative:src\\03-endpoints\\khaneban.endpoints.mvc\\areas\\admin\\controllers\\homeservicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45A8FC8E-62B2-4ACB-A298-E65FB2F6DA0F}|src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\KhaneBan.EndPoints.MVC.csproj|d:\\c#\\khaneban\\khaneban\\src\\03-endpoints\\khaneban.endpoints.mvc\\areas\\admin\\views\\homeservice\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{45A8FC8E-62B2-4ACB-A298-E65FB2F6DA0F}|src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\KhaneBan.EndPoints.MVC.csproj|solutionrelative:src\\03-endpoints\\khaneban.endpoints.mvc\\areas\\admin\\views\\homeservice\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45A8FC8E-62B2-4ACB-A298-E65FB2F6DA0F}|src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\KhaneBan.EndPoints.MVC.csproj|d:\\c#\\khaneban\\khaneban\\src\\03-endpoints\\khaneban.endpoints.mvc\\models\\subcategoryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45A8FC8E-62B2-4ACB-A298-E65FB2F6DA0F}|src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\KhaneBan.EndPoints.MVC.csproj|solutionrelative:src\\03-endpoints\\khaneban.endpoints.mvc\\models\\subcategoryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45A8FC8E-62B2-4ACB-A298-E65FB2F6DA0F}|src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\KhaneBan.EndPoints.MVC.csproj|d:\\c#\\khaneban\\khaneban\\src\\03-endpoints\\khaneban.endpoints.mvc\\models\\updatecustomerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45A8FC8E-62B2-4ACB-A298-E65FB2F6DA0F}|src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\KhaneBan.EndPoints.MVC.csproj|solutionrelative:src\\03-endpoints\\khaneban.endpoints.mvc\\models\\updatecustomerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45A8FC8E-62B2-4ACB-A298-E65FB2F6DA0F}|src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\KhaneBan.EndPoints.MVC.csproj|d:\\c#\\khaneban\\khaneban\\src\\03-endpoints\\khaneban.endpoints.mvc\\areas\\admin\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45A8FC8E-62B2-4ACB-A298-E65FB2F6DA0F}|src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\KhaneBan.EndPoints.MVC.csproj|solutionrelative:src\\03-endpoints\\khaneban.endpoints.mvc\\areas\\admin\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45A8FC8E-62B2-4ACB-A298-E65FB2F6DA0F}|src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\KhaneBan.EndPoints.MVC.csproj|d:\\c#\\khaneban\\khaneban\\src\\03-endpoints\\khaneban.endpoints.mvc\\areas\\admin\\views\\category\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{45A8FC8E-62B2-4ACB-A298-E65FB2F6DA0F}|src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\KhaneBan.EndPoints.MVC.csproj|solutionrelative:src\\03-endpoints\\khaneban.endpoints.mvc\\areas\\admin\\views\\category\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45A8FC8E-62B2-4ACB-A298-E65FB2F6DA0F}|src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\KhaneBan.EndPoints.MVC.csproj|d:\\c#\\khaneban\\khaneban\\src\\03-endpoints\\khaneban.endpoints.mvc\\areas\\admin\\views\\category\\categorylist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{45A8FC8E-62B2-4ACB-A298-E65FB2F6DA0F}|src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\KhaneBan.EndPoints.MVC.csproj|solutionrelative:src\\03-endpoints\\khaneban.endpoints.mvc\\areas\\admin\\views\\category\\categorylist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45A8FC8E-62B2-4ACB-A298-E65FB2F6DA0F}|src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\KhaneBan.EndPoints.MVC.csproj|d:\\c#\\khaneban\\khaneban\\src\\03-endpoints\\khaneban.endpoints.mvc\\areas\\admin\\views\\admin\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{45A8FC8E-62B2-4ACB-A298-E65FB2F6DA0F}|src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\KhaneBan.EndPoints.MVC.csproj|solutionrelative:src\\03-endpoints\\khaneban.endpoints.mvc\\areas\\admin\\views\\admin\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45A8FC8E-62B2-4ACB-A298-E65FB2F6DA0F}|src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\KhaneBan.EndPoints.MVC.csproj|d:\\c#\\khaneban\\khaneban\\src\\03-endpoints\\khaneban.endpoints.mvc\\areas\\users\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{45A8FC8E-62B2-4ACB-A298-E65FB2F6DA0F}|src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\KhaneBan.EndPoints.MVC.csproj|solutionrelative:src\\03-endpoints\\khaneban.endpoints.mvc\\areas\\users\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45A8FC8E-62B2-4ACB-A298-E65FB2F6DA0F}|src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\KhaneBan.EndPoints.MVC.csproj|d:\\c#\\khaneban\\khaneban\\src\\03-endpoints\\khaneban.endpoints.mvc\\areas\\users\\views\\profile\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{45A8FC8E-62B2-4ACB-A298-E65FB2F6DA0F}|src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\KhaneBan.EndPoints.MVC.csproj|solutionrelative:src\\03-endpoints\\khaneban.endpoints.mvc\\areas\\users\\views\\profile\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45A8FC8E-62B2-4ACB-A298-E65FB2F6DA0F}|src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\KhaneBan.EndPoints.MVC.csproj|d:\\c#\\khaneban\\khaneban\\src\\03-endpoints\\khaneban.endpoints.mvc\\models\\adminviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45A8FC8E-62B2-4ACB-A298-E65FB2F6DA0F}|src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\KhaneBan.EndPoints.MVC.csproj|solutionrelative:src\\03-endpoints\\khaneban.endpoints.mvc\\models\\adminviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45A8FC8E-62B2-4ACB-A298-E65FB2F6DA0F}|src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\KhaneBan.EndPoints.MVC.csproj|d:\\c#\\khaneban\\khaneban\\src\\03-endpoints\\khaneban.endpoints.mvc\\areas\\admin\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{45A8FC8E-62B2-4ACB-A298-E65FB2F6DA0F}|src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\KhaneBan.EndPoints.MVC.csproj|solutionrelative:src\\03-endpoints\\khaneban.endpoints.mvc\\areas\\admin\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45A8FC8E-62B2-4ACB-A298-E65FB2F6DA0F}|src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\KhaneBan.EndPoints.MVC.csproj|d:\\c#\\khaneban\\khaneban\\src\\03-endpoints\\khaneban.endpoints.mvc\\areas\\admin\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45A8FC8E-62B2-4ACB-A298-E65FB2F6DA0F}|src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\KhaneBan.EndPoints.MVC.csproj|solutionrelative:src\\03-endpoints\\khaneban.endpoints.mvc\\areas\\admin\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5009D80B-7CC2-4FDD-942C-8F20D656480C}|src\\01-Domain\\Services\\KhaneBan.Domain.Service\\KhaneBan.Domain.Services\\KhaneBan.Domain.Services.csproj|d:\\c#\\khaneban\\khaneban\\src\\01-domain\\services\\khaneban.domain.service\\khaneban.domain.services\\adminaccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5009D80B-7CC2-4FDD-942C-8F20D656480C}|src\\01-Domain\\Services\\KhaneBan.Domain.Service\\KhaneBan.Domain.Services\\KhaneBan.Domain.Services.csproj|solutionrelative:src\\01-domain\\services\\khaneban.domain.service\\khaneban.domain.services\\adminaccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 1156,
-          "SelectedChildIndex": -1,
+          "DockedWidth": 1133,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ExpertController.cs",
+              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Admin\\Controllers\\ExpertController.cs",
+              "RelativeDocumentMoniker": "src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Admin\\Controllers\\ExpertController.cs",
+              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Admin\\Controllers\\ExpertController.cs",
+              "RelativeToolTip": "src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Admin\\Controllers\\ExpertController.cs",
+              "ViewState": "AgIAAJYAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T11:02:14.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RequestsSuggestions.cshtml",
+              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Admin\\Views\\Request\\RequestsSuggestions.cshtml",
+              "RelativeDocumentMoniker": "src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Admin\\Views\\Request\\RequestsSuggestions.cshtml",
+              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Admin\\Views\\Request\\RequestsSuggestions.cshtml",
+              "RelativeToolTip": "src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Admin\\Views\\Request\\RequestsSuggestions.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-28T10:54:35.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Admin\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Admin\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Admin\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Admin\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-28T10:54:32.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_header.cshtml",
+              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Admin\\Views\\Shared\\_header.cshtml",
+              "RelativeDocumentMoniker": "src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Admin\\Views\\Shared\\_header.cshtml",
+              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Admin\\Views\\Shared\\_header.cshtml",
+              "RelativeToolTip": "src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Admin\\Views\\Shared\\_header.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-28T10:54:29.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HomeServiceRepository.cs",
+              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\HomeServiceRepository.cs",
+              "RelativeDocumentMoniker": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\HomeServiceRepository.cs",
+              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\HomeServiceRepository.cs",
+              "RelativeToolTip": "src\\02-InfraStructure\\KhaneBan.InfraStructure.EfCore\\KhaneBan.InfraStructure.EfCore\\Repositories\\HomeServiceRepository.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAlwEAAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T10:46:55.694Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HomeServiceController.cs",
+              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Admin\\Controllers\\HomeServiceController.cs",
+              "RelativeDocumentMoniker": "src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Admin\\Controllers\\HomeServiceController.cs",
+              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Admin\\Controllers\\HomeServiceController.cs",
+              "RelativeToolTip": "src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Admin\\Controllers\\HomeServiceController.cs",
+              "ViewState": "AgIAAHMAAAAAAAAAAAAAwIEAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T10:42:19.09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Admin\\Views\\HomeService\\Edit.cshtml",
+              "RelativeDocumentMoniker": "src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Admin\\Views\\HomeService\\Edit.cshtml",
+              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Admin\\Views\\HomeService\\Edit.cshtml",
+              "RelativeToolTip": "src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Admin\\Views\\HomeService\\Edit.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-28T10:41:53.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SubCategoryViewModel.cs",
+              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Models\\SubCategoryViewModel.cs",
+              "RelativeDocumentMoniker": "src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Models\\SubCategoryViewModel.cs",
+              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Models\\SubCategoryViewModel.cs",
+              "RelativeToolTip": "src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Models\\SubCategoryViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T10:41:45.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UpdateCustomerViewModel.cs",
+              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Models\\UpdateCustomerViewModel.cs",
+              "RelativeDocumentMoniker": "src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Models\\UpdateCustomerViewModel.cs",
+              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Models\\UpdateCustomerViewModel.cs",
+              "RelativeToolTip": "src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Models\\UpdateCustomerViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T10:41:43.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Admin\\Views\\Category\\Create.cshtml",
+              "RelativeDocumentMoniker": "src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Admin\\Views\\Category\\Create.cshtml",
+              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Admin\\Views\\Category\\Create.cshtml",
+              "RelativeToolTip": "src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Admin\\Views\\Category\\Create.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-28T10:37:04.458Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CategoryList.cshtml",
+              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Admin\\Views\\Category\\CategoryList.cshtml",
+              "RelativeDocumentMoniker": "src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Admin\\Views\\Category\\CategoryList.cshtml",
+              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Admin\\Views\\Category\\CategoryList.cshtml",
+              "RelativeToolTip": "src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Admin\\Views\\Category\\CategoryList.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-28T10:37:00.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Admin\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Admin\\Controllers\\CategoryController.cs",
+              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Admin\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Admin\\Controllers\\CategoryController.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAIwD4AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T10:36:56.649Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAEQAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-28T10:24:57.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Admin\\Views\\Admin\\Login.cshtml",
+              "RelativeDocumentMoniker": "src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Admin\\Views\\Admin\\Login.cshtml",
+              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Admin\\Views\\Admin\\Login.cshtml",
+              "RelativeToolTip": "src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Admin\\Views\\Admin\\Login.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAuwBkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-28T10:19:34.834Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Users\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Users\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Users\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Users\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-28T10:19:05.756Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Users\\Views\\Profile\\Index.cshtml",
+              "RelativeDocumentMoniker": "src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Users\\Views\\Profile\\Index.cshtml",
+              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Users\\Views\\Profile\\Index.cshtml",
+              "RelativeToolTip": "src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Users\\Views\\Profile\\Index.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-28T10:18:56.979Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AdminViewModel.cs",
+              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Models\\AdminViewModel.cs",
+              "RelativeDocumentMoniker": "src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Models\\AdminViewModel.cs",
+              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Models\\AdminViewModel.cs",
+              "RelativeToolTip": "src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Models\\AdminViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T10:18:41.645Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Admin\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Admin\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Admin\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Admin\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAD0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-28T10:17:40.211Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Admin\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Admin\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Admin\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Admin\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T10:17:30.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Admin\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Admin\\Controllers\\AdminController.cs",
+              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Admin\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\Areas\\Admin\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T10:17:21.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AdminAccountService.cs",
+              "DocumentMoniker": "D:\\c#\\KhaneBan\\KhaneBan\\src\\01-Domain\\Services\\KhaneBan.Domain.Service\\KhaneBan.Domain.Services\\AdminAccountService.cs",
+              "RelativeDocumentMoniker": "src\\01-Domain\\Services\\KhaneBan.Domain.Service\\KhaneBan.Domain.Services\\AdminAccountService.cs",
+              "ToolTip": "D:\\c#\\KhaneBan\\KhaneBan\\src\\01-Domain\\Services\\KhaneBan.Domain.Service\\KhaneBan.Domain.Services\\AdminAccountService.cs",
+              "RelativeToolTip": "src\\01-Domain\\Services\\KhaneBan.Domain.Service\\KhaneBan.Domain.Services\\AdminAccountService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T10:16:40.589Z",
+              "EditorCaption": ""
             }
           ]
         }

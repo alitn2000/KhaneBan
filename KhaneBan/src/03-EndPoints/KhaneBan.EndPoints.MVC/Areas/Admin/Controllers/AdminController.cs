@@ -13,7 +13,7 @@ using Newtonsoft.Json;
 namespace KhaneBan.EndPoints.MVC.Areas.Admin.Controllers;
 
 [Area("Admin")]
-//[Authorize(Roles ="Admin")]
+[Authorize(Roles ="Admin")]
 public class AdminController : Controller
 {
     private readonly UserManager<User> _userManager;
@@ -25,6 +25,7 @@ public class AdminController : Controller
     private readonly IRequestAppService _requestAppService;
     private readonly ISuggestionAppService _suggestionAppService;
     private readonly IRatingAppService _ratingAppService;
+    private readonly IPictureAppService _pictureAppService;
     public AdminController(UserManager<User> userManager,
         IAdminAccountAppService adminAccountAppService,
         SignInManager<User> signInManager,
@@ -33,7 +34,8 @@ public class AdminController : Controller
         ICityAppService cityAppService,
         IRequestAppService requestAppService,
         ISuggestionAppService suggestionAppService,
-        IRatingAppService ratingAppService)
+        IRatingAppService ratingAppService,
+        IPictureAppService pictureAppService)
         
     {
         _userManager = userManager;
@@ -45,6 +47,7 @@ public class AdminController : Controller
         _requestAppService = requestAppService;
         _suggestionAppService = suggestionAppService;
         _ratingAppService = ratingAppService;
+        _pictureAppService = pictureAppService;
     }
     #region AdminLogin
     [HttpGet]
@@ -64,13 +67,12 @@ public class AdminController : Controller
         var user = await _userManager.FindByNameAsync(adminViewModel.UserName);
         if (user == null)
         {
-            TempData["LoginResult"] = "شناسه کاربری یا رمز عبور اشتباه است";
             return View(adminViewModel);
         }
         var result = await _adminAccountAppService.LoginAsync(adminViewModel.UserName, adminViewModel.Password);
 
         if (result.Succeeded)
-            return RedirectToAction("Index", "Home", new { area = "Admin" });
+            return RedirectToAction("Index", "Home");
 
         TempData["LoginResult"] = "شناسه کاربری یا رمز عبور اشتباه است";
         return View(adminViewModel);
@@ -81,417 +83,411 @@ public class AdminController : Controller
     public async Task<IActionResult> Logout()
     {
         await _signInManager.SignOutAsync();
-        return RedirectToAction("Login", "Admin", new { area = "Admin" });
+        return RedirectToAction("Login", "Admin");
     }
     #endregion
 
     #region Customer
-    //----------Customer----------//
-    public async Task<IActionResult> CustomerList(CancellationToken cancellationToken)
-    {
-        var customers = await _customerAppService.GetCustomerInfoAsync();
+    ////----------Customer----------//
+    //public async Task<IActionResult> CustomerList(CancellationToken cancellationToken)
+    //{
+    //    var customers = await _customerAppService.GetCustomerInfoAsync();
 
 
-        List<UserViewModel> users = new List<UserViewModel>();
+    //    List<UserViewModel> users = new List<UserViewModel>();
 
-        foreach (var customer in customers)
-        {
-            string picturePath = customer.User.PicturePath;
+    //    foreach (var customer in customers)
+    //    {
+    //        string picturePath = customer.User.PicturePath;
 
-            if (!string.IsNullOrEmpty(picturePath) && !picturePath.StartsWith("http") && !picturePath.Contains("/"))
-            {
-                picturePath = $"data:image/jpeg;base64,{picturePath}";
-            }
-            users.Add(new UserViewModel()
-            {
-                Id = customer.Id,
-                Email = customer.User.Email,
-                FirstName = customer.User.FirstName,
-                LastName = customer.User.LastName,
-                Adress = customer.User.Address,
-                PicturePath = picturePath,
-                PhoneNumber = customer.User.PhoneNumber,
-                IsDeleted = customer.User.IsDeleted,
+    //        users.Add(new UserViewModel()
+    //        {
+    //            Id = customer.Id,
+    //            Email = customer.User.Email,
+    //            FirstName = customer.User.FirstName,
+    //            LastName = customer.User.LastName,
+    //            Adress = customer.User.Address,
+    //            PicturePath = picturePath,
+    //            PhoneNumber = customer.User.PhoneNumber,
+    //            IsDeleted = customer.User.IsDeleted,
 
-            });
-        }
-        return View(users);
-    }
+    //        });
+    //    }
+    //    return View(users);
+    //}
 
 
-    public async Task<IActionResult> DeleteCustomer(int userId, CancellationToken cancellationToken)
-    {
+    //public async Task<IActionResult> DeleteCustomer(int userId, CancellationToken cancellationToken)
+    //{
 
-        var Flag = await _customerAppService.DeleteAsync(userId, cancellationToken);
-        if (!Flag)
-        {
-            TempData["CustomerNotFound"] = "مشتری یافت نشد";
-            return RedirectToAction("CustomerList");
-        }
+    //    var Flag = await _customerAppService.DeleteAsync(userId, cancellationToken);
+    //    if (!Flag)
+    //    {
+    //        TempData["CustomerNotFound"] = "مشتری یافت نشد";
+    //        return RedirectToAction("CustomerList");
+    //    }
 
-        TempData["DeleteResult"] = "مشتری با موفقیت حذف گردید";
-        return RedirectToAction("CustomerList");
-    }
+    //    TempData["DeleteResult"] = "مشتری با موفقیت حذف گردید";
+    //    return RedirectToAction("CustomerList");
+    //}
 
-    public async Task<IActionResult> ActiveCustomer(int userId, CancellationToken cancellationToken)
-    {
-        var Flag = await _customerAppService.ActiveCustomer(userId, cancellationToken);
-        if (!Flag)
-        {
-            TempData["CustomerNotFound"] = "مشتری یافت نشد";
-            return RedirectToAction("CustomerList");
-        }
+    //public async Task<IActionResult> ActiveCustomer(int userId, CancellationToken cancellationToken)
+    //{
+    //    var Flag = await _customerAppService.ActiveCustomer(userId, cancellationToken);
+    //    if (!Flag)
+    //    {
+    //        TempData["CustomerNotFound"] = "مشتری یافت نشد";
+    //        return RedirectToAction("CustomerList");
+    //    }
 
-        TempData["DeleteResult"] = "مشتری با موفقیت فعال گردید ";
-        return RedirectToAction("CustomerList");
-    }
+    //    TempData["DeleteResult"] = "مشتری با موفقیت فعال گردید ";
+    //    return RedirectToAction("CustomerList");
+    //}
 
-    [HttpGet]
-    public async Task<IActionResult> CreateCustomer(CancellationToken cancellationToken)
-    {
+    //[HttpGet]
+    //public async Task<IActionResult> CreateCustomer(CancellationToken cancellationToken)
+    //{
 
-        var cities = await _cityAppService.GetCitiesAsync(cancellationToken);
-        ViewData["Cities"] = JsonConvert.SerializeObject(cities.Select(c => new SelectListItem
-        {
-            Value = c.Id.ToString(),
-            Text = c.Title
-        }).ToList());
-        return View();
-    }
+    //    var cities = await _cityAppService.GetCitiesAsync(cancellationToken);
+    //    ViewData["Cities"] = JsonConvert.SerializeObject(cities.Select(c => new SelectListItem
+    //    {
+    //        Value = c.Id.ToString(),
+    //        Text = c.Title
+    //    }).ToList());
+    //    return View();
+    //}
 
-    [HttpPost]
-    public async Task<IActionResult> CreateCustomer(CreateCustomerViewModel viewModel, CancellationToken cancellationToken)
-    {
-        var cities = await _cityAppService.GetCitiesAsync(cancellationToken);
-        if (!ModelState.IsValid)
-        {
-            ViewData["Cities"] = JsonConvert.SerializeObject(cities.Select(c => new SelectListItem
-            {
-                Value = c.Id.ToString(),
-                Text = c.Title
-            }).ToList());
-            return View(viewModel);
-        }
+    //[HttpPost]
+    //public async Task<IActionResult> CreateCustomer(CreateCustomerViewModel viewModel, CancellationToken cancellationToken)
+    //{
+    //    var cities = await _cityAppService.GetCitiesAsync(cancellationToken);
+    //    if (!ModelState.IsValid)
+    //    {
+    //        ViewData["Cities"] = JsonConvert.SerializeObject(cities.Select(c => new SelectListItem
+    //        {
+    //            Value = c.Id.ToString(),
+    //            Text = c.Title
+    //        }).ToList());
+    //        return View(viewModel);
+    //    }
 
-        string picture = string.Empty;
-        if (viewModel.ProfileImage != null && viewModel.ProfileImage.Length > 0)
-        {
-            using (var ms = new MemoryStream())
-            {
-                await viewModel.ProfileImage.CopyToAsync(ms);
-                byte[] fileBytes = ms.ToArray();
-                string base64String = Convert.ToBase64String(fileBytes);
-
-                string fileType = viewModel.ProfileImage.ContentType;
-                picture = $"data:{fileType};base64,{base64String}";
-            }
-        }
+    //    if (viewModel.ProfileImgFile is not null)
+    //    {
+    //        viewModel.ImagePath = await _pictureAppService.UploadImage(viewModel.ProfileImgFile!, "Customers", cancellationToken);
+    //    }
 
 
-        var user = new User
-        {
-            FirstName = viewModel.FirstName,
-            LastName = viewModel.LastName,
-            Email = viewModel.Email,
-            Address = viewModel.Address,
-            UserName = viewModel.UserName,
-            CityId = viewModel.CityId,
-            PicturePath = picture
-        };
+    //    var user = new User
+    //    {
+    //        FirstName = viewModel.FirstName,
+    //        LastName = viewModel.LastName,
+    //        Email = viewModel.Email,
+    //        Address = viewModel.Address,
+    //        UserName = viewModel.UserName,
+    //        CityId = viewModel.CityId,
+    //        PicturePath = viewModel.ImagePath
+    //    };
 
-        var result = await _userManager.CreateAsync(user, viewModel.Password);
-        if (!result.Succeeded)
-        {
-            foreach (var error in result.Errors)
-            {
-                ModelState.AddModelError("", error.Description);
-            }
-            ViewData["Cities"] = JsonConvert.SerializeObject(cities.Select(c => new SelectListItem
-            {
-                Value = c.Id.ToString(),
-                Text = c.Title
-            }).ToList());
+    //    var result = await _userManager.CreateAsync(user, viewModel.Password);
+    //    if (!result.Succeeded)
+    //    {
+    //        foreach (var error in result.Errors)
+    //        {
+    //            ModelState.AddModelError("", error.Description);
+    //        }
+    //        ViewData["Cities"] = JsonConvert.SerializeObject(cities.Select(c => new SelectListItem
+    //        {
+    //            Value = c.Id.ToString(),
+    //            Text = c.Title
+    //        }).ToList());
 
 
-        }
-        var customer = new Customer
-        {
-            UserId = user.Id,
-            User = user
-        };
+    //    }
+    //    var customer = new Customer
+    //    {
+    //        UserId = user.Id,
+    //        User = user
+    //    };
 
-        var flag = await _customerAppService.CreateAsync(customer, cancellationToken);
-        if (flag)
-        {
-            TempData["Message"] = "مشتری با موفقیت اضافه شد";    /////////////////بولیناش بررسی شود 
-            ViewData["Cities"] = JsonConvert.SerializeObject(cities.Select(c => new SelectListItem
-            {
-                Value = c.Id.ToString(),
-                Text = c.Title
-            }).ToList());
-            return RedirectToAction("CustomerList");
-        }
-        TempData["Message"] = "مشتری موجود است ";
+    //    var flag = await _customerAppService.CreateAsync(customer, cancellationToken);
+    //    if (flag)
+    //    {
+    //        TempData["Message"] = "مشتری با موفقیت اضافه شد";    /////////////////بولیناش بررسی شود 
+    //        ViewData["Cities"] = JsonConvert.SerializeObject(cities.Select(c => new SelectListItem
+    //        {
+    //            Value = c.Id.ToString(),
+    //            Text = c.Title
+    //        }).ToList());
+    //        return RedirectToAction("CustomerList");
+    //    }
+    //    TempData["Message"] = "مشتری موجود است ";
 
-        ViewData["Cities"] = JsonConvert.SerializeObject(cities.Select(c => new SelectListItem
-        {
-            Value = c.Id.ToString(),
-            Text = c.Title
-        }).ToList());
-        return View(viewModel);
-    }
+    //    ViewData["Cities"] = JsonConvert.SerializeObject(cities.Select(c => new SelectListItem
+    //    {
+    //        Value = c.Id.ToString(),
+    //        Text = c.Title
+    //    }).ToList());
+    //    return View(viewModel);
+    //}
 
 
     
 
-    public async Task<IActionResult> UpdateCustomer(int userId, CancellationToken cancellationToken)
-    {
-        var customer = await _customerAppService.GetCustomerInfoByIdAsync(userId, cancellationToken);
-        if (customer == null)
-           return NotFound();         /////////// taghir bede
+    //public async Task<IActionResult> UpdateCustomer(int userId, CancellationToken cancellationToken)
+    //{
+    //    var customer = await _customerAppService.GetCustomerInfoByIdAsync(userId, cancellationToken);
+    //    if (customer == null)
+    //       return NotFound();         /////////// taghir bede
 
-       var model = new UpdateCustomerViewModel
-          {
-            Id = customer.Id,
-            Email = customer.User.Email,
-            FirstName = customer.User.FirstName,
-            LastName = customer.User.LastName
+    //   var model = new UpdateCustomerViewModel
+    //      {
+    //        Id = customer.Id,
+    //        Email = customer.User.Email,
+    //        FirstName = customer.User.FirstName,
+    //        LastName = customer.User.LastName
 
-          };
-        return View(model);
-    }
+    //      };
+    //    return View(model);
+    //}
 
-    [HttpPost]
-    public async Task<IActionResult> UpdateCustomer(UpdateCustomerViewModel model, CancellationToken cancellationToken)
-    {
-        if (!ModelState.IsValid)
-            return View(model);
+    //[HttpPost]
+    //public async Task<IActionResult> UpdateCustomer(UpdateCustomerViewModel model, CancellationToken cancellationToken)
+    //{
+    //    if (!ModelState.IsValid)
+    //        return View(model);
 
-        var user = await _userManager.FindByEmailAsync(model.Email);
-        if (user == null)
-            return NotFound();             ////// taghir bede
+    //    var user = await _userManager.FindByEmailAsync(model.Email);
+    //    if (user == null)
+    //        return NotFound();             ////// taghir bede
 
-        user.UserName = model.Email;
-        user.Email = model.Email;
-        user.FirstName = model.FirstName;
-        user.LastName = model.LastName;
+    //    user.UserName = model.Email;
+    //    user.Email = model.Email;
+    //    user.FirstName = model.FirstName;
+    //    user.LastName = model.LastName;
 
-        var result = await _userManager.UpdateAsync(user);
-        if (!result.Succeeded)
-        {
-            foreach (var error in result.Errors)
-            {
-                ModelState.AddModelError("", error.Description);
-            }
-            return View(model);
-        }
-        var customer = await _customerAppService.GetCustomerInfoByIdAsync(model.Id, cancellationToken);
-        if (customer == null)
-            return NotFound();
+    //    var result = await _userManager.UpdateAsync(user);
+    //    if (!result.Succeeded)
+    //    {
+    //        foreach (var error in result.Errors)
+    //        {
+    //            ModelState.AddModelError("", error.Description);
+    //        }
+    //        return View(model);
+    //    }
+    //    var customer = await _customerAppService.GetCustomerInfoByIdAsync(model.Id, cancellationToken);
+    //    if (customer == null)
+    //        return NotFound();
 
-        customer.User = user;
-        await _customerAppService.UpdateAsync(customer, cancellationToken);
-        return RedirectToAction("CustomerList", "Admin");
+    //    customer.User = user;
+    //    await _customerAppService.UpdateAsync(customer, cancellationToken);
+    //    return RedirectToAction("CustomerList", "Admin");
 
-    }
+    //}
     #endregion
 
     #region Expert
     //----------Expert----------//
 
-    public async Task<IActionResult> ExpertList(CancellationToken cancellationToken)
-    {
-        var experts = await _expertAppService.GetExpertInfoAsync(cancellationToken);
-        return View(experts);
-    }
+    //public async Task<IActionResult> ExpertList(CancellationToken cancellationToken)
+    //{
+    //    var experts = await _expertAppService.GetExpertInfoAsync(cancellationToken);
+    //    return View(experts);
+    //}
 
-    public async Task<IActionResult> DeleteExpert(int userId, CancellationToken cancellationToken)
-    {
+    //public async Task<IActionResult> DeleteExpert(int userId, CancellationToken cancellationToken)
+    //{
 
-        var Flag = await _expertAppService.DeleteAsync(userId, cancellationToken);
-        if (!Flag)
-        {
-            TempData["CustomerNotFound"] = "کارشناس یافت نشد";
-            return RedirectToAction("ExpertList");
-        }
+    //    var Flag = await _expertAppService.DeleteAsync(userId, cancellationToken);
+    //    if (!Flag)
+    //    {
+    //        TempData["CustomerNotFound"] = "کارشناس یافت نشد";
+    //        return RedirectToAction("ExpertList");
+    //    }
 
-        TempData["DeleteResult"] = "کارشناس با موفقیت حذف گردید";
-        return RedirectToAction("ExpertList");
-    }
+    //    TempData["DeleteResult"] = "کارشناس با موفقیت حذف گردید";
+    //    return RedirectToAction("ExpertList");
+    //}
 
-    [HttpGet]
-    public async Task<IActionResult> CreateExpert(CancellationToken cancellationToken)
-    {
+    //[HttpGet]
+    //public async Task<IActionResult> CreateExpert(CancellationToken cancellationToken)
+    //{
 
-        var cities = await _cityAppService.GetCitiesAsync(cancellationToken);
-        ViewData["Cities"] = JsonConvert.SerializeObject(cities.Select(c => new SelectListItem
-        {
-            Value = c.Id.ToString(),
-            Text = c.Title
-        }).ToList());
-        return View();
-    }
+    //    var cities = await _cityAppService.GetCitiesAsync(cancellationToken);
+    //    ViewData["Cities"] = JsonConvert.SerializeObject(cities.Select(c => new SelectListItem
+    //    {
+    //        Value = c.Id.ToString(),
+    //        Text = c.Title
+    //    }).ToList());
+    //    return View();
+    //}
 
-    [HttpPost]
-    public async Task<IActionResult> CreateExpert(CreateCustomerViewModel viewModel, CancellationToken cancellationToken)
-    {
-        var cities = await _cityAppService.GetCitiesAsync(cancellationToken);
-        if (!ModelState.IsValid)
-        {
+    //[HttpPost]
+    //public async Task<IActionResult> CreateExpert(CreateCustomerViewModel viewModel, CancellationToken cancellationToken)
+    //{
+    //    var cities = await _cityAppService.GetCitiesAsync(cancellationToken);
+    //    if (!ModelState.IsValid)
+    //    {
 
-            ViewData["Cities"] = JsonConvert.SerializeObject(cities.Select(c => new SelectListItem
-            {
-                Value = c.Id.ToString(),
-                Text = c.Title
-            }).ToList());
-            return View(viewModel);
-        }
-
-        var user = new User
-        {
-            FirstName = viewModel.FirstName,
-            LastName = viewModel.LastName,
-            Email = viewModel.Email,
-            Address = viewModel.Address,
-            UserName = viewModel.UserName,
-            CityId = viewModel.CityId,
-        };
-
-        var result = await _userManager.CreateAsync(user, viewModel.Password);
-        if (!result.Succeeded)
-        {
-            foreach (var error in result.Errors)
-            {
-                ModelState.AddModelError("", error.Description);
-            }
-
-            ViewData["Cities"] = JsonConvert.SerializeObject(cities.Select(c => new SelectListItem
-            {
-                Value = c.Id.ToString(),
-                Text = c.Title
-            }).ToList());
+    //        ViewData["Cities"] = JsonConvert.SerializeObject(cities.Select(c => new SelectListItem
+    //        {
+    //            Value = c.Id.ToString(),
+    //            Text = c.Title
+    //        }).ToList());
+    //        return View(viewModel);
+    //    }
 
 
-        }
-        var expert = new Expert
-        {
-            UserId = user.Id,
-            User = user
-        };
-        var flag = await _expertAppService.CreateAsync(expert, cancellationToken);
-        if (flag)
-        {
-            TempData["Message"] = "مشتری با موفقیت اضافه شد";    /////////////////بولیناش بررسی شود 
+    //    if (viewModel.ProfileImgFile is not null)
+    //    {
+    //        viewModel.ImagePath = await _pictureAppService.UploadImage(viewModel.ProfileImgFile!, "Customers", cancellationToken);
+    //    }
 
-            ViewData["Cities"] = JsonConvert.SerializeObject(cities.Select(c => new SelectListItem
-            {
-                Value = c.Id.ToString(),
-                Text = c.Title
-            }).ToList());
-            return View(viewModel);
-        }
-        TempData["Message"] = "مشتری موجود است ";
-        ViewData["Cities"] = JsonConvert.SerializeObject(cities.Select(c => new SelectListItem
-        {
-            Value = c.Id.ToString(),
-            Text = c.Title
-        }).ToList());
-        return View(viewModel);
-    }
+    //    var user = new User
+    //    {
+    //        FirstName = viewModel.FirstName,
+    //        LastName = viewModel.LastName,
+    //        Email = viewModel.Email,
+    //        Address = viewModel.Address,
+    //        UserName = viewModel.UserName,
+    //        CityId = viewModel.CityId,
+    //        PicturePath = viewModel.ImagePath
+    //    };
 
+    //    var result = await _userManager.CreateAsync(user, viewModel.Password);
+    //    if (!result.Succeeded)
+    //    {
+    //        foreach (var error in result.Errors)
+    //        {
+    //            ModelState.AddModelError("", error.Description);
+    //        }
 
-    public async Task<IActionResult> ActiveExpert(int userId, CancellationToken cancellationToken)
-    {
-        var Flag = await _expertAppService.ActiveExpertAsync(userId, cancellationToken);
-        if (!Flag)
-        {
-            TempData["ExpertNotFound"] = "مشتری یافت نشد";
-            return RedirectToAction("CustomerList");
-        }
-
-        TempData["DeleteResult"] = "مشتری با موفقیت فعال گردید ";
-        return RedirectToAction("ExpertList");
-    }
+    //        ViewData["Cities"] = JsonConvert.SerializeObject(cities.Select(c => new SelectListItem
+    //        {
+    //            Value = c.Id.ToString(),
+    //            Text = c.Title
+    //        }).ToList());
 
 
-    public async Task<IActionResult> UpdateExpert(int userId, CancellationToken cancellationToken)
-    {
-        var customer = await _expertAppService.GetExpertInfoByIdAsync(userId, cancellationToken);
-        if (customer == null)
-            return NotFound();         /////////// taghir bede
+    //    }
+    //    var expert = new Expert
+    //    {
+    //        UserId = user.Id,
+    //        User = user
+    //    };
+    //    var flag = await _expertAppService.CreateAsync(expert, cancellationToken);
+    //    if (flag)
+    //    {
+    //        TempData["Message"] = "مشتری با موفقیت اضافه شد";    /////////////////بولیناش بررسی شود 
 
-        var model = new UpdateCustomerViewModel
-        {
-            Id = customer.Id,
-            Email = customer.User.Email,
-            FirstName = customer.User.FirstName,
-            LastName = customer.User.LastName
+    //        ViewData["Cities"] = JsonConvert.SerializeObject(cities.Select(c => new SelectListItem
+    //        {
+    //            Value = c.Id.ToString(),
+    //            Text = c.Title
+    //        }).ToList());
+    //        return View(viewModel);
+    //    }
+    //    TempData["Message"] = "مشتری موجود است ";
+    //    ViewData["Cities"] = JsonConvert.SerializeObject(cities.Select(c => new SelectListItem
+    //    {
+    //        Value = c.Id.ToString(),
+    //        Text = c.Title
+    //    }).ToList());
+    //    return View(viewModel);
+    //}
 
-        };
-        return View(model);
-    }
-    [HttpPost]
-    public async Task<IActionResult> UpdateExpert(UpdateCustomerViewModel model, CancellationToken cancellationToken)
-    {
-        if (!ModelState.IsValid)
-            return View(model);
 
-        var user = await _userManager.FindByEmailAsync(model.Email);
-        if (user == null)
-            return NotFound();             ////// taghir bede
+    //public async Task<IActionResult> ActiveExpert(int userId, CancellationToken cancellationToken)
+    //{
+    //    var Flag = await _expertAppService.ActiveExpertAsync(userId, cancellationToken);
+    //    if (!Flag)
+    //    {
+    //        TempData["ExpertNotFound"] = "مشتری یافت نشد";
+    //        return RedirectToAction("CustomerList");
+    //    }
 
-        user.UserName = model.Email;
-        user.Email = model.Email;
-        user.FirstName = model.FirstName;
-        user.LastName = model.LastName;
+    //    TempData["DeleteResult"] = "مشتری با موفقیت فعال گردید ";
+    //    return RedirectToAction("ExpertList");
+    //}
 
-        var result = await _userManager.UpdateAsync(user);
-        if (!result.Succeeded)
-        {
-            foreach (var error in result.Errors)
-            {
-                ModelState.AddModelError("", error.Description);
-            }
-            return View(model);
-        }
 
-        return RedirectToAction("ExpertList", "Admin");
+    //public async Task<IActionResult> UpdateExpert(int userId, CancellationToken cancellationToken)
+    //{
+    //    var customer = await _expertAppService.GetExpertInfoByIdAsync(userId, cancellationToken);
+    //    if (customer == null)
+    //        return NotFound();         /////////// taghir bede
 
-    }
+    //    var model = new UpdateCustomerViewModel
+    //    {
+    //        Id = customer.Id,
+    //        Email = customer.User.Email,
+    //        FirstName = customer.User.FirstName,
+    //        LastName = customer.User.LastName
+
+    //    };
+    //    return View(model);
+    //}
+    //[HttpPost]
+    //public async Task<IActionResult> UpdateExpert(UpdateCustomerViewModel model, CancellationToken cancellationToken)
+    //{
+    //    if (!ModelState.IsValid)
+    //        return View(model);
+
+    //    var user = await _userManager.FindByEmailAsync(model.Email);
+    //    if (user == null)
+    //        return NotFound();             ////// taghir bede
+
+    //    user.UserName = model.Email;
+    //    user.Email = model.Email;
+    //    user.FirstName = model.FirstName;
+    //    user.LastName = model.LastName;
+
+    //    var result = await _userManager.UpdateAsync(user);
+    //    if (!result.Succeeded)
+    //    {
+    //        foreach (var error in result.Errors)
+    //        {
+    //            ModelState.AddModelError("", error.Description);
+    //        }
+    //        return View(model);
+    //    }
+
+    //    return RedirectToAction("ExpertList", "Admin");
+
+    //}
 
     #endregion
 
     #region Request
 
     //----------Request----------//
-    public async  Task<IActionResult> RequestList(CancellationToken cancellationToken)
-    {
-        var requests = await _requestAppService.GetRequestsInfo(cancellationToken);
+    //public async  Task<IActionResult> RequestList(CancellationToken cancellationToken)
+    //{
+    //    var requests = await _requestAppService.GetRequestsInfo(cancellationToken);
 
-        return View(requests);
-    }
+    //    return View(requests);
+    //}
 
-    public async Task<IActionResult> RequestsSuggestions(int requestId, CancellationToken cancellationToken)
-    {
-      var suggestions = await _suggestionAppService.GetRequestSuggestions(requestId, cancellationToken);
+    //public async Task<IActionResult> RequestsSuggestions(int requestId, CancellationToken cancellationToken)
+    //{
+    //  var suggestions = await _suggestionAppService.GetRequestSuggestions(requestId, cancellationToken);
 
-        return View(suggestions);
-    }
+    //    return View(suggestions);
+    //}
 
-    public async Task<IActionResult> ChangeStatus(int requestId,StatusEnum Statusenum, CancellationToken cancellationToken)
-    {
-        bool flag = await _requestAppService.ChangeStatus(requestId, Statusenum, cancellationToken);
+    //public async Task<IActionResult> ChangeStatus(int requestId,StatusEnum Statusenum, CancellationToken cancellationToken)
+    //{
+    //    bool flag = await _requestAppService.ChangeStatus(requestId, Statusenum, cancellationToken);
 
-        if (flag)
-        {
-            ViewBag.StatusMessage = "وضعیت سفارش با موفقیت تغییر یافت";
-            return RedirectToAction("RequestList");
-        }
+    //    if (flag)
+    //    {
+    //        ViewBag.StatusMessage = "وضعیت سفارش با موفقیت تغییر یافت";
+    //        return RedirectToAction("RequestList");
+    //    }
 
-        ViewBag.StatusMessageFaild = "تغییر وضعیت صورت نگرفت";
-        return RedirectToAction("RequestList");
+    //    ViewBag.StatusMessageFaild = "تغییر وضعیت صورت نگرفت";
+    //    return RedirectToAction("RequestList");
 
-    }
+    //}
 
     #endregion
 

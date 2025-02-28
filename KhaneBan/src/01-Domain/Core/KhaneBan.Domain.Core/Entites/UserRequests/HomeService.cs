@@ -17,7 +17,7 @@ namespace KhaneBan.Domain.Core.Entites.UserRequests
         public string Title { get; set; }
         public int SubCategoryId { get; set; }
         public int VisitCount { get; set; }
-        public string? ImagePath { get; set; }
+        public string? PicturePath { get; set; }
         public bool IsDeleted { get; set; } = false;
         public DateTime RegisterAt { get; set; } = DateTime.Now;
         public double BasePrice { get; set; }

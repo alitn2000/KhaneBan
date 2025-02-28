@@ -13,7 +13,7 @@ public class Category
     public int Id { get; set; }
     public string Title { get; set; }
     public bool IsDeleted { get; set; } = false;
-
+    public string? PicturePath { get; set; }
     public DateTime RegisterAt { get; set; } = DateTime.Now;
 
     #endregion Properties

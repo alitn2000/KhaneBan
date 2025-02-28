@@ -2,6 +2,7 @@
 using KhaneBan.Domain.Core.Contracts.Service;
 using KhaneBan.Domain.Core.Entites.User;
 using KhaneBan.Domain.Services;
+using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -40,4 +41,9 @@ public class ExpertAppService : IExpertAppService
     public async Task<bool> ActiveExpertAsync(int userId, CancellationToken cancellationToken)
         => await _expertService.ActiveExpertAsync(userId, cancellationToken);
 
+    public Task<IdentityResult> RegisterAsync(User user, string pass)
+        => _expertService.RegisterAsync(user, pass);
+
+    public Task<IdentityResult> UpdateAsync(User user)
+        => _expertService.UpdateAsync(user);
 }

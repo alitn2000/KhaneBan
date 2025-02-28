@@ -1,0 +1,53 @@
+﻿@model UpdateCustomerViewModel
+
+
+<div class="container px-5 my-5">
+	<form asp-area="Admin" asp-controller="Expert" method="post" asp-action="UpdateExpert" enctype="multipart/form-data">
+
+
+		<div class="mb-3 row">
+			<label asp-for="FirstName" class="col-sm-3 col-form-label text-end">نام</label>
+			<div class="col-sm-9">
+				<input class="form-control" asp-for="FirstName" />
+				<span class="text-danger" asp-validation-for="FirstName"></span>
+			</div>
+		</div>
+
+		<div class="mb-3 row">
+			<label asp-for="LastName" class="col-sm-3 col-form-label text-end">نام خانوادگی</label>
+			<div class="col-sm-9">
+				<input class="form-control" asp-for="LastName" />
+				<span class="text-danger" asp-validation-for="LastName"></span>
+			</div>
+		</div>
+
+	
+		<div class="mb-3 row">
+			<label asp-for="Email" class="col-sm-3 col-form-label text-end">ایمیل</label>
+			<div class="col-sm-9">
+				<input class="form-control" asp-for="Email" />
+				<span class="text-danger" asp-validation-for="Email"></span>
+			</div>
+		</div>
+
+
+	
+		
+
+		<div class="d-none" id="submitErrorMessage">
+			<div class="text-center text-danger mb-3">Error sending message!</div>
+		</div>
+
+		<div class="d-grid">
+			<button class="btn btn-primary btn-lg" id="submitButton" type="submit">ثبت نام</button>
+		</div>
+	</form>
+</div>
+
+@section Scripts
+{
+    <partial name="_validationScriptsPartial" />
+}
+
+
+

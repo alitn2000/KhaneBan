@@ -4,6 +4,7 @@ using KhaneBan.Domain.Core.Entites.UserRequests;
 using KhaneBan.Domain.Core.Enums;
 using KhaneBan.InfraStructure.EfCore.Common;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,10 +17,12 @@ namespace KhaneBan.InfraStructure.EfCore.Repositories;
 public class SuggestionRepository : ISuggestionRepository
 {
     private readonly AppDbContext _appDbContext;
+    private readonly ILogger<SuggestionRepository> _logger;
 
-    public SuggestionRepository(AppDbContext appDbContext)
+    public SuggestionRepository(AppDbContext appDbContext, ILogger<SuggestionRepository> logger)
     {
         _appDbContext = appDbContext;
+        _logger = logger;
     }
 
     public async Task<List<Suggestion>?> GetSuggestionesAsync(CancellationToken cancellationToken)
@@ -34,7 +37,7 @@ public class SuggestionRepository : ISuggestionRepository
     public async Task<List<Suggestion>?> GetRequestSuggestions(int requestId, CancellationToken cancellationToken)
         => await _appDbContext.Suggestions
         .Include(c => c.Request)
-        .Include( c => c.Expert)                                        ////////// dorostish barresi shavad
+        .Include(c => c.Expert)                                        ////////// dorostish barresi shavad
         .ThenInclude(c => c.User)
         .Where(r => r.Request.Id == requestId)
         .ToListAsync(cancellationToken);
@@ -90,13 +93,25 @@ public class SuggestionRepository : ISuggestionRepository
 
     public async Task<bool> ChangeStatus(StatusEnum status, int suggestionId, CancellationToken cancellationToken)
     {
-        var existSuggestion =await _appDbContext.Suggestions.FirstOrDefaultAsync(s => s.Id == suggestionId);
-        if (existSuggestion == null)
-            return false;
-        existSuggestion.SuggestionStatus = status;
+        try
+        {
+            var existSuggestion = await _appDbContext.Suggestions.FirstOrDefaultAsync(s => s.Id == suggestionId);
+            if (existSuggestion == null)
+                return false;
+            existSuggestion.SuggestionStatus = status;
 
-        await _appDbContext.SaveChangesAsync(cancellationToken);
-        return true;
+            await _appDbContext.SaveChangesAsync(cancellationToken);
+            _logger.LogInformation(" ChangeStatus request Succesfully");
+            return true;
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError("Error in suggestion repository=======================>>>>>>>>>>>{ErrorMessage}", ex.Message);
+
+            return false;
+        }
+
+
     }
 
     public async Task<bool> CreateAsync(Suggestion suggestion, CancellationToken cancellationToken)
@@ -105,13 +120,16 @@ public class SuggestionRepository : ISuggestionRepository
         {
             await _appDbContext.Suggestions.AddAsync(suggestion, cancellationToken);
             await _appDbContext.SaveChangesAsync(cancellationToken);
+
+            _logger.LogInformation(" create request Succesfully");
             return true;
         }
-        catch
+        catch (Exception ex)
         {
+            _logger.LogError("Error in request repository=======================>>>>>>>>>>>{ErrorMessage}", ex.Message);
             return false;
         }
-       
+
     }
 
     public async Task<bool> DeleteAsync(Suggestion suggestion, CancellationToken cancellationToken)
@@ -120,22 +138,37 @@ public class SuggestionRepository : ISuggestionRepository
         {
             _appDbContext.Suggestions.Remove(suggestion);
             await _appDbContext.SaveChangesAsync(cancellationToken);
+
+            _logger.LogInformation(" delete request Succesfully");
             return true;
         }
-        catch
+        catch (Exception ex)
         {
+            _logger.LogError("Error in request repository=======================>>>>>>>>>>>{ErrorMessage}", ex.Message);
             return false;
         }
     }
 
     public async Task<bool> IsDelete(int suggestionId, CancellationToken cancellationToken)
     {
-        var existSuggestion = await _appDbContext.Suggestions.FirstOrDefaultAsync(r => r.Id == suggestionId, cancellationToken);
-        if (existSuggestion == null)
+        try
+        {
+            var existSuggestion = await _appDbContext.Suggestions.FirstOrDefaultAsync(r => r.Id == suggestionId, cancellationToken);
+            if (existSuggestion == null)
+                return false;
+            existSuggestion.IsDeleted = true;
+            await _appDbContext.SaveChangesAsync(cancellationToken);
+
+            _logger.LogInformation(" isdelete request Succesfully");
+            return true;
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError("Error in request repository=======================>>>>>>>>>>>{ErrorMessage}", ex.Message);
             return false;
-        existSuggestion.IsDeleted = true;
-        await _appDbContext.SaveChangesAsync(cancellationToken);
-        return true;
+        }
+
+
     }
     public async Task<bool> UpdateAsync(Suggestion suggestion, CancellationToken cancellationToken)
     {
@@ -145,22 +178,25 @@ public class SuggestionRepository : ISuggestionRepository
             var existSuggestion = await _appDbContext.Suggestions.FirstOrDefaultAsync(x => x.Id == suggestion.Id);
             if (existSuggestion == null)
                 return false;
-            
-                existSuggestion.RegisterDate = suggestion.RegisterDate;
-                existSuggestion.Description = suggestion.Description;
-                existSuggestion.StartDate = suggestion.StartDate;
-                existSuggestion.Price = suggestion.Price;
-                existSuggestion.RequestId = suggestion.RequestId;
 
-                await _appDbContext.SaveChangesAsync(cancellationToken);
-            return true;
+            existSuggestion.RegisterDate = suggestion.RegisterDate;
+            existSuggestion.Description = suggestion.Description;
+            existSuggestion.StartDate = suggestion.StartDate;
+            existSuggestion.Price = suggestion.Price;
+            existSuggestion.RequestId = suggestion.RequestId;
+
+            await _appDbContext.SaveChangesAsync(cancellationToken);
             
+            _logger.LogInformation(" update request Succesfully");
+            return true;
+
         }
-        catch
+        catch(Exception ex)
         {
-            throw new Exception("Logic Error");
+            _logger.LogError("Error in request repository=======================>>>>>>>>>>>{ErrorMessage}", ex.Message);
+            return false;
         }
-       
+
     }
 
 }

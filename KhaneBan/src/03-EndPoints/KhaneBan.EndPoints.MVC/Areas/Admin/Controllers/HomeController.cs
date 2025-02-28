@@ -4,8 +4,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace KhaneBan.EndPoints.MVC.Areas.Admin.Controllers;
 
-//[Authorize]
+
 [Area("Admin")]
+[Authorize]
 public class HomeController : Controller
 {
     private readonly ICustomerAppService _customerAppService;

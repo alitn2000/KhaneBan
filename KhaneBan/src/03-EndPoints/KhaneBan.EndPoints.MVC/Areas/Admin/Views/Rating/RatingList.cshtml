@@ -1,0 +1,85 @@
+﻿@using KhaneBan.Domain.Core.Entites.UserRequests
+
+@model List<Rating>
+
+
+<section class="content contact">
+	<div class="body_scroll">
+		<div class="block-header">
+			<div class="row">
+				<div class="col-lg-7 col-md-6 col-sm-12">
+					<h2>مخاطبین</h2>
+					<ul class="breadcrumb">
+						<li class="breadcrumb-item"><a href="index.html"><i class="zmdi zmdi-home"></i> آئرو</a></li>
+						<li class="breadcrumb-item"><a href="javascript:void(0);">برنامه</a></li>
+						<li class="breadcrumb-item active">نظرات</li>
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row clearfix">
+				<div class="col-lg-12">
+					<div class="card">
+						<div class="table-responsive">
+							<table class="table table-hover mb-0 c_list c_table">
+									<thead>
+										<tr>
+											<th data-breakpoints="xs">شناسه پیشنهاد</th>
+											<th data-breakpoints="xs sm md">کارشناس</th>
+											<th data-breakpoints="xs sm md">توضیحات</th>
+											<th data-breakpoints="xs">امتیاز</th>
+											<th data-breakpoints="xs">عملیات</th>
+											
+										</tr>
+									</thead>
+									<tbody>
+										@if (Model != null && Model.Any())
+										{
+											@foreach (var rate in Model)
+											{
+												<tr>
+													<td>
+														<span><i class="mr-2"></i>@rate.Id</span>
+													</td>
+
+													<td>
+														<span>@($"{rate.Expert.User.FirstName} {rate.Expert.User.LastName}")</span>
+													</td>
+													<td>
+														<span>@rate.Comment</span>
+													</td>
+													<td>
+														<span>@rate.Rate</span>
+													</td>
+													<td>
+														<form asp-area="Admin" asp-controller="Rating" method="post" asp-action="UpdateStatus">
+															<input type="hidden" name="ratingId" value="@rate.Id" />
+															<button type="submit" name="newStatus" value=true class="btn btn-success btn-sm">قبول</button>
+															<button type="submit" name="newStatus" value=false class="btn btn-danger btn-sm">رد</button>
+														</form>
+													</td>
+												</tr>
+											}
+										}
+										else
+										{
+											<tr>
+												<td colspan="6" class="text-center">هیچ پیشنهادی ثبت نشده</td>
+											</tr>
+										}
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+@if (TempData["UpdateStatus"] != null)
+{
+	<div class="alert alert-info">@TempData["UpdateStatus"]</div>
+}

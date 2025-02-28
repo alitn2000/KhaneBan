@@ -1,0 +1,87 @@
+﻿@using KhaneBan.Domain.Core.Entites.UserRequests
+@model List<SubCategory>
+
+@{
+    ViewData["Title"] = "مدیریت زیردسته‌ها";
+}
+
+<div class="container mt-4">
+    <h2 class="text-center mb-4">مدیریت زیردسته‌ها</h2>
+    <a asp-action="Create" class="btn btn-success mb-3">افزودن زیردسته جدید</a>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>شناسه</th>
+                <th>نام زیردسته</th>
+                <th>دسته‌بندی</th>
+                <th>تصویر</th>
+                <th>وضعیت</th>
+                <th>عملیات</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var subCategory in Model)
+            {
+                <tr>
+                    <td>@subCategory.Id</td>
+                    <td>@subCategory.Title</td>
+                    <td>@subCategory.Category.Title</td>
+                    <td>
+                        @if (!string.IsNullOrEmpty(subCategory.PicturePath))
+                        {
+                            <img src="@subCategory.PicturePath" class="avatar w30" alt="SubCategory Image">
+                        }
+                        else
+                        {
+                            <p>بدون تصویر </p>
+                        }
+                    </td>
+                    <td>
+                        @if (!subCategory.IsDeleted)
+                        {
+                            <svg color="green" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+                                <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0" />
+                                <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z" />
+                            </svg>
+                        }
+                        else
+                        {
+                            <svg color="red" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                            </svg>
+                        }
+
+                    </td>
+
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@subCategory.Id" class="btn btn-warning  ">
+                            <i class="zmdi zmdi-edit"></i>
+                        </a>
+                        @if (!subCategory.IsDeleted)
+                        {
+                            <a class="btn btn-danger" asp-area="Admin" asp-controller="SubCategory" asp-action="Delete" asp-route-id=@subCategory.Id>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                                    <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z" />
+                                    <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z" />
+                                </svg>
+                            </a>
+                        }
+                        else
+                        {
+                            <a class="btn btn-success" asp-area="Admin" asp-controller="SubCategory" asp-action="Active" asp-route-id=@subCategory.Id>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-check-fill" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M15.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0" />
+                                    <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                                </svg>
+                            </a>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

@@ -3,16 +3,19 @@ using KhaneBan.Domain.Core.Entites.UserRequests;
 using KhaneBan.InfraStructure.EfCore.Common;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking.Internal;
+using Microsoft.Extensions.Logging;
 
 namespace KhaneBan.InfraStructure.EfCore.Repositories;
 
 public class RatingRepository : IRatingRepository
 {
     private readonly AppDbContext _appDbContext;
+    private readonly ILogger<RatingRepository> _logger;
 
-    public RatingRepository(AppDbContext appDbContext)
+    public RatingRepository(AppDbContext appDbContext, ILogger<RatingRepository> logger)
     {
         _appDbContext = appDbContext;
+        _logger = logger;
     }
 
 
@@ -50,12 +53,14 @@ public class RatingRepository : IRatingRepository
             existingReview.Rate = rate;
 
             await _appDbContext.SaveChangesAsync(cancellationToken);
+            _logger.LogInformation(" set rating Succesfully");
             return true;
         }
 
-        catch
+        catch (Exception ex)
         {
-            throw new Exception("Logic error");
+            _logger.LogError("Error in rating repository=======================>>>>>>>>>>>{ErrorMessage}", ex.Message);
+            return false;
         }
 
 
@@ -76,13 +81,16 @@ public class RatingRepository : IRatingRepository
             existRating.IsAccepted = true;
 
             await _appDbContext.SaveChangesAsync(cancellationToken);
+            _logger.LogInformation(" accept  rating Succesfully");
             return true;
         }
-        catch
+        catch (Exception ex)
         {
-            throw new Exception("Logic Error");
+            _logger.LogError("Error in rating repository=======================>>>>>>>>>>>{ErrorMessage}", ex.Message);
+            return false;
+
         }
-       
+
     }
 
     public async Task<bool> Reject(int id, CancellationToken cancellationToken)
@@ -97,11 +105,13 @@ public class RatingRepository : IRatingRepository
             existingreview.IsDeleted = true;
 
             await _appDbContext.SaveChangesAsync(cancellationToken);
+            _logger.LogInformation(" reject rating Succesfully");
             return true;
         }
-        catch
+        catch (Exception ex)
         {
-            throw new Exception("Logic error");
+            _logger.LogError("Error in rating repository=======================>>>>>>>>>>>{ErrorMessage}", ex.Message);
+            return false;
         }
 
 
@@ -113,10 +123,13 @@ public class RatingRepository : IRatingRepository
         {
             await _appDbContext.Ratings.AddAsync(rating, cancellationToken);
             await _appDbContext.SaveChangesAsync(cancellationToken);
+            _logger.LogInformation(" create rating Succesfully");
             return true;
         }
-        catch
+        catch (Exception ex)
         {
+            _logger.LogError("Error in rating repository=======================>>>>>>>>>>>{ErrorMessage}", ex.Message);
+
             return false;
         }
     }
@@ -127,21 +140,34 @@ public class RatingRepository : IRatingRepository
         {
             _appDbContext.Ratings.Remove(rating);
             await _appDbContext.SaveChangesAsync(cancellationToken);
+            _logger.LogInformation(" delete rating Succesfully");
             return true;
         }
-        catch
+        catch (Exception ex)
         {
+            _logger.LogError("Error in rating repository=======================>>>>>>>>>>>{ErrorMessage}", ex.Message);
             return false;
         }
     }
     public async Task<bool> IsDelete(int ratingId, CancellationToken cancellationToken)
     {
-        var existRating = await _appDbContext.Ratings.FirstOrDefaultAsync(r => r.Id == ratingId, cancellationToken);
-        if (existRating == null)
-            return false;
-        existRating.IsDeleted = true;
-        await _appDbContext.SaveChangesAsync(cancellationToken);
-        return true;
+        try
+        {
+            var existRating = await _appDbContext.Ratings.FirstOrDefaultAsync(r => r.Id == ratingId, cancellationToken);
+            if (existRating == null)
+                return false;
+            existRating.IsDeleted = true;
+            await _appDbContext.SaveChangesAsync(cancellationToken);
+            _logger.LogInformation(" isdeleted rating Succesfully");
+            return true;
+        }
+        catch(Exception ex)
+        {
+            _logger.LogError("Error in rating repository=======================>>>>>>>>>>>{ErrorMessage}", ex.Message);
+            return false ;
+        }
+
+
     }
 
     public async Task<bool> UpdateAsync(Rating rating, CancellationToken cancellationToken)
@@ -157,10 +183,12 @@ public class RatingRepository : IRatingRepository
             existRating.IsAccepted = rating.IsAccepted;
 
             await _appDbContext.SaveChangesAsync(cancellationToken);
+            _logger.LogInformation(" update rating Succesfully");
             return true;
         }
-        catch
+        catch (Exception ex)
         {
+            _logger.LogError("Error in rating repository=======================>>>>>>>>>>>{ErrorMessage}", ex.Message);
             return false;
         }
 

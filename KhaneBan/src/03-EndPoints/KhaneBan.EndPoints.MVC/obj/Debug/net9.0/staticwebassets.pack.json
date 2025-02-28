@@ -2,7 +2,7 @@
   "Files": [
     {
       "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\KhaneBan.EndPoints.MVC.bundle.scp.css",
-      "PackagePath": "staticwebassets\\KhaneBan.EndPoints.MVC.oknjd5rshm.bundle.scp.css"
+      "PackagePath": "staticwebassets\\KhaneBan.EndPoints.MVC.55qbtw8tev.bundle.scp.css"
     },
     {
       "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\bundles\\c3.bundle.js",
@@ -55,6 +55,10 @@
     {
       "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\bundles\\vendorscripts.bundle.js",
       "PackagePath": "staticwebassets\\AdminTemplate\\bundles\\vendorscripts.bundle.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\css\\all.min.css",
+      "PackagePath": "staticwebassets\\AdminTemplate\\css\\all.min.css"
     },
     {
       "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\css\\style.min.css",
@@ -871,6 +875,1702 @@
     {
       "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\AdminTemplate\\plugins\\sweetalert\\sweetalert.min.js",
       "PackagePath": "staticwebassets\\AdminTemplate\\plugins\\sweetalert\\sweetalert.min.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\Images\\Categories\\133838a6-f726-4deb-ac85-360a5dec2c09Screenshot 2023-12-08 211011.png",
+      "PackagePath": "staticwebassets\\Images\\Categories\\133838a6-f726-4deb-ac85-360a5dec2c09Screenshot 2023-12-08 211011.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\Images\\Categories\\1a45a939-5684-4ac7-8ff3-3f3569ea31b1Screenshot 2023-12-08 211011.png",
+      "PackagePath": "staticwebassets\\Images\\Categories\\1a45a939-5684-4ac7-8ff3-3f3569ea31b1Screenshot 2023-12-08 211011.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\Images\\Categories\\1aa22dd3-8621-40c4-aede-7ef9bd2190b7Screenshot 2023-12-08 211011.png",
+      "PackagePath": "staticwebassets\\Images\\Categories\\1aa22dd3-8621-40c4-aede-7ef9bd2190b7Screenshot 2023-12-08 211011.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\Images\\Categories\\4a179ac8-6a23-47c1-af0c-a4fb2154f6ebScreenshot 2023-12-08 201958.png",
+      "PackagePath": "staticwebassets\\Images\\Categories\\4a179ac8-6a23-47c1-af0c-a4fb2154f6ebScreenshot 2023-12-08 201958.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\Images\\Categories\\8663d880-ef74-4cc2-b6f6-b3a280a9e397Screenshot 2023-12-08 205952.png",
+      "PackagePath": "staticwebassets\\Images\\Categories\\8663d880-ef74-4cc2-b6f6-b3a280a9e397Screenshot 2023-12-08 205952.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\Images\\Categories\\bddf2332-da9e-439d-b774-09a6ef67221dScreenshot 2024-09-16 205922.png",
+      "PackagePath": "staticwebassets\\Images\\Categories\\bddf2332-da9e-439d-b774-09a6ef67221dScreenshot 2024-09-16 205922.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\Images\\Categories\\c7dd0981-9cd6-4681-a218-afc50d68016cScreenshot 2023-12-08 195459.png",
+      "PackagePath": "staticwebassets\\Images\\Categories\\c7dd0981-9cd6-4681-a218-afc50d68016cScreenshot 2023-12-08 195459.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\Images\\Customers\\4dbb39e3-f6c5-4b9e-8d8a-79bcdebed567Screenshot 2023-12-08 205952.png",
+      "PackagePath": "staticwebassets\\Images\\Customers\\4dbb39e3-f6c5-4b9e-8d8a-79bcdebed567Screenshot 2023-12-08 205952.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\Images\\Customers\\9e2eb0a7-72b2-43d8-92ba-fa66882a93a5Screenshot 2023-12-08 205952.png",
+      "PackagePath": "staticwebassets\\Images\\Customers\\9e2eb0a7-72b2-43d8-92ba-fa66882a93a5Screenshot 2023-12-08 205952.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\Images\\Customers\\d3c96939-dca7-406b-964d-21d536bf602aScreenshot 2024-12-13 164301.png",
+      "PackagePath": "staticwebassets\\Images\\Customers\\d3c96939-dca7-406b-964d-21d536bf602aScreenshot 2024-12-13 164301.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\Images\\Customers\\e51f83d6-848d-4121-9df9-446c61f89fc3Screenshot 2023-12-08 210542.png",
+      "PackagePath": "staticwebassets\\Images\\Customers\\e51f83d6-848d-4121-9df9-446c61f89fc3Screenshot 2023-12-08 210542.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\Images\\Experts\\36de391d-8827-4d5d-a02e-b123b463425aScreenshot 2023-12-16 160217.png",
+      "PackagePath": "staticwebassets\\Images\\Experts\\36de391d-8827-4d5d-a02e-b123b463425aScreenshot 2023-12-16 160217.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\Images\\Experts\\377a7f72-843d-4c2b-9c0f-74d46fcb64baScreenshot 2023-12-08 201958.png",
+      "PackagePath": "staticwebassets\\Images\\Experts\\377a7f72-843d-4c2b-9c0f-74d46fcb64baScreenshot 2023-12-08 201958.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\Images\\Experts\\c2032201-190d-4130-ad5b-aabb1b1918dfScreenshot 2023-12-08 205952.png",
+      "PackagePath": "staticwebassets\\Images\\Experts\\c2032201-190d-4130-ad5b-aabb1b1918dfScreenshot 2023-12-08 205952.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\Images\\Experts\\f9d24ad8-7d9d-4ba5-8d43-86e974bb5be0Screenshot 2023-12-08 232520.png",
+      "PackagePath": "staticwebassets\\Images\\Experts\\f9d24ad8-7d9d-4ba5-8d43-86e974bb5be0Screenshot 2023-12-08 232520.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\Images\\HomeServices\\ef8e8942-12d0-41e0-b662-ce03471898c4Screenshot 2023-12-08 233135.png",
+      "PackagePath": "staticwebassets\\Images\\HomeServices\\ef8e8942-12d0-41e0-b662-ce03471898c4Screenshot 2023-12-08 233135.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\Images\\HomeServices\\fde4fb62-9867-4cf1-8ad3-e634bd53740bScreenshot 2023-12-08 201958.png",
+      "PackagePath": "staticwebassets\\Images\\HomeServices\\fde4fb62-9867-4cf1-8ad3-e634bd53740bScreenshot 2023-12-08 201958.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\Images\\SubCategories\\2e4409f8-64c3-4951-b2f7-f9e6599e6cc0Screenshot 2023-12-08 205952.png",
+      "PackagePath": "staticwebassets\\Images\\SubCategories\\2e4409f8-64c3-4951-b2f7-f9e6599e6cc0Screenshot 2023-12-08 205952.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\Images\\SubCategories\\a0351baa-17e2-4dd6-978e-56d7e3e1f2feScreenshot 2023-12-08 205952.png",
+      "PackagePath": "staticwebassets\\Images\\SubCategories\\a0351baa-17e2-4dd6-978e-56d7e3e1f2feScreenshot 2023-12-08 205952.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\Images\\SubCategories\\ec52500c-bdf6-431d-819d-95fb2a89ec5fScreenshot 2023-11-03 205001.png",
+      "PackagePath": "staticwebassets\\Images\\SubCategories\\ec52500c-bdf6-431d-819d-95fb2a89ec5fScreenshot 2023-11-03 205001.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\Images\\SubCategories\\f8115cbc-0428-4f0c-98e7-7ecb95473ac0Screenshot 2023-12-08 195459.png",
+      "PackagePath": "staticwebassets\\Images\\SubCategories\\f8115cbc-0428-4f0c-98e7-7ecb95473ac0Screenshot 2023-12-08 195459.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\cdnjs.cloudflare.com\\ajax\\libs\\font-awesome\\A5.14.0\\css\\all.min.css",
+      "PackagePath": "staticwebassets\\UsersTemplate\\cdnjs.cloudflare.com\\ajax\\libs\\font-awesome\\A5.14.0\\css\\all.min.css"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\cdnjs.cloudflare.com\\ajax\\libs\\popper.js\\1.12.9\\umd\\popper.min.js",
+      "PackagePath": "staticwebassets\\UsersTemplate\\cdnjs.cloudflare.com\\ajax\\libs\\popper.js\\1.12.9\\umd\\popper.min.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\404.css",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\404.css"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\about.css",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\about.css"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\ad-post.css",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\ad-post.css"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\blog-details.css",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\blog-details.css"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\blog-list.css",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\blog-list.css"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\bookmark.css",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\bookmark.css"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\category-details.css",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\category-details.css"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\category-list.css",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\category-list.css"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\cities.css",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\cities.css"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\compare.css",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\compare.css"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\contact.css",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\contact.css"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\dashboard.css",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\dashboard.css"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\anjoman\\eot\\Anjoman-Bold.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\anjoman\\eot\\Anjoman-Bold.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\anjoman\\eot\\Anjoman-Light.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\anjoman\\eot\\Anjoman-Light.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\anjoman\\eot\\Anjoman-Regular.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\anjoman\\eot\\Anjoman-Regular.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\anjoman\\ttf\\Anjoman-Bold.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\anjoman\\ttf\\Anjoman-Bold.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\anjoman\\ttf\\Anjoman-Light.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\anjoman\\ttf\\Anjoman-Light.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\anjoman\\ttf\\Anjoman-Regular.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\anjoman\\ttf\\Anjoman-Regular.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\anjoman\\woff2\\Anjoman-Bold.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\anjoman\\woff2\\Anjoman-Bold.woff2"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\anjoman\\woff2\\Anjoman-Light.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\anjoman\\woff2\\Anjoman-Light.woff2"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\anjoman\\woff2\\Anjoman-Regular.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\anjoman\\woff2\\Anjoman-Regular.woff2"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\anjoman\\woff\\Anjoman-Bold.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\anjoman\\woff\\Anjoman-Bold.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\anjoman\\woff\\Anjoman-Light.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\anjoman\\woff\\Anjoman-Light.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\anjoman\\woff\\Anjoman-Regular.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\anjoman\\woff\\Anjoman-Regular.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\aviny\\ttf\\aviny.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\aviny\\ttf\\aviny.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-black.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-black.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-blackitalic.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-blackitalic.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-bold.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-bold.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-bolditalic.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-bolditalic.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-demibold.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-demibold.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-demibolditalic.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-demibolditalic.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-extrabold.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-extrabold.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-extrabolditalic.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-extrabolditalic.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-extralight.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-extralight.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-extralightitalic.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-extralightitalic.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-light.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-light.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-lightitalic.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-lightitalic.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-medium.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-medium.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-mediumitalic.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-mediumitalic.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-regular.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-regular.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-regularitalic.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-regularitalic.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-thin.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-thin.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-thinitalic.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-thinitalic.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-ultrabold.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-ultrabold.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-ultrabolditalic.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\eot\\dana-ultrabolditalic.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-black.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-black.woff2"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-blackitalic.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-blackitalic.woff2"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-bold.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-bold.woff2"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-bolditalic.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-bolditalic.woff2"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-demibold.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-demibold.woff2"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-demibolditalic.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-demibolditalic.woff2"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-extrabold.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-extrabold.woff2"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-extrabolditalic.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-extrabolditalic.woff2"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-extralight.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-extralight.woff2"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-extralightitalic.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-extralightitalic.woff2"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-light.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-light.woff2"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-lightitalic.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-lightitalic.woff2"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-medium.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-medium.woff2"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-mediumitalic.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-mediumitalic.woff2"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-regular.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-regular.woff2"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-regularitalic.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-regularitalic.woff2"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-thin.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-thin.woff2"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-thinitalic.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-thinitalic.woff2"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-ultrabold.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-ultrabold.woff2"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-ultrabolditalic.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff2\\dana-ultrabolditalic.woff2"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-black.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-black.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-blackitalic.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-blackitalic.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-bold.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-bold.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-bolditalic.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-bolditalic.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-demibold.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-demibold.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-demibolditalic.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-demibolditalic.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-extrabold.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-extrabold.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-extrabolditalic.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-extrabolditalic.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-extralight.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-extralight.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-extralightitalic.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-extralightitalic.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-light.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-light.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-lightitalic.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-lightitalic.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-medium.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-medium.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-mediumitalic.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-mediumitalic.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-regular.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-regular.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-regularitalic.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-regularitalic.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-thin.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-thin.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-thinitalic.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-thinitalic.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-ultrabold.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-ultrabold.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-ultrabolditalic.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dana\\woff\\dana-ultrabolditalic.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dastnevis\\eot\\DastNevis.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dastnevis\\eot\\DastNevis.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dastnevis\\ttf\\DastNevis.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dastnevis\\ttf\\DastNevis.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\dastnevis\\woff\\DastNevis.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\dastnevis\\woff\\DastNevis.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\droidkufi\\DroidKufi-Regular.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\droidkufi\\DroidKufi-Regular.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\droidkufi\\DroidKufi-Regular.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\droidkufi\\DroidKufi-Regular.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\index.php",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\index.php"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransans\\eot\\IRANSansWeb.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransans\\eot\\IRANSansWeb.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransans\\eot\\IRANSansWeb_Black.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransans\\eot\\IRANSansWeb_Black.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransans\\eot\\IRANSansWeb_Bold.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransans\\eot\\IRANSansWeb_Bold.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransans\\eot\\IRANSansWeb_Light.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransans\\eot\\IRANSansWeb_Light.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransans\\eot\\IRANSansWeb_Medium.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransans\\eot\\IRANSansWeb_Medium.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransans\\eot\\IRANSansWeb_UltraLight.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransans\\eot\\IRANSansWeb_UltraLight.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransans\\ttf\\IRANSansWeb.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransans\\ttf\\IRANSansWeb.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransans\\ttf\\IRANSansWeb_Black.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransans\\ttf\\IRANSansWeb_Black.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransans\\ttf\\IRANSansWeb_Bold.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransans\\ttf\\IRANSansWeb_Bold.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransans\\ttf\\IRANSansWeb_Light.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransans\\ttf\\IRANSansWeb_Light.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransans\\ttf\\IRANSansWeb_Medium.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransans\\ttf\\IRANSansWeb_Medium.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransans\\ttf\\IRANSansWeb_UltraLight.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransans\\ttf\\IRANSansWeb_UltraLight.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransans\\woff2\\IRANSansWeb.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransans\\woff2\\IRANSansWeb.woff2"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransans\\woff2\\IRANSansWeb_Black.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransans\\woff2\\IRANSansWeb_Black.woff2"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransans\\woff2\\IRANSansWeb_Bold.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransans\\woff2\\IRANSansWeb_Bold.woff2"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransans\\woff2\\IRANSansWeb_Light.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransans\\woff2\\IRANSansWeb_Light.woff2"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransans\\woff2\\IRANSansWeb_Medium.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransans\\woff2\\IRANSansWeb_Medium.woff2"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransans\\woff2\\IRANSansWeb_UltraLight.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransans\\woff2\\IRANSansWeb_UltraLight.woff2"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransans\\woff\\IRANSansWeb.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransans\\woff\\IRANSansWeb.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransans\\woff\\IRANSansWeb_Black.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransans\\woff\\IRANSansWeb_Black.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransans\\woff\\IRANSansWeb_Bold.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransans\\woff\\IRANSansWeb_Bold.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransans\\woff\\IRANSansWeb_Light.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransans\\woff\\IRANSansWeb_Light.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransans\\woff\\IRANSansWeb_Medium.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransans\\woff\\IRANSansWeb_Medium.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransans\\woff\\IRANSansWeb_UltraLight.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransans\\woff\\IRANSansWeb_UltraLight.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansdn\\eot\\iransansdn.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansdn\\eot\\iransansdn.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansdn\\eot\\iransansdnbold.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansdn\\eot\\iransansdnbold.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansdn\\eot\\iransansdnlight.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansdn\\eot\\iransansdnlight.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansdn\\ttf\\iransansdn.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansdn\\ttf\\iransansdn.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansdn\\ttf\\iransansdnbold.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansdn\\ttf\\iransansdnbold.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansdn\\ttf\\iransansdnlight.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansdn\\ttf\\iransansdnlight.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansdn\\woff2\\iransansdn.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansdn\\woff2\\iransansdn.woff2"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansdn\\woff2\\iransansdnbold.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansdn\\woff2\\iransansdnbold.woff2"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansdn\\woff2\\iransansdnlight.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansdn\\woff2\\iransansdnlight.woff2"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansdn\\woff\\iransansdn.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansdn\\woff\\iransansdn.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansdn\\woff\\iransansdnbold.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansdn\\woff\\iransansdnbold.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansdn\\woff\\iransansdnlight.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansdn\\woff\\iransansdnlight.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\eot\\IRANSansWeb(FaNum).eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\eot\\IRANSansWeb(FaNum).eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\eot\\IRANSansWeb(FaNum)_Black.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\eot\\IRANSansWeb(FaNum)_Black.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\eot\\IRANSansWeb(FaNum)_Bold.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\eot\\IRANSansWeb(FaNum)_Bold.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\eot\\IRANSansWeb(FaNum)_Light.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\eot\\IRANSansWeb(FaNum)_Light.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\eot\\IRANSansWeb(FaNum)_Medium.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\eot\\IRANSansWeb(FaNum)_Medium.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\eot\\IRANSansWeb(FaNum)_UltraLight.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\eot\\IRANSansWeb(FaNum)_UltraLight.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\ttf\\IRANSansWeb(FaNum).ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\ttf\\IRANSansWeb(FaNum).ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\ttf\\IRANSansWeb(FaNum)_Black.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\ttf\\IRANSansWeb(FaNum)_Black.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\ttf\\IRANSansWeb(FaNum)_Bold.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\ttf\\IRANSansWeb(FaNum)_Bold.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\ttf\\IRANSansWeb(FaNum)_Light.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\ttf\\IRANSansWeb(FaNum)_Light.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\ttf\\IRANSansWeb(FaNum)_Medium.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\ttf\\IRANSansWeb(FaNum)_Medium.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\ttf\\IRANSansWeb(FaNum)_UltraLight.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\ttf\\IRANSansWeb(FaNum)_UltraLight.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\woff2\\IRANSansWeb(FaNum).woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\woff2\\IRANSansWeb(FaNum).woff2"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\woff2\\IRANSansWeb(FaNum)_Black.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\woff2\\IRANSansWeb(FaNum)_Black.woff2"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\woff2\\IRANSansWeb(FaNum)_Bold.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\woff2\\IRANSansWeb(FaNum)_Bold.woff2"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\woff2\\IRANSansWeb(FaNum)_Light.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\woff2\\IRANSansWeb(FaNum)_Light.woff2"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\woff2\\IRANSansWeb(FaNum)_Medium.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\woff2\\IRANSansWeb(FaNum)_Medium.woff2"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\woff2\\IRANSansWeb(FaNum)_UltraLight.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\woff2\\IRANSansWeb(FaNum)_UltraLight.woff2"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\woff\\IRANSansWeb(FaNum).woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\woff\\IRANSansWeb(FaNum).woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\woff\\IRANSansWeb(FaNum)_Black.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\woff\\IRANSansWeb(FaNum)_Black.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\woff\\IRANSansWeb(FaNum)_Bold.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\woff\\IRANSansWeb(FaNum)_Bold.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\woff\\IRANSansWeb(FaNum)_Light.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\woff\\IRANSansWeb(FaNum)_Light.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\woff\\IRANSansWeb(FaNum)_Medium.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\woff\\IRANSansWeb(FaNum)_Medium.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\woff\\IRANSansWeb(FaNum)_UltraLight.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iransansfanum\\woff\\IRANSansWeb(FaNum)_UltraLight.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\eot\\iranyekanwebblack.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\eot\\iranyekanwebblack.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\eot\\iranyekanwebbold.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\eot\\iranyekanwebbold.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\eot\\iranyekanwebextrablack.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\eot\\iranyekanwebextrablack.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\eot\\iranyekanwebextrabold.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\eot\\iranyekanwebextrabold.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\eot\\iranyekanweblight.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\eot\\iranyekanweblight.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\eot\\iranyekanwebmedium.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\eot\\iranyekanwebmedium.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\eot\\iranyekanwebregular.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\eot\\iranyekanwebregular.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\eot\\iranyekanwebthin.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\eot\\iranyekanwebthin.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\svg\\iranyekanwebblack.svg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\svg\\iranyekanwebblack.svg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\svg\\iranyekanwebbold.svg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\svg\\iranyekanwebbold.svg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\svg\\iranyekanwebextrablack.svg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\svg\\iranyekanwebextrablack.svg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\svg\\iranyekanwebextrabold.svg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\svg\\iranyekanwebextrabold.svg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\svg\\iranyekanweblight.svg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\svg\\iranyekanweblight.svg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\svg\\iranyekanwebmedium.svg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\svg\\iranyekanwebmedium.svg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\svg\\iranyekanwebregular.svg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\svg\\iranyekanwebregular.svg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\svg\\iranyekanwebthin.svg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\svg\\iranyekanwebthin.svg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\ttf\\iranyekanwebblack.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\ttf\\iranyekanwebblack.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\ttf\\iranyekanwebbold.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\ttf\\iranyekanwebbold.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\ttf\\iranyekanwebextrablack.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\ttf\\iranyekanwebextrablack.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\ttf\\iranyekanwebextrabold.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\ttf\\iranyekanwebextrabold.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\ttf\\iranyekanweblight.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\ttf\\iranyekanweblight.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\ttf\\iranyekanwebmedium.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\ttf\\iranyekanwebmedium.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\ttf\\iranyekanwebregular.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\ttf\\iranyekanwebregular.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\ttf\\iranyekanwebthin.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\ttf\\iranyekanwebthin.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\woff\\iranyekanwebblack.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\woff\\iranyekanwebblack.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\woff\\iranyekanwebbold.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\woff\\iranyekanwebbold.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\woff\\iranyekanwebextrablack.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\woff\\iranyekanwebextrablack.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\woff\\iranyekanwebextrabold.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\woff\\iranyekanwebextrabold.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\woff\\iranyekanweblight.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\woff\\iranyekanweblight.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\woff\\iranyekanwebmedium.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\woff\\iranyekanwebmedium.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\woff\\iranyekanwebregular.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\woff\\iranyekanwebregular.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\woff\\iranyekanwebthin.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekan\\woff\\iranyekanwebthin.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\eot\\iranyekanwebblackfanum.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\eot\\iranyekanwebblackfanum.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\eot\\iranyekanwebboldfanum.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\eot\\iranyekanwebboldfanum.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\eot\\iranyekanwebextrablackfanum.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\eot\\iranyekanwebextrablackfanum.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\eot\\iranyekanwebextraboldfanum.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\eot\\iranyekanwebextraboldfanum.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\eot\\iranyekanweblightfanum.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\eot\\iranyekanweblightfanum.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\eot\\iranyekanwebmediumfanum.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\eot\\iranyekanwebmediumfanum.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\eot\\iranyekanwebregularfanum.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\eot\\iranyekanwebregularfanum.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\eot\\iranyekanwebthinfanum.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\eot\\iranyekanwebthinfanum.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\svg\\iranyekanwebblackfanum.svg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\svg\\iranyekanwebblackfanum.svg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\svg\\iranyekanwebboldfanum.svg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\svg\\iranyekanwebboldfanum.svg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\svg\\iranyekanwebextrablackfanum.svg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\svg\\iranyekanwebextrablackfanum.svg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\svg\\iranyekanwebextraboldfanum.svg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\svg\\iranyekanwebextraboldfanum.svg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\svg\\iranyekanweblightfanum.svg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\svg\\iranyekanweblightfanum.svg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\svg\\iranyekanwebmediumfanum.svg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\svg\\iranyekanwebmediumfanum.svg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\svg\\iranyekanwebregularfanum.svg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\svg\\iranyekanwebregularfanum.svg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\svg\\iranyekanwebthinfanum.svg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\svg\\iranyekanwebthinfanum.svg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\ttf\\iranyekanwebblackfanum.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\ttf\\iranyekanwebblackfanum.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\ttf\\iranyekanwebboldfanum.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\ttf\\iranyekanwebboldfanum.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\ttf\\iranyekanwebextrablackfanum.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\ttf\\iranyekanwebextrablackfanum.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\ttf\\iranyekanwebextraboldfanum.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\ttf\\iranyekanwebextraboldfanum.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\ttf\\iranyekanweblightfanum.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\ttf\\iranyekanweblightfanum.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\ttf\\iranyekanwebmediumfanum.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\ttf\\iranyekanwebmediumfanum.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\ttf\\iranyekanwebregularfanum.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\ttf\\iranyekanwebregularfanum.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\ttf\\iranyekanwebthinfanum.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\ttf\\iranyekanwebthinfanum.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\woff\\iranyekanwebblackfanum.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\woff\\iranyekanwebblackfanum.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\woff\\iranyekanwebboldfanum.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\woff\\iranyekanwebboldfanum.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\woff\\iranyekanwebextrablackfanum.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\woff\\iranyekanwebextrablackfanum.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\woff\\iranyekanwebextraboldfanum.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\woff\\iranyekanwebextraboldfanum.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\woff\\iranyekanweblightfanum.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\woff\\iranyekanweblightfanum.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\woff\\iranyekanwebmediumfanum.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\woff\\iranyekanwebmediumfanum.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\woff\\iranyekanwebregularfanum.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\woff\\iranyekanwebregularfanum.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\woff\\iranyekanwebthinfanum.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\iranyekanfanum\\woff\\iranyekanwebthinfanum.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\koodak\\BKoodakBold.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\koodak\\BKoodakBold.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\koodak\\BKoodakBold.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\koodak\\BKoodakBold.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\nahid\\Nahid.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\nahid\\Nahid.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\nahid\\Nahid.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\nahid\\Nahid.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\nahid\\Nahid.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\nahid\\Nahid.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\nahid\\Nahid.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\nahid\\Nahid.woff2"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\palatino\\PalatinoRegular.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\palatino\\PalatinoRegular.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\palatino\\PalatinoRegular.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\palatino\\PalatinoRegular.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\sahel\\Sahel-Black.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\sahel\\Sahel-Black.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\sahel\\Sahel-Black.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\sahel\\Sahel-Black.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\sahel\\Sahel-Black.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\sahel\\Sahel-Black.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\sahel\\Sahel-Black.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\sahel\\Sahel-Black.woff2"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\sahel\\Sahel-Bold.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\sahel\\Sahel-Bold.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\sahel\\Sahel-Bold.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\sahel\\Sahel-Bold.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\sahel\\Sahel-Bold.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\sahel\\Sahel-Bold.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\sahel\\Sahel-Bold.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\sahel\\Sahel-Bold.woff2"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\sahel\\Sahel.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\sahel\\Sahel.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\sahel\\Sahel.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\sahel\\Sahel.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\sahel\\Sahel.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\sahel\\Sahel.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\sahel\\Sahel.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\sahel\\Sahel.woff2"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\samim\\Samim-Bold.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\samim\\Samim-Bold.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\samim\\Samim-Bold.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\samim\\Samim-Bold.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\samim\\Samim-Bold.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\samim\\Samim-Bold.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\samim\\Samim-Bold.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\samim\\Samim-Bold.woff2"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\samim\\Samim.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\samim\\Samim.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\samim\\Samim.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\samim\\Samim.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\samim\\Samim.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\samim\\Samim.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\samim\\Samim.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\samim\\Samim.woff2"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\shabnam\\Shabnam-Bold.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\shabnam\\Shabnam-Bold.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\shabnam\\Shabnam-Bold.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\shabnam\\Shabnam-Bold.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\shabnam\\Shabnam-Bold.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\shabnam\\Shabnam-Bold.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\shabnam\\Shabnam-Bold.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\shabnam\\Shabnam-Bold.woff2"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\shabnam\\Shabnam-Light.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\shabnam\\Shabnam-Light.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\shabnam\\Shabnam-Light.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\shabnam\\Shabnam-Light.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\shabnam\\Shabnam-Light.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\shabnam\\Shabnam-Light.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\shabnam\\Shabnam-Light.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\shabnam\\Shabnam-Light.woff2"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\shabnam\\Shabnam.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\shabnam\\Shabnam.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\shabnam\\Shabnam.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\shabnam\\Shabnam.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\shabnam\\Shabnam.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\shabnam\\Shabnam.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\shabnam\\Shabnam.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\shabnam\\Shabnam.woff2"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\tanha\\Tanha.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\tanha\\Tanha.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\tanha\\Tanha.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\tanha\\Tanha.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\tanha\\Tanha.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\tanha\\Tanha.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\tanha\\Tanha.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\tanha\\Tanha.woff2"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Bold.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Bold.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Bold.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Bold.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Bold.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Bold.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Bold.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Bold.woff2"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Light.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Light.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Light.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Light.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Light.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Light.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Light.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Light.woff2"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Medium.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Medium.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Medium.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Medium.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Medium.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Medium.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Medium.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Medium.woff2"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Thin.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Thin.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Thin.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Thin.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Thin.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Thin.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Thin.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir-Thin.woff2"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\fonts\\vazir\\Vazir.woff2"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\grid-details.css",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\grid-details.css"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\grid-list.css",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\grid-list.css"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\index.css",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\index.css"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\leftbar-details.css",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\leftbar-details.css"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\leftbar-list.css",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\leftbar-list.css"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\main.css",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\main.css"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\my-ads.css",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\my-ads.css"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\price.css",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\price.css"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\profile.css",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\profile.css"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\rightbar-details.css",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\rightbar-details.css"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\rightbar-list.css",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\rightbar-list.css"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\setting.css",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\setting.css"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\custom\\user-form.css",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\custom\\user-form.css"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\vendor\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\vendor\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\vendor\\images\\ui-icons_444444_256x240.html",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\vendor\\images\\ui-icons_444444_256x240.html"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\vendor\\images\\ui-icons_555555_256x240.html",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\vendor\\images\\ui-icons_555555_256x240.html"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\vendor\\images\\ui-icons_777620_256x240.html",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\vendor\\images\\ui-icons_777620_256x240.html"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\vendor\\images\\ui-icons_777777_256x240.html",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\vendor\\images\\ui-icons_777777_256x240.html"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\vendor\\images\\ui-icons_cc0000_256x240.html",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\vendor\\images\\ui-icons_cc0000_256x240.html"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\vendor\\images\\ui-icons_ffffff_256x240.html",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\vendor\\images\\ui-icons_ffffff_256x240.html"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\vendor\\jquery-ui.min.css",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\vendor\\jquery-ui.min.css"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\css\\vendor\\slick.min.css",
+      "PackagePath": "staticwebassets\\UsersTemplate\\css\\vendor\\slick.min.css"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\fonts\\flaticon\\Flaticon.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\fonts\\flaticon\\Flaticon.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\fonts\\flaticon\\Flaticon.svg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\fonts\\flaticon\\Flaticon.svg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\fonts\\flaticon\\Flaticon.ttf",
+      "PackagePath": "staticwebassets\\UsersTemplate\\fonts\\flaticon\\Flaticon.ttf"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\fonts\\flaticon\\Flaticon.woff",
+      "PackagePath": "staticwebassets\\UsersTemplate\\fonts\\flaticon\\Flaticon.woff"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\fonts\\flaticon\\Flaticon.woff2",
+      "PackagePath": "staticwebassets\\UsersTemplate\\fonts\\flaticon\\Flaticon.woff2"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\fonts\\flaticon\\Flaticond41d.eot",
+      "PackagePath": "staticwebassets\\UsersTemplate\\fonts\\flaticon\\Flaticond41d.eot"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\fonts\\flaticon\\flaticon.css",
+      "PackagePath": "staticwebassets\\UsersTemplate\\fonts\\flaticon\\flaticon.css"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\about\\01.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\about\\01.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\about\\02.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\about\\02.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\about\\03.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\about\\03.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\about\\04.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\about\\04.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\app-store.png",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\app-store.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\avatar\\01.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\avatar\\01.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\avatar\\02.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\avatar\\02.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\avatar\\03.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\avatar\\03.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\avatar\\04.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\avatar\\04.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\bg\\01.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\bg\\01.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\bg\\02.png",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\bg\\02.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\bg\\03.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\bg\\03.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\bg\\04.png",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\bg\\04.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\blog-suggest\\01.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\blog-suggest\\01.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\blog-suggest\\02.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\blog-suggest\\02.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\blog-suggest\\03.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\blog-suggest\\03.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\blog\\01.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\blog\\01.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\blog\\02.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\blog\\02.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\blog\\03.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\blog\\03.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\blog\\04.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\blog\\04.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\blog\\05.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\blog\\05.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\blog\\06.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\blog\\06.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\category\\agriculture.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\category\\agriculture.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\category\\animals.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\category\\animals.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\category\\automobiles.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\category\\automobiles.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\category\\bussiness.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\category\\bussiness.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\category\\education.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\category\\education.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\category\\electronics.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\category\\electronics.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\category\\fashions.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\category\\fashions.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\category\\furnitures.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\category\\furnitures.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\category\\gadgets.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\category\\gadgets.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\category\\hospitality.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\category\\hospitality.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\category\\motorbikes.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\category\\motorbikes.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\category\\properties.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\category\\properties.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\cities\\01.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\cities\\01.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\cities\\02.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\cities\\02.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\cities\\03.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\cities\\03.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\cities\\04.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\cities\\04.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\cities\\05.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\cities\\05.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\cities\\06.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\cities\\06.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\counter\\ads.png",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\counter\\ads.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\counter\\review.png",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\counter\\review.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\counter\\user.png",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\counter\\user.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\favicon.png",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\favicon.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\logo.png",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\logo.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\pay-card\\01.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\pay-card\\01.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\pay-card\\02.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\pay-card\\02.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\pay-card\\03.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\pay-card\\03.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\pay-card\\04.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\pay-card\\04.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\play-store.png",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\play-store.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\product\\01.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\product\\01.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\product\\02.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\product\\02.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\product\\03.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\product\\03.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\product\\04.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\product\\04.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\product\\05.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\product\\05.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\product\\06.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\product\\06.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\product\\07.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\product\\07.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\product\\08.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\product\\08.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\product\\09.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\product\\09.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\product\\10.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\product\\10.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\product\\11.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\product\\11.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\product\\12.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\product\\12.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\product\\13.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\product\\13.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\product\\14.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\product\\14.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\product\\15.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\product\\15.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\product\\16.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\product\\16.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\suggest\\animals.png",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\suggest\\animals.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\suggest\\automobile.png",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\suggest\\automobile.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\suggest\\education.png",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\suggest\\education.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\suggest\\electronics.png",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\suggest\\electronics.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\suggest\\fashion.png",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\suggest\\fashion.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\suggest\\food.png",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\suggest\\food.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\suggest\\furniture.png",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\suggest\\furniture.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\suggest\\gadgets.png",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\suggest\\gadgets.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\suggest\\hospitality.png",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\suggest\\hospitality.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\suggest\\properties.png",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\suggest\\properties.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\suggest\\services.png",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\suggest\\services.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\suggest\\software.png",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\suggest\\software.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\team\\01.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\team\\01.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\team\\02.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\team\\02.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\team\\03.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\team\\03.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\team\\04.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\team\\04.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\team\\05.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\team\\05.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\team\\06.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\team\\06.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\images\\team\\07.jpg",
+      "PackagePath": "staticwebassets\\UsersTemplate\\images\\team\\07.jpg"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\js\\custom\\main.js",
+      "PackagePath": "staticwebassets\\UsersTemplate\\js\\custom\\main.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\js\\custom\\price-range.js",
+      "PackagePath": "staticwebassets\\UsersTemplate\\js\\custom\\price-range.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\js\\custom\\slick.js",
+      "PackagePath": "staticwebassets\\UsersTemplate\\js\\custom\\slick.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\js\\vendor\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\UsersTemplate\\js\\vendor\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\js\\vendor\\jquery-1.12.4.min.js",
+      "PackagePath": "staticwebassets\\UsersTemplate\\js\\vendor\\jquery-1.12.4.min.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\js\\vendor\\jquery-ui.min.js",
+      "PackagePath": "staticwebassets\\UsersTemplate\\js\\vendor\\jquery-ui.min.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\js\\vendor\\popper.min.js",
+      "PackagePath": "staticwebassets\\UsersTemplate\\js\\vendor\\popper.min.js"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\UsersTemplate\\js\\vendor\\slick.min.js",
+      "PackagePath": "staticwebassets\\UsersTemplate\\js\\vendor\\slick.min.js"
     },
     {
       "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\css\\site.css",

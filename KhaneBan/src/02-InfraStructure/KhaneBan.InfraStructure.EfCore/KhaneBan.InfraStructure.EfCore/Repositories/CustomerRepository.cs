@@ -2,6 +2,7 @@
 using KhaneBan.Domain.Core.Entites.User;
 using KhaneBan.InfraStructure.EfCore.Common;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,10 +15,12 @@ namespace KhaneBan.InfraStructure.EfCore.Repositories;
 public class CustomerRepository : ICustomerRepository
 {
     private readonly AppDbContext _appDbContext;
+    private readonly ILogger<CustomerRepository> _logger;
 
-    public CustomerRepository(AppDbContext appDbContext)
+    public CustomerRepository(AppDbContext appDbContext, ILogger<CustomerRepository> logger)
     {
         _appDbContext = appDbContext;
+        _logger = logger;
     }
 
     public async Task<List<Customer>> GetCustomersAsync(CancellationToken cancellationToken)
@@ -50,6 +53,7 @@ public class CustomerRepository : ICustomerRepository
         {
             var x = await _appDbContext.Customers.Include(c => c.User).ToListAsync();
             return x;
+
         }
         catch (Exception ex)
         {
@@ -79,10 +83,12 @@ public class CustomerRepository : ICustomerRepository
         {
             await _appDbContext.Customers.AddAsync(customer, cancellationToken);
             await _appDbContext.SaveChangesAsync(cancellationToken);
+            _logger.LogInformation("Category Added Succesfully");
             return true;
         }
         catch
         {
+            _logger.LogError("something is wrong in create category");
             return false;
         }
     }
@@ -102,10 +108,13 @@ public class CustomerRepository : ICustomerRepository
             await _appDbContext.SaveChangesAsync(cancellationToken);
             return true;
         }
+
         catch (Exception ex)
         {
-            throw new Exception($"{ex.Message} ---------Logic Errorr!!!");
+            _logger.LogError("Error in customer repository=======================>>>>>>>>>>>{ErrorMessage}", ex.Message);
+            return false;
         }
+
     }
 
     public async Task ActiveCustomer(int userId, CancellationToken cancellationToken)
@@ -120,10 +129,11 @@ public class CustomerRepository : ICustomerRepository
 
             existcustomer.User.IsDeleted = false;
             await _appDbContext.SaveChangesAsync(cancellationToken);
+            _logger.LogInformation(" Active customer Succesfully");
         }
         catch (Exception ex)
         {
-            throw new Exception($"{ex.Message} ---------Logic Errorr!!!");
+            _logger.LogError("Error in customer repository=======================>>>>>>>>>>>{ErrorMessage}", ex.Message);
         }
     }
 
@@ -147,12 +157,16 @@ public class CustomerRepository : ICustomerRepository
             existCustomer.User.PhoneNumber = customer.User.PhoneNumber;
 
             await _appDbContext.SaveChangesAsync(cancellationToken);
+            _logger.LogInformation(" update customer Succesfully");
+        
             return true;
 
         }
-        catch
+        catch(Exception ex)
         {
-            throw new Exception("Logic Errorr!!!");
+
+            _logger.LogError("Error in customer repository=======================>>>>>>>>>>>{ErrorMessage}", ex.Message);
+            return false;
         }
 
 

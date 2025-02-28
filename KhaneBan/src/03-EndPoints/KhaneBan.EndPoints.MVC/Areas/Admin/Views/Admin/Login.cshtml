@@ -1,5 +1,8 @@
 ﻿@model AdminViewModel
 
+@{
+	Layout = null;
+}
 <!DOCTYPE html>
 <html lang="fa">
 <head>
@@ -19,6 +22,10 @@
 			height: 100vh;
 			margin: 0;
 			color: #2c3e50;
+		}
+
+		.alert:empty {
+			display: none;
 		}
 
 		.login-container {
@@ -110,14 +117,14 @@
 		<h2>ورود ادمین</h2>
 		<form method="post" asp-area="Admin" asp-action="Login" id="loginForm">
 			<div class="mb-4">
-				<input asp-for="UserName" class="form-control" >
+				<input asp-for="UserName" class="form-control">
 				<label asp-for="UserName"></label>
-				<span id="error-message" class="alert "  asp-validation-for="Password"></span>
+				<span class="alert" asp-validation-for="UserName"></span>
 			</div>
 			<div class="mb-4">
 				<input asp-for="Password" class="form-control">
 				<label asp-for="Password"></label>
-				<span id="error-message" class="alert" asp-validation-for="Password"></span>
+				<span class="alert" asp-validation-for="Password"></span>
 			</div>
 			<button type="submit" class="btn btn-login">ورود</button>
 			<a asp-area="Admin" asp-controller="Admin" asp-action="Logout" class="btn btn-danger">خروج</a>

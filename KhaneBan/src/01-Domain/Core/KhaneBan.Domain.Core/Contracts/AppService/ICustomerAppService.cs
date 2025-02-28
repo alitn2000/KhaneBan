@@ -1,4 +1,5 @@
 ﻿using KhaneBan.Domain.Core.Entites.User;
+using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,4 +17,6 @@ public interface ICustomerAppService
     Task<Customer?> GetCustomerInfoByIdAsync(int id, CancellationToken cancellationToken);
     Task<bool> UpdateAsync(Customer customer, CancellationToken cancellationToken);
     Task<bool> ActiveCustomer(int userId, CancellationToken cancellationToken);
+    Task<IdentityResult> RegisterAsync(User user, string pass);
+    Task<IdentityResult> UpdateAsync(User user);
 }

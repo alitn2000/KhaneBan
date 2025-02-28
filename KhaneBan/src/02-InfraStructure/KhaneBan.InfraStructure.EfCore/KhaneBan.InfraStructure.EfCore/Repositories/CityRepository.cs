@@ -4,6 +4,7 @@ using KhaneBan.Domain.Core.Entites.DTOs;
 using KhaneBan.Domain.Core.Entites.User;
 using KhaneBan.InfraStructure.EfCore.Common;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using Microsoft.VisualBasic;
 using System;
 using System.Collections.Generic;
@@ -17,19 +18,20 @@ namespace KhaneBan.InfraStructure.EfCore.Repositories;
 public class CityRepository : ICityRepository
 {
     private readonly AppDbContext _appDbContext;
-
-    public CityRepository(AppDbContext appDbContext)
+    private readonly ILogger<CityRepository> _logger;
+    public CityRepository(AppDbContext appDbContext, ILogger<CityRepository> logger)
     {
+        _logger = logger;
         _appDbContext = appDbContext;
     }
 
     public async Task<List<CityDTO>> GetCitiesAsync(CancellationToken cancellationToken)
     {
-               var cities = await _appDbContext.Cities.AsNoTracking().Select(c => new CityDTO
-               {
-                   Id = c.Id,
-                   Title = c.Title,
-               }).ToListAsync(cancellationToken);
+        var cities = await _appDbContext.Cities.AsNoTracking().Select(c => new CityDTO
+        {
+            Id = c.Id,
+            Title = c.Title,
+        }).ToListAsync(cancellationToken);
 
         return cities;
     }
@@ -48,10 +50,13 @@ public class CityRepository : ICityRepository
         {
             await _appDbContext.Cities.AddAsync(city, cancellationToken);
             await _appDbContext.SaveChangesAsync(cancellationToken);
+
+            _logger.LogInformation(" create city Succesfully");
             return true;
         }
-        catch
+        catch (Exception ex)
         {
+            _logger.LogError("Error in city repository=======================>>>>>>>>>>>{ErrorMessage}", ex.Message);
             return false;
         }
     }
@@ -62,10 +67,14 @@ public class CityRepository : ICityRepository
         {
             _appDbContext.Cities.Remove(city);
             await _appDbContext.SaveChangesAsync(cancellationToken);
+
+            _logger.LogInformation(" delete city Succesfully");
             return true;
         }
-        catch
+        catch (Exception ex)
         {
+
+            _logger.LogError("Error in city repository=======================>>>>>>>>>>>{ErrorMessage}", ex.Message);
             return false;
         }
     }
@@ -81,11 +90,14 @@ public class CityRepository : ICityRepository
 
             existCity.Title = city.Title;
             await _appDbContext.SaveChangesAsync(cancellationToken);
+
+            _logger.LogInformation(" update city Succesfully");
             return true;
         }
-        catch
+        catch (Exception ex)
         {
-            throw new Exception("Logic Errorr!!!");
+            _logger.LogError("Error in city repository=======================>>>>>>>>>>>{ErrorMessage}", ex.Message);
+            return false;
         }
 
     }

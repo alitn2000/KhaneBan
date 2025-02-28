@@ -1,0 +1,63 @@
+﻿@using KhaneBan.Domain.Core.Entites.UserRequests
+
+@model EditSubCategoryViewModel
+
+@{
+
+    var categories = ViewBag.Categories as List<Category>;
+}
+
+<div class="container mt-4">
+    <h2 class="text-center mb-4">ویرایش زیردسته</h2>
+
+    <form asp-action="Edit" method="post" enctype="multipart/form-data">
+        <input type="hidden" asp-for="Id" />
+        <input type="hidden" asp-for="ImageFile" />
+
+        <div class="mb-3">
+            <label asp-for="Title" class="form-label">نام زیردسته</label>
+            <input asp-for="Title" class="form-control" />
+            <span asp-validation-for="Title" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="CategoryId" class="form-label">دسته‌بندی</label>
+            <select asp-for="CategoryId" class="form-select">
+                <option value="">انتخاب کنید...</option>
+                @if (categories != null)
+                {
+                    @foreach (var item in categories)
+                    {
+                        <option value="@item.Id" selected="@(item.Id == Model.CategoryId ? "selected" : null)">
+                            @item.Title
+                        </option>
+                    }
+                }
+            </select>
+            <span asp-validation-for="CategoryId" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">تصویر فعلی</label>
+            @if (!string.IsNullOrEmpty(Model.ImagePath))
+            {
+                <div>
+                    <img src="@Model.ImagePath" class="img-thumbnail" style="max-width: 150px;" />
+                </div>
+            }
+            else
+            {
+                <p class="text-muted">تصویری وجود ندارد.</p>
+            }
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">آپلود تصویر جدید (اختیاری)</label>
+            <input type="file" asp-for="ImageFile" class="form-control" />
+            <span asp-validation-for="ImageFile" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-success w-100">ذخیره تغییرات</button>
+        <a asp-action="SubCategoryIndex" class="btn btn-secondary w-100 mt-2">بازگشت</a>
+    </form>
+</div>

@@ -2,106 +2,118 @@
 using KhaneBan.Domain.Core.Entites.UserRequests;
 using KhaneBan.InfraStructure.EfCore.Common;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 
 namespace KhaneBan.InfraStructure.EfCore.Repositories;
 
 public class HomeServiceRepository : IHomeServiceRepository
 {
-    private readonly AppDbContext _appDbContext;
+    private readonly AppDbContext _context;
+    private readonly ILogger<HomeServiceRepository> _logger;
 
-    public HomeServiceRepository(AppDbContext appDbContext)
+    public HomeServiceRepository(AppDbContext context, ILogger<HomeServiceRepository> logger)
     {
-        _appDbContext = appDbContext;
+        _context = context;
+        _logger = logger;
     }
 
-    public async Task<List<HomeService>?> GetHomeServicesAsync(CancellationToken cancellationToken)
-     => await _appDbContext.HomeServices
-     .ToListAsync(cancellationToken);
+    public async Task<List<HomeService>> GetAllAsync(CancellationToken cancellationToken)
+    {
+        return await _context.HomeServices
+            .Include(x => x.SubCategory)
+            .ToListAsync(cancellationToken);
+    }
 
-    public async Task<List<HomeService>?> GetHomeServicesWithDetailsAsync(CancellationToken cancellationToken)
-    => await _appDbContext.HomeServices
-        .Include(h => h.Requests)
-        .Include(h => h.Experts)
-    .ToListAsync(cancellationToken);
-
-    public async Task<HomeService?> GetHomeServiceByIdAsync(int id, CancellationToken cancellationToken)
-     => await _appDbContext
-     .HomeServices
-     .FirstOrDefaultAsync(s => s.Id == id, cancellationToken);
-
-    public async Task<HomeService?> GetHomeServiceByIdWithDetailsAsync(int homeServiceId, CancellationToken cancellationToken)
-     => await _appDbContext
-     .HomeServices
-        .Include(h => h.Requests)
-        .Include(h => h.Experts)
-        .FirstOrDefaultAsync(s => s.Id == homeServiceId, cancellationToken);
+    public async Task<HomeService> GetByIdAsync(int id, CancellationToken cancellationToken)
+    {
+        return await _context.HomeServices
+            .Include(x => x.SubCategory)
+            .FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
+    }
 
     public async Task<bool> CreateAsync(HomeService homeService, CancellationToken cancellationToken)
     {
         try
         {
-            await _appDbContext.HomeServices.AddAsync(homeService, cancellationToken);
-            await _appDbContext.SaveChangesAsync(cancellationToken);
+            await _context.HomeServices.AddAsync(homeService, cancellationToken);
+            await _context.SaveChangesAsync(cancellationToken);
+            _logger.LogInformation("homeservice Added Succesfully");
             return true;
         }
-        catch
+        catch (Exception ex)
         {
+            _logger.LogError("Error in homeservice repository=======================>>>>>>>>>>>{ErrorMessage}", ex.Message);
             return false;
         }
-       
+
+
     }
 
-    public async Task<bool> DeleteAsync(int homeServiceId, CancellationToken cancellationToken)
-    {
-        try
-        {
-            var homeService = await _appDbContext.HomeServices
-            .Include(x => x.Requests)
-            .FirstOrDefaultAsync(x => x.Id == homeServiceId, cancellationToken);
-
-            if (homeService == null)
-                return false;
-
-            _appDbContext.HomeServices.Remove(homeService);
-            await _appDbContext.SaveChangesAsync();
-            return true;
-        }
-        catch
-        {
-            throw new Exception("Logic Errorr");
-        }
-    }
-
-    public async Task<bool> IsDelete(int homeServiceId, CancellationToken cancellationToken)
-    {
-        var existHomeService = await _appDbContext.HomeServices.FirstOrDefaultAsync(r => r.Id == homeServiceId, cancellationToken);
-        if (existHomeService == null)
-            return false;
-        existHomeService.IsDeleted = true;
-        await _appDbContext.SaveChangesAsync(cancellationToken);
-        return true;
-    }
     public async Task<bool> UpdateAsync(HomeService homeService, CancellationToken cancellationToken)
     {
         try
         {
-            var existHomeService = await _appDbContext.HomeServices.FirstOrDefaultAsync(x => x.Id == homeService.Id);
-            if (existHomeService == null)
+            var existingHomeService = await _context.HomeServices
+                .FirstOrDefaultAsync(x => x.Id == homeService.Id, cancellationToken);
+            if (existingHomeService == null)
                 return false;
-            
-                existHomeService.Title = homeService.Title;
-                existHomeService.SubCategoryId = homeService.SubCategoryId;
-                existHomeService.VisitCount = homeService.VisitCount;
-                existHomeService.ImagePath = homeService.ImagePath;
-                existHomeService.BasePrice = homeService.BasePrice;
-                await _appDbContext.SaveChangesAsync(cancellationToken);
+
+            existingHomeService.Title = homeService.Title;
+            existingHomeService.SubCategoryId = homeService.SubCategoryId;
+            existingHomeService.VisitCount = homeService.VisitCount;
+            existingHomeService.PicturePath = homeService.PicturePath;
+            existingHomeService.BasePrice = homeService.BasePrice;
+            await _context.SaveChangesAsync(cancellationToken);
+            _logger.LogInformation("homeservice update Succesfully");
             return true;
-            
         }
-        catch
+        catch (Exception ex)
         {
-            throw new Exception("Logic Errorr");
+            _logger.LogError("Error in homeservice repository=======================>>>>>>>>>>>{ErrorMessage}", ex.Message);
+            return false;
         }
-       
     }
+
+    public async Task ActiveHomeServiceAsync(int homeServiceId, CancellationToken cancellationToken)
+    {
+
+        try
+        {
+            var existHomeServicce= await _context
+            .HomeServices
+            .FirstOrDefaultAsync(c => c.Id == homeServiceId, cancellationToken);
+
+            existHomeServicce.IsDeleted = false;
+            await _context.SaveChangesAsync(cancellationToken);
+            _logger.LogInformation(" Active homeservice Succesfully");
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError("Error in homeservice repository=======================>>>>>>>>>>>{ErrorMessage}", ex.Message);
+        }
+    }
+
+    public async Task<bool> DeleteAsync(int id, CancellationToken cancellationToken)
+    {
+        try
+        {
+            var homeService = await _context.HomeServices
+           .FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
+            if (homeService == null)
+                return false;
+
+            homeService.IsDeleted = true;
+            await _context.SaveChangesAsync(cancellationToken);
+            _logger.LogInformation("homeservice update Succesfully");
+            return true;
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError("Error in homeservice repository=======================>>>>>>>>>>>{ErrorMessage}", ex.Message);
+            return false;
+        }
+
+    }
+
+
 }

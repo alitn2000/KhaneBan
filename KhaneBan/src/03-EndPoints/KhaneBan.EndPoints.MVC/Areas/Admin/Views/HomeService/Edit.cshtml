@@ -1,0 +1,68 @@
+﻿
+@model EditHomeServiceViewModel
+
+
+<div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <div class="card shadow-lg p-4" style="width: 40rem;">
+        <h2 class="text-center mb-4">ویرایش سرویس</h2>
+
+        <form asp-action="Edit" method="post" enctype="multipart/form-data">
+            <input type="hidden" asp-for="Id" />
+
+            <div class="mb-3">
+                <label asp-for="Title" class="form-label">عنوان</label>
+                <input asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="SubCategoryId" class="form-label">دسته‌بندی</label>
+                <select asp-for="SubCategoryId" class="form-select">
+                    <option value="">انتخاب کنید...</option>
+                    @foreach (var item in ViewBag.SubCategories as List<SelectListItem>)
+                    {
+                        <option value="@item.Value">@item.Text</option>
+                    }
+                </select>
+                <span asp-validation-for="SubCategoryId" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">تصویر فعلی</label>
+                @if (!string.IsNullOrEmpty(Model.ImagePath))
+                {
+                    <div>
+                        <img src="@Model.ImagePath" alt="تصویر سرویس" class="img-fluid rounded" style="max-height: 150px;" />
+                    </div>
+                }
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">آپلود تصویر جدید</label>
+                <input type="file" name="ImageFile" class="form-control" />
+                <input type="hidden" asp-for="ImagePath" />
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Price" class="form-label">قیمت</label>
+                <input asp-for="Price" type="number" class="form-control" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+
+            
+
+            <div class="text-center">
+                <button class="btn btn-success w-100" type="submit">ذخیره تغییرات</button>
+                <a asp-action="HomeServiceIndex" class="btn btn-secondary w-100 mt-2">بازگشت</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

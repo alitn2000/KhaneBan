@@ -3,6 +3,7 @@ using KhaneBan.Domain.Core.Entites.BaseEntities;
 using KhaneBan.Domain.Core.Entites.User;
 using KhaneBan.InfraStructure.EfCore.Common;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,10 +15,12 @@ namespace KhaneBan.InfraStructure.EfCore.Repositories;
 public class ExpertRepository : IExpertRepository
 {
     private readonly AppDbContext _appDbContext;
+    private readonly ILogger<ExpertRepository> _logger;
 
-    public ExpertRepository(AppDbContext appDbContext)
+    public ExpertRepository(AppDbContext appDbContext, ILogger<ExpertRepository> logger)
     {
         _appDbContext = appDbContext;
+        _logger = logger;
     }
 
     public async Task<List<Expert>> GetExpertsAsync(CancellationToken cancellationToken)
@@ -70,10 +73,12 @@ public class ExpertRepository : IExpertRepository
         {
             await _appDbContext.Experts.AddAsync(expert, cancellationToken);
             await _appDbContext.SaveChangesAsync(cancellationToken);
+            _logger.LogInformation(" create expert Succesfully");
             return true;
         }
-        catch
+        catch(Exception ex)
         {
+            _logger.LogError("Error in expert repository=======================>>>>>>>>>>>{ErrorMessage}", ex.Message);
             return false;
         }
     }
@@ -91,11 +96,13 @@ public class ExpertRepository : IExpertRepository
 
             existExpert.User.IsDeleted = true;
             await _appDbContext.SaveChangesAsync(cancellationToken);
+            _logger.LogInformation(" delete expert Succesfully");
             return true;
         }
         catch (Exception ex)
         {
-            throw new Exception($"{ex.Message} ---------Logic Errorr!!!");
+            _logger.LogError("Error in expert repository=======================>>>>>>>>>>>{ErrorMessage}", ex.Message);
+            return false;
         }
     }
 
@@ -111,10 +118,11 @@ public class ExpertRepository : IExpertRepository
 
             existExpert.User.IsDeleted = false;
             await _appDbContext.SaveChangesAsync(cancellationToken);
+            _logger.LogInformation(" Active expert Succesfully");
         }
         catch (Exception ex)
         {
-            throw new Exception($"{ex.Message} ---------Logic Errorr!!!");
+            _logger.LogError("Error in expert repository=======================>>>>>>>>>>>{ErrorMessage}", ex.Message);
         }
     }
 
@@ -136,11 +144,13 @@ public class ExpertRepository : IExpertRepository
             existExpert.User.PhoneNumber = expert.User.PhoneNumber;
 
             await _appDbContext.SaveChangesAsync(cancellationToken);
+            _logger.LogInformation(" update expert Succesfully");
             return true;
         }
-        catch 
+        catch (Exception ex)
         {
-            throw new Exception("Logic Errorr!!!");
+            _logger.LogError("Error in expert repository=======================>>>>>>>>>>>{ErrorMessage}", ex.Message);
+            return false;
         }
     }
 }

@@ -2,6 +2,7 @@
 using KhaneBan.Domain.Core.Contracts.Service;
 using KhaneBan.Domain.Core.Entites.User;
 using KhaneBan.InfraStructure.EfCore.Repositories;
+using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,10 +14,23 @@ namespace KhaneBan.Domain.Services
     public class ExpertService : IExpertService
     {
         private readonly IExpertRepository _expertRepository;
+        private readonly UserManager<User> _userManager;
 
-        public ExpertService(IExpertRepository expertRepository)
+
+        public ExpertService(IExpertRepository expertRepository, UserManager<User> userManager)
         {
             _expertRepository = expertRepository;
+            _userManager = userManager;
+        }
+
+
+        public Task<IdentityResult> RegisterAsync(User user, string pass)
+        {
+            return _userManager.CreateAsync(user, pass);
+        }
+        public Task<IdentityResult> UpdateAsync(User user)
+        {
+            return _userManager.UpdateAsync(user);
         }
 
         public Task<int> GetCountExpertAsync(CancellationToken cancellationToken)

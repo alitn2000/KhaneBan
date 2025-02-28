@@ -1,6 +1,7 @@
 ﻿using KhaneBan.Domain.Core.Contracts.Repository;
 using KhaneBan.Domain.Core.Contracts.Service;
 using KhaneBan.Domain.Core.Entites.User;
+using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,10 +13,22 @@ namespace KhaneBan.Domain.Services;
 public class CustomerService : ICustomerService
 {
     private readonly ICustomerRepository _customerRepository;
+    private readonly UserManager<User> _userManager;
 
-    public CustomerService(ICustomerRepository customerRepository)
+    public CustomerService(ICustomerRepository customerRepository, UserManager<User> userManager)
     {
         _customerRepository = customerRepository;
+        _userManager = userManager;
+    }
+
+    public  Task<IdentityResult> RegisterAsync(User user, string pass)
+    {
+        return  _userManager.CreateAsync(user, pass);
+    }
+
+    public Task<IdentityResult> UpdateAsync(User user)
+    {
+        return _userManager.UpdateAsync(user);
     }
 
     public async Task<int> GetCountCustomerAsync(CancellationToken cancellationToken)

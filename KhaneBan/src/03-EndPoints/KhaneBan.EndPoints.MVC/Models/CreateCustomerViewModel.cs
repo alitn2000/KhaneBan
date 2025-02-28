@@ -29,12 +29,16 @@ public class CreateCustomerViewModel
     public string Password { get; set; }
 
 
-    [Display(Name = "عکس")]
 
-    public IFormFile? ProfileImage { get; set; }
+
 
     [Required(ErrorMessage = "استان اجباری است")]
     [Display(Name = "استان")]
     public int CityId { get; set; }
+
+    [Display(Name = "عکس")]
+    public IFormFile? ProfileImgFile { get; set; }
+
+    public string? ImagePath { get; set; }
 
 }
