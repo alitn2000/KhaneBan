@@ -9,6 +9,7 @@ namespace KhaneBan.Domain.Core.Contracts.Repository;
 
 public interface ICategoryRepository
 {
+    Task<List<Category>> GetAllWithDetailsAsync(CancellationToken cancellationToken);
     Task<bool> CreateAsync(Category category, CancellationToken cancellationToken);
     Task<bool> DeleteAsync(int id, CancellationToken cancellationToken);
     Task<List<Category>> GetAllAsync(CancellationToken cancellationToken);

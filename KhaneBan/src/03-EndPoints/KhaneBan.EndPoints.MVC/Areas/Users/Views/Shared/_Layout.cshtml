@@ -35,7 +35,7 @@
 				<div class="header-left">
 					<ul class="header-widget">
 						<li><button type="button" class="header-menu"><i class="fas fa-align-left"></i></button></li>
-						<li><a href="index.html" class="header-logo"><img src="~/UsersTemplate/images/logo.png" alt="logo"></a></li>
+						<li><a asp-area="Users" asp-controller="Home" asp-action="Index" class="header-logo"><img src="~/UsersTemplate/images/logo.png" alt="logo"></a></li>
 						<li>
 							<a href="user-form.html" class="header-user">
 								<i class="fas fa-user"></i><span>ورود</span>
@@ -44,26 +44,7 @@
 						<li><button type="button" class="header-src"><i class="fas fa-search"></i></button></li>
 					</ul>
 				</div>
-				<form class="header-search">
-					<div class="header-main-search">
-						<button type="submit" class="header-search-btn">
-							<i class="fas fa-search"></i>
-						</button><input type="text" class="form-control"
-										placeholder="چیزی که دوست داری را جستجو کن ...">
-					</div>
-					<div class="header-search-option">
-						<div class="row">
-
-							<div class="col-12">
-								<div class="form-btn">
-									<button type="submit" class="btn btn-inline">
-										<i class="fas fa-search"></i><span>جستجو کنید</span>
-									</button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</form>
+				
 
 			</div>
 		</div>
@@ -71,7 +52,7 @@
 	<div class="sidebar-part">
 		<div class="sidebar-body">
 			<div class="sidebar-header">
-				<a href="index.html" class="sidebar-logo">
+				<a asp-area="Users" asp-controller="Home" asp-action="Index" class="sidebar-logo">
 					<img src="~/UsersTemplate/images/logo.png"
 						 alt="logo">
 				</a><button class="sidebar-cross"><i class="fas fa-times"></i></button>

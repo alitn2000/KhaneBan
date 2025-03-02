@@ -44,4 +44,7 @@ public class CustomerAppService : ICustomerAppService
 
     public Task<IdentityResult> UpdateAsync(User user)
         => _customerService.UpdateAsync(user);
+
+    public Task<Customer?> GetCustomerByIdWithDetailsAsync(int userId, CancellationToken cancellationToken)
+        => _customerService.GetCustomerByIdWithDetailsAsync(userId, cancellationToken);
 }

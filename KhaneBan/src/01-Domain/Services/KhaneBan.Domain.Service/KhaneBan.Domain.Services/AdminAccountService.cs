@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace KhaneBan.Domain.Services;
-
+ 
 public class AdminAccountService : IAdminAccountService
 {
     private readonly UserManager<User> _userManager;

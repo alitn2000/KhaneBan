@@ -3960,174 +3960,30 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Categories\133838a6-f726-4deb-ac85-360a5dec2c09Screenshot 2023-12-08 211011.png'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Customers\94f46bed-f6c1-48a7-bd54-efe8d43c1eceScreenshot 2024-07-23 145928.png'))">
       <SourceType>Package</SourceType>
       <SourceId>KhaneBan.EndPoints.MVC</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/KhaneBan.EndPoints.MVC</BasePath>
-      <RelativePath>Images/Categories/133838a6-f726-4deb-ac85-360a5dec2c09Screenshot 2023-12-08 211011.png</RelativePath>
+      <RelativePath>Images/Customers/94f46bed-f6c1-48a7-bd54-efe8d43c1eceScreenshot 2024-07-23 145928.png</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>jlsooekigk</Fingerprint>
-      <Integrity>OYnklMUUGh+GB6FdBYxyWF+65t5kHKQAHGpo3ItrLEs=</Integrity>
+      <Fingerprint>33f27khpsb</Fingerprint>
+      <Integrity>3z/WXe+HgM94r7hEkP07e8xQZUE1IIn/nTss3DieVaI=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Categories\133838a6-f726-4deb-ac85-360a5dec2c09Screenshot 2023-12-08 211011.png'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Customers\94f46bed-f6c1-48a7-bd54-efe8d43c1eceScreenshot 2024-07-23 145928.png'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Categories\1a45a939-5684-4ac7-8ff3-3f3569ea31b1Screenshot 2023-12-08 211011.png'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Customers\b7475052-77b6-42f3-aed7-12b2dc82dc07Screenshot 2024-12-13 164301.png'))">
       <SourceType>Package</SourceType>
       <SourceId>KhaneBan.EndPoints.MVC</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/KhaneBan.EndPoints.MVC</BasePath>
-      <RelativePath>Images/Categories/1a45a939-5684-4ac7-8ff3-3f3569ea31b1Screenshot 2023-12-08 211011.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>jlsooekigk</Fingerprint>
-      <Integrity>OYnklMUUGh+GB6FdBYxyWF+65t5kHKQAHGpo3ItrLEs=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Categories\1a45a939-5684-4ac7-8ff3-3f3569ea31b1Screenshot 2023-12-08 211011.png'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Categories\1aa22dd3-8621-40c4-aede-7ef9bd2190b7Screenshot 2023-12-08 211011.png'))">
-      <SourceType>Package</SourceType>
-      <SourceId>KhaneBan.EndPoints.MVC</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/KhaneBan.EndPoints.MVC</BasePath>
-      <RelativePath>Images/Categories/1aa22dd3-8621-40c4-aede-7ef9bd2190b7Screenshot 2023-12-08 211011.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>jlsooekigk</Fingerprint>
-      <Integrity>OYnklMUUGh+GB6FdBYxyWF+65t5kHKQAHGpo3ItrLEs=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Categories\1aa22dd3-8621-40c4-aede-7ef9bd2190b7Screenshot 2023-12-08 211011.png'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Categories\4a179ac8-6a23-47c1-af0c-a4fb2154f6ebScreenshot 2023-12-08 201958.png'))">
-      <SourceType>Package</SourceType>
-      <SourceId>KhaneBan.EndPoints.MVC</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/KhaneBan.EndPoints.MVC</BasePath>
-      <RelativePath>Images/Categories/4a179ac8-6a23-47c1-af0c-a4fb2154f6ebScreenshot 2023-12-08 201958.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>b4lwea1pkc</Fingerprint>
-      <Integrity>FUeAfB3yyPneKRCDmUGrRgyaiFlB4bRJsU4CL5+dFJw=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Categories\4a179ac8-6a23-47c1-af0c-a4fb2154f6ebScreenshot 2023-12-08 201958.png'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Categories\8663d880-ef74-4cc2-b6f6-b3a280a9e397Screenshot 2023-12-08 205952.png'))">
-      <SourceType>Package</SourceType>
-      <SourceId>KhaneBan.EndPoints.MVC</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/KhaneBan.EndPoints.MVC</BasePath>
-      <RelativePath>Images/Categories/8663d880-ef74-4cc2-b6f6-b3a280a9e397Screenshot 2023-12-08 205952.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>i5pgeegjfr</Fingerprint>
-      <Integrity>qpbt2lunzti+ehjIhSPZ74MOQ0ebLe8BZe+gLxk81/Y=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Categories\8663d880-ef74-4cc2-b6f6-b3a280a9e397Screenshot 2023-12-08 205952.png'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Categories\bddf2332-da9e-439d-b774-09a6ef67221dScreenshot 2024-09-16 205922.png'))">
-      <SourceType>Package</SourceType>
-      <SourceId>KhaneBan.EndPoints.MVC</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/KhaneBan.EndPoints.MVC</BasePath>
-      <RelativePath>Images/Categories/bddf2332-da9e-439d-b774-09a6ef67221dScreenshot 2024-09-16 205922.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>kita3vwrj1</Fingerprint>
-      <Integrity>7DIoHIBaILkgmXZuZ99DTqc4MGMJ7tAcghawhTmqsu4=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Categories\bddf2332-da9e-439d-b774-09a6ef67221dScreenshot 2024-09-16 205922.png'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Categories\c7dd0981-9cd6-4681-a218-afc50d68016cScreenshot 2023-12-08 195459.png'))">
-      <SourceType>Package</SourceType>
-      <SourceId>KhaneBan.EndPoints.MVC</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/KhaneBan.EndPoints.MVC</BasePath>
-      <RelativePath>Images/Categories/c7dd0981-9cd6-4681-a218-afc50d68016cScreenshot 2023-12-08 195459.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>vcefrw3wx6</Fingerprint>
-      <Integrity>b6GR2d+1tVhceb/9zNPAB0HugTk5WuWfwrsGY5PZLY4=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Categories\c7dd0981-9cd6-4681-a218-afc50d68016cScreenshot 2023-12-08 195459.png'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Customers\4dbb39e3-f6c5-4b9e-8d8a-79bcdebed567Screenshot 2023-12-08 205952.png'))">
-      <SourceType>Package</SourceType>
-      <SourceId>KhaneBan.EndPoints.MVC</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/KhaneBan.EndPoints.MVC</BasePath>
-      <RelativePath>Images/Customers/4dbb39e3-f6c5-4b9e-8d8a-79bcdebed567Screenshot 2023-12-08 205952.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>i5pgeegjfr</Fingerprint>
-      <Integrity>qpbt2lunzti+ehjIhSPZ74MOQ0ebLe8BZe+gLxk81/Y=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Customers\4dbb39e3-f6c5-4b9e-8d8a-79bcdebed567Screenshot 2023-12-08 205952.png'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Customers\9e2eb0a7-72b2-43d8-92ba-fa66882a93a5Screenshot 2023-12-08 205952.png'))">
-      <SourceType>Package</SourceType>
-      <SourceId>KhaneBan.EndPoints.MVC</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/KhaneBan.EndPoints.MVC</BasePath>
-      <RelativePath>Images/Customers/9e2eb0a7-72b2-43d8-92ba-fa66882a93a5Screenshot 2023-12-08 205952.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>i5pgeegjfr</Fingerprint>
-      <Integrity>qpbt2lunzti+ehjIhSPZ74MOQ0ebLe8BZe+gLxk81/Y=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Customers\9e2eb0a7-72b2-43d8-92ba-fa66882a93a5Screenshot 2023-12-08 205952.png'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Customers\d3c96939-dca7-406b-964d-21d536bf602aScreenshot 2024-12-13 164301.png'))">
-      <SourceType>Package</SourceType>
-      <SourceId>KhaneBan.EndPoints.MVC</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/KhaneBan.EndPoints.MVC</BasePath>
-      <RelativePath>Images/Customers/d3c96939-dca7-406b-964d-21d536bf602aScreenshot 2024-12-13 164301.png</RelativePath>
+      <RelativePath>Images/Customers/b7475052-77b6-42f3-aed7-12b2dc82dc07Screenshot 2024-12-13 164301.png</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -4138,205 +3994,7 @@
       <Integrity>LdBoNMDleXslsHGOx8ftA+0/IzvfKDkXe2yMzJbaHcY=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Customers\d3c96939-dca7-406b-964d-21d536bf602aScreenshot 2024-12-13 164301.png'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Customers\e51f83d6-848d-4121-9df9-446c61f89fc3Screenshot 2023-12-08 210542.png'))">
-      <SourceType>Package</SourceType>
-      <SourceId>KhaneBan.EndPoints.MVC</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/KhaneBan.EndPoints.MVC</BasePath>
-      <RelativePath>Images/Customers/e51f83d6-848d-4121-9df9-446c61f89fc3Screenshot 2023-12-08 210542.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>tboa2wvo90</Fingerprint>
-      <Integrity>qUtRLsS0CctySHtHHOpAIgVGbasHhIqIMRFMVBRB7rY=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Customers\e51f83d6-848d-4121-9df9-446c61f89fc3Screenshot 2023-12-08 210542.png'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Experts\36de391d-8827-4d5d-a02e-b123b463425aScreenshot 2023-12-16 160217.png'))">
-      <SourceType>Package</SourceType>
-      <SourceId>KhaneBan.EndPoints.MVC</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/KhaneBan.EndPoints.MVC</BasePath>
-      <RelativePath>Images/Experts/36de391d-8827-4d5d-a02e-b123b463425aScreenshot 2023-12-16 160217.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>pztk63mmz0</Fingerprint>
-      <Integrity>K5kv/8wdN4fSHR83gYYbE9ZnIHAF3aUVXpVJqRB6Ljc=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Experts\36de391d-8827-4d5d-a02e-b123b463425aScreenshot 2023-12-16 160217.png'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Experts\377a7f72-843d-4c2b-9c0f-74d46fcb64baScreenshot 2023-12-08 201958.png'))">
-      <SourceType>Package</SourceType>
-      <SourceId>KhaneBan.EndPoints.MVC</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/KhaneBan.EndPoints.MVC</BasePath>
-      <RelativePath>Images/Experts/377a7f72-843d-4c2b-9c0f-74d46fcb64baScreenshot 2023-12-08 201958.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>b4lwea1pkc</Fingerprint>
-      <Integrity>FUeAfB3yyPneKRCDmUGrRgyaiFlB4bRJsU4CL5+dFJw=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Experts\377a7f72-843d-4c2b-9c0f-74d46fcb64baScreenshot 2023-12-08 201958.png'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Experts\c2032201-190d-4130-ad5b-aabb1b1918dfScreenshot 2023-12-08 205952.png'))">
-      <SourceType>Package</SourceType>
-      <SourceId>KhaneBan.EndPoints.MVC</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/KhaneBan.EndPoints.MVC</BasePath>
-      <RelativePath>Images/Experts/c2032201-190d-4130-ad5b-aabb1b1918dfScreenshot 2023-12-08 205952.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>i5pgeegjfr</Fingerprint>
-      <Integrity>qpbt2lunzti+ehjIhSPZ74MOQ0ebLe8BZe+gLxk81/Y=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Experts\c2032201-190d-4130-ad5b-aabb1b1918dfScreenshot 2023-12-08 205952.png'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Experts\f9d24ad8-7d9d-4ba5-8d43-86e974bb5be0Screenshot 2023-12-08 232520.png'))">
-      <SourceType>Package</SourceType>
-      <SourceId>KhaneBan.EndPoints.MVC</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/KhaneBan.EndPoints.MVC</BasePath>
-      <RelativePath>Images/Experts/f9d24ad8-7d9d-4ba5-8d43-86e974bb5be0Screenshot 2023-12-08 232520.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>l6aquvvqf1</Fingerprint>
-      <Integrity>DeAlrcKYhxsgTbab7Db+lFGkSSZOzEz4amS13rGj84M=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Experts\f9d24ad8-7d9d-4ba5-8d43-86e974bb5be0Screenshot 2023-12-08 232520.png'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\HomeServices\ef8e8942-12d0-41e0-b662-ce03471898c4Screenshot 2023-12-08 233135.png'))">
-      <SourceType>Package</SourceType>
-      <SourceId>KhaneBan.EndPoints.MVC</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/KhaneBan.EndPoints.MVC</BasePath>
-      <RelativePath>Images/HomeServices/ef8e8942-12d0-41e0-b662-ce03471898c4Screenshot 2023-12-08 233135.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>l5v05i4r65</Fingerprint>
-      <Integrity>R7V4cKWcOavnx/dYf5iGA1EcncaiU8k+DHJwkAkhrSs=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\HomeServices\ef8e8942-12d0-41e0-b662-ce03471898c4Screenshot 2023-12-08 233135.png'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\HomeServices\fde4fb62-9867-4cf1-8ad3-e634bd53740bScreenshot 2023-12-08 201958.png'))">
-      <SourceType>Package</SourceType>
-      <SourceId>KhaneBan.EndPoints.MVC</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/KhaneBan.EndPoints.MVC</BasePath>
-      <RelativePath>Images/HomeServices/fde4fb62-9867-4cf1-8ad3-e634bd53740bScreenshot 2023-12-08 201958.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>b4lwea1pkc</Fingerprint>
-      <Integrity>FUeAfB3yyPneKRCDmUGrRgyaiFlB4bRJsU4CL5+dFJw=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\HomeServices\fde4fb62-9867-4cf1-8ad3-e634bd53740bScreenshot 2023-12-08 201958.png'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\SubCategories\2e4409f8-64c3-4951-b2f7-f9e6599e6cc0Screenshot 2023-12-08 205952.png'))">
-      <SourceType>Package</SourceType>
-      <SourceId>KhaneBan.EndPoints.MVC</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/KhaneBan.EndPoints.MVC</BasePath>
-      <RelativePath>Images/SubCategories/2e4409f8-64c3-4951-b2f7-f9e6599e6cc0Screenshot 2023-12-08 205952.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>i5pgeegjfr</Fingerprint>
-      <Integrity>qpbt2lunzti+ehjIhSPZ74MOQ0ebLe8BZe+gLxk81/Y=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\SubCategories\2e4409f8-64c3-4951-b2f7-f9e6599e6cc0Screenshot 2023-12-08 205952.png'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\SubCategories\a0351baa-17e2-4dd6-978e-56d7e3e1f2feScreenshot 2023-12-08 205952.png'))">
-      <SourceType>Package</SourceType>
-      <SourceId>KhaneBan.EndPoints.MVC</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/KhaneBan.EndPoints.MVC</BasePath>
-      <RelativePath>Images/SubCategories/a0351baa-17e2-4dd6-978e-56d7e3e1f2feScreenshot 2023-12-08 205952.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>i5pgeegjfr</Fingerprint>
-      <Integrity>qpbt2lunzti+ehjIhSPZ74MOQ0ebLe8BZe+gLxk81/Y=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\SubCategories\a0351baa-17e2-4dd6-978e-56d7e3e1f2feScreenshot 2023-12-08 205952.png'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\SubCategories\ec52500c-bdf6-431d-819d-95fb2a89ec5fScreenshot 2023-11-03 205001.png'))">
-      <SourceType>Package</SourceType>
-      <SourceId>KhaneBan.EndPoints.MVC</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/KhaneBan.EndPoints.MVC</BasePath>
-      <RelativePath>Images/SubCategories/ec52500c-bdf6-431d-819d-95fb2a89ec5fScreenshot 2023-11-03 205001.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>01vdp194bb</Fingerprint>
-      <Integrity>VMtM1kRwr5oeGlWXJnN8FaBl87V4mB25uk3x27OPZeU=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\SubCategories\ec52500c-bdf6-431d-819d-95fb2a89ec5fScreenshot 2023-11-03 205001.png'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\SubCategories\f8115cbc-0428-4f0c-98e7-7ecb95473ac0Screenshot 2023-12-08 195459.png'))">
-      <SourceType>Package</SourceType>
-      <SourceId>KhaneBan.EndPoints.MVC</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/KhaneBan.EndPoints.MVC</BasePath>
-      <RelativePath>Images/SubCategories/f8115cbc-0428-4f0c-98e7-7ecb95473ac0Screenshot 2023-12-08 195459.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>vcefrw3wx6</Fingerprint>
-      <Integrity>b6GR2d+1tVhceb/9zNPAB0HugTk5WuWfwrsGY5PZLY4=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\SubCategories\f8115cbc-0428-4f0c-98e7-7ecb95473ac0Screenshot 2023-12-08 195459.png'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Customers\b7475052-77b6-42f3-aed7-12b2dc82dc07Screenshot 2024-12-13 164301.png'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))">
       <SourceType>Package</SourceType>

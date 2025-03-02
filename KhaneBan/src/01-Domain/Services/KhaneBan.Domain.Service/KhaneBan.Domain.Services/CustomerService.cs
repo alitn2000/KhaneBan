@@ -80,4 +80,6 @@ public class CustomerService : ICustomerService
         return false;
     }
 
+    public Task<Customer?> GetCustomerByIdWithDetailsAsync(int userId, CancellationToken cancellationToken)
+        => _customerRepository.GetCustomerByIdWithDetailsAsync(userId, cancellationToken);
 }

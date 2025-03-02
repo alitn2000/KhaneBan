@@ -34,7 +34,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\Users\Models\" />
     <Folder Include="wwwroot\Images\Customers\" />
     <Folder Include="wwwroot\Images\Experts\" />
     <Folder Include="wwwroot\Images\Categories\" />

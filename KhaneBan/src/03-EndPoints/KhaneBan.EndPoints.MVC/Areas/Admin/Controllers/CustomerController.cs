@@ -148,6 +148,7 @@ public class CustomerController : Controller
 
 
         }
+        await _userManager.AddToRoleAsync(user, "Customer");
         var customer = new Customer
         {
             UserId = user.Id,
@@ -155,6 +156,8 @@ public class CustomerController : Controller
         };
 
         var flag = await _customerAppService.CreateAsync(customer, cancellationToken);
+
+
         if (flag)
         {
             TempData["Message"] = "مشتری با موفقیت اضافه شد";    

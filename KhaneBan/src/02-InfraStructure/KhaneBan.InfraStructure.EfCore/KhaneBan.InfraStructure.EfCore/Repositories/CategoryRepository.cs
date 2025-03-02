@@ -26,7 +26,11 @@ public class CategoryRepository : ICategoryRepository
 
       => await _context.Categories.ToListAsync(cancellationToken);
 
+    public async Task<List<Category>> GetAllWithDetailsAsync(CancellationToken cancellationToken)
 
+      => await _context.Categories
+        .Include(c =>c.SubCategories)
+        .ToListAsync(cancellationToken);
 
 
 

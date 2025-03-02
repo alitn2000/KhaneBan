@@ -19,11 +19,12 @@ public class ExpertController : Controller
     private readonly SignInManager<User> _signInManager;
     private readonly IPictureAppService _pictureAppService;
 
-    public ExpertController(IExpertAppService expertAppService, ICityAppService cityAppService, IPictureAppService pictureAppService)
+    public ExpertController(IExpertAppService expertAppService, ICityAppService cityAppService, IPictureAppService pictureAppService, UserManager<User> userManager)
     {
         _expertAppService = expertAppService;
         _cityAppService = cityAppService;
         _pictureAppService = pictureAppService;
+        _userManager = userManager;
     }
 
     public async Task<IActionResult> ExpertList(CancellationToken cancellationToken)
@@ -107,6 +108,7 @@ public class ExpertController : Controller
 
 
         }
+        await _userManager.AddToRoleAsync(user, "Expert");
         var expert = new Expert
         {
             UserId = user.Id,

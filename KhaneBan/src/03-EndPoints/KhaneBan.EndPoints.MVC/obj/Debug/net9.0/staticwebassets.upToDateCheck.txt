@@ -464,27 +464,8 @@ wwwroot\AdminTemplate\plugins\sweetalert\sweetalert.css
 wwwroot\AdminTemplate\plugins\sweetalert\sweetalert.min.js
 wwwroot\css\site.css
 wwwroot\favicon.ico
-wwwroot\Images\Categories\133838a6-f726-4deb-ac85-360a5dec2c09Screenshot 2023-12-08 211011.png
-wwwroot\Images\Categories\1a45a939-5684-4ac7-8ff3-3f3569ea31b1Screenshot 2023-12-08 211011.png
-wwwroot\Images\Categories\1aa22dd3-8621-40c4-aede-7ef9bd2190b7Screenshot 2023-12-08 211011.png
-wwwroot\Images\Categories\4a179ac8-6a23-47c1-af0c-a4fb2154f6ebScreenshot 2023-12-08 201958.png
-wwwroot\Images\Categories\8663d880-ef74-4cc2-b6f6-b3a280a9e397Screenshot 2023-12-08 205952.png
-wwwroot\Images\Categories\bddf2332-da9e-439d-b774-09a6ef67221dScreenshot 2024-09-16 205922.png
-wwwroot\Images\Categories\c7dd0981-9cd6-4681-a218-afc50d68016cScreenshot 2023-12-08 195459.png
-wwwroot\Images\Customers\4dbb39e3-f6c5-4b9e-8d8a-79bcdebed567Screenshot 2023-12-08 205952.png
-wwwroot\Images\Customers\9e2eb0a7-72b2-43d8-92ba-fa66882a93a5Screenshot 2023-12-08 205952.png
-wwwroot\Images\Customers\d3c96939-dca7-406b-964d-21d536bf602aScreenshot 2024-12-13 164301.png
-wwwroot\Images\Customers\e51f83d6-848d-4121-9df9-446c61f89fc3Screenshot 2023-12-08 210542.png
-wwwroot\Images\Experts\36de391d-8827-4d5d-a02e-b123b463425aScreenshot 2023-12-16 160217.png
-wwwroot\Images\Experts\377a7f72-843d-4c2b-9c0f-74d46fcb64baScreenshot 2023-12-08 201958.png
-wwwroot\Images\Experts\c2032201-190d-4130-ad5b-aabb1b1918dfScreenshot 2023-12-08 205952.png
-wwwroot\Images\Experts\f9d24ad8-7d9d-4ba5-8d43-86e974bb5be0Screenshot 2023-12-08 232520.png
-wwwroot\Images\HomeServices\ef8e8942-12d0-41e0-b662-ce03471898c4Screenshot 2023-12-08 233135.png
-wwwroot\Images\HomeServices\fde4fb62-9867-4cf1-8ad3-e634bd53740bScreenshot 2023-12-08 201958.png
-wwwroot\Images\SubCategories\2e4409f8-64c3-4951-b2f7-f9e6599e6cc0Screenshot 2023-12-08 205952.png
-wwwroot\Images\SubCategories\a0351baa-17e2-4dd6-978e-56d7e3e1f2feScreenshot 2023-12-08 205952.png
-wwwroot\Images\SubCategories\ec52500c-bdf6-431d-819d-95fb2a89ec5fScreenshot 2023-11-03 205001.png
-wwwroot\Images\SubCategories\f8115cbc-0428-4f0c-98e7-7ecb95473ac0Screenshot 2023-12-08 195459.png
+wwwroot\Images\Customers\94f46bed-f6c1-48a7-bd54-efe8d43c1eceScreenshot 2024-07-23 145928.png
+wwwroot\Images\Customers\b7475052-77b6-42f3-aed7-12b2dc82dc07Screenshot 2024-12-13 164301.png
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map

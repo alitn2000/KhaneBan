@@ -3,12 +3,6 @@ using KhaneBan.Domain.Core.Entites.User;
 using KhaneBan.InfraStructure.EfCore.Common;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 
 namespace KhaneBan.InfraStructure.EfCore.Repositories;
 
@@ -106,6 +100,7 @@ public class CustomerRepository : ICustomerRepository
 
             existcustomer.User.IsDeleted = true;
             await _appDbContext.SaveChangesAsync(cancellationToken);
+            _logger.LogError("<<<<<<<<<<<<<<<<<<<<<<<<<<==============================================>>>>>something is wrong in create category");
             return true;
         }
 
@@ -129,7 +124,7 @@ public class CustomerRepository : ICustomerRepository
 
             existcustomer.User.IsDeleted = false;
             await _appDbContext.SaveChangesAsync(cancellationToken);
-            _logger.LogInformation(" Active customer Succesfully");
+            _logger.LogInformation(" <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<=====================================================================>>>>Active customer Succesfully");
         }
         catch (Exception ex)
         {
@@ -158,14 +153,14 @@ public class CustomerRepository : ICustomerRepository
 
             await _appDbContext.SaveChangesAsync(cancellationToken);
             _logger.LogInformation(" update customer Succesfully");
-        
+
             return true;
 
         }
-        catch(Exception ex)
+        catch (Exception ex)
         {
 
-            _logger.LogError("Error in customer repository=======================>>>>>>>>>>>{ErrorMessage}", ex.Message);
+            _logger.LogError("Error in customer repository<<<<<<<<<<<<==================================================>>>>>>>>>>>{ErrorMessage}", ex.Message);
             return false;
         }
 

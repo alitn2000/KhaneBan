@@ -1,0 +1,210 @@
+﻿@using KhaneBan.EndPoints.MVC.Areas.Users.Models
+
+@model UpdateCustomerInfoViewModel
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<title>کلاسیک ادز - تنظیمات</title>
+	<link rel="stylesheet" href="~/UsersTemplate/css/custom/setting.css">
+</head>
+
+<body>
+
+
+	<div class="btmbar-part">
+		<div class="container">
+			<ul class="btmbar-widget">
+				<li><a href="user-form.html"><i class="fas fa-user"></i></a></li>
+				<li><a href="#"><i class="fas fa-star"></i><sup>0</sup></a></li>
+				<li>
+					<a class="plus-btn" href="ad-post.html">
+						<i class="fas fa-plus"></i><span>
+							پست خود را تبلیغ کنید
+						</span>
+					</a>
+				</li>
+				<li><a href="#"><i class="fas fa-bell"></i><sup>0</sup></a></li>
+				<li><a href="#"><i class="fas fa-envelope"></i><sup>0</sup></a></li>
+			</ul>
+		</div>
+	</div>
+	<section class="single-banner">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="single-content">
+						<h2>تنظیمات</h2>
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="index.html">صفحه اصلی</a></li>
+							<li class="breadcrumb-item active" aria-current="page">تنظیمات</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="dash-header-part">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 col-md-3 col-lg-2">
+					<div class="dash-avatar"><a href="#"><img src="~/UsersTemplate/images/avatar/01.jpg" alt="avatar"></a></div>
+				</div>
+				<div class="col-sm-8 col-md-9 col-lg-3">
+					<div class="dash-intro">
+						<h4><a href="#">جک اسپارو</a></h4>
+						<h5>فروشنده جدید</h5>
+					</div>
+					<ul class="dash-meta">
+						<li><i class="fas fa-phone-alt"></i><span>(123) 000-1234</span></li>
+						<li><i class="fas fa-envelope"></i><span>gackon@gmail.com</span></li>
+						<li><i class="fas fa-map-marker-alt"></i><span>آمریکا، لس آنجلس</span></li>
+					</ul>
+				</div>
+				<div class="col-lg-7">
+					<div class="row">
+						<div class="col-md-4 col-lg-4">
+							<div class="dash-focus dash-list">
+								<h2>2433</h2>
+								<p>آگهی تبلیغ </p>
+							</div>
+						</div>
+						<div class="col-md-4 col-lg-4">
+							<div class="dash-focus dash-book">
+								<h2>2433</h2>
+								<p>نشان دار کردن تبلیغ </p>
+							</div>
+						</div>
+						<div class="col-md-4 col-lg-4">
+							<div class="dash-focus dash-rev">
+								<h2>2433</h2>
+								<p>مجموع نظرات</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="dash-menu-list">
+						<ul>
+							<li class="navbar-item"><a href="profile.html">پروفایل</a></li>
+							<li class="navbar-item"><a href="my-ads.html">سفارشات من</a></li>
+							<li class="navbar-item"><a class="active" href="setting.html">ویرایش مشخصات </a></li>
+							<li class="navbar-item"><a href="#">خروج </a></li>
+							<li class="navbar-item navbar-dropdown">
+								<a class="navbar-link"
+								   href="bookmark.html"><span>نشانک </span><span>0</span></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="setting-part">
+		<div class="container">
+			<form class="setting-form" asp-controller="Profile" asp-action="UpdateCustomerProfile" method="post" enctype="multipart/form-data">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="form-group">
+							<label asp-for="FirstName" class="form-label">نام  </label><input asp-for="FirstName" type="text"
+																									 class="form-control" placeholder="@Model.FirstName">
+						</div>
+
+						<span asp-validation-for="FirstName" class="text-danger"></span>
+					</div>
+					<div class="col-lg-6">
+						<div class="form-group">
+							<label asp-for="LastName" class="form-label">نام خانوادگی </label><input asp-for="LastName" type="text"
+																											class="form-control" placeholder="@Model.LastName">
+						</div>
+						<span asp-validation-for="LastName" class="text-danger"></span>
+					</div>
+
+					<div class="col-lg-6">
+						<div class="form-group">
+							<label asp-for="UserName" class="form-label">نام کاربری </label><input asp-for="UserName" type="text"
+																											class="form-control" placeholder="@Model.UserName">
+						</div>
+						<span asp-validation-for="LastName" class="text-danger"></span>
+					</div>
+
+					<div class="col-lg-12">
+						<div class="form-group">
+							<label asp-for="Address" class="form-label">آدرس </label><input asp-for="Address" type="text"
+																			  class="form-control" placeholder="@Model.Address">
+						</div>
+						<span asp-validation-for="Address" class="text-danger"></span>
+					</div>
+					<div class="col-lg-6">
+						<div class="form-group">
+							<label asp-for="CityId" class="form-label">استان ها</label>
+							<select asp-for="CityId" class="form-select">
+								<option value="">انتخاب کنید...</option>
+								@foreach (var item in ViewBag.Cities as List<SelectListItem>)
+								{
+									<option value="@item.Value">@item.Text</option>
+								}
+							</select>
+							<span asp-validation-for="CityId" class="text-danger"></span>
+						</div>
+
+
+
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label asp-for="Email" class="form-label">ایمیل </label><input asp-for="Email" type="email"
+																			  class="form-control" placeholder="@Model.Email">
+							</div>
+							<span asp-validation-for="Email" class="text-danger"></span>
+						</div>
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label asp-for="PhoneNumber" class="form-label">شماره </label><input asp-for="PhoneNumber" type="text"
+															   class="form-control" placeholder="@Model.PhoneNumber">
+							</div>
+							<span asp-validation-for="PhoneNumber" class="text-danger"></span>
+						</div>
+
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label class="form-label">آپلود عکس جدید</label>
+								<input type="file" asp-for="ImageFile" class="form-control" />
+
+							</div>
+							<span asp-validation-for="ImageFile" class="text-danger"></span>
+						</div>
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label asp-for="Balance" class="form-label">موجودی</label><input asp-for="Balance" type="number"
+																	   step="100000" class="form-control" placeholder="@Model.Balance">
+							</div>
+						</div>
+
+
+
+						<div class="col-lg-12">
+							<div class="form-group text-center mt-5">
+								<button class="btn btn-inline">
+									<i class="fas fa-user-check"></i><span>بروز رسانی اطلاعات</span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+</body>
+
+</html>
+
+@section Scripts
+{
+	<partial name="_validationScriptsPartial" />
+}

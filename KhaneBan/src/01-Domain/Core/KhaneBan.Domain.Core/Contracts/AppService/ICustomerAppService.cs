@@ -19,4 +19,5 @@ public interface ICustomerAppService
     Task<bool> ActiveCustomer(int userId, CancellationToken cancellationToken);
     Task<IdentityResult> RegisterAsync(User user, string pass);
     Task<IdentityResult> UpdateAsync(User user);
+    Task<Customer?> GetCustomerByIdWithDetailsAsync(int userId, CancellationToken cancellationToken);
 }

@@ -18,7 +18,12 @@ Log.Logger = new LoggerConfiguration()
 
 
 var builder = WebApplication.CreateBuilder(args);
-
+Log.Logger = new LoggerConfiguration()
+    .MinimumLevel.Information() 
+    .WriteTo.Console()
+    .WriteTo.Seq("http://localhost:5341", apiKey: "m1P3sZ70TIi58jV7WpO9")
+    .Enrich.FromLogContext()
+    .CreateLogger();
 
 builder.Host.ConfigureLogging(x =>
 {
@@ -74,6 +79,7 @@ try
     builder.Services.AddScoped<ISuggestionService, SuggestionService>();
     builder.Services.AddScoped<IRatingService, RatingService>();
     builder.Services.AddScoped<IPictureService, PictureService>();
+    builder.Services.AddScoped<IAccountService, AccountService>();
 
 
     //appservice
@@ -88,6 +94,7 @@ try
     builder.Services.AddScoped<ISuggestionAppService, SuggestionAppService>();
     builder.Services.AddScoped<IRatingAppService, RatingAppService>();
     builder.Services.AddScoped<IPictureAppService, PictureAppService>();
+    builder.Services.AddScoped<IAccountAppService, AccountAppService>();
 
     builder.Services.AddIdentity<User, IdentityRole<int>>
         (options =>

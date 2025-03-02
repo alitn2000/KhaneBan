@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KhaneBan.InfraStructure.EfCore")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+59f90452e57f38fc46d4632511b54195b25f60b7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+56dec13f41284a0afd2d4162266ceb0d87e73df0")]
 [assembly: System.Reflection.AssemblyProductAttribute("KhaneBan.InfraStructure.EfCore")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KhaneBan.InfraStructure.EfCore")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿@using KhaneBan.Domain.Core.Entites.User
+@model Customer
+
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -33,8 +36,7 @@
             <div class="sidebar-content">
                 <div class="sidebar-profile">
                     <a href="#" class="sidebar-avatar">
-                        <img src="/UsersTemplate/images/avatar/01.jpg"
-                             alt="avatar">
+                        <img src ="@Model.User.PicturePath" alt="avatar">
                     </a>
                     <h4><a href="#" class="sidebar-name">جکسون هندرسون</a></h4><a href="ad-post.html"
                                                                                   class="btn btn-inline sidebar-btn">
@@ -121,8 +123,8 @@
                         <ul class="navbar-list">
                             <li class="navbar-item"><a class="navbar-link" href="Index">پروفایل</a></li>
                             <li class="navbar-item"><a class="navbar-link" href="RequestList">سفارشات من</a></li>
-                            <li class="navbar-item"><a class="navbar-link" href="UpdateProfile">ویرایش مشخصات </a></li>
-                            <li class="navbar-item"><a class="navbar-link" href="#">خروج </a></li>
+                            <li class="navbar-item"><a class="navbar-link" asp-controller="Profile" asp-action="UpdateCustomerProfile">ویرایش مشخصات </a></li>
+                            <li class="navbar-item"><a class="navbar-link" asp-controller="Account" asp-action="Logout">خروج </a></li>
                            
                             <li class="navbar-item navbar-dropdown">
                                 <a class="navbar-link" href="#">
@@ -135,7 +137,7 @@
                                 <a class="navbar-link"
                                    href="#"><span>اعلانات</span><span>0</span></a>
                             </li>
-                            <li class="navbar-item"><a class="navbar-link" href="user-form.html">خروج </a></li>
+                            <li class="navbar-item"><a class="navbar-link" asp-controller="Account" asp-action="Logout">خروج </a></li>
                         </ul>
                     </div>
                 </div>
@@ -181,17 +183,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-4 col-md-3 col-lg-2">
-                    <div class="dash-avatar"><a href="#"><img src="/UsersTemplate/images/avatar/01.jpg" alt="avatar"></a></div>
+                    <div class="dash-avatar"><a href="#"><img src="@Model.User.PicturePath" alt="avatar"></a></div>
                 </div>
                 <div class="col-sm-8 col-md-9 col-lg-3">
                     <div class="dash-intro">
-                        <h4><a href="#">جک اسپارو</a></h4>
+                        <h4><a href="#">@($"{Model.User.FirstName} {Model.User.LastName}")</a></h4>
                         <h5>فروشنده جدید</h5>
                     </div>
                     <ul class="dash-meta">
-                        <li><i class="fas fa-phone-alt"></i><span>(123) 000-1234</span></li>
-                        <li><i class="fas fa-envelope"></i><span>gackon@gmail.com</span></li>
-                        <li><i class="fas fa-map-marker-alt"></i><span>آمریکا، لس آنجلس</span></li>
+                        <li><i class="fas fa-phone-alt"></i><span>@Model.User.PhoneNumber</span></li>
+                        <li><i class="fas fa-envelope"></i><span>@Model.User.Email</span></li>
+                        <li><i class="fas fa-map-marker-alt"></i><span>@Model.User.City.Title</span></li>
                     </ul>
                 </div>
                 <div class="col-lg-7">
@@ -223,9 +225,9 @@
                         <ul>
                             <li class="navbar-item"><a class="active" href="Index">پروفایل</a></li>
                             <li class="navbar-item"><a href="RequestList">سفارشات من</a></li>
-                            <li class="navbar-item"><a href="UpdateProfile">ویرایش مشخصات </a></li>
+                            <li class="navbar-item"><a asp-controller="Profile" asp-action="UpdateCustomerProfile">ویرایش مشخصات </a></li>
                             <li class="navbar-item"><a href="SuggestionList">پیشنهادات من </a></li>
-                            <li class="navbar-item"><a  href="#">خروج </a></li>
+                            <li class="navbar-item"><a asp-controller="Account" asp-action="Logout">خروج </a></li>
                         </ul>
                     </div>
                 </div>
@@ -242,27 +244,24 @@
                         </div>
                         <div class="profile-intro">
                             <div class="profile-author">
-                                <a href="#"><img src="/UsersTemplate/images/avatar/01.jpg" alt="01"></a>
-                                <h4>جعفر عباسی</h4>
-                                <p><span>عضو شده:</span>1399/12/12</p>
+                                <a href="#"><img src="@Model.User.PicturePath" alt="avatar"></a>
+                                <h4>@($"{Model.User.FirstName} {Model.User.LastName}")</h4>
+                                <p><span>عضو شده:</span>@Model.User.RegisterDate</p>
                             </div>
                             <ul class="account-list">
                                 <li>
                                     <h6>مجموع سفارش:</h6>
-                                    <p>07</p>
+                                    <p>@Model.Requests.Count()</p>
                                 </li>
                                 <li>
                                     <h6>لغو سفارش:</h6>
-                                    <p>02</p>
+                                    <p>انجام ندادم :(</p>
                                 </li>
                                 <li>
                                     <h6>موجودی:</h6>
-                                    <p>98000 تومان</p>
+                                    <p>@Model.User.Balance</p>
                                 </li>
-                                <li>
-                                    <h6>وضعیت سفارش:</h6>
-                                    <p>01</p>
-                                </li>
+                                
                             </ul>
                         </div>
                     </div>
@@ -276,22 +275,24 @@
 
                             <li>
                                 <h6>استان:</h6>
-                                <p>تهران</p>
+                                <p>@Model.User.City.Title</p>
                             </li>
 
                             <li>
                                 <h6>آدرس:</h6>
-                                <p>شهران</p>
+                                <p>@Model.User.Address</p>
                             </li>
 
 
                             <li>
                                 <h6>ایمیل:</h6>
-                                <p>richard@example.com</p>
+                                <p>@Model.User.Email</p>
                             </li>
                             <li>
                                 <h6>تلفن:</h6>
-                                <p>+12027953213</p>
+                                <p>
+                                    @Model.User.PhoneNumber
+                                </p>
                             </li>
                             
                         </ul>
