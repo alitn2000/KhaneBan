@@ -25,6 +25,6 @@ public interface IRequestRepository
     Task<bool> UpdateAsync(Request request, CancellationToken cancellationToken);
     Task<bool> IsDelete(int requestId, CancellationToken cancellationToken);
     Task<List<Request>> GetCustomersRequestAsync(int userId, CancellationToken cancellationToken);
-    Task<bool> ChangeStatus(StatusEnum status, int requestId, CancellationToken cancellationToken);
+    Task<bool> UpdateStatus(Request request, StatusEnum newStatus, CancellationToken cancellationToken);
 
 }

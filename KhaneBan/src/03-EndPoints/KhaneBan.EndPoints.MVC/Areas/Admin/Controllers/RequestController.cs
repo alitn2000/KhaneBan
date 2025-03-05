@@ -34,16 +34,11 @@ public class RequestController : Controller
 
     public async Task<IActionResult> ChangeStatus(int requestId, StatusEnum Statusenum, CancellationToken cancellationToken)
     {
-        bool flag = await _requestAppService.ChangeStatus(requestId, Statusenum, cancellationToken);
+        var result = await _requestAppService.UpdateStatusAsync(requestId, Statusenum, cancellationToken);
 
-        if (flag)
-        {
-            ViewBag.StatusMessage = "وضعیت سفارش با موفقیت تغییر یافت";
+    
+            ViewBag.StatusMessage = result.Message;
             return RedirectToAction("RequestList");
-        }
-
-        ViewBag.StatusMessageFaild = "تغییر وضعیت صورت نگرفت";
-        return RedirectToAction("RequestList");
 
     }
 }

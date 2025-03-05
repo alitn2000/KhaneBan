@@ -38,6 +38,7 @@ public class RequestRepository : IRequestRepository
     => await _appDbContext.Requests
         .Where(r => r.Customer.UserId == userId)
         .Include(r => r.Customer) 
+        .Include(r => r.HomeService)
         .ToListAsync(cancellationToken);
 
     public async Task<List<Request>> GetRequestsInfo(CancellationToken cancellationToken)
@@ -94,7 +95,7 @@ public class RequestRepository : IRequestRepository
     {
         try
         {
-            var request = await _appDbContext.Requests.FirstOrDefaultAsync(r => r.Id == requestId);
+            var request = await _appDbContext.Requests.FirstOrDefaultAsync(r => r.Id == requestId, cancellationToken);
 
             if (request == null)
                 return;
@@ -139,7 +140,7 @@ public class RequestRepository : IRequestRepository
                 return false;
 
             request.IsDeleted = true;
-            await _appDbContext.SaveChangesAsync();
+            await _appDbContext.SaveChangesAsync(cancellationToken);
             _logger.LogInformation(" delete request Succesfully");
             return true;
         }
@@ -172,14 +173,12 @@ public class RequestRepository : IRequestRepository
 
     }
 
-    public async Task<bool> ChangeStatus(StatusEnum status, int requestId, CancellationToken cancellationToken)
+    public async Task<bool> UpdateStatus( Request request, StatusEnum newStatus, CancellationToken cancellationToken)
     {
         try
         {
-            var existRequest = await _appDbContext.Requests.FirstOrDefaultAsync(s => s.Id == requestId);
-            if (existRequest == null)
-                return false;
-            existRequest.RequestStatus = status;
+
+            request.RequestStatus = newStatus;
 
             await _appDbContext.SaveChangesAsync(cancellationToken);
             _logger.LogInformation(" ChangeStatus request Succesfully");
@@ -197,13 +196,13 @@ public class RequestRepository : IRequestRepository
     {
         try
         {
-            var existRequest = await _appDbContext.Requests.FirstOrDefaultAsync(x => x.Id == request.Id);
+            var existRequest = await _appDbContext.Requests.FirstOrDefaultAsync(x => x.Id == request.Id, cancellationToken);
             if (existRequest == null)
                 return false;
 
             existRequest.Title = request.Title;
             existRequest.Description = request.Description;
-            existRequest.StartTime = request.StartTime;
+            existRequest.EndTime = request.EndTime;
             existRequest.RequestStatus = request.RequestStatus;
             existRequest.CityId = request.CityId;
 

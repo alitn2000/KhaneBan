@@ -1,4 +1,5 @@
-﻿using KhaneBan.Domain.Core.Entites.User;
+﻿using KhaneBan.Domain.Core.Entites.BaseEntities;
+using KhaneBan.Domain.Core.Entites.User;
 using KhaneBan.Domain.Core.Entites.UserRequests;
 using KhaneBan.Domain.Core.Enums;
 using System;
@@ -18,6 +19,6 @@ public interface IRequestService
     Task<bool> ChangeStatus(int requestId, StatusEnum status, CancellationToken cancellationToken);
     Task<List<Request>> GetCustomersRequestAsync(int userId, CancellationToken cancellationToken);
     Task<Request?> GetRequestByIdAsync(int requestId, CancellationToken cancellationToken);
-
+    Task<Result> UpdateStatusAsync(int requestId, StatusEnum newStatus, CancellationToken cancellationToken);
 
 }

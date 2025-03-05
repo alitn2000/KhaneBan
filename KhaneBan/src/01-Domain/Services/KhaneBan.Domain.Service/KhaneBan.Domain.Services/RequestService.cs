@@ -1,5 +1,6 @@
 ﻿using KhaneBan.Domain.Core.Contracts.Repository;
 using KhaneBan.Domain.Core.Contracts.Service;
+using KhaneBan.Domain.Core.Entites.BaseEntities;
 using KhaneBan.Domain.Core.Entites.User;
 using KhaneBan.Domain.Core.Entites.UserRequests;
 using KhaneBan.Domain.Core.Enums;
@@ -64,4 +65,20 @@ public class RequestService : IRequestService
 
     public async Task<Request?> GetRequestByIdAsync(int requestId, CancellationToken cancellationToken)
         => await _requestRepository.GetRequestByIdAsync(requestId, cancellationToken);
+
+    public async Task<Result> UpdateStatusAsync(int requestId, StatusEnum newStatus, CancellationToken cancellationToken)
+    {
+        var request = await _requestRepository.GetRequestByIdAsync(requestId, cancellationToken);
+        if (request == null)
+            return new Result("درخواست یافت نشد", false);
+
+        if (await _requestRepository.UpdateStatus(request, newStatus, cancellationToken))
+            return new Result("تغغیر وضعیت با موفقیت انجام شد", true);
+
+        return new Result("تغغیر وضعیت انجام نشد", false);
+
+
+    }
+
+
 }

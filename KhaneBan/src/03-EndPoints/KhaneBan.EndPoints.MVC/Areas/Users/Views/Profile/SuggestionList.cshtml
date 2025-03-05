@@ -210,17 +210,20 @@
                                                 <a asp-action="SuggestionsDetail" asp-route-id="@sug.RequestId" class="btn btn-primary">جزئیات پیشنهاد</a>
 
                                                 @if (sug.SuggestionStatus != StatusEnum.WorkPaidByCustomer &&
-                                               sug.SuggestionStatus != StatusEnum.WorkDoneByExpert &&
-                                               sug.SuggestionStatus != StatusEnum.Canceled)
+                                              sug.SuggestionStatus != StatusEnum.WorkDoneByExpert &&
+                                              sug.SuggestionStatus != StatusEnum.Canceled)
                                                 {
                                                     <form asp-action="ConfirmSuggestion" asp-controller="Profile" method="post">
                                                         <input type="hidden" name="id" value="@sug.Id" />
-                                                        <button type="submit" class="btn btn-success"
-                                                                onclick="return confirm('آیا از انتخاب این پیشنهاد مطمئن هستید؟')">
+                                                        <button type="submit" class="btn btn-warning"
+                                                        onclick="return confirm('آیا از انتخاب این پیشنهاد مطمئن هستید؟')">
                                                             انتخاب پیشنهاد
                                                         </button>
                                                     </form>
                                                 }
+
+                                               
+
                                             </td>
                                         </tr>
                                     }

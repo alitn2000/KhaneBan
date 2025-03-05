@@ -1,6 +1,7 @@
 ﻿using KhaneBan.Domain.AppServices;
 using KhaneBan.Domain.Core.Contracts.AppService;
 using KhaneBan.Domain.Core.Entites.User;
+using KhaneBan.Domain.Core.Enums;
 using KhaneBan.EndPoints.MVC.Areas.Users.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -176,5 +177,38 @@ public class ProfileController : Controller
             return NotFound();
         }
         return View(request);
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> ConfirmSuggestion(int id, CancellationToken cancellationToken)
+    {
+        
+
+        var suggestion = await _suggestionAppService.GetByIdAsync(id, cancellationToken);
+
+        if (suggestion == null)
+        {
+            return NotFound();
+        }
+
+       var suggestionResult = await _suggestionAppService.UpdateStatusAsync(suggestion.Id, StatusEnum.WorkStarted, cancellationToken);
+
+        if (suggestionResult.Flag)
+        {
+
+            var requestResult = await _requestAppService.UpdateStatusAsync(suggestion.RequestId, StatusEnum.WorkStarted, cancellationToken);
+            if (requestResult.Flag)
+            {
+                TempData["ResultMessage"] = requestResult.Message;
+                return RedirectToAction("RequestList");
+            }
+
+            TempData["ResultMessage"] = requestResult.Message;
+            return RedirectToAction("RequestList");
+
+        }
+
+        TempData["ResultMessage"] = suggestionResult.Message;
+        return RedirectToAction("RequestList");
     }
 }

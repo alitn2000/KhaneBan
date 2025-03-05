@@ -1,4 +1,6 @@
-﻿using KhaneBan.Domain.Core.Entites.UserRequests;
+﻿using KhaneBan.Domain.Core.Entites.BaseEntities;
+using KhaneBan.Domain.Core.Entites.UserRequests;
+using KhaneBan.Domain.Core.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,4 +13,5 @@ public interface ISuggestionService
 {
     Task<List<Suggestion>?> GetRequestSuggestions(int requestId, CancellationToken cancellationToken);
     Task<Suggestion?> GetByIdAsync(int id, CancellationToken cancellationToken);
+    Task<Result> UpdateStatusAsync(int suggestionId, StatusEnum newStatus, CancellationToken cancellationToken);
 }

@@ -11,7 +11,7 @@ public class Request
     public string Title { get; set; }
     public string Description { get; set; }
     public DateTime RegisterDate { get; set; }  = DateTime.Now;
-    public DateTime? StartTime { get; set; }
+    public DateTime? EndTime { get; set; }
     public DateTime RequestedDate { get; set; }
     public StatusEnum RequestStatus { get; set; } = StatusEnum.WatingExpertOffer;
     public bool IsDeleted { get; set; } = false;

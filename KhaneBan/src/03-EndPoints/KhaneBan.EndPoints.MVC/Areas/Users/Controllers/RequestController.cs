@@ -56,7 +56,7 @@ public class RequestController : Controller
         }
         if (model.ImageFiles is not null && model.ImageFiles.Any())
         {
-            model.ImagePaths = new List<string>();
+            model.ImagePaths = [];
 
             foreach (var imageFile in model.ImageFiles)
             {

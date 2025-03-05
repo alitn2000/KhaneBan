@@ -1,10 +1,12 @@
 ﻿using KhaneBan.Domain.Core.Contracts.Repository;
+using KhaneBan.Domain.Core.Entites.BaseEntities;
 using KhaneBan.Domain.Core.Entites.User;
 using KhaneBan.Domain.Core.Entites.UserRequests;
 using KhaneBan.Domain.Core.Enums;
 using KhaneBan.InfraStructure.EfCore.Common;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using Microsoft.Identity.Client;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -98,28 +100,8 @@ public class SuggestionRepository : ISuggestionRepository
                              .Include(x => x.Request)
                              .ThenInclude(x => x.HomeService)
                              .FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
-    public async Task<bool> ChangeStatus(StatusEnum status, int suggestionId, CancellationToken cancellationToken)
-    {
-        try
-        {
-            var existSuggestion = await _appDbContext.Suggestions.FirstOrDefaultAsync(s => s.Id == suggestionId, cancellationToken);
-            if (existSuggestion == null)
-                return false;
-            existSuggestion.SuggestionStatus = status;
+    
 
-            await _appDbContext.SaveChangesAsync(cancellationToken);
-            _logger.LogInformation(" ChangeStatus request Succesfully");
-            return true;
-        }
-        catch (Exception ex)
-        {
-            _logger.LogError("Error in suggestion repository=======================>>>>>>>>>>>{ErrorMessage}", ex.Message);
-
-            return false;
-        }
-
-
-    }
 
     public async Task<bool> CreateAsync(Suggestion suggestion, CancellationToken cancellationToken)
     {
@@ -199,6 +181,25 @@ public class SuggestionRepository : ISuggestionRepository
 
         }
         catch(Exception ex)
+        {
+            _logger.LogError("Error in request repository=======================>>>>>>>>>>>{ErrorMessage}", ex.Message);
+            return false;
+        }
+
+        
+
+    }
+
+    public async Task<bool>UpdateStatusAsync(Suggestion suggestion,StatusEnum newStatus, CancellationToken cancellationToken)
+    {
+        try
+        {
+            suggestion.SuggestionStatus = newStatus;
+            await _appDbContext.SaveChangesAsync(cancellationToken);
+            _logger.LogInformation(" updatestatus request Succesfully");
+            return true;
+        }
+        catch (Exception ex)
         {
             _logger.LogError("Error in request repository=======================>>>>>>>>>>>{ErrorMessage}", ex.Message);
             return false;

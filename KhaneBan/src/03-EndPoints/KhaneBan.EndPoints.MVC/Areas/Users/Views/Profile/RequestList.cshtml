@@ -1,6 +1,7 @@
 ﻿
 @using FrameWork
 @using KhaneBan.Domain.Core.Entites.UserRequests
+@using KhaneBan.Domain.Core.Enums
 @model List<Request>
 
 <!DOCTYPE html>
@@ -185,10 +186,11 @@
                             <thead>
                                 <tr>
                                     <th scope="col">شناسه سفارش</th>
-                                    @*  <th scope="col"> عنوان هوم سرویس</th> *@
+                                    <th scope="col"> عنوان هوم سرویس</th> 
                                     <th scope="col">وضعیت</th>
                                     <th scope="col">جزئیات سفارش</th>
                                     <th scope="col">پیشنهادات</th>
+                                    <th scope="col">عملیات</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -200,11 +202,37 @@
                                     {
                                         <tr>
                                             <td>@request.Id</td>
-                                            @*   <td>@request.HomeService.Title</td> *@
-                                            <td>@request.RequestStatus.GetEnumDisplayName()</td>
+                                            <td>@request.HomeService.Title</td>
+                                            <td>
+                                                @if (request.RequestStatus != null)
+                                                {
+                                                    <span class="badge
+                                                         @(request.RequestStatus == StatusEnum.WatingExpertOffer ? "badge-secondary" :
+                                                           request.RequestStatus == StatusEnum.WaitingCustomerToChoose ? "badge-warning" :
+                                                           request.RequestStatus == StatusEnum.WorkStarted ? "badge-primary" :
+                                                           request.RequestStatus == StatusEnum.WorkDoneByExpert ? "badge-success" :
+                                                           request.RequestStatus == StatusEnum.Canceled ? "badge-danger" :
+                                                           request.RequestStatus == StatusEnum.WorkPaidByCustomer ? "badge-success" : "badge-light")">
+                                                        @request.RequestStatus.GetEnumDisplayName()
+                                                    </span>
+                                                }
+                                            </td>
                                             <td><a asp-action="RequestDetails" asp-route-id="@request.Id" class="btn btn-primary">جزئییات</a></td>
                                             <td><a asp-action="SuggestionList" asp-route-id="@request.Id" class="btn btn-primary">پیشنهادات</a></td>
+                                           @*  <td>
+                                                @if (request.RequestStatus == StatusEnum.WorkStarted)
 
+                                                {
+                                                    <form asp-action="Payment" asp-controller="Profile" method="post">
+                                                        <input type="hidden" name="id" value="@request.Id" />
+                                                        <button type="submit" class="btn btn-warning"
+                                                                onclick="return confirm('آیا از انتخاب این پیشنهاد مطمئن هستید؟')">
+                                                            انتخاب پیشنهاد
+                                                        </button>
+                                                    </form>
+                                                }
+                                            </td> *@
+                                            درست کن
                                         </tr>
                                     }
                                 }
