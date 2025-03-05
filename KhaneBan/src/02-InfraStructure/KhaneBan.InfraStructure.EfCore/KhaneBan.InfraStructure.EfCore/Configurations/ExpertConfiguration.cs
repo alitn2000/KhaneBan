@@ -15,7 +15,10 @@ namespace KhaneBan.InfraStructure.EfCore.Configurations
     {
         builder.HasData(
 
-           new Expert { Id = 1, UserId = 2 });
-    }
+            new Expert { Id = 1, UserId = 2 },
+            new Expert { Id = 2, UserId = 5 },
+            new Expert { Id = 3, UserId = 6 }
+            );
+        }
 }
 }

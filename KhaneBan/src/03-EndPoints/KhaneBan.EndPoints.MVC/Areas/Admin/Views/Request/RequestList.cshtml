@@ -40,7 +40,7 @@
 							<li class="breadcrumb-item active">درخواست ها</li>
 						</ul>
 					</div>
-					
+
 				</div>
 			</div>
 			<div class="container-fluid">
@@ -59,7 +59,7 @@
 											<th data-breakpoints="xs">وضعیت</th>
 											<th data-breakpoints="xs">پیشنهاد</th>
 											<th data-breakpoints="xs">تغییر وضعیت</th>
-										    @* <th data-breakpoints="xs">جزئیات سفارش</th>  *@
+											@* <th data-breakpoints="xs">جزئیات سفارش</th>  *@
 										</tr>
 									</thead>
 									<tbody>
@@ -89,12 +89,12 @@
 														{
 															<span class="badge
 																	@(request.RequestStatus == StatusEnum.WatingExpertOffer ? "badge-secondary" :
-																	request.RequestStatus == StatusEnum.WatingForChoosingExpert ? "badge-info" :
-																	request.RequestStatus == StatusEnum.WatingExpertComeToYourPlace ? "badge-warning" :
+																	request.RequestStatus == StatusEnum.WaitingCustomerToChoose ? "badge-warning" :
 																	request.RequestStatus == StatusEnum.WorkStarted ? "badge-primary" :
 																	request.RequestStatus == StatusEnum.WorkDoneByExpert ? "badge-success" :
+																	request.RequestStatus == StatusEnum.Canceled ? "badge-danger" :
 																	request.RequestStatus == StatusEnum.WorkPaidByCustomer ? "badge-success" : "badge-light")">
-																	@request.RequestStatus.GetEnumDisplayName()
+																@request.RequestStatus.GetEnumDisplayName()
 															</span>
 														}
 													</td>
@@ -108,16 +108,16 @@
 														<form asp-area="Admin" asp-controller="Request" asp-action="ChangeStatus" method="post">
 															<input type="hidden" name="requestId" value="@request.Id" />
 															<select name="Statusenum" class="form-control status-dropdown" onchange="this.form.submit()">
-																	@foreach (StatusEnum status in Enum.GetValues(typeof(StatusEnum)))
-																	{
+																@foreach (StatusEnum status in Enum.GetValues(typeof(StatusEnum)))
+																{
 																	<option value="@((int)status)" selected="@(request.RequestStatus == status ? "selected" : null)">
-																			@status.GetEnumDisplayName()
+																		@status.GetEnumDisplayName()
 																	</option>
-																	}
+																}
 															</select>
 														</form>
 													</td>
-													
+
 
 												</tr>
 											}

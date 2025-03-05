@@ -115,6 +115,8 @@ public class ExpertRepository : IExpertRepository
             .Experts
             .Include(u => u.User)
             .FirstOrDefaultAsync(c => c.Id == userId, cancellationToken);
+            if (existExpert == null)
+                return;
 
             existExpert.User.IsDeleted = false;
             await _appDbContext.SaveChangesAsync(cancellationToken);

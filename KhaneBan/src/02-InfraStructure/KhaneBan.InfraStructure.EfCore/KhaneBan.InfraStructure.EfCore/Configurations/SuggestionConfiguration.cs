@@ -37,11 +37,11 @@ public class SuggestionConfiguration : IEntityTypeConfiguration<Suggestion>
         new Suggestion
         {
             Id = 1,
-            Price = 5000,
+            Price = 6000,
             StartDate = new DateTime(2025, 2, 2, 0, 0, 0),
             RegisterDate = new DateTime(2025, 2, 2, 0, 0, 0),
             Description = "ارزون",
-            SuggestionStatus  = StatusEnum.WatingForChoosingExpert,
+            SuggestionStatus = StatusEnum.WorkPaidByCustomer,
             IsDeleted = false,
             RequestId = 1,
             ExpertId = 1,
@@ -53,11 +53,39 @@ public class SuggestionConfiguration : IEntityTypeConfiguration<Suggestion>
             StartDate = new DateTime(2025, 2, 2, 0, 0, 0),
             RegisterDate = new DateTime(2025, 2, 2, 0, 0, 0),
             Description = "گرون",
-            SuggestionStatus = StatusEnum.WatingForChoosingExpert,
+            SuggestionStatus = StatusEnum.WorkPaidByCustomer,
             IsDeleted = false,
             RequestId = 2,
             ExpertId = 1,
-        }
+        },
+
+         new Suggestion
+         {
+             Id = 3,
+             Price = 2500,
+             StartDate = new DateTime(2025, 3, 8, 0, 0, 0),
+             RegisterDate = new DateTime(2025, 3, 5, 0, 0, 0),
+             Description = "قیمت مناسب میگیرم",
+             SuggestionStatus = StatusEnum.WaitingCustomerToChoose,
+             IsDeleted = false,
+             RequestId = 3,
+             ExpertId = 2,
+         },
+
+          new Suggestion
+          {
+              Id = 4,
+              Price = 2100,
+              StartDate = new DateTime(2025, 3, 8, 0, 0, 0),
+              RegisterDate = new DateTime(2025, 3, 5, 0, 0, 0),
+              Description = "قیمت مناسب تر میگیرم",
+              SuggestionStatus = StatusEnum.WaitingCustomerToChoose,
+              IsDeleted = false,
+              RequestId = 3,
+              ExpertId = 3,
+             
+          }
+
         );
 
     }

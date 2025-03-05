@@ -1,5 +1,6 @@
 ﻿using KhaneBan.Domain.Core.Contracts.AppService;
 using KhaneBan.Domain.Core.Contracts.Service;
+using KhaneBan.Domain.Core.Entites.BaseEntities;
 using KhaneBan.Domain.Core.Entites.User;
 using Microsoft.AspNetCore.Identity;
 using System;
@@ -43,8 +44,11 @@ public class CustomerAppService : ICustomerAppService
         => _customerService.RegisterAsync(user, pass);
 
     public Task<IdentityResult> UpdateAsync(User user)
-        => _customerService.UpdateAsync(user);
+        =>  _customerService.UpdateAsync(user);
 
-    public Task<Customer?> GetCustomerByIdWithDetailsAsync(int userId, CancellationToken cancellationToken)
-        => _customerService.GetCustomerByIdWithDetailsAsync(userId, cancellationToken);
+    public async Task<Customer?> GetCustomerByIdWithDetailsAsync(int userId, CancellationToken cancellationToken)
+        => await  _customerService.GetCustomerByIdWithDetailsAsync(userId, cancellationToken);
+
+    public async Task<Result> MinusBalanceAsync(int userId, double minusBalance, CancellationToken cancellationToken)
+        => await _customerService.MinusBalanceAsync(userId, minusBalance, cancellationToken);
 }

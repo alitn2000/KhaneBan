@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace KhaneBan.Domain.Core.Enums;
 
@@ -13,18 +14,21 @@ public enum StatusEnum
     [Display(Name = "منتظر پیشنهاد کارشناس")]
     WatingExpertOffer = 1,
 
-    [Display(Name = "منتظر انتخاب کارشناس")]
-    WatingForChoosingExpert = 2,
-
-    [Display(Name = "در انتظار کارشناس")]
-    WatingExpertComeToYourPlace = 3,
+    [Display(Name = "منتظر انتخاب مشتری")]
+    WaitingCustomerToChoose = 2,
 
     [Display(Name = " آغاز کار کارشناس")]
-    WorkStarted = 4,
+    WorkStarted = 3,
 
     [Display(Name = " انجام شده")]
-    WorkDoneByExpert = 5,
+    WorkDoneByExpert = 4,
 
     [Display(Name = "پرداخت شده ")]
-    WorkPaidByCustomer = 6
+    WorkPaidByCustomer = 5,
+
+    [Display(Name = "لغو شده ")]
+    Canceled = 6
+
+
+
 }

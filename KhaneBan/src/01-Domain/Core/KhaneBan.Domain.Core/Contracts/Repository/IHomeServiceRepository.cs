@@ -15,5 +15,6 @@ namespace KhaneBan.Domain.Core.Contracts.Repository
         Task<bool> UpdateAsync(HomeService homeService, CancellationToken cancellationToken);
         Task<bool> DeleteAsync(int id, CancellationToken cancellationToken);
         Task ActiveHomeServiceAsync(int homeServiceId, CancellationToken cancellationToken);
+        Task<List<HomeService>> GetHomeServicesBySubCategoryId(int subCategoryId, CancellationToken cancellationToken);
     }
 }

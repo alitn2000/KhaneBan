@@ -36,10 +36,11 @@ public class SuggestionRepository : ISuggestionRepository
 
     public async Task<List<Suggestion>?> GetRequestSuggestions(int requestId, CancellationToken cancellationToken)
         => await _appDbContext.Suggestions
-        .Include(c => c.Request)
-        .Include(c => c.Expert)                                        ////////// dorostish barresi shavad
-        .ThenInclude(c => c.User)
         .Where(r => r.Request.Id == requestId)
+        .Include(c => c.Request)
+        .Include(c => c.Expert)                                        
+        .ThenInclude(c => c.User)
+
         .ToListAsync(cancellationToken);
 
     public async Task<Suggestion?> GetSuggestionByIdAsync(int suggestionId, CancellationToken cancellationToken)
@@ -89,13 +90,19 @@ public class SuggestionRepository : ISuggestionRepository
          .ThenInclude(s => s.HomeService)
          .Include(s => s.Expert)
          .ThenInclude(s => s.User)
-        .FirstOrDefaultAsync(s => s.ExpertId == expertId && s.Id == suggestionId, cancellationToken);
+         .FirstOrDefaultAsync(s => s.ExpertId == expertId && s.Id == suggestionId, cancellationToken);
 
+    public async Task<Suggestion?> GetByIdAsync(int id, CancellationToken cancellationToken)
+
+           => await _appDbContext.Suggestions
+                             .Include(x => x.Request)
+                             .ThenInclude(x => x.HomeService)
+                             .FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
     public async Task<bool> ChangeStatus(StatusEnum status, int suggestionId, CancellationToken cancellationToken)
     {
         try
         {
-            var existSuggestion = await _appDbContext.Suggestions.FirstOrDefaultAsync(s => s.Id == suggestionId);
+            var existSuggestion = await _appDbContext.Suggestions.FirstOrDefaultAsync(s => s.Id == suggestionId, cancellationToken);
             if (existSuggestion == null)
                 return false;
             existSuggestion.SuggestionStatus = status;
@@ -175,7 +182,7 @@ public class SuggestionRepository : ISuggestionRepository
         try
         {
 
-            var existSuggestion = await _appDbContext.Suggestions.FirstOrDefaultAsync(x => x.Id == suggestion.Id);
+            var existSuggestion = await _appDbContext.Suggestions.FirstOrDefaultAsync(x => x.Id == suggestion.Id, cancellationToken);
             if (existSuggestion == null)
                 return false;
 

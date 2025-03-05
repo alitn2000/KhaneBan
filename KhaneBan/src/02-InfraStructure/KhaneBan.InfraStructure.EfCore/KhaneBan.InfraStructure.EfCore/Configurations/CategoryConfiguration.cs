@@ -25,14 +25,14 @@ namespace KhaneBan.InfraStructure.EfCore.Configurations
 
             builder.HasData(new List<Category>()
             {
-                new Category() { Id = 1, RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0),Title = "تمیزکاری"},
-                new Category() { Id = 2, RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0),Title = "ساختمان" },
-                new Category() { Id = 3, RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0),Title = "تعمیرات اشیا"},
-                new Category() { Id = 4, RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0),Title = "اسباب کشی و حمل بار"},
-                new Category() { Id = 5, RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0),Title = "خودرو"},
-                new Category() { Id = 6, RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0),Title = "سلامت و زیبایی"},
-                new Category() { Id = 7, RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0),Title = "سازمان ها و مجتمع ها"},
-                new Category() { Id = 8, RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0),Title = "سایر"},
+                new() { Id = 1, RegisterAt = new DateTime(2025, 2, 2), IsDeleted = false, Title = "تمیزکاری", PicturePath = "/images/Categories/tamizkari.jpg"},
+                new() { Id = 2, RegisterAt = new DateTime(2025, 2, 2), IsDeleted = false, Title = "ساختمان", PicturePath = "/images/Categories/sakhteman.jpg" },
+                new() { Id = 3, RegisterAt = new DateTime(2025, 2, 2), IsDeleted = false, Title = "تعمیرات اشیا",PicturePath = "/images/Categories/tamirat_ashya.jpg" },
+                new() { Id = 4, RegisterAt = new DateTime(2025, 2, 2), IsDeleted = false, Title = "اسباب کشی و حمل بار",PicturePath = "/images/Categories/asbabkeshi.jpg" },
+                new() { Id = 5, RegisterAt = new DateTime(2025, 2, 2), IsDeleted = false, Title = "خودرو",PicturePath = "/images/category/khodro.jpg" },
+                new() { Id = 6, RegisterAt = new DateTime(2025, 2, 2), IsDeleted = false, Title = "سلامت و زیبایی",PicturePath = "/images/Categories/salamat_zibayi.jpg" },
+                new() { Id = 7, RegisterAt = new DateTime(2025, 2, 2), IsDeleted = false, Title = "سازمان ها و مجتمع ها",PicturePath = "/images/Categories/sazmanha_va_mojtamha.jpg" },
+                new() { Id = 8, RegisterAt = new DateTime(2025, 2, 2), IsDeleted = false, Title = "سایر",PicturePath = "/images/Categories/sayer.jpg" },
 
 
             });

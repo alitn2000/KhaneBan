@@ -34,8 +34,10 @@ namespace KhaneBan.Domain.AppServices;
 
               => await _categoryService.GetAllAsync(cancellationToken);
 
+    public async Task<List<Category>> GetAllWithDetailsAsync(CancellationToken cancellationToken)
+        => await _categoryService.GetAllWithDetailsAsync(cancellationToken);
 
-        public async Task<Category> GetByIdAsync(int id, CancellationToken cancellationToken)
+    public async Task<Category> GetByIdAsync(int id, CancellationToken cancellationToken)
 
               => await _categoryService.GetByIdAsync(id, cancellationToken);
 

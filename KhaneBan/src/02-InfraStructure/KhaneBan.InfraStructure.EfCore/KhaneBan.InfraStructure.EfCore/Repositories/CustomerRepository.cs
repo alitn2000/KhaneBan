@@ -1,5 +1,6 @@
 ﻿using KhaneBan.Domain.Core.Contracts.Repository;
 using KhaneBan.Domain.Core.Entites.User;
+using KhaneBan.Domain.Core.Entites.UserRequests;
 using KhaneBan.InfraStructure.EfCore.Common;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
@@ -29,8 +30,15 @@ public class CustomerRepository : ICustomerRepository
      => await _appDbContext
      .Customers
      .Include(c => c.User)
-     .FirstOrDefaultAsync(c => c.Id == id, cancellationToken);
+     .FirstOrDefaultAsync(c => c.UserId == id, cancellationToken);
 
+
+
+    public async Task<Customer?> GetCustomerInfoByUserIdAsync(int userId, CancellationToken cancellationToken)
+     => await _appDbContext
+     .Customers
+     .Include(c => c.User)
+     .FirstOrDefaultAsync(c => c.Id == userId, cancellationToken);
     public async Task<List<Customer>> GetCustomersWithDetailsAsync(CancellationToken cancellationToken)
        => await _appDbContext
         .Customers
@@ -40,6 +48,7 @@ public class CustomerRepository : ICustomerRepository
         .Include(c => c.User)
         .ThenInclude(c => c.City)
         .ToListAsync(cancellationToken);
+
 
     public async Task<List<Customer>> GetCustomerInfoAsync()
     {
@@ -170,19 +179,21 @@ public class CustomerRepository : ICustomerRepository
     }
 
 
-    //public async Task<bool> AddBalanceAsync(Customer customer, double addBalance, CancellationToken cancellationToken)
-    //{
-    //    try
-    //    {
-    //        customer.User.Balance += addBalance;
+    public async Task<bool> MinusBalanceAsync(Customer customer, double minusBalance, CancellationToken cancellationToken)
+    {
+        try
+        {
+            customer.User.Balance -= minusBalance;
 
-    //        await _appDbContext.SaveChangesAsync(cancellationToken);
-    //        return true;
-    //    }
-    //    catch
-    //    {
-    //        return false;
-    //    }
-    //}
+            await _appDbContext.SaveChangesAsync(cancellationToken);
+            _logger.LogInformation(" MinusBalanceAsync customer Succesfully");
+            return true;
+        }
+        catch(Exception ex)
+        {
+            _logger.LogError("Error in customer repository<<<<<<<<<<<<==================================================>>>>>>>>>>>{ErrorMessage}", ex.Message);
+            return false;
+        }
+    }
 
 }

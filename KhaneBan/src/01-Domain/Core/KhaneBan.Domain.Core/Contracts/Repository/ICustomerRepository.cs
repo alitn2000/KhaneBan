@@ -20,4 +20,6 @@ public interface ICustomerRepository
     Task<bool> UpdateAsync(Customer customer, CancellationToken cancellationToken);
     Task<int> GetCountCustomerAsync(CancellationToken cancellationToken);
     Task<List<Customer>> GetCustomerInfoAsync();
+    Task<Customer?> GetCustomerInfoByUserIdAsync(int userId, CancellationToken cancellationToken);
+    Task<bool> MinusBalanceAsync(Customer customer, double minusBalance, CancellationToken cancellationToken);
 }

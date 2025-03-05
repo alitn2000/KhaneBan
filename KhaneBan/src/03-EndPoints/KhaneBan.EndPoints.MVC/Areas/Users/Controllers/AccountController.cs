@@ -24,20 +24,12 @@ public class AccountController : Controller
     }
 
     [HttpPost]
-    public async Task<IActionResult> Login(LoginViewModel viewModel, CancellationToken cancellationToken)
+    public async Task<IActionResult> Login(UserLoginDTO dto, CancellationToken cancellationToken)
     {
         if (!ModelState.IsValid)
         {
-            return View(viewModel);
+            return View(dto);
         }
-
-        var dto = new UserLoginDTO()
-        {
-            Email = viewModel.Email,
-            Password = viewModel.Password,
-            IsPresistent = viewModel.IsPresistent,
-            Role = viewModel.Role
-        };
 
         var result = await _accountAppService.Login(dto);
 
@@ -45,7 +37,7 @@ public class AccountController : Controller
            return RedirectToAction("Index", "Home");
 
         ViewBag.LoginMessage = "ایمیل یا رمزعبور اشتباه است";
-        return View(viewModel);
+        return View(dto);
     }
 
     [HttpGet]

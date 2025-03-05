@@ -1,0 +1,103 @@
+﻿@using FrameWork
+@using KhaneBan.Domain.Core.Entites.UserRequests
+@using KhaneBan.Domain.Core.Enums
+@model Request
+
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+<head>
+	<title>جزئیات ریکوئست</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 20px;
+		}
+
+		table {
+			width: 100%;
+			border-collapse: collapse;
+			margin-top: 20px;
+		}
+
+		th, td {
+			border: 1px solid #ddd;
+			padding: 10px;
+			text-align: center;
+		}
+
+		th {
+			background-color: #f4f4f4;
+		}
+
+		.image-container img {
+			max-width: 100px;
+			height: auto;
+			border: 1px solid #ddd;
+			border-radius: 4px;
+		}
+
+		.back-link {
+			display: inline-block;
+			margin-top: 20px;
+			padding: 10px 20px;
+			background-color: #007bff;
+			color: white;
+			text-decoration: none;
+			border-radius: 5px;
+		}
+	</style>
+</head>
+<body>
+	<h1>جزئیات ریکوئست</h1>
+
+	<table>
+		<thead>
+			<tr>
+				<th>شناسه سفارش</th>
+				<th>تصاویر</th>
+				<th>وضعیت</th>
+				<th>توضیحات</th>
+				<th>تاریخ و ساعت ثبت</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>@Model.Id</td>
+				<td>
+					@if (Model.RequestImages != null && Model.RequestImages.Any())
+					{
+						<div class="image-container">
+							@foreach (var imagePath in Model.RequestImages)
+							{
+								<img src="@imagePath" alt="تصویر ریکوئست" />
+							}
+						</div>
+					}
+					else
+					{
+						<p>تصویری یافت نشد</p>
+					}
+				</td>
+				<td>
+					@if (Model.RequestStatus != null)
+					{
+						<span class="badge
+								@(Model.RequestStatus == StatusEnum.WatingExpertOffer ? "badge-secondary" :
+								Model.RequestStatus == StatusEnum.WaitingCustomerToChoose ? "badge-warning" :
+								Model.RequestStatus == StatusEnum.WorkStarted ? "badge-primary" :
+								Model.RequestStatus == StatusEnum.WorkDoneByExpert ? "badge-success" :
+								Model.RequestStatus == StatusEnum.Canceled ? "badge-danger" :
+								Model.RequestStatus == StatusEnum.WorkPaidByCustomer ? "badge-success" : "badge-light")">
+							@Model.RequestStatus.GetEnumDisplayName()
+						</span>
+					}
+				</td>
+				<td>@Model.Description</td>
+				<td>@Model.RequestedDate</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<a asp-action="RequestList" class="back-link">بازگشت به لیست</a>
+</body>
+</html>

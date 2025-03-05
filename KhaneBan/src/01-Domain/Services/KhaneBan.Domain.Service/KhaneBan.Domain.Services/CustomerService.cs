@@ -1,5 +1,6 @@
 ﻿using KhaneBan.Domain.Core.Contracts.Repository;
 using KhaneBan.Domain.Core.Contracts.Service;
+using KhaneBan.Domain.Core.Entites.BaseEntities;
 using KhaneBan.Domain.Core.Entites.User;
 using Microsoft.AspNetCore.Identity;
 using System;
@@ -80,6 +81,23 @@ public class CustomerService : ICustomerService
         return false;
     }
 
-    public Task<Customer?> GetCustomerByIdWithDetailsAsync(int userId, CancellationToken cancellationToken)
-        => _customerRepository.GetCustomerByIdWithDetailsAsync(userId, cancellationToken);
+    public async Task<Customer?> GetCustomerByIdWithDetailsAsync(int userId, CancellationToken cancellationToken)
+        => await _customerRepository.GetCustomerByIdWithDetailsAsync(userId, cancellationToken);
+
+    public async Task<Result> MinusBalanceAsync(int userId, double minusBalance, CancellationToken cancellationToken)
+    {
+        var customer = await _customerRepository.GetCustomerInfoByUserIdAsync(userId, cancellationToken);
+        if (customer == null)
+            return new Result("مشکلی رخ داده است لطفا مجددا تلاش کنید", false);
+
+        if(customer.User.Balance - minusBalance <0 || customer.User.Balance < minusBalance)
+            return new Result("موجودی ناکافی است ", false);
+
+        if (await _customerRepository.MinusBalanceAsync(customer, minusBalance, cancellationToken))
+        {
+            return new Result("مشکلی رخ داده است لطفا مجددا تلاش کنید", false);
+        }
+
+        return new Result("پرداخت با موفقیت انجام شد", true);
+    }
 }

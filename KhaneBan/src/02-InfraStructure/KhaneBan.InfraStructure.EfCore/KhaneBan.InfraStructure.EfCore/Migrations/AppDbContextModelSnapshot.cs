@@ -41,6 +41,16 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                         {
                             ExpertsId = 1,
                             HomeServicesId = 1
+                        },
+                        new
+                        {
+                            ExpertsId = 2,
+                            HomeServicesId = 2
+                        },
+                        new
+                        {
+                            ExpertsId = 3,
+                            HomeServicesId = 2
                         });
                 });
 
@@ -266,6 +276,11 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                         {
                             Id = 2,
                             UserId = 4
+                        },
+                        new
+                        {
+                            Id = 3,
+                            UserId = 7
                         });
                 });
 
@@ -292,6 +307,16 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                         {
                             Id = 1,
                             UserId = 2
+                        },
+                        new
+                        {
+                            Id = 2,
+                            UserId = 5
+                        },
+                        new
+                        {
+                            Id = 3,
+                            UserId = 6
                         });
                 });
 
@@ -405,7 +430,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@GMAIL.COM",
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAIAAYagAAAAEP/VGAVE6baNss1Ys6EoN8N7ThVIRvKk3ZnnFRyfC2EeCb9//u03af0zyszE8Wybvw==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEKWY6yw5aR8hmBvumbMpzbaRa3EazJvyTUAaIh0skvw7CnIY4yStqcV4ITwbAuvoWw==",
                             PhoneNumber = "09102123542",
                             PhoneNumberConfirmed = false,
                             PicturePath = "desktop",
@@ -430,7 +455,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "ALITN2000@GMAIL.COM",
                             NormalizedUserName = "ALITN2000",
-                            PasswordHash = "AQAAAAIAAYagAAAAEKYVwnSOLUfytd9op28cmA8IRd3qSPoHRKFlvfhsTBIwNuXOabHkofuPQYFDLACivA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEHYMFXlYYWIJFvCqk3V358dmgxdD0hU2pQYVw5SIRnxWqePfiI1/OPOa51aU57XsSw==",
                             PhoneNumber = "09022004453",
                             PhoneNumberConfirmed = false,
                             PicturePath = "desktop1",
@@ -455,7 +480,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "REZA2000@GMAIL.COM",
                             NormalizedUserName = "REZA2000",
-                            PasswordHash = "AQAAAAIAAYagAAAAEBXUyhs3uDbQqZeH1lqvzSuwa0Xt4wV0cQNcygv499EO4acXpUxRmqysJabuVBc2oA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEM67/wyH+QkqFhhXV7rnMch++J1C+fA9hcnBUrknljxvhbPXkA3sUDvieilOqRmnqw==",
                             PhoneNumber = "09102123543",
                             PhoneNumberConfirmed = false,
                             PicturePath = "desktop2",
@@ -480,7 +505,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "SARA2000@GMAIL.COM",
                             NormalizedUserName = "SARA2000",
-                            PasswordHash = "AQAAAAIAAYagAAAAELLQQbmx1cnnagZHpCBMGabs3odKKS3rRJI4rVMApxteAkspsiN8OdHt5maTWdswZA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEG+aJYqhKqwjDpTdUZO1ETPT+mHdwSEXzGk+t4qA+eJC3aCmG4YZnKVocAlGlCoT7Q==",
                             PhoneNumber = "09102123545",
                             PhoneNumberConfirmed = false,
                             PicturePath = "desktop3",
@@ -488,6 +513,81 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             SecurityStamp = "1DBE15F3-BB61-4FC0-87EE-5383DC66CF52",
                             TwoFactorEnabled = false,
                             UserName = "sara2000"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            AccessFailedCount = 0,
+                            Address = "test2",
+                            Balance = 20000.0,
+                            CityId = 1,
+                            ConcurrencyStamp = "5780E9A6-7966-48F0-AC09-20FA8EA4B212",
+                            Email = "expert12000@gmail.com",
+                            EmailConfirmed = false,
+                            FirstName = "expert1",
+                            IsDeleted = false,
+                            LastName = "expertinia",
+                            LockoutEnabled = false,
+                            NormalizedEmail = " EXPERT12000@GMAIL.COM",
+                            NormalizedUserName = "EXPERT12000",
+                            PasswordHash = "AQAAAAIAAYagAAAAEJcCkmhWXTXzIOx2/45Z24dOqozKz2rhJQx1ffBG/V/tjFAh8mgHFuDXEdFf1D1UFQ==",
+                            PhoneNumber = "09102123541",
+                            PhoneNumberConfirmed = false,
+                            PicturePath = "desktop1",
+                            RegisterDate = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            SecurityStamp = "5780E9A6-7966-48F0-AC09-20FA8EA4B213",
+                            TwoFactorEnabled = false,
+                            UserName = "expert12000"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            AccessFailedCount = 0,
+                            Address = "test5",
+                            Balance = 20000.0,
+                            CityId = 1,
+                            ConcurrencyStamp = "5780E9A6-7966-48F0-AC09-20FA8EA4B212",
+                            Email = "expert22000@gmail.com",
+                            EmailConfirmed = false,
+                            FirstName = "expert2",
+                            IsDeleted = false,
+                            LastName = "expertinia",
+                            LockoutEnabled = false,
+                            NormalizedEmail = " EXPERT22000@GMAIL.COM",
+                            NormalizedUserName = "EXPERT22000",
+                            PasswordHash = "AQAAAAIAAYagAAAAEPNIil5bNMBD7a6et28t+wkjqrghmCFFrNV3f4KJj1aJxUktD3S7MRpmtjNFIQotqA==",
+                            PhoneNumber = "09102123542",
+                            PhoneNumberConfirmed = false,
+                            PicturePath = "desktop1",
+                            RegisterDate = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            SecurityStamp = "5780E9A6-7966-48F0-AC09-20FA8EA4B213",
+                            TwoFactorEnabled = false,
+                            UserName = "expert22000"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            AccessFailedCount = 0,
+                            Address = "test7",
+                            Balance = 20000.0,
+                            CityId = 1,
+                            ConcurrencyStamp = "5780E9A6-7966-48F0-AC09-20FA8EA4B212",
+                            Email = "customer12000@gmail.com",
+                            EmailConfirmed = false,
+                            FirstName = "customer1",
+                            IsDeleted = false,
+                            LastName = "customernia",
+                            LockoutEnabled = false,
+                            NormalizedEmail = "CUSTOMER12000@GMAIL.COM",
+                            NormalizedUserName = "CUSTOMER12000",
+                            PasswordHash = "AQAAAAIAAYagAAAAEANrkFM0yp7B4yZ8UToR1Hb0V2lEzhSGOelb96CXTTx/Hdz+JDgFtzLvf51G3LAvnQ==",
+                            PhoneNumber = "09102123555",
+                            PhoneNumberConfirmed = false,
+                            PicturePath = "desktop1",
+                            RegisterDate = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            SecurityStamp = "5780E9A6-7966-48F0-AC09-20FA8EA4B213",
+                            TwoFactorEnabled = false,
+                            UserName = "customer12000"
                         });
                 });
 
@@ -522,6 +622,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                         {
                             Id = 1,
                             IsDeleted = false,
+                            PicturePath = "/images/Categories/tamizkari.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "تمیزکاری"
                         },
@@ -529,6 +630,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                         {
                             Id = 2,
                             IsDeleted = false,
+                            PicturePath = "/images/Categories/sakhteman.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "ساختمان"
                         },
@@ -536,6 +638,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                         {
                             Id = 3,
                             IsDeleted = false,
+                            PicturePath = "/images/Categories/tamirat_ashya.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "تعمیرات اشیا"
                         },
@@ -543,6 +646,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                         {
                             Id = 4,
                             IsDeleted = false,
+                            PicturePath = "/images/Categories/asbabkeshi.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "اسباب کشی و حمل بار"
                         },
@@ -550,6 +654,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                         {
                             Id = 5,
                             IsDeleted = false,
+                            PicturePath = "/images/category/khodro.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "خودرو"
                         },
@@ -557,6 +662,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                         {
                             Id = 6,
                             IsDeleted = false,
+                            PicturePath = "/images/Categories/salamat_zibayi.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "سلامت و زیبایی"
                         },
@@ -564,6 +670,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                         {
                             Id = 7,
                             IsDeleted = false,
+                            PicturePath = "/images/Categories/sazmanha_va_mojtamha.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "سازمان ها و مجتمع ها"
                         },
@@ -571,6 +678,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                         {
                             Id = 8,
                             IsDeleted = false,
+                            PicturePath = "/images/Categories/sayer.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "سایر"
                         });
@@ -586,6 +694,10 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
 
                     b.Property<double>("BasePrice")
                         .HasColumnType("float");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
@@ -617,392 +729,710 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                         new
                         {
                             Id = 1,
-                            BasePrice = 100.0,
+                            BasePrice = 2000.0,
+                            Description = "Lorem ipsum lorem ipsum",
                             IsDeleted = false,
+                            PicturePath = "/images/HomeServices/nezafat_manzel.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SubCategoryId = 1,
-                            Title = "نقاشی",
-                            VisitCount = 120
+                            Title = "خدمات نظافت منزل",
+                            VisitCount = 210
                         },
                         new
                         {
                             Id = 2,
-                            BasePrice = 100.0,
+                            BasePrice = 2000.0,
+                            Description = "Lorem ipsum lorem ipsum",
                             IsDeleted = false,
+                            PicturePath = "/images/HomeServices/nezafat_rahpele.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SubCategoryId = 1,
                             Title = "نظافت راه پله",
-                            VisitCount = 120
+                            VisitCount = 210
                         },
                         new
                         {
                             Id = 3,
-                            BasePrice = 100.0,
+                            BasePrice = 2000.0,
+                            Description = "Lorem ipsum lorem ipsum",
                             IsDeleted = false,
+                            PicturePath = "/images/HomeServices/ghalishoyi.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SubCategoryId = 2,
                             Title = "قالیشویی",
-                            VisitCount = 120
+                            VisitCount = 210
                         },
                         new
                         {
                             Id = 4,
-                            BasePrice = 100.0,
+                            BasePrice = 2000.0,
+                            Description = "Lorem ipsum lorem ipsum",
                             IsDeleted = false,
+                            PicturePath = "/images/HomeServices/pardeshoyi.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SubCategoryId = 2,
                             Title = "پرده شویی",
-                            VisitCount = 120
+                            VisitCount = 210
                         },
                         new
                         {
                             Id = 5,
-                            BasePrice = 100.0,
+                            BasePrice = 2000.0,
+                            Description = "Lorem ipsum lorem ipsum",
                             IsDeleted = false,
+                            PicturePath = "/images/HomeServices/seramik_khodro.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SubCategoryId = 3,
                             Title = "سرامیک خودرو",
-                            VisitCount = 120
+                            VisitCount = 210
                         },
                         new
                         {
                             Id = 6,
-                            BasePrice = 100.0,
+                            BasePrice = 2000.0,
+                            Description = "Lorem ipsum lorem ipsum",
                             IsDeleted = false,
+                            PicturePath = "/images/HomeServices/sefrshoyi_khodro.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SubCategoryId = 3,
                             Title = "صفرشویی خودرو",
-                            VisitCount = 120
+                            VisitCount = 210
                         },
                         new
                         {
                             Id = 7,
-                            BasePrice = 100.0,
+                            BasePrice = 2000.0,
+                            Description = "Lorem ipsum lorem ipsum",
                             IsDeleted = false,
+                            PicturePath = "/images/HomeServices/tamir_coolerabi.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SubCategoryId = 4,
                             Title = "تعمیر و سرویس کولر آبی",
-                            VisitCount = 120
+                            VisitCount = 210
                         },
                         new
                         {
                             Id = 8,
-                            BasePrice = 100.0,
+                            BasePrice = 2000.0,
+                            Description = "Lorem ipsum lorem ipsum",
                             IsDeleted = false,
+                            PicturePath = "/images/HomeServices/kanalsazi_cooler.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SubCategoryId = 4,
                             Title = "کانال سازی کولر",
-                            VisitCount = 120
+                            VisitCount = 210
                         },
                         new
                         {
                             Id = 9,
-                            BasePrice = 100.0,
+                            BasePrice = 2000.0,
+                            Description = "Lorem ipsum lorem ipsum",
                             IsDeleted = false,
+                            PicturePath = "/images/HomeServices/tamir_motorkhane.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SubCategoryId = 4,
                             Title = "تعمیر و نگهداری موتورخانه",
-                            VisitCount = 120
+                            VisitCount = 210
                         },
                         new
                         {
                             Id = 10,
-                            BasePrice = 100.0,
+                            BasePrice = 2000.0,
+                            Description = "Lorem ipsum lorem ipsum",
                             IsDeleted = false,
+                            PicturePath = "/images/HomeServices/sangkari.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SubCategoryId = 5,
                             Title = "سنگ کاری",
-                            VisitCount = 120
+                            VisitCount = 210
                         },
                         new
                         {
                             Id = 11,
-                            BasePrice = 100.0,
+                            BasePrice = 2000.0,
+                            Description = "Lorem ipsum lorem ipsum",
                             IsDeleted = false,
+                            PicturePath = "/images/HomeServices/banayi.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SubCategoryId = 5,
                             Title = "بنایی",
-                            VisitCount = 120
+                            VisitCount = 210
                         },
                         new
                         {
                             Id = 12,
-                            BasePrice = 100.0,
+                            BasePrice = 2000.0,
+                            Description = "Lorem ipsum lorem ipsum",
                             IsDeleted = false,
+                            PicturePath = "/images/HomeServices/klidsazi.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SubCategoryId = 5,
                             Title = "کلیدسازی",
-                            VisitCount = 120
+                            VisitCount = 210
                         },
                         new
                         {
                             Id = 13,
-                            BasePrice = 100.0,
+                            BasePrice = 2000.0,
+                            Description = "Lorem ipsum lorem ipsum",
                             IsDeleted = false,
+                            PicturePath = "/images/HomeServices/kafsabi.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SubCategoryId = 5,
                             Title = "کفسابی",
-                            VisitCount = 120
+                            VisitCount = 210
                         },
                         new
                         {
                             Id = 14,
-                            BasePrice = 100.0,
+                            BasePrice = 2000.0,
+                            Description = "Lorem ipsum lorem ipsum",
                             IsDeleted = false,
+                            PicturePath = "/images/HomeServices/lolekeshi.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SubCategoryId = 6,
                             Title = "خدمات لوله کشی ساختمان",
-                            VisitCount = 120
+                            VisitCount = 210
                         },
                         new
                         {
                             Id = 15,
-                            BasePrice = 100.0,
+                            BasePrice = 2000.0,
+                            Description = "Lorem ipsum lorem ipsum",
                             IsDeleted = false,
+                            PicturePath = "/images/HomeServices/lolebazkoni.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SubCategoryId = 6,
                             Title = "تخلیه چاه و لوله بازکنی",
-                            VisitCount = 120
+                            VisitCount = 210
                         },
                         new
                         {
                             Id = 16,
-                            BasePrice = 100.0,
+                            BasePrice = 2000.0,
+                            Description = "Lorem ipsum lorem ipsum",
                             IsDeleted = false,
+                            PicturePath = "/images/HomeServices/lolekeshi_fazelab.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SubCategoryId = 6,
                             Title = "لوله کشی آب و فاضلاب",
-                            VisitCount = 120
+                            VisitCount = 210
                         },
                         new
                         {
                             Id = 17,
-                            BasePrice = 100.0,
+                            BasePrice = 2000.0,
+                            Description = "Lorem ipsum lorem ipsum",
                             IsDeleted = false,
+                            PicturePath = "/images/HomeServices/moshavere_bazsazi_sakhteman.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SubCategoryId = 7,
                             Title = "مشاوره و بازسازی ساختمان",
-                            VisitCount = 120
+                            VisitCount = 210
                         },
                         new
                         {
                             Id = 18,
-                            BasePrice = 100.0,
+                            BasePrice = 2000.0,
+                            Description = "Lorem ipsum lorem ipsum",
                             IsDeleted = false,
+                            PicturePath = "/images/HomeServices/dekorasion_sakhteman.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SubCategoryId = 7,
                             Title = "دکوراسیون و طراحی ساختمان",
-                            VisitCount = 120
+                            VisitCount = 210
                         },
                         new
                         {
                             Id = 19,
-                            BasePrice = 100.0,
+                            BasePrice = 2000.0,
+                            Description = "Lorem ipsum lorem ipsum",
                             IsDeleted = false,
+                            PicturePath = "/images/HomeServices/khadamat_baqbani.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SubCategoryId = 8,
                             Title = "خدمات باغبانی",
-                            VisitCount = 120
+                            VisitCount = 210
                         },
                         new
                         {
                             Id = 20,
-                            BasePrice = 100.0,
+                            BasePrice = 2000.0,
+                            Description = "Lorem ipsum lorem ipsum",
                             IsDeleted = false,
+                            PicturePath = "/images/HomeServices/kasht_goldan.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SubCategoryId = 8,
                             Title = "کاشت و تعویض گلدان",
-                            VisitCount = 120
+                            VisitCount = 210
                         },
                         new
                         {
                             Id = 21,
-                            BasePrice = 100.0,
+                            BasePrice = 2000.0,
+                            Description = "Lorem ipsum lorem ipsum",
                             IsDeleted = false,
+                            PicturePath = "/images/HomeServices/tamirat_mobleman.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SubCategoryId = 9,
                             Title = "تعمیرات مبلمان",
-                            VisitCount = 120
+                            VisitCount = 210
                         },
                         new
                         {
                             Id = 22,
-                            BasePrice = 100.0,
+                            BasePrice = 2000.0,
+                            Description = "Lorem ipsum lorem ipsum",
                             IsDeleted = false,
+                            PicturePath = "/images/HomeServices/tamirat_mobleman_edari.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SubCategoryId = 9,
                             Title = "تعمیرات مبلمان اداری",
-                            VisitCount = 120
+                            VisitCount = 210
                         },
                         new
                         {
                             Id = 23,
-                            BasePrice = 100.0,
+                            BasePrice = 2000.0,
+                            Description = "Lorem ipsum lorem ipsum",
                             IsDeleted = false,
+                            PicturePath = "/images/HomeServices/tamir_panke.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SubCategoryId = 10,
                             Title = "تعمیر پنکه",
-                            VisitCount = 120
+                            VisitCount = 210
                         },
                         new
                         {
                             Id = 24,
-                            BasePrice = 100.0,
+                            BasePrice = 2000.0,
+                            Description = "Lorem ipsum lorem ipsum",
                             IsDeleted = false,
+                            PicturePath = "/images/HomeServices/nasb_va_tamir_fer.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SubCategoryId = 10,
                             Title = "نصب و تعمیر فر",
-                            VisitCount = 120
+                            VisitCount = 210
                         },
                         new
                         {
                             Id = 25,
-                            BasePrice = 100.0,
+                            BasePrice = 2000.0,
+                            Description = "Lorem ipsum lorem ipsum",
                             IsDeleted = false,
+                            PicturePath = "/images/HomeServices/tamir_laptop.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SubCategoryId = 11,
                             Title = "تعمیر کامپیوتر و لپ تاپ",
-                            VisitCount = 120
+                            VisitCount = 210
                         },
                         new
                         {
                             Id = 26,
-                            BasePrice = 100.0,
+                            BasePrice = 2000.0,
+                            Description = "Lorem ipsum lorem ipsum",
                             IsDeleted = false,
+                            PicturePath = "/images/HomeServices/modem_va_internet.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SubCategoryId = 11,
                             Title = "مودم و اینترنت",
-                            VisitCount = 120
+                            VisitCount = 210
                         },
                         new
                         {
                             Id = 27,
-                            BasePrice = 100.0,
+                            BasePrice = 2000.0,
+                            Description = "Lorem ipsum lorem ipsum",
                             IsDeleted = false,
+                            PicturePath = "/images/HomeServices/tamirat_mobile.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SubCategoryId = 12,
                             Title = "خدمات تعمیر موبایل",
-                            VisitCount = 120
+                            VisitCount = 210
                         },
                         new
                         {
                             Id = 28,
-                            BasePrice = 100.0,
+                            BasePrice = 2000.0,
+                            Description = "Lorem ipsum lorem ipsum",
                             IsDeleted = false,
+                            PicturePath = "/images/HomeServices/khadamt_kharid_mobile.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SubCategoryId = 12,
                             Title = "خدمات خرید موبایل و کالاهای دیجیتال",
-                            VisitCount = 120
+                            VisitCount = 210
                         },
                         new
                         {
                             Id = 29,
-                            BasePrice = 100.0,
+                            BasePrice = 2000.0,
+                            Description = "Lorem ipsum lorem ipsum",
                             IsDeleted = false,
+                            PicturePath = "/images/HomeServices/khadamat_dorbin.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SubCategoryId = 12,
                             Title = "خدمات دوربین",
-                            VisitCount = 120
+                            VisitCount = 210
                         },
                         new
                         {
                             Id = 30,
-                            BasePrice = 100.0,
+                            BasePrice = 2000.0,
+                            Description = "Lorem ipsum lorem ipsum",
                             IsDeleted = false,
+                            PicturePath = "/images/HomeServices/asbabkeshi_ba_khavar.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SubCategoryId = 13,
                             Title = "اسباب کشی با خاور و کامیون",
-                            VisitCount = 120
+                            VisitCount = 210
                         },
                         new
                         {
                             Id = 31,
-                            BasePrice = 100.0,
+                            BasePrice = 2000.0,
+                            Description = "Lorem ipsum lorem ipsum",
                             IsDeleted = false,
+                            PicturePath = "/images/HomeServices/asabkeshi_ba_neysan.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SubCategoryId = 13,
                             Title = "اسباب کشی با وانت و نیسان",
-                            VisitCount = 120
+                            VisitCount = 210
                         },
                         new
                         {
                             Id = 32,
-                            BasePrice = 100.0,
+                            BasePrice = 2000.0,
+                            Description = "Lorem ipsum lorem ipsum",
                             IsDeleted = false,
+                            PicturePath = "/images/HomeServices/kargar_jabejayi.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SubCategoryId = 13,
                             Title = "کارگر جابه جایی",
-                            VisitCount = 120
+                            VisitCount = 210
                         },
                         new
                         {
                             Id = 33,
-                            BasePrice = 100.0,
+                            BasePrice = 2000.0,
+                            Description = "Lorem ipsum lorem ipsum",
                             IsDeleted = false,
+                            PicturePath = "/images/HomeServices/taviz_batri_khodro.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SubCategoryId = 14,
                             Title = "تعویض باتری خودرو",
-                            VisitCount = 120
+                            VisitCount = 210
                         },
                         new
                         {
                             Id = 34,
-                            BasePrice = 100.0,
+                            BasePrice = 2000.0,
+                            Description = "Lorem ipsum lorem ipsum",
                             IsDeleted = false,
+                            PicturePath = "/images/HomeServices/batri_be_batri.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SubCategoryId = 14,
                             Title = "باتری به باتری",
-                            VisitCount = 120
+                            VisitCount = 210
                         },
                         new
                         {
                             Id = 35,
-                            BasePrice = 100.0,
+                            BasePrice = 2000.0,
+                            Description = "Lorem ipsum lorem ipsum",
                             IsDeleted = false,
+                            PicturePath = "/images/HomeServices/haml_khodro.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SubCategoryId = 14,
                             Title = "حمل خودرو",
-                            VisitCount = 120
+                            VisitCount = 210
                         },
                         new
                         {
                             Id = 36,
-                            BasePrice = 100.0,
+                            BasePrice = 2000.0,
+                            Description = "Lorem ipsum lorem ipsum",
                             IsDeleted = false,
+                            PicturePath = "/images/HomeServices/taviz_vayer_sham_khodro.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SubCategoryId = 14,
                             Title = "تعویض وایر و شمع خودرو",
-                            VisitCount = 120
+                            VisitCount = 210
                         },
                         new
                         {
                             Id = 37,
-                            BasePrice = 100.0,
+                            BasePrice = 2000.0,
+                            Description = "Lorem ipsum lorem ipsum",
                             IsDeleted = false,
+                            PicturePath = "/images/HomeServices/berashing_moye_banovan.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SubCategoryId = 15,
                             Title = "براشینگ موی بانوان",
-                            VisitCount = 120
+                            VisitCount = 210
                         },
                         new
                         {
                             Id = 38,
-                            BasePrice = 100.0,
+                            BasePrice = 2000.0,
+                            Description = "Lorem ipsum lorem ipsum",
                             IsDeleted = false,
+                            PicturePath = "/images/HomeServices/kotahi_moye_banovan.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SubCategoryId = 15,
                             Title = "کوتاهی موی بانوان",
-                            VisitCount = 120
+                            VisitCount = 210
                         },
                         new
                         {
                             Id = 39,
-                            BasePrice = 100.0,
+                            BasePrice = 2000.0,
+                            Description = "Lorem ipsum lorem ipsum",
                             IsDeleted = false,
+                            PicturePath = "/images/HomeServices/baft_moye_banovan.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SubCategoryId = 15,
                             Title = "بافت موی بانوان در خانه",
-                            VisitCount = 120
+                            VisitCount = 210
+                        },
+                        new
+                        {
+                            Id = 40,
+                            BasePrice = 2000.0,
+                            Description = "Lorem ipsum lorem ipsum",
+                            IsDeleted = false,
+                            PicturePath = "/images/HomeServices/moraqebat_negahdari.jpg",
+                            RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            SubCategoryId = 16,
+                            Title = "مراقبت و نگهداری",
+                            VisitCount = 210
+                        },
+                        new
+                        {
+                            Id = 41,
+                            BasePrice = 2000.0,
+                            Description = "Lorem ipsum lorem ipsum",
+                            IsDeleted = false,
+                            PicturePath = "/images/HomeServices/moayene_pezeshki.jpg",
+                            RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            SubCategoryId = 16,
+                            Title = "معاینه پزشکی",
+                            VisitCount = 210
+                        },
+                        new
+                        {
+                            Id = 42,
+                            BasePrice = 2000.0,
+                            Description = "Lorem ipsum lorem ipsum",
+                            IsDeleted = false,
+                            PicturePath = "/images/HomeServices/pirapezeshki.jpg",
+                            RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            SubCategoryId = 16,
+                            Title = "پیراپزشکی",
+                            VisitCount = 210
+                        },
+                        new
+                        {
+                            Id = 43,
+                            BasePrice = 2000.0,
+                            Description = "Lorem ipsum lorem ipsum",
+                            IsDeleted = false,
+                            PicturePath = "/images/HomeServices/petshop.jpg",
+                            RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            SubCategoryId = 17,
+                            Title = "پت شاپ",
+                            VisitCount = 210
+                        },
+                        new
+                        {
+                            Id = 44,
+                            BasePrice = 2000.0,
+                            Description = "Lorem ipsum lorem ipsum",
+                            IsDeleted = false,
+                            PicturePath = "/images/HomeServices/khadamat_dampezshki.jpg",
+                            RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            SubCategoryId = 17,
+                            Title = "خدمات دامپزشکی در محل",
+                            VisitCount = 210
+                        },
+                        new
+                        {
+                            Id = 45,
+                            BasePrice = 2000.0,
+                            Description = "Lorem ipsum lorem ipsum",
+                            IsDeleted = false,
+                            PicturePath = "/images/HomeServices/khadamt_yoga.jpg",
+                            RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            SubCategoryId = 18,
+                            Title = "کلاس یوگا در خانه",
+                            VisitCount = 210
+                        },
+                        new
+                        {
+                            Id = 46,
+                            BasePrice = 2000.0,
+                            Description = "Lorem ipsum lorem ipsum",
+                            IsDeleted = false,
+                            PicturePath = "/images/HomeServices/kelas_polates.jpg",
+                            RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            SubCategoryId = 18,
+                            Title = "کلاس پیلاتس در خانه",
+                            VisitCount = 210
+                        },
+                        new
+                        {
+                            Id = 47,
+                            BasePrice = 2000.0,
+                            Description = "Lorem ipsum lorem ipsum",
+                            IsDeleted = false,
+                            PicturePath = "/images/HomeServices/khadamat_achare.jpg",
+                            RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            SubCategoryId = 19,
+                            Title = "پیشنهاد فروش خدمات آچاره به شرکت ها",
+                            VisitCount = 210
+                        },
+                        new
+                        {
+                            Id = 48,
+                            BasePrice = 2000.0,
+                            Description = "Lorem ipsum lorem ipsum",
+                            IsDeleted = false,
+                            PicturePath = "/images/HomeServices/estekhdam_niroye_khedmatkar.jpg",
+                            RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            SubCategoryId = 20,
+                            Title = "استخدام نیروی خدمتکار",
+                            VisitCount = 210
+                        },
+                        new
+                        {
+                            Id = 49,
+                            BasePrice = 2000.0,
+                            Description = "Lorem ipsum lorem ipsum",
+                            IsDeleted = false,
+                            PicturePath = "/images/HomeServices/tamirat_lebas.jpg",
+                            RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            SubCategoryId = 21,
+                            Title = "تعمیرات لباس",
+                            VisitCount = 210
+                        },
+                        new
+                        {
+                            Id = 50,
+                            BasePrice = 2000.0,
+                            Description = "Lorem ipsum lorem ipsum",
+                            IsDeleted = false,
+                            PicturePath = "/images/HomeServices/dokht_lebas_zanane.jpg",
+                            RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            SubCategoryId = 21,
+                            Title = "دوخت لباس زنانه",
+                            VisitCount = 210
+                        },
+                        new
+                        {
+                            Id = 51,
+                            BasePrice = 2000.0,
+                            Description = "Lorem ipsum lorem ipsum",
+                            IsDeleted = false,
+                            PicturePath = "/images/HomeServices/tamir_kifokafsh.jpg",
+                            RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            SubCategoryId = 21,
+                            Title = "تعمیر کیف و کفش",
+                            VisitCount = 210
+                        },
+                        new
+                        {
+                            Id = 52,
+                            BasePrice = 2000.0,
+                            Description = "Lorem ipsum lorem ipsum",
+                            IsDeleted = false,
+                            PicturePath = "/images/HomeServices/keyko_shirini.jpg",
+                            RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            SubCategoryId = 22,
+                            Title = "کیک و شیرینی",
+                            VisitCount = 210
+                        },
+                        new
+                        {
+                            Id = 53,
+                            BasePrice = 2000.0,
+                            Description = "Lorem ipsum lorem ipsum",
+                            IsDeleted = false,
+                            PicturePath = "/images/HomeServices/dekor_tavalod.jpg",
+                            RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            SubCategoryId = 22,
+                            Title = "دکور تولد",
+                            VisitCount = 210
+                        },
+                        new
+                        {
+                            Id = 54,
+                            BasePrice = 2000.0,
+                            Description = "Lorem ipsum lorem ipsum",
+                            IsDeleted = false,
+                            PicturePath = "/images/HomeServices/gol_arayi.jpg",
+                            RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            SubCategoryId = 22,
+                            Title = "گل آرایی",
+                            VisitCount = 210
+                        },
+                        new
+                        {
+                            Id = 55,
+                            BasePrice = 2000.0,
+                            Description = "Lorem ipsum lorem ipsum",
+                            IsDeleted = false,
+                            PicturePath = "/images/HomeServices/finger_food.jpg",
+                            RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            SubCategoryId = 22,
+                            Title = "فینگرفود",
+                            VisitCount = 210
+                        },
+                        new
+                        {
+                            Id = 56,
+                            BasePrice = 2000.0,
+                            Description = "Lorem ipsum lorem ipsum",
+                            IsDeleted = false,
+                            PicturePath = "/images/HomeServices/amozesh_zaban_khareji.jpg",
+                            RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            SubCategoryId = 23,
+                            Title = "آموزش زبان های خارجی",
+                            VisitCount = 210
+                        },
+                        new
+                        {
+                            Id = 57,
+                            BasePrice = 2000.0,
+                            Description = "Lorem ipsum lorem ipsum",
+                            IsDeleted = false,
+                            PicturePath = "/images/HomeServices/ebtedayi_motevasete.jpg",
+                            RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            SubCategoryId = 23,
+                            Title = "آموزش ابتدایی تا متوسطه",
+                            VisitCount = 210
+                        },
+                        new
+                        {
+                            Id = 58,
+                            BasePrice = 2000.0,
+                            Description = "Lorem ipsum lorem ipsum",
+                            IsDeleted = false,
+                            PicturePath = "/images/HomeServices/kotahi_moye_kodak.jpg",
+                            RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            SubCategoryId = 24,
+                            Title = "کوتاهی موی کودک",
+                            VisitCount = 210
+                        },
+                        new
+                        {
+                            Id = 59,
+                            BasePrice = 2000.0,
+                            Description = "Lorem ipsum lorem ipsum",
+                            IsDeleted = false,
+                            PicturePath = "/images/HomeServices/tarahi_otaq_kodak.jpg",
+                            RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            SubCategoryId = 24,
+                            Title = "طراحی و دیزاین اتاق کودک",
+                            VisitCount = 210
                         });
                 });
 
@@ -1099,6 +1529,9 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                     b.Property<DateTime>("RegisterDate")
                         .HasColumnType("datetime2");
 
+                    b.PrimitiveCollection<string>("RequestImages")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("RequestStatus")
                         .HasColumnType("int");
 
@@ -1137,7 +1570,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             IsDeleted = false,
                             RatingId = 1,
                             RegisterDate = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            RequestStatus = 6,
+                            RequestStatus = 5,
                             RequestedDate = new DateTime(2025, 2, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "نقاشی"
                         },
@@ -1151,9 +1584,22 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             IsDeleted = false,
                             RatingId = 2,
                             RegisterDate = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            RequestStatus = 6,
+                            RequestStatus = 5,
                             RequestedDate = new DateTime(2025, 2, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "نقاشی"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            CityId = 1,
+                            CustomerId = 3,
+                            Description = "نظافت راه پله ساختمان 4 طبقه",
+                            HomeServiceId = 2,
+                            IsDeleted = false,
+                            RegisterDate = new DateTime(2025, 3, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            RequestStatus = 2,
+                            RequestedDate = new DateTime(2025, 3, 8, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Title = "نظافت راه پله"
                         });
                 });
 
@@ -1194,6 +1640,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             Id = 1,
                             CategoryId = 1,
                             IsDeleted = false,
+                            PicturePath = "/images/subcategpries/nezafat_pazirayi.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "نظافت و پذیرایی"
                         },
@@ -1202,6 +1649,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             Id = 2,
                             CategoryId = 1,
                             IsDeleted = false,
+                            PicturePath = "/images/subcategpries/shostosho.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "شستشو"
                         },
@@ -1210,6 +1658,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             Id = 3,
                             CategoryId = 1,
                             IsDeleted = false,
+                            PicturePath = "/images/subsubcategpriescategory/karvash_detailing",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "کارواش و دیتیلینگ"
                         },
@@ -1218,6 +1667,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             Id = 4,
                             CategoryId = 2,
                             IsDeleted = false,
+                            PicturePath = "/images/subcategpries/sarmayesh_garmayesh",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "سرمایش و گرمایش"
                         },
@@ -1226,6 +1676,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             Id = 5,
                             CategoryId = 2,
                             IsDeleted = false,
+                            PicturePath = "/images/subcategpries/tamirat_sakhteman",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "تعمیرات ساختمان"
                         },
@@ -1234,6 +1685,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             Id = 6,
                             CategoryId = 2,
                             IsDeleted = false,
+                            PicturePath = "/images/subcategpries/lolekeshi",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "لوله کشی"
                         },
@@ -1242,6 +1694,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             Id = 7,
                             CategoryId = 2,
                             IsDeleted = false,
+                            PicturePath = "/images/subcategpries/tarahi_bazsazi.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "طراحی و بازسازی ساختمان"
                         },
@@ -1250,6 +1703,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             Id = 8,
                             CategoryId = 2,
                             IsDeleted = false,
+                            PicturePath = "/images/subcategpries/baqbani_fazayesabz.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "باغبانی و فضای سبز"
                         },
@@ -1258,6 +1712,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             Id = 9,
                             CategoryId = 2,
                             IsDeleted = false,
+                            PicturePath = "/images/subcategpries/choob_kabinet.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "چوب و کابینت"
                         },
@@ -1266,6 +1721,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             Id = 10,
                             CategoryId = 3,
                             IsDeleted = false,
+                            PicturePath = "/images/subcategpries/nasab_tamir_lavazem.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "نصب و تعمیر لوازم خانگی"
                         },
@@ -1274,6 +1730,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             Id = 11,
                             CategoryId = 3,
                             IsDeleted = false,
+                            PicturePath = "/images/subcategpries/khadamt_cp.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "خدمات کامپیوتری"
                         },
@@ -1282,6 +1739,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             Id = 12,
                             CategoryId = 3,
                             IsDeleted = false,
+                            PicturePath = "/images/subcategpries/tamirat_mobile.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "تعمیرات موبایل"
                         },
@@ -1290,6 +1748,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             Id = 13,
                             CategoryId = 4,
                             IsDeleted = false,
+                            PicturePath = "/images/subcategpries/barbari_jabejayi.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "باربری و جابجایی"
                         },
@@ -1298,6 +1757,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             Id = 14,
                             CategoryId = 5,
                             IsDeleted = false,
+                            PicturePath = "/images/subcategpries/khadamat_khodro.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "خدمات و تعمیرات خودرو"
                         },
@@ -1306,6 +1766,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             Id = 15,
                             CategoryId = 6,
                             IsDeleted = false,
+                            PicturePath = "/images/subcategpries/zibayi_banovan.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "زیبایی بانوان"
                         },
@@ -1314,6 +1775,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             Id = 16,
                             CategoryId = 6,
                             IsDeleted = false,
+                            PicturePath = "/images/subcategpries/pezeshki_parastari.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "پزشکی و پرستاری"
                         },
@@ -1322,6 +1784,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             Id = 17,
                             CategoryId = 6,
                             IsDeleted = false,
+                            PicturePath = "/images/subcategpries/heyvanat_khanegi.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "حیوانات خانگی"
                         },
@@ -1330,6 +1793,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             Id = 18,
                             CategoryId = 6,
                             IsDeleted = false,
+                            PicturePath = "/images/subcategpries/tandorosti_varzesh.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "تندرستی و ورزش"
                         },
@@ -1338,6 +1802,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             Id = 19,
                             CategoryId = 7,
                             IsDeleted = false,
+                            PicturePath = "/images/subcategpries/khadamat_sherkati.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "خدمات شرکتی"
                         },
@@ -1346,6 +1811,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             Id = 20,
                             CategoryId = 7,
                             IsDeleted = false,
+                            PicturePath = "/images/subcategpries/tamin_niroye_ensani.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "تامین نیروی انسانی"
                         },
@@ -1354,6 +1820,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             Id = 21,
                             CategoryId = 8,
                             IsDeleted = false,
+                            PicturePath = "/images/subcategpries/khayati_tamirat.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "خیاطی و تعمیرات لباس"
                         },
@@ -1362,6 +1829,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             Id = 22,
                             CategoryId = 8,
                             IsDeleted = false,
+                            PicturePath = "/images/subcategpries/majales_roydad.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "مجالس و رویدادها"
                         },
@@ -1370,6 +1838,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             Id = 23,
                             CategoryId = 8,
                             IsDeleted = false,
+                            PicturePath = "/images/subcategpries/amozesh.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "آموزش"
                         },
@@ -1378,6 +1847,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             Id = 24,
                             CategoryId = 8,
                             IsDeleted = false,
+                            PicturePath = "/images/subcategpries/kodak.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "کودک"
                         });
@@ -1432,11 +1902,11 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             Description = "ارزون",
                             ExpertId = 1,
                             IsDeleted = false,
-                            Price = 5000.0,
+                            Price = 6000.0,
                             RegisterDate = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             RequestId = 1,
                             StartDate = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            SuggestionStatus = 2
+                            SuggestionStatus = 5
                         },
                         new
                         {
@@ -1448,6 +1918,30 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             RegisterDate = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             RequestId = 2,
                             StartDate = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            SuggestionStatus = 5
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Description = "قیمت مناسب میگیرم",
+                            ExpertId = 2,
+                            IsDeleted = false,
+                            Price = 2500.0,
+                            RegisterDate = new DateTime(2025, 3, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            RequestId = 3,
+                            StartDate = new DateTime(2025, 3, 8, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            SuggestionStatus = 2
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Description = "قیمت مناسب تر میگیرم",
+                            ExpertId = 3,
+                            IsDeleted = false,
+                            Price = 2100.0,
+                            RegisterDate = new DateTime(2025, 3, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            RequestId = 3,
+                            StartDate = new DateTime(2025, 3, 8, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SuggestionStatus = 2
                         });
                 });
@@ -1605,6 +2099,21 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                         {
                             UserId = 4,
                             RoleId = 3
+                        },
+                        new
+                        {
+                            UserId = 5,
+                            RoleId = 2
+                        },
+                        new
+                        {
+                            UserId = 6,
+                            RoleId = 2
+                        },
+                        new
+                        {
+                            UserId = 7,
+                            RoleId = 3
                         });
                 });
 
@@ -1645,9 +2154,9 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
             modelBuilder.Entity("KhaneBan.Domain.Core.Entites.BaseEntities.Picture", b =>
                 {
                     b.HasOne("KhaneBan.Domain.Core.Entites.UserRequests.Request", "Request")
-                        .WithMany("Pictures")
+                        .WithMany()
                         .HasForeignKey("RequestId")
-                        .OnDelete(DeleteBehavior.NoAction)
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Request");
@@ -1890,8 +2399,6 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
 
             modelBuilder.Entity("KhaneBan.Domain.Core.Entites.UserRequests.Request", b =>
                 {
-                    b.Navigation("Pictures");
-
                     b.Navigation("Suggestions");
                 });
 

@@ -18,6 +18,9 @@ public class SuggestionService : ISuggestionService
         _suggestionRepository = suggestionRepository;
     }
 
+    public async Task<Suggestion?> GetByIdAsync(int id, CancellationToken cancellationToken)
+        => await _suggestionRepository.GetByIdAsync(id, cancellationToken);
+
     public async Task<List<Suggestion>?> GetRequestSuggestions(int requestId, CancellationToken cancellationToken)
         => await _suggestionRepository.GetRequestSuggestions(requestId, cancellationToken);
 }

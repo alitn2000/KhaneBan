@@ -19,6 +19,7 @@ namespace KhaneBan.Domain.Core.Entites.UserRequests
         public int VisitCount { get; set; }
         public string? PicturePath { get; set; }
         public bool IsDeleted { get; set; } = false;
+        public string Description { get; set; }
         public DateTime RegisterAt { get; set; } = DateTime.Now;
         public double BasePrice { get; set; }
 

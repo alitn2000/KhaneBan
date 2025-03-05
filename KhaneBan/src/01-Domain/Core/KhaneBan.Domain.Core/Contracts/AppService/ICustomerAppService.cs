@@ -1,4 +1,5 @@
-﻿using KhaneBan.Domain.Core.Entites.User;
+﻿using KhaneBan.Domain.Core.Entites.BaseEntities;
+using KhaneBan.Domain.Core.Entites.User;
 using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
@@ -20,4 +21,5 @@ public interface ICustomerAppService
     Task<IdentityResult> RegisterAsync(User user, string pass);
     Task<IdentityResult> UpdateAsync(User user);
     Task<Customer?> GetCustomerByIdWithDetailsAsync(int userId, CancellationToken cancellationToken);
+    Task<Result> MinusBalanceAsync(int userId, double minusBalance, CancellationToken cancellationToken);
 }

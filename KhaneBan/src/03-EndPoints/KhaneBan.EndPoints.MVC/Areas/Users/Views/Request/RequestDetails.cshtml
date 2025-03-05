@@ -1,0 +1,104 @@
+﻿@{
+	Layout = null;
+}
+
+@using KhaneBan.Domain.Core.Entites.UserRequests
+@model Request
+@using FrameWork
+
+
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+<head>
+	<title>جزئیات ریکوئست</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 20px;
+		}
+
+		h1 {
+			color: #333;
+			margin-bottom: 20px;
+		}
+
+		.detail-item {
+			margin-bottom: 15px;
+			border-bottom: 1px solid #eee;
+			padding-bottom: 10px;
+		}
+
+			.detail-item strong {
+				display: block;
+				margin-bottom: 5px;
+				color: #555;
+			}
+
+		.image-container {
+			display: flex;
+			flex-wrap: wrap;
+			margin-top: 10px;
+		}
+
+			.image-container img {
+				margin: 10px;
+				max-width: 200px;
+				height: auto;
+				border: 1px solid #ddd;
+				border-radius: 4px;
+			}
+
+		.back-link {
+			display: inline-block;
+			margin-top: 20px;
+			padding: 10px 20px;
+			background-color: #007bff;
+			color: white;
+			text-decoration: none;
+			border-radius: 5px;
+		}
+	</style>
+</head>
+<body class=" >
+	<h1>جزئیات ریکوئست</h1>
+
+	<div class="detail-item">
+		<strong>شناسه سفارش:</strong>
+		<span>@Model.Id</span>
+	</div>
+
+	<div class="detail-item">
+		<strong>تصاویر:</strong>
+		@if (Model.RequestImages != null && Model.RequestImages.Any())
+		{
+			<div class="image-container">
+				@foreach (var imagePath in Model.RequestImages)
+				{
+					<img src="@imagePath" alt="تصویر ریکوئست" />
+				}
+			</div>
+		}
+		else
+		{
+			<p>تصویری یافت نشد</p>
+		}
+	</div>
+
+	<div class="detail-item">
+		<strong>وضعیت:</strong>
+		<span>@Model.RequestStatus.GetEnumDisplayName()</span>
+	</div>
+
+	<div class="detail-item">
+		<strong>توضیحات:</strong>
+		<span>@Model.Description</span>
+	</div>
+
+	<div class="detail-item">
+		<strong>تاریخ و ساعت ثبت:</strong>
+		<span>@Model.RequestedDate</span>
+	</div>
+
+	<a asp-action="RequestList" class="back-link">بازگشت به لیست</a>
+</body>
+</html>

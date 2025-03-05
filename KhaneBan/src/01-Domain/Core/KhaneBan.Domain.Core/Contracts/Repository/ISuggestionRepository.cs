@@ -24,4 +24,5 @@ public interface ISuggestionRepository
     Task<bool> IsDelete(int suggestionId, CancellationToken cancellationToken);
     Task<bool> ChangeStatus(StatusEnum status, int suggestionId, CancellationToken cancellationToken);
     Task<List<Suggestion>?> GetRequestSuggestions(int requestId, CancellationToken cancellationToken);
+    Task<Suggestion?> GetByIdAsync(int id, CancellationToken cancellationToken);
 }

@@ -16,7 +16,7 @@ public class Suggestion
     public DateTime StartDate { get; set; } 
     public DateTime RegisterDate { get; set; } = DateTime.Now;
     public string Description { get; set; }
-    public StatusEnum SuggestionStatus { get; set; }
+    public StatusEnum SuggestionStatus { get; set; } = StatusEnum.WaitingCustomerToChoose;
     public bool IsDeleted { get; set; } = false;
     public int RequestId { get; set; }
     public int ExpertId { get; set; }

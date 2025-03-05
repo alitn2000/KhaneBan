@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace KhaneBan.InfraStructure.EfCore.Migrations
 {
     /// <inheritdoc />
-    public partial class init1 : Migration
+    public partial class init : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -150,6 +150,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                     VisitCount = table.Column<int>(type: "int", nullable: false),
                     PicturePath = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     IsDeleted = table.Column<bool>(type: "bit", nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     RegisterAt = table.Column<DateTime>(type: "datetime2", nullable: false),
                     BasePrice = table.Column<double>(type: "float", nullable: false)
                 },
@@ -371,7 +372,8 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                     CityId = table.Column<int>(type: "int", nullable: false),
                     RatingId = table.Column<int>(type: "int", nullable: true),
                     CustomerId = table.Column<int>(type: "int", nullable: false),
-                    HomeServiceId = table.Column<int>(type: "int", nullable: false)
+                    HomeServiceId = table.Column<int>(type: "int", nullable: false),
+                    RequestImages = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -416,7 +418,8 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                         name: "FK_Pictures_Requests_RequestId",
                         column: x => x.RequestId,
                         principalTable: "Requests",
-                        principalColumn: "Id");
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -464,14 +467,14 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                 columns: new[] { "Id", "IsDeleted", "PicturePath", "RegisterAt", "Title" },
                 values: new object[,]
                 {
-                    { 1, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "تمیزکاری" },
-                    { 2, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "ساختمان" },
-                    { 3, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "تعمیرات اشیا" },
-                    { 4, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "اسباب کشی و حمل بار" },
-                    { 5, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "خودرو" },
-                    { 6, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "سلامت و زیبایی" },
-                    { 7, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "سازمان ها و مجتمع ها" },
-                    { 8, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "سایر" }
+                    { 1, false, "/images/Categories/tamizkari.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "تمیزکاری" },
+                    { 2, false, "/images/Categories/sakhteman.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "ساختمان" },
+                    { 3, false, "/images/Categories/tamirat_ashya.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "تعمیرات اشیا" },
+                    { 4, false, "/images/Categories/asbabkeshi.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "اسباب کشی و حمل بار" },
+                    { 5, false, "/images/category/khodro.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "خودرو" },
+                    { 6, false, "/images/Categories/salamat_zibayi.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "سلامت و زیبایی" },
+                    { 7, false, "/images/Categories/sazmanha_va_mojtamha.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "سازمان ها و مجتمع ها" },
+                    { 8, false, "/images/Categories/sayer.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "سایر" }
                 });
 
             migrationBuilder.InsertData(
@@ -511,10 +514,13 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                 columns: new[] { "Id", "AccessFailedCount", "Address", "Balance", "CityId", "ConcurrencyStamp", "Email", "EmailConfirmed", "FirstName", "IsDeleted", "LastName", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "PicturePath", "RegisterDate", "SecurityStamp", "TwoFactorEnabled", "UserName" },
                 values: new object[,]
                 {
-                    { 1, 0, "test1", 10000.0, 1, "1168BED7-A787-44E1-A869-7D150A038915", "Admin@gmail.com", false, "Admin", false, "Admin", false, null, "ADMIN@GMAIL.COM", "ADMIN", "AQAAAAIAAYagAAAAEP/VGAVE6baNss1Ys6EoN8N7ThVIRvKk3ZnnFRyfC2EeCb9//u03af0zyszE8Wybvw==", "09102123542", false, "desktop", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "1168BED7-A787-44E1-A869-7D150A038916", false, "Admin" },
-                    { 2, 0, "test2", 20000.0, 1, "5780E9A6-7966-48F0-AC09-20FA8EA4B212", "alitn2000@gmail.com", false, "Ali", false, "Tahmasebinia", false, null, "ALITN2000@GMAIL.COM", "ALITN2000", "AQAAAAIAAYagAAAAEKYVwnSOLUfytd9op28cmA8IRd3qSPoHRKFlvfhsTBIwNuXOabHkofuPQYFDLACivA==", "09022004453", false, "desktop1", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "5780E9A6-7966-48F0-AC09-20FA8EA4B213", false, "alitn2000" },
-                    { 3, 0, "test3", 20000.0, 1, "3FEB408E-2E7D-4BB9-B80C-12A88348057D", "reza2000@gmail.com", false, "Reza", false, "Rezaei", false, null, "REZA2000@GMAIL.COM", "REZA2000", "AQAAAAIAAYagAAAAEBXUyhs3uDbQqZeH1lqvzSuwa0Xt4wV0cQNcygv499EO4acXpUxRmqysJabuVBc2oA==", "09102123543", false, "desktop2", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "3FEB408E-2E7D-4BB9-B80C-12A88348057E", false, "reza2000" },
-                    { 4, 0, "test4", 20000.0, 1, "1DBE15F3-BB61-4FC0-87EE-5383DC66CF51", "sara2000@gmail.com", false, "Sara", false, "Saraei", false, null, "SARA2000@GMAIL.COM", "SARA2000", "AQAAAAIAAYagAAAAELLQQbmx1cnnagZHpCBMGabs3odKKS3rRJI4rVMApxteAkspsiN8OdHt5maTWdswZA==", "09102123545", false, "desktop3", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "1DBE15F3-BB61-4FC0-87EE-5383DC66CF52", false, "sara2000" }
+                    { 1, 0, "test1", 10000.0, 1, "1168BED7-A787-44E1-A869-7D150A038915", "Admin@gmail.com", false, "Admin", false, "Admin", false, null, "ADMIN@GMAIL.COM", "ADMIN", "AQAAAAIAAYagAAAAEKWY6yw5aR8hmBvumbMpzbaRa3EazJvyTUAaIh0skvw7CnIY4yStqcV4ITwbAuvoWw==", "09102123542", false, "desktop", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "1168BED7-A787-44E1-A869-7D150A038916", false, "Admin" },
+                    { 2, 0, "test2", 20000.0, 1, "5780E9A6-7966-48F0-AC09-20FA8EA4B212", "alitn2000@gmail.com", false, "Ali", false, "Tahmasebinia", false, null, "ALITN2000@GMAIL.COM", "ALITN2000", "AQAAAAIAAYagAAAAEHYMFXlYYWIJFvCqk3V358dmgxdD0hU2pQYVw5SIRnxWqePfiI1/OPOa51aU57XsSw==", "09022004453", false, "desktop1", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "5780E9A6-7966-48F0-AC09-20FA8EA4B213", false, "alitn2000" },
+                    { 3, 0, "test3", 20000.0, 1, "3FEB408E-2E7D-4BB9-B80C-12A88348057D", "reza2000@gmail.com", false, "Reza", false, "Rezaei", false, null, "REZA2000@GMAIL.COM", "REZA2000", "AQAAAAIAAYagAAAAEM67/wyH+QkqFhhXV7rnMch++J1C+fA9hcnBUrknljxvhbPXkA3sUDvieilOqRmnqw==", "09102123543", false, "desktop2", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "3FEB408E-2E7D-4BB9-B80C-12A88348057E", false, "reza2000" },
+                    { 4, 0, "test4", 20000.0, 1, "1DBE15F3-BB61-4FC0-87EE-5383DC66CF51", "sara2000@gmail.com", false, "Sara", false, "Saraei", false, null, "SARA2000@GMAIL.COM", "SARA2000", "AQAAAAIAAYagAAAAEG+aJYqhKqwjDpTdUZO1ETPT+mHdwSEXzGk+t4qA+eJC3aCmG4YZnKVocAlGlCoT7Q==", "09102123545", false, "desktop3", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "1DBE15F3-BB61-4FC0-87EE-5383DC66CF52", false, "sara2000" },
+                    { 5, 0, "test2", 20000.0, 1, "5780E9A6-7966-48F0-AC09-20FA8EA4B212", "expert12000@gmail.com", false, "expert1", false, "expertinia", false, null, " EXPERT12000@GMAIL.COM", "EXPERT12000", "AQAAAAIAAYagAAAAEJcCkmhWXTXzIOx2/45Z24dOqozKz2rhJQx1ffBG/V/tjFAh8mgHFuDXEdFf1D1UFQ==", "09102123541", false, "desktop1", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "5780E9A6-7966-48F0-AC09-20FA8EA4B213", false, "expert12000" },
+                    { 6, 0, "test5", 20000.0, 1, "5780E9A6-7966-48F0-AC09-20FA8EA4B212", "expert22000@gmail.com", false, "expert2", false, "expertinia", false, null, " EXPERT22000@GMAIL.COM", "EXPERT22000", "AQAAAAIAAYagAAAAEPNIil5bNMBD7a6et28t+wkjqrghmCFFrNV3f4KJj1aJxUktD3S7MRpmtjNFIQotqA==", "09102123542", false, "desktop1", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "5780E9A6-7966-48F0-AC09-20FA8EA4B213", false, "expert22000" },
+                    { 7, 0, "test7", 20000.0, 1, "5780E9A6-7966-48F0-AC09-20FA8EA4B212", "customer12000@gmail.com", false, "customer1", false, "customernia", false, null, "CUSTOMER12000@GMAIL.COM", "CUSTOMER12000", "AQAAAAIAAYagAAAAEANrkFM0yp7B4yZ8UToR1Hb0V2lEzhSGOelb96CXTTx/Hdz+JDgFtzLvf51G3LAvnQ==", "09102123555", false, "desktop1", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "5780E9A6-7966-48F0-AC09-20FA8EA4B213", false, "customer12000" }
                 });
 
             migrationBuilder.InsertData(
@@ -522,30 +528,30 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                 columns: new[] { "Id", "CategoryId", "IsDeleted", "PicturePath", "RegisterAt", "Title" },
                 values: new object[,]
                 {
-                    { 1, 1, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "نظافت و پذیرایی" },
-                    { 2, 1, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "شستشو" },
-                    { 3, 1, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "کارواش و دیتیلینگ" },
-                    { 4, 2, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "سرمایش و گرمایش" },
-                    { 5, 2, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "تعمیرات ساختمان" },
-                    { 6, 2, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "لوله کشی" },
-                    { 7, 2, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "طراحی و بازسازی ساختمان" },
-                    { 8, 2, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "باغبانی و فضای سبز" },
-                    { 9, 2, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "چوب و کابینت" },
-                    { 10, 3, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "نصب و تعمیر لوازم خانگی" },
-                    { 11, 3, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "خدمات کامپیوتری" },
-                    { 12, 3, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "تعمیرات موبایل" },
-                    { 13, 4, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "باربری و جابجایی" },
-                    { 14, 5, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "خدمات و تعمیرات خودرو" },
-                    { 15, 6, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "زیبایی بانوان" },
-                    { 16, 6, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "پزشکی و پرستاری" },
-                    { 17, 6, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "حیوانات خانگی" },
-                    { 18, 6, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "تندرستی و ورزش" },
-                    { 19, 7, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "خدمات شرکتی" },
-                    { 20, 7, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "تامین نیروی انسانی" },
-                    { 21, 8, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "خیاطی و تعمیرات لباس" },
-                    { 22, 8, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "مجالس و رویدادها" },
-                    { 23, 8, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "آموزش" },
-                    { 24, 8, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "کودک" }
+                    { 1, 1, false, "/images/subcategpries/nezafat_pazirayi.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "نظافت و پذیرایی" },
+                    { 2, 1, false, "/images/subcategpries/shostosho.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "شستشو" },
+                    { 3, 1, false, "/images/subsubcategpriescategory/karvash_detailing", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "کارواش و دیتیلینگ" },
+                    { 4, 2, false, "/images/subcategpries/sarmayesh_garmayesh", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "سرمایش و گرمایش" },
+                    { 5, 2, false, "/images/subcategpries/tamirat_sakhteman", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "تعمیرات ساختمان" },
+                    { 6, 2, false, "/images/subcategpries/lolekeshi", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "لوله کشی" },
+                    { 7, 2, false, "/images/subcategpries/tarahi_bazsazi.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "طراحی و بازسازی ساختمان" },
+                    { 8, 2, false, "/images/subcategpries/baqbani_fazayesabz.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "باغبانی و فضای سبز" },
+                    { 9, 2, false, "/images/subcategpries/choob_kabinet.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "چوب و کابینت" },
+                    { 10, 3, false, "/images/subcategpries/nasab_tamir_lavazem.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "نصب و تعمیر لوازم خانگی" },
+                    { 11, 3, false, "/images/subcategpries/khadamt_cp.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "خدمات کامپیوتری" },
+                    { 12, 3, false, "/images/subcategpries/tamirat_mobile.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "تعمیرات موبایل" },
+                    { 13, 4, false, "/images/subcategpries/barbari_jabejayi.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "باربری و جابجایی" },
+                    { 14, 5, false, "/images/subcategpries/khadamat_khodro.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "خدمات و تعمیرات خودرو" },
+                    { 15, 6, false, "/images/subcategpries/zibayi_banovan.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "زیبایی بانوان" },
+                    { 16, 6, false, "/images/subcategpries/pezeshki_parastari.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "پزشکی و پرستاری" },
+                    { 17, 6, false, "/images/subcategpries/heyvanat_khanegi.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "حیوانات خانگی" },
+                    { 18, 6, false, "/images/subcategpries/tandorosti_varzesh.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "تندرستی و ورزش" },
+                    { 19, 7, false, "/images/subcategpries/khadamat_sherkati.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "خدمات شرکتی" },
+                    { 20, 7, false, "/images/subcategpries/tamin_niroye_ensani.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "تامین نیروی انسانی" },
+                    { 21, 8, false, "/images/subcategpries/khayati_tamirat.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "خیاطی و تعمیرات لباس" },
+                    { 22, 8, false, "/images/subcategpries/majales_roydad.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "مجالس و رویدادها" },
+                    { 23, 8, false, "/images/subcategpries/amozesh.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "آموزش" },
+                    { 24, 8, false, "/images/subcategpries/kodak.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "کودک" }
                 });
 
             migrationBuilder.InsertData(
@@ -561,7 +567,10 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                     { 1, 1 },
                     { 2, 2 },
                     { 3, 3 },
-                    { 3, 4 }
+                    { 3, 4 },
+                    { 2, 5 },
+                    { 2, 6 },
+                    { 3, 7 }
                 });
 
             migrationBuilder.InsertData(
@@ -570,64 +579,95 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                 values: new object[,]
                 {
                     { 1, 3 },
-                    { 2, 4 }
+                    { 2, 4 },
+                    { 3, 7 }
                 });
 
             migrationBuilder.InsertData(
                 table: "Experts",
                 columns: new[] { "Id", "UserId" },
-                values: new object[] { 1, 2 });
+                values: new object[,]
+                {
+                    { 1, 2 },
+                    { 2, 5 },
+                    { 3, 6 }
+                });
 
             migrationBuilder.InsertData(
                 table: "HomeServices",
-                columns: new[] { "Id", "BasePrice", "IsDeleted", "PicturePath", "RegisterAt", "SubCategoryId", "Title", "VisitCount" },
+                columns: new[] { "Id", "BasePrice", "Description", "IsDeleted", "PicturePath", "RegisterAt", "SubCategoryId", "Title", "VisitCount" },
                 values: new object[,]
                 {
-                    { 1, 100.0, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 1, "نقاشی", 120 },
-                    { 2, 100.0, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 1, "نظافت راه پله", 120 },
-                    { 3, 100.0, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 2, "قالیشویی", 120 },
-                    { 4, 100.0, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 2, "پرده شویی", 120 },
-                    { 5, 100.0, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 3, "سرامیک خودرو", 120 },
-                    { 6, 100.0, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 3, "صفرشویی خودرو", 120 },
-                    { 7, 100.0, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 4, "تعمیر و سرویس کولر آبی", 120 },
-                    { 8, 100.0, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 4, "کانال سازی کولر", 120 },
-                    { 9, 100.0, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 4, "تعمیر و نگهداری موتورخانه", 120 },
-                    { 10, 100.0, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 5, "سنگ کاری", 120 },
-                    { 11, 100.0, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 5, "بنایی", 120 },
-                    { 12, 100.0, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 5, "کلیدسازی", 120 },
-                    { 13, 100.0, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 5, "کفسابی", 120 },
-                    { 14, 100.0, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 6, "خدمات لوله کشی ساختمان", 120 },
-                    { 15, 100.0, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 6, "تخلیه چاه و لوله بازکنی", 120 },
-                    { 16, 100.0, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 6, "لوله کشی آب و فاضلاب", 120 },
-                    { 17, 100.0, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 7, "مشاوره و بازسازی ساختمان", 120 },
-                    { 18, 100.0, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 7, "دکوراسیون و طراحی ساختمان", 120 },
-                    { 19, 100.0, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 8, "خدمات باغبانی", 120 },
-                    { 20, 100.0, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 8, "کاشت و تعویض گلدان", 120 },
-                    { 21, 100.0, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 9, "تعمیرات مبلمان", 120 },
-                    { 22, 100.0, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 9, "تعمیرات مبلمان اداری", 120 },
-                    { 23, 100.0, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 10, "تعمیر پنکه", 120 },
-                    { 24, 100.0, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 10, "نصب و تعمیر فر", 120 },
-                    { 25, 100.0, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 11, "تعمیر کامپیوتر و لپ تاپ", 120 },
-                    { 26, 100.0, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 11, "مودم و اینترنت", 120 },
-                    { 27, 100.0, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 12, "خدمات تعمیر موبایل", 120 },
-                    { 28, 100.0, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 12, "خدمات خرید موبایل و کالاهای دیجیتال", 120 },
-                    { 29, 100.0, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 12, "خدمات دوربین", 120 },
-                    { 30, 100.0, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 13, "اسباب کشی با خاور و کامیون", 120 },
-                    { 31, 100.0, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 13, "اسباب کشی با وانت و نیسان", 120 },
-                    { 32, 100.0, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 13, "کارگر جابه جایی", 120 },
-                    { 33, 100.0, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 14, "تعویض باتری خودرو", 120 },
-                    { 34, 100.0, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 14, "باتری به باتری", 120 },
-                    { 35, 100.0, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 14, "حمل خودرو", 120 },
-                    { 36, 100.0, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 14, "تعویض وایر و شمع خودرو", 120 },
-                    { 37, 100.0, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 15, "براشینگ موی بانوان", 120 },
-                    { 38, 100.0, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 15, "کوتاهی موی بانوان", 120 },
-                    { 39, 100.0, false, null, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 15, "بافت موی بانوان در خانه", 120 }
+                    { 1, 2000.0, "Lorem ipsum lorem ipsum", false, "/images/HomeServices/nezafat_manzel.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 1, "خدمات نظافت منزل", 210 },
+                    { 2, 2000.0, "Lorem ipsum lorem ipsum", false, "/images/HomeServices/nezafat_rahpele.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 1, "نظافت راه پله", 210 },
+                    { 3, 2000.0, "Lorem ipsum lorem ipsum", false, "/images/HomeServices/ghalishoyi.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 2, "قالیشویی", 210 },
+                    { 4, 2000.0, "Lorem ipsum lorem ipsum", false, "/images/HomeServices/pardeshoyi.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 2, "پرده شویی", 210 },
+                    { 5, 2000.0, "Lorem ipsum lorem ipsum", false, "/images/HomeServices/seramik_khodro.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 3, "سرامیک خودرو", 210 },
+                    { 6, 2000.0, "Lorem ipsum lorem ipsum", false, "/images/HomeServices/sefrshoyi_khodro.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 3, "صفرشویی خودرو", 210 },
+                    { 7, 2000.0, "Lorem ipsum lorem ipsum", false, "/images/HomeServices/tamir_coolerabi.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 4, "تعمیر و سرویس کولر آبی", 210 },
+                    { 8, 2000.0, "Lorem ipsum lorem ipsum", false, "/images/HomeServices/kanalsazi_cooler.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 4, "کانال سازی کولر", 210 },
+                    { 9, 2000.0, "Lorem ipsum lorem ipsum", false, "/images/HomeServices/tamir_motorkhane.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 4, "تعمیر و نگهداری موتورخانه", 210 },
+                    { 10, 2000.0, "Lorem ipsum lorem ipsum", false, "/images/HomeServices/sangkari.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 5, "سنگ کاری", 210 },
+                    { 11, 2000.0, "Lorem ipsum lorem ipsum", false, "/images/HomeServices/banayi.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 5, "بنایی", 210 },
+                    { 12, 2000.0, "Lorem ipsum lorem ipsum", false, "/images/HomeServices/klidsazi.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 5, "کلیدسازی", 210 },
+                    { 13, 2000.0, "Lorem ipsum lorem ipsum", false, "/images/HomeServices/kafsabi.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 5, "کفسابی", 210 },
+                    { 14, 2000.0, "Lorem ipsum lorem ipsum", false, "/images/HomeServices/lolekeshi.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 6, "خدمات لوله کشی ساختمان", 210 },
+                    { 15, 2000.0, "Lorem ipsum lorem ipsum", false, "/images/HomeServices/lolebazkoni.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 6, "تخلیه چاه و لوله بازکنی", 210 },
+                    { 16, 2000.0, "Lorem ipsum lorem ipsum", false, "/images/HomeServices/lolekeshi_fazelab.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 6, "لوله کشی آب و فاضلاب", 210 },
+                    { 17, 2000.0, "Lorem ipsum lorem ipsum", false, "/images/HomeServices/moshavere_bazsazi_sakhteman.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 7, "مشاوره و بازسازی ساختمان", 210 },
+                    { 18, 2000.0, "Lorem ipsum lorem ipsum", false, "/images/HomeServices/dekorasion_sakhteman.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 7, "دکوراسیون و طراحی ساختمان", 210 },
+                    { 19, 2000.0, "Lorem ipsum lorem ipsum", false, "/images/HomeServices/khadamat_baqbani.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 8, "خدمات باغبانی", 210 },
+                    { 20, 2000.0, "Lorem ipsum lorem ipsum", false, "/images/HomeServices/kasht_goldan.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 8, "کاشت و تعویض گلدان", 210 },
+                    { 21, 2000.0, "Lorem ipsum lorem ipsum", false, "/images/HomeServices/tamirat_mobleman.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 9, "تعمیرات مبلمان", 210 },
+                    { 22, 2000.0, "Lorem ipsum lorem ipsum", false, "/images/HomeServices/tamirat_mobleman_edari.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 9, "تعمیرات مبلمان اداری", 210 },
+                    { 23, 2000.0, "Lorem ipsum lorem ipsum", false, "/images/HomeServices/tamir_panke.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 10, "تعمیر پنکه", 210 },
+                    { 24, 2000.0, "Lorem ipsum lorem ipsum", false, "/images/HomeServices/nasb_va_tamir_fer.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 10, "نصب و تعمیر فر", 210 },
+                    { 25, 2000.0, "Lorem ipsum lorem ipsum", false, "/images/HomeServices/tamir_laptop.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 11, "تعمیر کامپیوتر و لپ تاپ", 210 },
+                    { 26, 2000.0, "Lorem ipsum lorem ipsum", false, "/images/HomeServices/modem_va_internet.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 11, "مودم و اینترنت", 210 },
+                    { 27, 2000.0, "Lorem ipsum lorem ipsum", false, "/images/HomeServices/tamirat_mobile.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 12, "خدمات تعمیر موبایل", 210 },
+                    { 28, 2000.0, "Lorem ipsum lorem ipsum", false, "/images/HomeServices/khadamt_kharid_mobile.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 12, "خدمات خرید موبایل و کالاهای دیجیتال", 210 },
+                    { 29, 2000.0, "Lorem ipsum lorem ipsum", false, "/images/HomeServices/khadamat_dorbin.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 12, "خدمات دوربین", 210 },
+                    { 30, 2000.0, "Lorem ipsum lorem ipsum", false, "/images/HomeServices/asbabkeshi_ba_khavar.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 13, "اسباب کشی با خاور و کامیون", 210 },
+                    { 31, 2000.0, "Lorem ipsum lorem ipsum", false, "/images/HomeServices/asabkeshi_ba_neysan.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 13, "اسباب کشی با وانت و نیسان", 210 },
+                    { 32, 2000.0, "Lorem ipsum lorem ipsum", false, "/images/HomeServices/kargar_jabejayi.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 13, "کارگر جابه جایی", 210 },
+                    { 33, 2000.0, "Lorem ipsum lorem ipsum", false, "/images/HomeServices/taviz_batri_khodro.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 14, "تعویض باتری خودرو", 210 },
+                    { 34, 2000.0, "Lorem ipsum lorem ipsum", false, "/images/HomeServices/batri_be_batri.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 14, "باتری به باتری", 210 },
+                    { 35, 2000.0, "Lorem ipsum lorem ipsum", false, "/images/HomeServices/haml_khodro.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 14, "حمل خودرو", 210 },
+                    { 36, 2000.0, "Lorem ipsum lorem ipsum", false, "/images/HomeServices/taviz_vayer_sham_khodro.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 14, "تعویض وایر و شمع خودرو", 210 },
+                    { 37, 2000.0, "Lorem ipsum lorem ipsum", false, "/images/HomeServices/berashing_moye_banovan.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 15, "براشینگ موی بانوان", 210 },
+                    { 38, 2000.0, "Lorem ipsum lorem ipsum", false, "/images/HomeServices/kotahi_moye_banovan.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 15, "کوتاهی موی بانوان", 210 },
+                    { 39, 2000.0, "Lorem ipsum lorem ipsum", false, "/images/HomeServices/baft_moye_banovan.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 15, "بافت موی بانوان در خانه", 210 },
+                    { 40, 2000.0, "Lorem ipsum lorem ipsum", false, "/images/HomeServices/moraqebat_negahdari.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 16, "مراقبت و نگهداری", 210 },
+                    { 41, 2000.0, "Lorem ipsum lorem ipsum", false, "/images/HomeServices/moayene_pezeshki.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 16, "معاینه پزشکی", 210 },
+                    { 42, 2000.0, "Lorem ipsum lorem ipsum", false, "/images/HomeServices/pirapezeshki.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 16, "پیراپزشکی", 210 },
+                    { 43, 2000.0, "Lorem ipsum lorem ipsum", false, "/images/HomeServices/petshop.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 17, "پت شاپ", 210 },
+                    { 44, 2000.0, "Lorem ipsum lorem ipsum", false, "/images/HomeServices/khadamat_dampezshki.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 17, "خدمات دامپزشکی در محل", 210 },
+                    { 45, 2000.0, "Lorem ipsum lorem ipsum", false, "/images/HomeServices/khadamt_yoga.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 18, "کلاس یوگا در خانه", 210 },
+                    { 46, 2000.0, "Lorem ipsum lorem ipsum", false, "/images/HomeServices/kelas_polates.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 18, "کلاس پیلاتس در خانه", 210 },
+                    { 47, 2000.0, "Lorem ipsum lorem ipsum", false, "/images/HomeServices/khadamat_achare.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 19, "پیشنهاد فروش خدمات آچاره به شرکت ها", 210 },
+                    { 48, 2000.0, "Lorem ipsum lorem ipsum", false, "/images/HomeServices/estekhdam_niroye_khedmatkar.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 20, "استخدام نیروی خدمتکار", 210 },
+                    { 49, 2000.0, "Lorem ipsum lorem ipsum", false, "/images/HomeServices/tamirat_lebas.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 21, "تعمیرات لباس", 210 },
+                    { 50, 2000.0, "Lorem ipsum lorem ipsum", false, "/images/HomeServices/dokht_lebas_zanane.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 21, "دوخت لباس زنانه", 210 },
+                    { 51, 2000.0, "Lorem ipsum lorem ipsum", false, "/images/HomeServices/tamir_kifokafsh.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 21, "تعمیر کیف و کفش", 210 },
+                    { 52, 2000.0, "Lorem ipsum lorem ipsum", false, "/images/HomeServices/keyko_shirini.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 22, "کیک و شیرینی", 210 },
+                    { 53, 2000.0, "Lorem ipsum lorem ipsum", false, "/images/HomeServices/dekor_tavalod.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 22, "دکور تولد", 210 },
+                    { 54, 2000.0, "Lorem ipsum lorem ipsum", false, "/images/HomeServices/gol_arayi.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 22, "گل آرایی", 210 },
+                    { 55, 2000.0, "Lorem ipsum lorem ipsum", false, "/images/HomeServices/finger_food.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 22, "فینگرفود", 210 },
+                    { 56, 2000.0, "Lorem ipsum lorem ipsum", false, "/images/HomeServices/amozesh_zaban_khareji.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 23, "آموزش زبان های خارجی", 210 },
+                    { 57, 2000.0, "Lorem ipsum lorem ipsum", false, "/images/HomeServices/ebtedayi_motevasete.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 23, "آموزش ابتدایی تا متوسطه", 210 },
+                    { 58, 2000.0, "Lorem ipsum lorem ipsum", false, "/images/HomeServices/kotahi_moye_kodak.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 24, "کوتاهی موی کودک", 210 },
+                    { 59, 2000.0, "Lorem ipsum lorem ipsum", false, "/images/HomeServices/tarahi_otaq_kodak.jpg", new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 24, "طراحی و دیزاین اتاق کودک", 210 }
                 });
 
             migrationBuilder.InsertData(
                 table: "ExpertHomeService",
                 columns: new[] { "ExpertsId", "HomeServicesId" },
-                values: new object[] { 1, 1 });
+                values: new object[,]
+                {
+                    { 1, 1 },
+                    { 2, 2 },
+                    { 3, 2 }
+                });
 
             migrationBuilder.InsertData(
                 table: "Ratings",
@@ -640,11 +680,12 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
 
             migrationBuilder.InsertData(
                 table: "Requests",
-                columns: new[] { "Id", "CityId", "CustomerId", "Description", "HomeServiceId", "IsDeleted", "RatingId", "RegisterDate", "RequestStatus", "RequestedDate", "StartTime", "Title" },
+                columns: new[] { "Id", "CityId", "CustomerId", "Description", "HomeServiceId", "IsDeleted", "RatingId", "RegisterDate", "RequestImages", "RequestStatus", "RequestedDate", "StartTime", "Title" },
                 values: new object[,]
                 {
-                    { 1, 1, 1, "نقاشی 4 طبقه", 1, false, 1, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 6, new DateTime(2025, 2, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), null, "نقاشی" },
-                    { 2, 1, 2, "نقاشی 2 طبقه", 1, false, 2, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 6, new DateTime(2025, 2, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), null, "نقاشی" }
+                    { 3, 1, 3, "نظافت راه پله ساختمان 4 طبقه", 2, false, null, new DateTime(2025, 3, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 2, new DateTime(2025, 3, 8, 0, 0, 0, 0, DateTimeKind.Unspecified), null, "نظافت راه پله" },
+                    { 1, 1, 1, "نقاشی 4 طبقه", 1, false, 1, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 5, new DateTime(2025, 2, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), null, "نقاشی" },
+                    { 2, 1, 2, "نقاشی 2 طبقه", 1, false, 2, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), null, 5, new DateTime(2025, 2, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), null, "نقاشی" }
                 });
 
             migrationBuilder.InsertData(
@@ -652,8 +693,10 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                 columns: new[] { "Id", "Description", "ExpertId", "IsDeleted", "Price", "RegisterDate", "RequestId", "StartDate", "SuggestionStatus" },
                 values: new object[,]
                 {
-                    { 1, "ارزون", 1, false, 5000.0, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 1, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 2 },
-                    { 2, "گرون", 1, false, 6000.0, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 2, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 2 }
+                    { 3, "قیمت مناسب میگیرم", 2, false, 2500.0, new DateTime(2025, 3, 5, 0, 0, 0, 0, DateTimeKind.Unspecified), 3, new DateTime(2025, 3, 8, 0, 0, 0, 0, DateTimeKind.Unspecified), 2 },
+                    { 4, "قیمت مناسب تر میگیرم", 3, false, 2100.0, new DateTime(2025, 3, 5, 0, 0, 0, 0, DateTimeKind.Unspecified), 3, new DateTime(2025, 3, 8, 0, 0, 0, 0, DateTimeKind.Unspecified), 2 },
+                    { 1, "ارزون", 1, false, 6000.0, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 1, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 5 },
+                    { 2, "گرون", 1, false, 6000.0, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 2, new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 5 }
                 });
 
             migrationBuilder.CreateIndex(

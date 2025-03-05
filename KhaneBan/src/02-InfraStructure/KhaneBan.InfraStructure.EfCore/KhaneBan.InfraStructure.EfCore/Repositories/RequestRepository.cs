@@ -34,6 +34,12 @@ public class RequestRepository : IRequestRepository
      .Requests
      .FirstOrDefaultAsync(s => s.Id == requestId, cancellationToken);
 
+    public async Task<List<Request>> GetCustomersRequestAsync(int userId, CancellationToken cancellationToken)
+    => await _appDbContext.Requests
+        .Where(r => r.Customer.UserId == userId)
+        .Include(r => r.Customer) 
+        .ToListAsync(cancellationToken);
+
     public async Task<List<Request>> GetRequestsInfo(CancellationToken cancellationToken)
         => await _appDbContext.Requests
         .Where(r => r.IsDeleted == false)
@@ -52,7 +58,7 @@ public class RequestRepository : IRequestRepository
            .Requests
            .Include(r => r.HomeService)
            .Include(r => r.City)
-           .Include(r => r.Pictures)
+           .Include(r => r.RequestImages)
            .Include(r => r.Suggestions)
            .ToListAsync(cancellationToken);
 
@@ -62,7 +68,7 @@ public class RequestRepository : IRequestRepository
           .Where(r => r.CustomerId == customerId)
           .Include(r => r.HomeService)
           .Include(r => r.City)
-          .Include(r => r.Pictures)
+          .Include(r => r.RequestImages)
           .Include(r => r.Suggestions)
           .ToListAsync(cancellationToken);
 
@@ -71,7 +77,7 @@ public class RequestRepository : IRequestRepository
            .Requests
            .Include(r => r.HomeService)
            .Include(r => r.City)
-           .Include(r => r.Pictures)
+           .Include(r => r.RequestImages)
            .Include(r => r.Suggestions)
            .FirstOrDefaultAsync(e => e.Id == requestId, cancellationToken);
 
@@ -80,7 +86,7 @@ public class RequestRepository : IRequestRepository
            .Requests
            .Include(r => r.HomeService)
            .Include(r => r.City)
-           .Include(r => r.Pictures)
+           .Include(r => r.RequestImages)
            .Include(r => r.Suggestions)
            .FirstOrDefaultAsync(r => r.CustomerId == customerId && r.Id == requestId, cancellationToken);
 

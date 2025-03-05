@@ -58,4 +58,10 @@ public class RequestService : IRequestService
 
     public async Task<bool> UpdateAsync(Request request, CancellationToken cancellationToken)
         => await _requestRepository.UpdateAsync(request, cancellationToken);
+
+    public async Task<List<Request>> GetCustomersRequestAsync(int userId, CancellationToken cancellationToken)
+        => await _requestRepository.GetCustomersRequestAsync(userId, cancellationToken);
+
+    public async Task<Request?> GetRequestByIdAsync(int requestId, CancellationToken cancellationToken)
+        => await _requestRepository.GetRequestByIdAsync(requestId, cancellationToken);
 }

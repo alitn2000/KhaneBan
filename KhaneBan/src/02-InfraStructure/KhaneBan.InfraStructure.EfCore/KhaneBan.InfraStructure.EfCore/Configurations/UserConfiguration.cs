@@ -79,6 +79,8 @@ public class UserConfiguration
         };
         user1.PasswordHash = passHasher.HashPassword(user1, "1234");
 
+       
+
         var user2 = new User
         {
             Id = 3,
@@ -122,13 +124,83 @@ public class UserConfiguration
         };
         user3.PasswordHash = passHasher.HashPassword(user3, "1234");
 
-        modelBuilder.Entity<User>().HasData(adminUser, user1, user2, user3);
+        var expert1 = new User
+        {
+            Id = 5,
+            FirstName = "expert1",
+            LastName = "expertinia",
+            Address = "test2",
+            IsDeleted = false,
+            Balance = 20000,
+            PicturePath = "desktop1",
+            CityId = 1,
+            RegisterDate = new DateTime(2025, 2, 2, 0, 0, 0),
+            UserName = "expert12000",
+            NormalizedUserName = "EXPERT12000",
+            Email = "expert12000@gmail.com",
+            NormalizedEmail = " EXPERT12000@GMAIL.COM",
+            PhoneNumber = "09102123541",
+            LockoutEnabled = false,
+            SecurityStamp = "5780E9A6-7966-48F0-AC09-20FA8EA4B213",
+            ConcurrencyStamp = "5780E9A6-7966-48F0-AC09-20FA8EA4B212"
+        };
+        expert1.PasswordHash = passHasher.HashPassword(user1, "1234");
+
+        var expert2 = new User
+        {
+            Id = 6,
+            FirstName = "expert2",
+            LastName = "expertinia",
+            Address = "test5",
+            IsDeleted = false,
+            Balance = 20000,
+            PicturePath = "desktop1",
+            CityId = 1,
+            RegisterDate = new DateTime(2025, 2, 2, 0, 0, 0),
+            UserName = "expert22000",
+            NormalizedUserName = "EXPERT22000",
+            Email = "expert22000@gmail.com",
+            NormalizedEmail = " EXPERT22000@GMAIL.COM",
+            PhoneNumber = "09102123542",
+            LockoutEnabled = false,
+            SecurityStamp = "5780E9A6-7966-48F0-AC09-20FA8EA4B213",
+            ConcurrencyStamp = "5780E9A6-7966-48F0-AC09-20FA8EA4B212"
+        };
+        expert2.PasswordHash = passHasher.HashPassword(user1, "1234");
+
+        var customer1 = new User
+        {
+            Id = 7,
+            FirstName = "customer1",
+            LastName = "customernia",
+            Address = "test7",
+            IsDeleted = false,
+            Balance = 20000,
+            PicturePath = "desktop1",
+            CityId = 1,
+            RegisterDate = new DateTime(2025, 2, 2, 0, 0, 0),
+            UserName = "customer12000",
+            NormalizedUserName = "CUSTOMER12000",
+            Email = "customer12000@gmail.com",
+            NormalizedEmail = "CUSTOMER12000@GMAIL.COM",
+            PhoneNumber = "09102123555",
+            LockoutEnabled = false,
+            SecurityStamp = "5780E9A6-7966-48F0-AC09-20FA8EA4B213",
+            ConcurrencyStamp = "5780E9A6-7966-48F0-AC09-20FA8EA4B212"
+           
+        };
+        customer1.PasswordHash = passHasher.HashPassword(user1, "1234");
+
+        modelBuilder.Entity<User>().HasData(adminUser, user1, user2, user3, expert1, expert2,customer1);
 
         modelBuilder.Entity<IdentityUserRole<int>>().HasData(
             new IdentityUserRole<int> { RoleId = 1, UserId = 1 },
             new IdentityUserRole<int> { RoleId = 2, UserId = 2 },
             new IdentityUserRole<int> { RoleId = 3, UserId = 3 },
-            new IdentityUserRole<int> { RoleId = 3, UserId = 4 }
+            new IdentityUserRole<int> { RoleId = 3, UserId = 4 },
+            new IdentityUserRole<int> { RoleId = 2, UserId = 5 },
+            new IdentityUserRole<int> { RoleId = 2, UserId = 6 },
+            new IdentityUserRole<int> { RoleId = 3, UserId = 7 }
         );
 
 

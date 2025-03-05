@@ -10,4 +10,5 @@ namespace KhaneBan.Domain.Core.Contracts.Service;
 public interface ISuggestionService
 {
     Task<List<Suggestion>?> GetRequestSuggestions(int requestId, CancellationToken cancellationToken);
+    Task<Suggestion?> GetByIdAsync(int id, CancellationToken cancellationToken);
 }

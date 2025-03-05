@@ -37,6 +37,9 @@ namespace KhaneBan.Domain.AppServices
 
          => await _homeServiceService.GetByIdAsync(id, cancellationToken);
 
+        public async Task<List<HomeService>> GetHomeServicesBySubCategoryId(int subCategoryId, CancellationToken cancellationToken)
+            => await _homeServiceService.GetHomeServicesBySubCategoryId(subCategoryId, cancellationToken);
+
         public async Task<bool> UpdateAsync(HomeService homeService, CancellationToken cancellationToken)
 
         => await _homeServiceService.UpdateAsync(homeService, cancellationToken);

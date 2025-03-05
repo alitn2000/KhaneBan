@@ -16,7 +16,8 @@ public class CustomerConfiguration : IEntityTypeConfiguration<Customer>
         builder.HasData(
 
              new Customer { Id = 1, UserId = 3 },
-             new Customer { Id = 2, UserId = 4 }
+             new Customer { Id = 2, UserId = 4 },
+             new Customer { Id = 3, UserId = 7 }
             );
     }
 }

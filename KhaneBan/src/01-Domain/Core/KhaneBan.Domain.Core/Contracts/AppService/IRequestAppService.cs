@@ -16,4 +16,6 @@ public interface IRequestAppService
     Task<bool> DeleteAsync(int requestId, CancellationToken cancellationToken);
     Task<List<Request>> GetRequestsInfo(CancellationToken cancellationToken);
     Task<bool> ChangeStatus(int requestId, StatusEnum status, CancellationToken cancellationToken);
+    Task<List<Request>> GetCustomersRequestAsync(int userId, CancellationToken cancellationToken);
+    Task<Request?> GetRequestByIdAsync(int requestId, CancellationToken cancellationToken);
 }

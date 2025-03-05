@@ -34,6 +34,12 @@ public class RequestAppService : IRequestAppService
         return await _requestService.DeleteAsync(requestId, cancellationToken);
     }
 
+    public async Task<List<Request>> GetCustomersRequestAsync(int userId, CancellationToken cancellationToken)
+        => await _requestService.GetCustomersRequestAsync(userId, cancellationToken);
+
+    public async Task<Request?> GetRequestByIdAsync(int requestId, CancellationToken cancellationToken)
+        => await _requestService.GetRequestByIdAsync(requestId, cancellationToken);
+
     public async Task<List<Request>> GetRequestsInfo(CancellationToken cancellationToken)
     {
         return await _requestService.GetRequestsInfo(cancellationToken);
@@ -43,4 +49,6 @@ public class RequestAppService : IRequestAppService
     {
         return await _requestService.UpdateAsync(request, cancellationToken);
     }
+
+
 }

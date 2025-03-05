@@ -31,6 +31,14 @@ public class HomeServiceRepository : IHomeServiceRepository
             .FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
     }
 
+    public async Task<List<HomeService>> GetHomeServicesBySubCategoryId(int subCategoryId, CancellationToken cancellationToken)
+
+         => await _context.HomeServices
+                          .Include(x => x.SubCategory)
+                          .ThenInclude(x => x.Category)
+                          .Where(x => x.SubCategoryId == subCategoryId)
+                          .ToListAsync(cancellationToken);
+
     public async Task<bool> CreateAsync(HomeService homeService, CancellationToken cancellationToken)
     {
         try

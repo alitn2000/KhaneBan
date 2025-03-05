@@ -27,7 +27,7 @@ public class Request
     public City City { get; set; }
     public Rating? Rating { get; set; }
     public Customer Customer  { get; set; }
-    public List<Picture>? Pictures { get; set; }
+    public List<string>? RequestImages { get; set; }
     public List<Suggestion>? Suggestions { get; set; }
     #endregion
 }

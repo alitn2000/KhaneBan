@@ -19,10 +19,6 @@ namespace KhaneBan.InfraStructure.EfCore.Configurations
             builder.ToTable("Pictures");
             builder.Property(x => x.Path).HasMaxLength(500).IsRequired();
 
-            builder.HasOne(x => x.Request)
-                .WithMany(x => x.Pictures)
-                .HasForeignKey(x => x.RequestId)
-                .OnDelete(DeleteBehavior.NoAction);
 
 
         }

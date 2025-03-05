@@ -28,9 +28,10 @@ public class CategoryRepository : ICategoryRepository
 
     public async Task<List<Category>> GetAllWithDetailsAsync(CancellationToken cancellationToken)
 
-      => await _context.Categories
-        .Include(c =>c.SubCategories)
-        .ToListAsync(cancellationToken);
+     => await _context.Categories
+            .Where(c => !c.IsDeleted)
+            .Include(c => c.SubCategories.Where(s => !s.IsDeleted))
+            .ToListAsync(cancellationToken);
 
 
 
@@ -127,6 +128,6 @@ public class CategoryRepository : ICategoryRepository
             _logger.LogError("Error in category repository=======================>>>>>>>>>>>{ErrorMessage}", ex.Message);
         }
     }
-   
+
 }
 

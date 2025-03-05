@@ -63,8 +63,25 @@ public class RequestConfiguration : IEntityTypeConfiguration<Request>
             CustomerId = 2,
             HomeServiceId = 1,
             RequestStatus = StatusEnum.WorkPaidByCustomer
+        },
+
+        new Request
+        {
+            Id = 3,
+            Title = "نظافت راه پله",
+            Description = "نظافت راه پله ساختمان 4 طبقه",
+            RegisterDate = new DateTime(2025, 3, 2, 0, 0, 0),
+            RequestedDate = new DateTime(2025, 3, 8, 0, 0, 0),
+            IsDeleted = false,
+            CityId = 1,
+            CustomerId = 3,
+            HomeServiceId = 2,
+            RequestStatus = StatusEnum.WaitingCustomerToChoose
         }
+
         );
+
+
 
     }
 }

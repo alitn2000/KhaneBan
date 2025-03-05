@@ -148,6 +148,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcnNcVmlld3NcUHJvZmlsZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/c\#/KhaneBan/KhaneBan/src/03-EndPoints/KhaneBan.EndPoints.MVC/Areas/Users/Views/Profile/RequestDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcnNcVmlld3NcUHJvZmlsZVxSZXF1ZXN0RGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/c\#/KhaneBan/KhaneBan/src/03-EndPoints/KhaneBan.EndPoints.MVC/Areas/Users/Views/Profile/RequestList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcnNcVmlld3NcUHJvZmlsZVxSZXF1ZXN0TGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -156,12 +160,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcnNcVmlld3NcUHJvZmlsZVxTdWdnZXN0aW9uTGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/c\#/KhaneBan/KhaneBan/src/03-EndPoints/KhaneBan.EndPoints.MVC/Areas/Users/Views/Profile/SuggestionsDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcnNcVmlld3NcUHJvZmlsZVxTdWdnZXN0aW9uc0RldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/c\#/KhaneBan/KhaneBan/src/03-EndPoints/KhaneBan.EndPoints.MVC/Areas/Users/Views/Profile/UpdateCustomerProfile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcnNcVmlld3NcUHJvZmlsZVxVcGRhdGVDdXN0b21lclByb2ZpbGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/c\#/KhaneBan/KhaneBan/src/03-EndPoints/KhaneBan.EndPoints.MVC/Areas/Users/Views/Request/AddRequest.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcnNcVmlld3NcUmVxdWVzdFxBZGRSZXF1ZXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/c\#/KhaneBan/KhaneBan/src/03-EndPoints/KhaneBan.EndPoints.MVC/Areas/Users/Views/Request/RequestDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcnNcVmlld3NcUmVxdWVzdFxSZXF1ZXN0RGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/c\#/KhaneBan/KhaneBan/src/03-EndPoints/KhaneBan.EndPoints.MVC/Areas/Users/Views/Shared/Error.cshtml]

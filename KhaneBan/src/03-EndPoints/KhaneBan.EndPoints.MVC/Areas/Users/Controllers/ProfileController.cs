@@ -16,14 +16,24 @@ public class ProfileController : Controller
     private readonly ICustomerAppService _customerAppService;
     private readonly ICityAppService _cityAppService;
     private readonly IPictureAppService _pictureAppService;
+    private readonly IRequestAppService _requestAppService;
+    private readonly ISuggestionAppService _suggestionAppService;
 
-    public ProfileController(UserManager<User> userManager, ICustomerAppService customerAppService, ICityAppService cityAppService, IPictureAppService pictureAppService)
+    public ProfileController(UserManager<User> userManager,
+        ICustomerAppService customerAppService,
+        ICityAppService cityAppService,
+        IPictureAppService pictureAppService,
+        IRequestAppService requestAppService,
+        ISuggestionAppService suggestionAppService)
     {
         _userManager = userManager;
         _customerAppService = customerAppService;
         _cityAppService = cityAppService;
         _pictureAppService = pictureAppService;
+        _requestAppService = requestAppService;
+        _suggestionAppService = suggestionAppService;
     }
+
 
     public async Task<IActionResult> Index(CancellationToken cancellationToken)
     {
@@ -122,13 +132,49 @@ public class ProfileController : Controller
 
 
 
-    public IActionResult SuggestionList()
+    public async Task<IActionResult> SuggestionList(int id, CancellationToken cancellationToken)
+    {
+        var offers = await _suggestionAppService.GetRequestSuggestions(id, cancellationToken);
+
+        return View(offers);
+    }
+
+    public async Task<IActionResult> SuggestionsDetail(int id, CancellationToken cancellationToken)
+    {
+        var expertOffer = await _suggestionAppService.GetByIdAsync(id, cancellationToken);
+        if (expertOffer == null)
+        {
+            return NotFound();
+        }
+        return View(expertOffer);
+    }
+    public IActionResult EditCustomerInfo()
     {
         return View();
     }
 
-    public IActionResult RequestList()
+    public async Task<IActionResult> RequestList(CancellationToken cancellationToken)
     {
-        return View();
+        var onlineUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+        if (onlineUserId is null)
+            return RedirectToAction("Login", "Account");
+
+        int userId = int.Parse(onlineUserId);
+
+        var requests = await _requestAppService.GetCustomersRequestAsync(userId, cancellationToken); 
+
+        return View(requests);
+    }
+
+
+    public async Task<IActionResult> RequestDetails(int id, CancellationToken cancellationToken)
+    {
+        var request = await _requestAppService.GetRequestByIdAsync(id, cancellationToken);
+        if (request == null)
+        {
+            return NotFound();
+        }
+        return View(request);
     }
 }

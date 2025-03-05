@@ -1,44 +1,37 @@
-﻿<!DOCTYPE html>
+﻿
+@using FrameWork
+@using KhaneBan.Domain.Core.Entites.UserRequests
+@using KhaneBan.Domain.Core.Enums
+@model List<Suggestion>
+<!DOCTYPE html>
 <html lang="en">
-<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="author" content="Mironcoder">
-    <meta name="email" content="mironcoder@gmail.com">
-    <meta name="profile" content="https://www.rtl-theme.com/author/tn_plugin">
-    <meta name="name" content="Classicads">
-    <meta name="type" content="Classified Advertising">
-    <meta name="title" content="Classicads - Classified Ads HTML Template">
-    <meta name="keywords"
-          content="classicads, classified, ads, classified ads, listing, business, directory, jobs, marketing, portal, advertising, local, posting, ad listing, ad posting,">
-    <title>کلاسیک ادز - پروفایل</title>
-    <link rel="icon" href="~/UsersTemplate/images/favicon.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-    <link rel="stylesheet" href="~/UsersTemplate/css/vendor/bootstrap.min.css">
-    <link rel="stylesheet" href="~/UsersTemplate/css/custom/main.css">
+
+    <title>آچاره - پروفایل</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
     <link rel="stylesheet" href="~/UsersTemplate/css/custom/compare.css">
 </head>
 
 <body>
-    
+
     <div class="sidebar-part">
         <div class="sidebar-body">
             <div class="sidebar-header">
                 <a href="index.html" class="sidebar-logo">
                     <img src="images/logo.png"
-                         alt="logo">
+                    alt="logo">
                 </a><button class="sidebar-cross"><i class="fas fa-times"></i></button>
             </div>
             <div class="sidebar-content">
                 <div class="sidebar-profile">
                     <a href="#" class="sidebar-avatar">
                         <img src="images/avatar/01.jpg"
-                             alt="avatar">
+                        alt="avatar">
                     </a>
                     <h4><a href="#" class="sidebar-name">جکسون هندرسون</a></h4><a href="ad-post.html"
-                                                                                  class="btn btn-inline sidebar-btn">
+                    class="btn btn-inline sidebar-btn">
                         <i class="fas fa-plus-circle"></i><span>
                             تبلیغ خود را ارسال
                             کنید
@@ -127,7 +120,7 @@
                             <li class="navbar-item"><a class="navbar-link" href="setting.html">تنظیمات </a></li>
                             <li class="navbar-item navbar-dropdown">
                                 <a class="navbar-link"
-                                   href="bookmark.html"><span>نشانک </span><span>0</span></a>
+                                href="bookmark.html"><span>نشانک </span><span>0</span></a>
                             </li>
                             <li class="navbar-item navbar-dropdown">
                                 <a class="navbar-link" href="#">
@@ -138,7 +131,7 @@
                             </li>
                             <li class="navbar-item navbar-dropdown">
                                 <a class="navbar-link"
-                                   href="#"><span>اعلانات</span><span>0</span></a>
+                                href="#"><span>اعلانات</span><span>0</span></a>
                             </li>
                             <li class="navbar-item"><a class="navbar-link" href="user-form.html">خروج </a></li>
                         </ul>
@@ -179,72 +172,69 @@
                         <table class="table-list">
                             <thead>
                                 <tr>
+                                    <th scope="col">شناسه پیشنهاد</th>
                                     <th scope="col">کارشناس</th>
                                     <th scope="col">قیمت پیشنهادی</th>
-                                    <th scope="col">تاربخ پیشنهاد</th>
-                                    <th scope="col">تاریخ اتمام کار</th>
+                                    <th scope="col">تاریخ پیشنهاد</th>
+                                    <th scope="col">تاریخ شروع کار</th>
+                                    <th scope="col">وضعیت پیشنهاد</th>
                                     <th scope="col">عملیات</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td class="table-number">
-                                        <h5>01</h5>
-                                    </td>
-                                    <td class="table-product"><img src="images/product/02.jpg" alt="product-1"></td>
-                                    <td class="table-name">
-                                    </td>
-                                    <td class="table-price">
-                                    </td>
-                                    <td class="table-status">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="table-number">
-                                    </td>
-                                    <td class="table-product"><img src="images/product/02.jpg" alt="product-1"></td>
-                                    <td class="table-name">
-                                    </td>
-                                    <td class="table-price">
-                                    </td>
-                                    <td class="table-status">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="table-number">
-                                    </td>
-                                    <td class="table-product"><img src="images/product/02.jpg" alt="product-1"></td>
-                                    <td class="table-name">
-                                    </td>
-                                    <td class="table-price">
-                                    </td>
-                                    <td class="table-status">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="table-number">
-                                    </td>
-                                    <td class="table-product"><img src="images/product/02.jpg" alt="product-1"></td>
-                                    <td class="table-name">
-                                    </td>
-                                    <td class="table-price">
-                                    </td>
-                                    <td class="table-status">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="table-number">
-                                    </td>
-                                    <td class="table-product"><img src="images/product/02.jpg" alt="product-1"></td>
-                                    <td class="table-name">
-                                    </td>
-                                    <td class="table-price">
-                                    </td>
-                                    <td class="table-status">
-                                    </td>
-                                </tr>
+                                @if (Model != null && Model.Any())
+                                {
+                                    @foreach (var sug in Model)
+                                    {
+                                        <tr>
+                                            <td>@sug.Id</td>
+                                            <td>@sug.Expert.User.FirstName @sug.Expert.User.LastName </td>
+                                            <td>@sug.Price</td>
+                                            <td>@sug.RegisterDate</td>
+                                            <td>@sug.StartDate</td>
+                                            <td>
+                                                @if (sug.SuggestionStatus != null)
+                                                {
+                                                    <span class="badge
+                                                         @(sug.SuggestionStatus == StatusEnum.WatingExpertOffer ? "badge-secondary" :
+                                                           sug.SuggestionStatus == StatusEnum.WaitingCustomerToChoose ? "badge-warning" :
+                                                           sug.SuggestionStatus == StatusEnum.WorkStarted ? "badge-primary" :
+                                                           sug.SuggestionStatus == StatusEnum.WorkDoneByExpert ? "badge-success" :
+                                                           sug.SuggestionStatus == StatusEnum.Canceled ? "badge-danger" :
+                                                           sug.SuggestionStatus == StatusEnum.WorkPaidByCustomer ? "badge-success" : "badge-light")">
+                                                        @sug.SuggestionStatus.GetEnumDisplayName()
+                                                    </span>
+                                                }
+                                            </td>
+                                            <td>
+                                                <a asp-action="SuggestionsDetail" asp-route-id="@sug.RequestId" class="btn btn-primary">جزئیات پیشنهاد</a>
+
+                                                @if (sug.SuggestionStatus != StatusEnum.WorkPaidByCustomer &&
+                                               sug.SuggestionStatus != StatusEnum.WorkDoneByExpert &&
+                                               sug.SuggestionStatus != StatusEnum.Canceled)
+                                                {
+                                                    <form asp-action="ConfirmSuggestion" asp-controller="Profile" method="post">
+                                                        <input type="hidden" name="id" value="@sug.Id" />
+                                                        <button type="submit" class="btn btn-success"
+                                                                onclick="return confirm('آیا از انتخاب این پیشنهاد مطمئن هستید؟')">
+                                                            انتخاب پیشنهاد
+                                                        </button>
+                                                    </form>
+                                                }
+                                            </td>
+                                        </tr>
+                                    }
+                                }
+                                else
+                                {
+                                    <tr>
+                                        <td colspan="7" class="text-center">هیچ پیشنهادی یافت نشد</td>
+                                    </tr>
+                                }
                             </tbody>
+
                         </table>
+
                     </div>
                     <div class="compare-btn center-50">
                         <a href="#" class="btn btn-inline">
@@ -258,10 +248,12 @@
 
 
 
-    <script src="js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="js/vendor/popper.min.js"></script>
-    <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="js/custom/main.js"></script>
+
 </body>
 
 </html>
+
+
+
+
+
