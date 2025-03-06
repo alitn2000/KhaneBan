@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KhaneBan.Domain.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3a67827fbbd65cba3e452393a31ea092e486f933")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7807bf789b492e834eed8cf0978676b87926700f")]
 [assembly: System.Reflection.AssemblyProductAttribute("KhaneBan.Domain.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KhaneBan.Domain.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

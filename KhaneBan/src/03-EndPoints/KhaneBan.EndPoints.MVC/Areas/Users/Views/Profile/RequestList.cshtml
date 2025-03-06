@@ -18,7 +18,7 @@
     <meta name="type" content="Classified Advertising">
     <meta name="title" content="Classicads - Classified Ads HTML Template">
     <meta name="keywords"
-          content="classicads, classified, ads, classified ads, listing, business, directory, jobs, marketing, portal, advertising, local, posting, ad listing, ad posting,">
+    content="classicads, classified, ads, classified ads, listing, business, directory, jobs, marketing, portal, advertising, local, posting, ad listing, ad posting,">
     <title>کلاسیک ادز - پروفایل</title>
     <link rel="icon" href="~/UsersTemplate/images/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
@@ -28,7 +28,14 @@
 </head>
 
 <body>
-   
+    @if(TempData["ResultMessage"] is not null)
+    {
+        <div class="alert alert-info">@TempData["PaymentResult"]</div>
+    }
+    @if (TempData["PaymentResult"] is not null)
+    {
+        <div class="alert alert-info">@TempData["PaymentResult"]</div>
+    }
     <div class="sidebar-part">
         <div class="sidebar-body">
             <div class="sidebar-header">
@@ -219,20 +226,14 @@
                                             </td>
                                             <td><a asp-action="RequestDetails" asp-route-id="@request.Id" class="btn btn-primary">جزئییات</a></td>
                                             <td><a asp-action="SuggestionList" asp-route-id="@request.Id" class="btn btn-primary">پیشنهادات</a></td>
-                                           @*  <td>
+                                             <td>
                                                 @if (request.RequestStatus == StatusEnum.WorkStarted)
 
                                                 {
-                                                    <form asp-action="Payment" asp-controller="Profile" method="post">
-                                                        <input type="hidden" name="id" value="@request.Id" />
-                                                        <button type="submit" class="btn btn-warning"
-                                                                onclick="return confirm('آیا از انتخاب این پیشنهاد مطمئن هستید؟')">
-                                                            انتخاب پیشنهاد
-                                                        </button>
-                                                    </form>
+                                                   <a asp-action="Payment" asp-route-id="@request.WinnerId" class="btn btn-warning">پرداخت هزینه</a>
                                                 }
-                                            </td> *@
-                                            درست کن
+                                            </td> 
+                                            
                                         </tr>
                                     }
                                 }

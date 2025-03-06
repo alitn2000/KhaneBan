@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace KhaneBan.InfraStructure.EfCore.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250305230448_init")]
+    [Migration("20250306085546_init")]
     partial class init
     {
         /// <inheritdoc />
@@ -433,7 +433,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@GMAIL.COM",
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAIAAYagAAAAEOXmaXj2E36brzLQQt6l1smwuUV/yFMSw7B5R2duObxAKb3B0BKYq3SI4ul+6157kg==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEGioOhTYRKL4+tPMEYqg5N3HQoDewNEf4sstj/ogjmV1SGAJ2jkSnczJCyloPC5Ltw==",
                             PhoneNumber = "09102123542",
                             PhoneNumberConfirmed = false,
                             PicturePath = "desktop",
@@ -458,7 +458,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "ALITN2000@GMAIL.COM",
                             NormalizedUserName = "ALITN2000",
-                            PasswordHash = "AQAAAAIAAYagAAAAENKa9TBqsfmqlKcuwKtR/ui3Y6MbwgdI7igohV8uLffCuz2gyDPWDO8dbIoDio5ZFA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEFmcyrzc2siWaMtQDdNzlIZoz5Gq/LMmzfQrqYTcQBNtmcai5s44bJG70a592MTiWQ==",
                             PhoneNumber = "09022004453",
                             PhoneNumberConfirmed = false,
                             PicturePath = "desktop1",
@@ -483,7 +483,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "REZA2000@GMAIL.COM",
                             NormalizedUserName = "REZA2000",
-                            PasswordHash = "AQAAAAIAAYagAAAAEG2TAH6Gq5c+AGn++TbHbnVotOnwb7JQReW30FErl7tYPRqdVbVzk1JHvnLon4w41g==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEHsTDPY4WuYuUByVFfckZWg/Oh+fzsXTDcdnLSgioXM93fBNckvroF8+QsB6w8vhsQ==",
                             PhoneNumber = "09102123543",
                             PhoneNumberConfirmed = false,
                             PicturePath = "desktop2",
@@ -508,7 +508,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "SARA2000@GMAIL.COM",
                             NormalizedUserName = "SARA2000",
-                            PasswordHash = "AQAAAAIAAYagAAAAEOC1NgRB/au93v4mWk99Z9DZld//M9eJGznpvRP74y8EfstJdKXRpezDzjaSckcGiw==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEFVPCXtKfRtxd/kJTwCmNCYyCmv7/U/viAaz1li2oYceoiYqxaMX/XweCa/hSkP1Nw==",
                             PhoneNumber = "09102123545",
                             PhoneNumberConfirmed = false,
                             PicturePath = "desktop3",
@@ -533,7 +533,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = " EXPERT12000@GMAIL.COM",
                             NormalizedUserName = "EXPERT12000",
-                            PasswordHash = "AQAAAAIAAYagAAAAEIxKQoIQj74SoRJzB1dmqv1+paN5HA7ozJxpYYyVoeR3qPQEKu7IJFH2vSsxNAmJVg==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEF54oRxYEMRkxOYiJEti+7HNVq6l7aH/rSIrHsLQ6jq4Kqz18q2V0YvgZBeTN3WD1A==",
                             PhoneNumber = "09102123541",
                             PhoneNumberConfirmed = false,
                             PicturePath = "desktop1",
@@ -558,7 +558,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = " EXPERT22000@GMAIL.COM",
                             NormalizedUserName = "EXPERT22000",
-                            PasswordHash = "AQAAAAIAAYagAAAAEKiVLxI2MUQ0NFGexOF9uIFId8tZkrPFZ5i98i54qSLem4He0/xNSAjfTyHxinH78g==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEOsuzLHWEF3QptExDLOy4JBxvsJsSH583l9SXlk3Y6BR8RIOUilvEtP1OI8p+xTIqA==",
                             PhoneNumber = "09102123542",
                             PhoneNumberConfirmed = false,
                             PicturePath = "desktop1",
@@ -583,7 +583,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "CUSTOMER12000@GMAIL.COM",
                             NormalizedUserName = "CUSTOMER12000",
-                            PasswordHash = "AQAAAAIAAYagAAAAEGByoy/3i62WHhOO6Bgq1K7vcEFSqftoRbXPLkksjFk14nfItZjKYRXP2qxMOFzizQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEDEXoBR9ysa1DkE8bnCF94WZ2PL7JsEG2sZo4k6Xuh+Yw4PXangdOVg2UxgSOGnCkA==",
                             PhoneNumber = "09102123555",
                             PhoneNumberConfirmed = false,
                             PicturePath = "desktop1",
@@ -1548,6 +1548,9 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("WinnerId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.HasIndex("CityId");
@@ -1575,7 +1578,8 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             RegisterDate = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             RequestStatus = 5,
                             RequestedDate = new DateTime(2025, 2, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Title = "نقاشی"
+                            Title = "نقاشی",
+                            WinnerId = 0
                         },
                         new
                         {
@@ -1589,7 +1593,8 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             RegisterDate = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             RequestStatus = 5,
                             RequestedDate = new DateTime(2025, 2, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Title = "نقاشی"
+                            Title = "نقاشی",
+                            WinnerId = 0
                         },
                         new
                         {
@@ -1602,7 +1607,8 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             RegisterDate = new DateTime(2025, 3, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             RequestStatus = 2,
                             RequestedDate = new DateTime(2025, 3, 8, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Title = "نظافت راه پله"
+                            Title = "نظافت راه پله",
+                            WinnerId = 0
                         });
                 });
 

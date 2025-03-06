@@ -47,6 +47,9 @@ public class RequestAppService : IRequestAppService
         return await _requestService.GetRequestsInfo(cancellationToken);
     }
 
+    public async Task<Result> SetWinner(int requestId, int suggestionId, CancellationToken cancellationToken)
+        => await _requestService.SetWinner(requestId, suggestionId, cancellationToken);
+
     public async Task<bool> UpdateAsync(Request request, CancellationToken cancellationToken)
     {
         return await _requestService.UpdateAsync(request, cancellationToken);

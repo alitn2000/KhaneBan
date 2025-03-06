@@ -219,6 +219,25 @@ public class RequestRepository : IRequestRepository
 
     }
 
+    public async Task<bool> SetWinner(Request request,int suggestionId, CancellationToken cancellationToken)
+    {
+        try
+        {
+            request.WinnerId = suggestionId;
+
+            await _appDbContext.SaveChangesAsync(cancellationToken);
+            _logger.LogInformation(" set winner request Succesfully");
+            return true;
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError("Error in request repository=======================>>>>>>>>>>>{ErrorMessage}", ex.Message);
+            return false;
+        }
+
+
+    }
+
 
 
 }

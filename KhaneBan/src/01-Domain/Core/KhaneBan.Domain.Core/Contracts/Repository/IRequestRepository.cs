@@ -26,5 +26,6 @@ public interface IRequestRepository
     Task<bool> IsDelete(int requestId, CancellationToken cancellationToken);
     Task<List<Request>> GetCustomersRequestAsync(int userId, CancellationToken cancellationToken);
     Task<bool> UpdateStatus(Request request, StatusEnum newStatus, CancellationToken cancellationToken);
+    Task<bool> SetWinner(Request request, int suggestionId, CancellationToken cancellationToken);
 
 }

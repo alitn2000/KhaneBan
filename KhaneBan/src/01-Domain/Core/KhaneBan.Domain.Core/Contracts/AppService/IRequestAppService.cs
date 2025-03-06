@@ -19,5 +19,7 @@ public interface IRequestAppService
     Task<List<Request>> GetCustomersRequestAsync(int userId, CancellationToken cancellationToken);
     Task<Request?> GetRequestByIdAsync(int requestId, CancellationToken cancellationToken);
     Task<Result> UpdateStatusAsync(int requestId, StatusEnum newStatus, CancellationToken cancellationToken);
-    
+    Task<Result> SetWinner(int requestId, int suggestionId, CancellationToken cancellationToken);
+
+
     }

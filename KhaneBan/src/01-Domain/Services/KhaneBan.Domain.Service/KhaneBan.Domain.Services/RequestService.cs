@@ -80,5 +80,15 @@ public class RequestService : IRequestService
 
     }
 
+    public async Task<Result> SetWinner(int requestId, int suggestionId, CancellationToken cancellationToken)
+    {
+        var request = await _requestRepository.GetRequestByIdAsync(requestId, cancellationToken);
+        if (request == null)
+            return new Result("پیشنهاد یافت نشد", false);
 
+        if (await _requestRepository.SetWinner(request, suggestionId, cancellationToken))
+            return new Result("پیشنهاد با موفقیت انتخاب شد", true);
+
+        return new Result("انتخاب پیشنهاد برنده انجام نشد", false);
+    }
 }

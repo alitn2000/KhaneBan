@@ -19,6 +19,7 @@ public class Request
     public int? RatingId { get; set; }
     public int CustomerId { get; set; }
     public int HomeServiceId { get; set; }
+    public int WinnerId { get; set; }
 
     #endregion
 

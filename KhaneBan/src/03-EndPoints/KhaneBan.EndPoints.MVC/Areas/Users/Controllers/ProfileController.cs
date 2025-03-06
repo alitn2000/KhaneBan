@@ -136,7 +136,6 @@ public class ProfileController : Controller
     public async Task<IActionResult> SuggestionList(int id, CancellationToken cancellationToken)
     {
         var offers = await _suggestionAppService.GetRequestSuggestions(id, cancellationToken);
-
         return View(offers);
     }
 
@@ -199,11 +198,15 @@ public class ProfileController : Controller
             var requestResult = await _requestAppService.UpdateStatusAsync(suggestion.RequestId, StatusEnum.WorkStarted, cancellationToken);
             if (requestResult.Flag)
             {
-                TempData["ResultMessage"] = requestResult.Message;
+                var setWinnerResult = await _requestAppService.SetWinner(suggestion.RequestId, suggestion.Id, cancellationToken);
+                TempData["ResultMessage"] = setWinnerResult.Message;
                 return RedirectToAction("RequestList");
             }
 
             TempData["ResultMessage"] = requestResult.Message;
+
+           
+            TempData["ResultMessage"] = suggestionResult.Message;
             return RedirectToAction("RequestList");
 
         }
@@ -211,4 +214,51 @@ public class ProfileController : Controller
         TempData["ResultMessage"] = suggestionResult.Message;
         return RedirectToAction("RequestList");
     }
+
+    public  async Task<IActionResult> Payment(int id, CancellationToken cancellationToken)
+    {
+        var onlineUser = await _userManager.GetUserAsync(User);
+        var winner = await _suggestionAppService.GetByIdAsync(id, cancellationToken);
+        if (winner == null)
+            return NotFound();
+        TempData["Price"] = winner.Price;
+
+        return View(onlineUser);
+    }
+    [HttpPost]
+    public async Task<IActionResult> Payment(double minPrice,string selectedAmount, string customAmount, CancellationToken cancellationToken)
+    {
+        var onlineUser = await _userManager.GetUserAsync(User);
+        if (onlineUser == null)
+            return NotFound();
+
+        double price = 0;
+        
+
+        if (!string.IsNullOrEmpty(customAmount) && double.TryParse(customAmount, out double customMoney) && customMoney > 0)
+        {
+            if (customMoney < minPrice)
+            {
+                ModelState.AddModelError("customAmount", $"حداقل مبلغ پرداختی {minPrice} تومان است.");
+                return View(onlineUser); 
+            }
+            price = customMoney;
+        }
+        else if (!string.IsNullOrEmpty(selectedAmount) && double.TryParse(selectedAmount, out double defaultMoney))
+        {
+            price = defaultMoney;
+        }
+        else
+        {
+            ModelState.AddModelError("", "لطفاً مبلغ معتبری وارد کنید.");
+            return View(onlineUser);
+        }
+
+        var result = await _customerAppService.MinusBalanceAsync(onlineUser.Id, price, cancellationToken);
+        TempData["PaymentResult"] = result.Message;
+
+        return RedirectToAction("RequestList");
+    }
 }
+
+
