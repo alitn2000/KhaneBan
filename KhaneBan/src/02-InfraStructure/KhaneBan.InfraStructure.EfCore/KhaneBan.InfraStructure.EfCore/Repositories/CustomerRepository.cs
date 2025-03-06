@@ -38,7 +38,7 @@ public class CustomerRepository : ICustomerRepository
      => await _appDbContext
      .Customers
      .Include(c => c.User)
-     .FirstOrDefaultAsync(c => c.Id == userId, cancellationToken);
+     .FirstOrDefaultAsync(c => c.UserId == userId, cancellationToken);
     public async Task<List<Customer>> GetCustomersWithDetailsAsync(CancellationToken cancellationToken)
        => await _appDbContext
         .Customers
@@ -184,7 +184,7 @@ public class CustomerRepository : ICustomerRepository
         try
         {
             customer.User.Balance -= minusBalance;
-
+            
             await _appDbContext.SaveChangesAsync(cancellationToken);
             _logger.LogInformation(" MinusBalanceAsync customer Succesfully");
             return true;

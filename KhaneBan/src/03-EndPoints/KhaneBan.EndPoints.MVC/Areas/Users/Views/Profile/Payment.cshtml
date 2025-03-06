@@ -33,7 +33,7 @@
                                     <input class="form-check-input" type="radio" name="selectedAmount" id="defaultAmount"
                                            value="@ViewBag.Price" checked onclick="toggleInput(false)">
                                     <label class="form-check-label" for="defaultAmount">
-                                        پرداخت مبلغ <b>@TempData["Price"] تومان</b>
+                                        پرداخت مبلغ <b>"@ViewBag.Price" تومان</b>
                                     </label>
                                 </div>
 
@@ -58,7 +58,9 @@
                                     <button type="submit" class="btn btn-primary">پرداخت</button>
                                 </div>
 
-                                <input type="hidden" name="minPrice" value=@TempData["Price"] />
+                                <input type="hidden" name="minPrice" value="@ViewBag.Price" />
+                                <input type="hidden" name="SuggestionId" value="@ViewBag.SuggestionId" />
+                                <input type="hidden" name="RequestId" value="@ViewBag.RequestId" />
                             </form>
 
                         </div>

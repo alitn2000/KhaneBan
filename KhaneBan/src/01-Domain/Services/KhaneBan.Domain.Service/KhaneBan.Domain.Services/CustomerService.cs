@@ -95,9 +95,9 @@ public class CustomerService : ICustomerService
 
         if (await _customerRepository.MinusBalanceAsync(customer, minusBalance, cancellationToken))
         {
-            return new Result("مشکلی رخ داده است لطفا مجددا تلاش کنید", false);
+            return new Result("پرداخت با موفقیت انجام شد", true);
         }
 
-        return new Result("پرداخت با موفقیت انجام شد", true);
+        return new Result("مشکلی رخ داده است لطفا مجددا تلاش کنید", false);
     }
 }

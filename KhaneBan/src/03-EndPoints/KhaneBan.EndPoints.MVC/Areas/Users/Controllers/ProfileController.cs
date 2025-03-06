@@ -135,18 +135,18 @@ public class ProfileController : Controller
 
     public async Task<IActionResult> SuggestionList(int id, CancellationToken cancellationToken)
     {
-        var offers = await _suggestionAppService.GetRequestSuggestions(id, cancellationToken);
-        return View(offers);
+        var suggestions = await _suggestionAppService.GetRequestSuggestions(id, cancellationToken);
+        return View(suggestions);
     }
 
     public async Task<IActionResult> SuggestionsDetail(int id, CancellationToken cancellationToken)
     {
-        var expertOffer = await _suggestionAppService.GetByIdAsync(id, cancellationToken);
-        if (expertOffer == null)
+        var suggestion = await _suggestionAppService.GetByIdAsync(id, cancellationToken);
+        if (suggestion == null)
         {
             return NotFound();
         }
-        return View(expertOffer);
+        return View(suggestion);
     }
     public IActionResult EditCustomerInfo()
     {
@@ -221,19 +221,21 @@ public class ProfileController : Controller
         var winner = await _suggestionAppService.GetByIdAsync(id, cancellationToken);
         if (winner == null)
             return NotFound();
-        TempData["Price"] = winner.Price;
+        ViewBag.Price = winner.Price;
+        ViewBag.SuggestionId = winner.Id;
+        ViewBag.RequestId = winner.RequestId;
+
 
         return View(onlineUser);
     }
     [HttpPost]
-    public async Task<IActionResult> Payment(double minPrice,string selectedAmount, string customAmount, CancellationToken cancellationToken)
+    public async Task<IActionResult> Payment(int SuggestionId, int RequestId, double minPrice,string selectedAmount, string customAmount, CancellationToken cancellationToken)
     {
         var onlineUser = await _userManager.GetUserAsync(User);
         if (onlineUser == null)
             return NotFound();
 
         double price = 0;
-        
 
         if (!string.IsNullOrEmpty(customAmount) && double.TryParse(customAmount, out double customMoney) && customMoney > 0)
         {
@@ -255,7 +257,26 @@ public class ProfileController : Controller
         }
 
         var result = await _customerAppService.MinusBalanceAsync(onlineUser.Id, price, cancellationToken);
-        TempData["PaymentResult"] = result.Message;
+        if (result.Flag)
+        {
+            var suggestionResult = await _suggestionAppService.UpdateStatusAsync(SuggestionId, StatusEnum.WorkPaidByCustomer, cancellationToken);
+            if (suggestionResult.Flag)
+            {
+
+                var requestResult = await _requestAppService.UpdateStatusAsync(RequestId, StatusEnum.WorkPaidByCustomer, cancellationToken);
+                if (requestResult.Flag)
+                {
+
+                    TempData["ResultMessage"] = "پرداخت وجه موفقیت امیز بود";
+                    return RedirectToAction("RequestList");
+                }
+
+                TempData["ResultMessage"] = "خطا در پرداخت وجه: تغییر وضعیت درخواست صورت نگرفت";
+                return RedirectToAction("RequestList");
+
+            }
+        }
+        TempData["PaymentResult"] = "خطا در پرداخت وجه: تغییر وضعیت پیشنهاد صورت نگرفت";
 
         return RedirectToAction("RequestList");
     }

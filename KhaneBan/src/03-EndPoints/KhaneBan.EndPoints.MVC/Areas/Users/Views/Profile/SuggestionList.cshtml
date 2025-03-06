@@ -3,6 +3,12 @@
 @using KhaneBan.Domain.Core.Entites.UserRequests
 @using KhaneBan.Domain.Core.Enums
 @model List<Suggestion>
+
+@{
+    var winner = Model.Any(s => s.SuggestionStatus == StatusEnum.WorkStarted);
+}
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -209,10 +215,11 @@
                                             <td>
                                                 <a asp-action="SuggestionsDetail" asp-route-id="@sug.RequestId" class="btn btn-primary">جزئیات پیشنهاد</a>
 
-                                                @if (sug.SuggestionStatus != StatusEnum.WorkPaidByCustomer &&
-                                              sug.SuggestionStatus != StatusEnum.WorkDoneByExpert &&
-                                              sug.SuggestionStatus != StatusEnum.Canceled)
+                                                @if (!winner && sug.SuggestionStatus != StatusEnum.WorkPaidByCustomer &&
+                                               sug.SuggestionStatus != StatusEnum.WorkDoneByExpert &&
+                                               sug.SuggestionStatus != StatusEnum.Canceled)
                                                 {
+                                             
                                                     <form asp-action="ConfirmSuggestion" asp-controller="Profile" method="post">
                                                         <input type="hidden" name="id" value="@sug.Id" />
                                                         <button type="submit" class="btn btn-warning"
