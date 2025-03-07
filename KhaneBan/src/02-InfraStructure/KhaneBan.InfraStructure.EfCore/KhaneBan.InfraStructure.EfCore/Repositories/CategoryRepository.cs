@@ -3,6 +3,7 @@ using KhaneBan.Domain.Core.Entites.User;
 using KhaneBan.Domain.Core.Entites.UserRequests;
 using KhaneBan.InfraStructure.EfCore.Common;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -16,22 +17,44 @@ public class CategoryRepository : ICategoryRepository
 {
     private readonly AppDbContext _context;
     private readonly ILogger<CategoryRepository> _logger;
-    public CategoryRepository(AppDbContext context, ILogger<CategoryRepository> logger)
+    private readonly IMemoryCache _memoryCach;
+    public CategoryRepository(AppDbContext context, ILogger<CategoryRepository> logger, IMemoryCache memoryCach)
     {
         _context = context;
         _logger = logger;
+        _memoryCach = memoryCach;
     }
 
     public async Task<List<Category>> GetAllAsync(CancellationToken cancellationToken)
+    {
+        var categories = _memoryCach.Get<List<Category>>("GetAllAsync");
+        if(categories is null)
+        {
+           categories = await _context.Categories.ToListAsync(cancellationToken);
+        }
+        _memoryCach.Set("GetAllAsync", categories, TimeSpan.FromMinutes(1));
 
-      => await _context.Categories.ToListAsync(cancellationToken);
+        return categories;
+    }
+
 
     public async Task<List<Category>> GetAllWithDetailsAsync(CancellationToken cancellationToken)
+    {
+        var categories = _memoryCach.Get<List<Category>>("GetAllWithDetailsAsync");
+        if (categories is null)
+        {
+            categories= await _context.Categories
+         .Where(c => !c.IsDeleted)
+         .Include(c => c.SubCategories.Where(s => !s.IsDeleted))
+         .ToListAsync(cancellationToken);
 
-     => await _context.Categories
-            .Where(c => !c.IsDeleted)
-            .Include(c => c.SubCategories.Where(s => !s.IsDeleted))
-            .ToListAsync(cancellationToken);
+        }
+
+        _memoryCach.Set("GetAllWithDetailsAsync", categories, TimeSpan.FromMinutes(1));
+ 
+        return categories;
+    }
+
 
 
 

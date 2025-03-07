@@ -8,6 +8,7 @@ public class Rating
     public int Id { get; set; }
     public double Rate { get; set; }
     public string Comment { get; set; }
+    public string Title { get; set; }
     public DateTime RegisterDate { get; set; }
     public bool? IsAccepted { get; set; }
     public bool IsDeleted { get; set; } = false;

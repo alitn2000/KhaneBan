@@ -39,6 +39,9 @@ public class RequestAppService : IRequestAppService
     public async Task<List<Request>> GetCustomersRequestAsync(int userId, CancellationToken cancellationToken)
         => await _requestService.GetCustomersRequestAsync(userId, cancellationToken);
 
+    public async Task<int> GetPaidByCustomerOrderCountAsync(int userId, CancellationToken cancellationToken)
+        => await _requestService.GetPaidByCustomerOrderCountAsync(userId, cancellationToken);
+
     public async Task<Request?> GetRequestByIdAsync(int requestId, CancellationToken cancellationToken)
         => await _requestService.GetRequestByIdAsync(requestId, cancellationToken);
 
@@ -57,4 +60,6 @@ public class RequestAppService : IRequestAppService
 
     public async Task<Result> UpdateStatusAsync(int requestId, StatusEnum newStatus, CancellationToken cancellationToken)
         => await _requestService.UpdateStatusAsync(requestId, newStatus, cancellationToken);
+
+   
 }

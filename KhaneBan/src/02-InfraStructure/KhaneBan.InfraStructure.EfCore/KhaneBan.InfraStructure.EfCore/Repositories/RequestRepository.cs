@@ -238,6 +238,11 @@ public class RequestRepository : IRequestRepository
 
     }
 
-
+    public async Task<int> GetPaidByCustomerOrderCountAsync(int userId, CancellationToken cancellationToken)
+    {
+        return await _appDbContext.Requests
+        .Include(x => x.Customer.UserId == userId)
+        .CountAsync(r => r.RequestStatus == StatusEnum.WorkPaidByCustomer, cancellationToken);
+    }
 
 }

@@ -16,7 +16,6 @@ public class ExpertController : Controller
     private readonly IExpertAppService _expertAppService;
     private readonly ICityAppService _cityAppService;
     private readonly UserManager<User> _userManager;
-    private readonly SignInManager<User> _signInManager;
     private readonly IPictureAppService _pictureAppService;
 
     public ExpertController(IExpertAppService expertAppService, ICityAppService cityAppService, IPictureAppService pictureAppService, UserManager<User> userManager)

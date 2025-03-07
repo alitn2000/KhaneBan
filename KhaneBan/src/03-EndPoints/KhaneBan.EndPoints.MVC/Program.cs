@@ -12,12 +12,17 @@ using KhaneBan.Domain.Services;
 using KhaneBan.Domain.Core.Contracts.AppService;
 using Microsoft.Extensions.Options;
 
+
+
 Log.Logger = new LoggerConfiguration()
     .WriteTo.Console()
     .CreateLogger();
 
 
-var builder = WebApplication.CreateBuilder(args);
+var builder = WebApplication.CreateBuilder(args);          ////////////
+
+builder.Services.AddMemoryCache();
+
 Log.Logger = new LoggerConfiguration()
     .MinimumLevel.Information() 
     .WriteTo.Console()

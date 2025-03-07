@@ -1,4 +1,5 @@
-﻿using KhaneBan.Domain.Core.Entites.UserRequests;
+﻿using KhaneBan.Domain.Core.Entites.DTOs;
+using KhaneBan.Domain.Core.Entites.UserRequests;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,4 +13,5 @@ public interface IRatingAppService
     Task<bool> Accept(int id, CancellationToken cancellationToken);
     Task<bool> Reject(int id, CancellationToken cancellationToken);
     Task<List<Rating>> GetRatingsWithDetailsAsync(CancellationToken cancellationToken);
+    Task CreateAsync(CreateRatingDTO review, CancellationToken cancellationToken);
 }

@@ -1,5 +1,6 @@
 ﻿using KhaneBan.Domain.AppServices;
 using KhaneBan.Domain.Core.Contracts.AppService;
+using KhaneBan.Domain.Core.Entites.DTOs;
 using KhaneBan.Domain.Core.Entites.User;
 using KhaneBan.Domain.Core.Enums;
 using KhaneBan.EndPoints.MVC.Areas.Users.Models;
@@ -19,13 +20,16 @@ public class ProfileController : Controller
     private readonly IPictureAppService _pictureAppService;
     private readonly IRequestAppService _requestAppService;
     private readonly ISuggestionAppService _suggestionAppService;
+    private readonly IRatingAppService _ratingAppService;
+
 
     public ProfileController(UserManager<User> userManager,
         ICustomerAppService customerAppService,
         ICityAppService cityAppService,
         IPictureAppService pictureAppService,
         IRequestAppService requestAppService,
-        ISuggestionAppService suggestionAppService)
+        ISuggestionAppService suggestionAppService,
+        IRatingAppService ratingAppService)
     {
         _userManager = userManager;
         _customerAppService = customerAppService;
@@ -33,6 +37,7 @@ public class ProfileController : Controller
         _pictureAppService = pictureAppService;
         _requestAppService = requestAppService;
         _suggestionAppService = suggestionAppService;
+        _ratingAppService = ratingAppService;
     }
 
 
@@ -280,6 +285,57 @@ public class ProfileController : Controller
 
         return RedirectToAction("RequestList");
     }
+
+    public async Task<IActionResult> SetRating(int requestId, int expertId)
+    {
+        var onlineUser = await _userManager.GetUserAsync(User);
+
+        if (onlineUser is null)
+            return RedirectToAction("Login", "Account");
+
+        var model = new CreateRatingDTO
+        {
+            RequestId = requestId,
+            ExpertId = expertId
+        };
+
+        ViewBag.UserName = $"{onlineUser.FirstName} {onlineUser.LastName}";
+
+        return View(model);
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> SetRating(CreateRatingDTO model, CancellationToken cancellationToken)
+    {
+        if (!ModelState.IsValid)
+        {
+            return View(model);
+        }
+
+        var onlineUser = await _userManager.GetUserAsync(User);
+
+        if (onlineUser is null)
+            return RedirectToAction("Login", "Account");
+
+        var customer = await _customerAppService.GetCustomerInfoByIdAsync(onlineUser.Id, cancellationToken);
+
+        if (customer == null)
+        {
+
+            ModelState.AddModelError(string.Empty, "مشتری یافت نشد.");
+            return View(model);
+        }
+
+
+
+        model.CustomerId = customer.Id;
+
+        await _ratingAppService.CreateAsync(model, cancellationToken);
+
+        TempData["ResultMessage"] = "your comment succefully registerd.";
+        return RedirectToAction("RequestList");
+    }
+
 }
 
 

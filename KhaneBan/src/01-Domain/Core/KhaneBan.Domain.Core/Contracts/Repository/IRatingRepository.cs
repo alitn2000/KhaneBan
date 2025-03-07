@@ -1,4 +1,5 @@
-﻿using KhaneBan.Domain.Core.Entites.UserRequests;
+﻿using KhaneBan.Domain.Core.Entites.DTOs;
+using KhaneBan.Domain.Core.Entites.UserRequests;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +13,7 @@ public interface IRatingRepository
     Task<Rating?> GetRatingByIdAsync(int id, CancellationToken cancellationToken);
     Task<List<Rating>> GetRatingsWithDetailsAsync(CancellationToken cancellationToken);
     Task<Rating?> GetRatingByIdWithDetailsAsync(int id, CancellationToken cancellationToken);
-    Task<bool> CreateAsync(Rating rating, CancellationToken cancellationToken);
+    Task CreateAsync(CreateRatingDTO review, CancellationToken cancellationToken);
     Task<bool> DeleteAsync(Rating rating, CancellationToken cancellationToken);
     Task<bool> UpdateAsync(Rating rating, CancellationToken cancellationToken);
     Task<bool> IsDelete(int ratingId, CancellationToken cancellationToken);

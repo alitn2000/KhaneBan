@@ -38,6 +38,7 @@ public class RatingConfiguration : IEntityTypeConfiguration<Rating>
                Id = 1,
                Rate = 5,
                CustomerId = 1,
+               Title="تایتل",
                ExpertId = 1,
                Comment = "اوکی",
                IsDeleted = false,
@@ -48,6 +49,7 @@ public class RatingConfiguration : IEntityTypeConfiguration<Rating>
             {
                 Id = 2,
                 Rate = 5,
+                Title = "تایتل",
                 CustomerId = 2,
                 ExpertId = 1,
                 Comment = "اوکی",

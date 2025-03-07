@@ -430,7 +430,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@GMAIL.COM",
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAIAAYagAAAAEGioOhTYRKL4+tPMEYqg5N3HQoDewNEf4sstj/ogjmV1SGAJ2jkSnczJCyloPC5Ltw==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEOvg9YXtD3vUU1HJKeW0HtvT7mw4gxcEkV7WEeowmbaDuWYBe5QrqdVexXXaBhr4ag==",
                             PhoneNumber = "09102123542",
                             PhoneNumberConfirmed = false,
                             PicturePath = "desktop",
@@ -455,7 +455,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "ALITN2000@GMAIL.COM",
                             NormalizedUserName = "ALITN2000",
-                            PasswordHash = "AQAAAAIAAYagAAAAEFmcyrzc2siWaMtQDdNzlIZoz5Gq/LMmzfQrqYTcQBNtmcai5s44bJG70a592MTiWQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEH8AvcqgCMU+ZLyjOCvlGggjMG8L9Md3hOBE3HdZIUjilrfk06HD9xF+Lr2153Dkdw==",
                             PhoneNumber = "09022004453",
                             PhoneNumberConfirmed = false,
                             PicturePath = "desktop1",
@@ -480,7 +480,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "REZA2000@GMAIL.COM",
                             NormalizedUserName = "REZA2000",
-                            PasswordHash = "AQAAAAIAAYagAAAAEHsTDPY4WuYuUByVFfckZWg/Oh+fzsXTDcdnLSgioXM93fBNckvroF8+QsB6w8vhsQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEGCUUoMZh1zNSXts5lajPw9SnzYBd4BdfHADQTl+30EJBqEJTwys7ohR0aCBRM72WQ==",
                             PhoneNumber = "09102123543",
                             PhoneNumberConfirmed = false,
                             PicturePath = "desktop2",
@@ -505,7 +505,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "SARA2000@GMAIL.COM",
                             NormalizedUserName = "SARA2000",
-                            PasswordHash = "AQAAAAIAAYagAAAAEFVPCXtKfRtxd/kJTwCmNCYyCmv7/U/viAaz1li2oYceoiYqxaMX/XweCa/hSkP1Nw==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEHxz3pCbfW82DQ2/d/B62KvLcRDS5PnptvLUcK00rW8V1d6Ukf6G+P1tKcg2uT+9Bg==",
                             PhoneNumber = "09102123545",
                             PhoneNumberConfirmed = false,
                             PicturePath = "desktop3",
@@ -530,7 +530,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = " EXPERT12000@GMAIL.COM",
                             NormalizedUserName = "EXPERT12000",
-                            PasswordHash = "AQAAAAIAAYagAAAAEF54oRxYEMRkxOYiJEti+7HNVq6l7aH/rSIrHsLQ6jq4Kqz18q2V0YvgZBeTN3WD1A==",
+                            PasswordHash = "AQAAAAIAAYagAAAAELjhbQXuTibfFmzqa8ILor4oKsK4YUM2c2Vg04sj1aos9+TmQNejI6ytPONQWUR5hw==",
                             PhoneNumber = "09102123541",
                             PhoneNumberConfirmed = false,
                             PicturePath = "desktop1",
@@ -555,7 +555,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = " EXPERT22000@GMAIL.COM",
                             NormalizedUserName = "EXPERT22000",
-                            PasswordHash = "AQAAAAIAAYagAAAAEOsuzLHWEF3QptExDLOy4JBxvsJsSH583l9SXlk3Y6BR8RIOUilvEtP1OI8p+xTIqA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEH55lNy06IWgOzefvQp2OJjVAzy9NC8GLllEJfsRsLOKMswVu1n0e9NQ1D9/ZOfGLA==",
                             PhoneNumber = "09102123542",
                             PhoneNumberConfirmed = false,
                             PicturePath = "desktop1",
@@ -580,7 +580,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "CUSTOMER12000@GMAIL.COM",
                             NormalizedUserName = "CUSTOMER12000",
-                            PasswordHash = "AQAAAAIAAYagAAAAEDEXoBR9ysa1DkE8bnCF94WZ2PL7JsEG2sZo4k6Xuh+Yw4PXangdOVg2UxgSOGnCkA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEIyCQ3mXZBjTpizYFtuPaU6OZbj3FN03ynZ64lXfCMHQD3V7sGlOmaFwATGKfnbuXw==",
                             PhoneNumber = "09102123555",
                             PhoneNumberConfirmed = false,
                             PicturePath = "desktop1",
@@ -1467,6 +1467,10 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                     b.Property<DateTime>("RegisterDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
                     b.HasIndex("CustomerId");
@@ -1484,7 +1488,8 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             ExpertId = 1,
                             IsDeleted = false,
                             Rate = 5.0,
-                            RegisterDate = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                            RegisterDate = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Title = "تایتل"
                         },
                         new
                         {
@@ -1494,7 +1499,8 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             ExpertId = 1,
                             IsDeleted = false,
                             Rate = 5.0,
-                            RegisterDate = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                            RegisterDate = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Title = "تایتل"
                         });
                 });
 

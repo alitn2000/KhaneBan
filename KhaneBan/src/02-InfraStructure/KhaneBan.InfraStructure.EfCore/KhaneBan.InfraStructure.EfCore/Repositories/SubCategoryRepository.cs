@@ -3,6 +3,7 @@ using KhaneBan.Domain.Core.Entites.User;
 using KhaneBan.Domain.Core.Entites.UserRequests;
 using KhaneBan.InfraStructure.EfCore.Common;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -16,15 +17,32 @@ public class SubCategoryRepository : ISubCategoryRepository
 {
     private readonly AppDbContext _context;
     private readonly ILogger<SubCategoryRepository> _logger;
+    private readonly IMemoryCache _memoryCach;
 
-    public SubCategoryRepository(AppDbContext context, ILogger<SubCategoryRepository> logger)
+    public SubCategoryRepository(AppDbContext context, ILogger<SubCategoryRepository> logger, IMemoryCache memoryCach)
     {
         _context = context;
         _logger = logger;
+        _memoryCach = memoryCach;
     }
     public async Task<List<SubCategory>> GetAllAsync(CancellationToken cancellationToken)
+    {
+        var subcategories = _memoryCach.Get<List<SubCategory>>("GetAllsubsAsync");
+        if (subcategories is null)
+        {
+            await _context.SubCategories.ToListAsync(cancellationToken);
+        }
 
-        => await _context.SubCategories.ToListAsync(cancellationToken);
+
+        _memoryCach.Set("GetAllsubsAsync", subcategories, TimeSpan.FromMinutes(1));
+
+        return subcategories;
+
+    }
+
+
+
+
 
     public async Task<SubCategory> GetByIdAsync(int id, CancellationToken cancellationToken)
 

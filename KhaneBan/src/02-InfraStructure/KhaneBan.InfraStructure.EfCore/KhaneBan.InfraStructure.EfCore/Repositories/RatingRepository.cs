@@ -1,4 +1,5 @@
 ﻿using KhaneBan.Domain.Core.Contracts.Repository;
+using KhaneBan.Domain.Core.Entites.DTOs;
 using KhaneBan.Domain.Core.Entites.UserRequests;
 using KhaneBan.InfraStructure.EfCore.Common;
 using Microsoft.EntityFrameworkCore;
@@ -117,21 +118,20 @@ public class RatingRepository : IRatingRepository
 
     }
 
-    public async Task<bool> CreateAsync(Rating rating, CancellationToken cancellationToken)
+    public async Task CreateAsync(CreateRatingDTO review, CancellationToken cancellationToken)
     {
-        try
+        var newrating = new Rating()
         {
-            await _appDbContext.Ratings.AddAsync(rating, cancellationToken);
-            await _appDbContext.SaveChangesAsync(cancellationToken);
-            _logger.LogInformation(" create rating Succesfully");
-            return true;
-        }
-        catch (Exception ex)
-        {
-            _logger.LogError("Error in rating repository=======================>>>>>>>>>>>{ErrorMessage}", ex.Message);
+            Title = review.Title,
+            Comment = review.Comment,
+            Rate = review.Rating,
+            ExpertId = review.ExpertId,
+            CustomerId = review.CustomerId
+        };
 
-            return false;
-        }
+        await _appDbContext.Ratings.AddAsync(newrating, cancellationToken);
+        await _appDbContext.SaveChangesAsync();
+        _logger.LogInformation("review created Succesfully");
     }
 
     public async Task<bool> DeleteAsync(Rating rating, CancellationToken cancellationToken)

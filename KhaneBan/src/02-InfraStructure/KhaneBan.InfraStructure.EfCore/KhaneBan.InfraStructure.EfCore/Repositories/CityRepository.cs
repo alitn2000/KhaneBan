@@ -4,6 +4,7 @@ using KhaneBan.Domain.Core.Entites.DTOs;
 using KhaneBan.Domain.Core.Entites.User;
 using KhaneBan.InfraStructure.EfCore.Common;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Logging;
 using Microsoft.VisualBasic;
 using System;
@@ -19,19 +20,29 @@ public class CityRepository : ICityRepository
 {
     private readonly AppDbContext _appDbContext;
     private readonly ILogger<CityRepository> _logger;
-    public CityRepository(AppDbContext appDbContext, ILogger<CityRepository> logger)
+    private readonly IMemoryCache _memoryCache;
+    public CityRepository(AppDbContext appDbContext, ILogger<CityRepository> logger, IMemoryCache memoryCache)
     {
         _logger = logger;
         _appDbContext = appDbContext;
+        _memoryCache = memoryCache;
     }
 
     public async Task<List<CityDTO>> GetCitiesAsync(CancellationToken cancellationToken)
     {
-        var cities = await _appDbContext.Cities.AsNoTracking().Select(c => new CityDTO
+
+        var cities = _memoryCache.Get<List<CityDTO>>("Cities");
+        if (cities is null)
         {
-            Id = c.Id,
-            Title = c.Title,
-        }).ToListAsync(cancellationToken);
+             cities = await _appDbContext.Cities.AsNoTracking().Select(c => new CityDTO
+            {
+                Id = c.Id,
+                Title = c.Title,
+
+            }).ToListAsync(cancellationToken);
+            _memoryCache.Set("Cities", cities, TimeSpan.FromDays(30));
+        }
+       
 
         return cities;
     }

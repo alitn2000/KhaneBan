@@ -2,6 +2,7 @@
 using KhaneBan.Domain.Core.Entites.UserRequests;
 using KhaneBan.InfraStructure.EfCore.Common;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Logging;
 
 namespace KhaneBan.InfraStructure.EfCore.Repositories;
@@ -10,21 +11,34 @@ public class HomeServiceRepository : IHomeServiceRepository
 {
     private readonly AppDbContext _context;
     private readonly ILogger<HomeServiceRepository> _logger;
+    private readonly IMemoryCache _memoryCach;
 
-    public HomeServiceRepository(AppDbContext context, ILogger<HomeServiceRepository> logger)
+    public HomeServiceRepository(AppDbContext context, ILogger<HomeServiceRepository> logger, IMemoryCache memoryCach)
     {
         _context = context;
         _logger = logger;
+        _memoryCach = memoryCach;
     }
 
     public async Task<List<HomeService>> GetAllAsync(CancellationToken cancellationToken)
     {
-        return await _context.HomeServices
+
+        var homeservices = _memoryCach.Get<List<HomeService>>("GetAllhomesAsync");
+        if (homeservices is null)
+        {
+            await  _context.HomeServices
             .Include(x => x.SubCategory)
             .ToListAsync(cancellationToken);
+        }
+
+
+        _memoryCach.Set("GetAllhomesAsync", homeservices, TimeSpan.FromMinutes(1));
+
+        return homeservices;
+        
     }
 
-    public async Task<HomeService> GetByIdAsync(int id, CancellationToken cancellationToken)
+    public async Task<HomeService?> GetByIdAsync(int id, CancellationToken cancellationToken)
     {
         return await _context.HomeServices
             .Include(x => x.SubCategory)

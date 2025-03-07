@@ -91,4 +91,7 @@ public class RequestService : IRequestService
 
         return new Result("انتخاب پیشنهاد برنده انجام نشد", false);
     }
+
+    public async Task<int> GetPaidByCustomerOrderCountAsync(int userId, CancellationToken cancellationToken)
+        => await _requestRepository.GetPaidByCustomerOrderCountAsync(userId, cancellationToken);
 }

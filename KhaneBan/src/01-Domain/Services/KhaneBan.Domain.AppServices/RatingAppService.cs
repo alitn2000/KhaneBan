@@ -1,5 +1,6 @@
 ﻿using KhaneBan.Domain.Core.Contracts.AppService;
 using KhaneBan.Domain.Core.Contracts.Service;
+using KhaneBan.Domain.Core.Entites.DTOs;
 using KhaneBan.Domain.Core.Entites.UserRequests;
 using System;
 using System.Collections.Generic;
@@ -26,4 +27,7 @@ public class RatingAppService : IRatingAppService
 
     public async Task<bool> Reject(int id, CancellationToken cancellationToken)
         => await _ratingService.Reject(id, cancellationToken);
+    public async Task CreateAsync(CreateRatingDTO review, CancellationToken cancellationToken)
+
+          => await _ratingService.CreateAsync(review, cancellationToken);
 }
