@@ -1,4 +1,5 @@
-﻿@using KhaneBan.EndPoints.MVC.Areas.Users.Models
+﻿
+@using KhaneBan.EndPoints.MVC.Areas.Users.Models
 
 @model UpdateCustomerInfoViewModel
 <!DOCTYPE html>
@@ -6,12 +7,32 @@
 
 
 <head>
+
+	<style>
+		.circular-image {
+			width: 150px;
+			height: 150px;
+			border-radius: 50%;
+			overflow: hidden;
+		}
+
+			.circular-image img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+	</style>
+
+
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
-	<title>کلاسیک ادز - تنظیمات</title>
+	<title>آچاره - ویرایش</title>
 	<link rel="stylesheet" href="~/UsersTemplate/css/custom/setting.css">
 </head>
 
 <body>
+
+
+
 	<header class="header-part">
 		<div class="container">
 			<div class="header-content">
@@ -21,7 +42,7 @@
 						<li><a asp-area="Users" asp-controller="Home" asp-action="Index" class="header-logo"><img src="~/UsersTemplate/images/logo.png" alt="logo"></a></li>
 						<li>
 							<a href="user-form.html" class="header-user">
-								<i class="fas fa-user"></i><span>ورود</span>
+
 							</a>
 						</li>
 						<li><button type="button" class="header-src"><i class="fas fa-search"></i></button></li>
@@ -88,10 +109,11 @@
 									<span>صفحات</span><i class="fas fa-plus"></i>
 								</a>
 								<ul class="dropdown-list">
-									<li class="navbar-item"><a class="navbar-link" asp-controller="Profile" asp-action="Index">پروفایل</a></li>
-									<li class="navbar-item"><a class="navbar-link" asp-controller="Profile" asp-action="RequestList">سفارشات من</a></li>
-									<li class="navbar-item"><a class="navbar-link active" asp-controller="Profile" asp-action="UpdateCustomerProfile">ویرایش مشخصات </a></li>
-									<li class="navbar-item"><a class="navbar-link" asp-controller="Account" asp-action="Logout">خروج </a></li>
+									<li><a asp-area="Users" asp-controller="Home" asp-action="Index" class="dropdown-link">صفحه اصلی</a></li>
+									<li><a asp-area="Users" asp-controller="Profile" asp-action="Index" class="dropdown-link">پروفایل </a></li>
+									<li><a asp-area="Users" asp-controller="Account" asp-action="Login" class="dropdown-link">ورود</a></li>
+									<li><a asp-area="Users" asp-controller="Account" asp-action="Logout" class="dropdown-link">خروج</a></li>
+
 								</ul>
 							</li>
 							<li class="navbar-item navbar-dropdown">
@@ -117,6 +139,11 @@
 			</div>
 		</div>
 	</div>
+
+
+
+
+
 
 
 	<div class="btmbar-part">
@@ -154,18 +181,18 @@
 	<section class="dash-header-part">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-4 col-md-3 col-lg-2">
-					<div class="dash-avatar"><a href="#"><img src="~/UsersTemplate/images/avatar/01.jpg" alt="avatar"></a></div>
+				<div class="circular-image">
+					<img src=@Model.ImagePath alt="avatar">
 				</div>
 				<div class="col-sm-8 col-md-9 col-lg-3">
 					<div class="dash-intro">
-						<h4><a href="#">جک اسپارو</a></h4>
-						<h5>فروشنده جدید</h5>
+						<h4><a href="#">@Model.FirstName @Model.LastName</a></h4>
+
 					</div>
 					<ul class="dash-meta">
-						<li><i class="fas fa-phone-alt"></i><span>(123) 000-1234</span></li>
-						<li><i class="fas fa-envelope"></i><span>gackon@gmail.com</span></li>
-						<li><i class="fas fa-map-marker-alt"></i><span>آمریکا، لس آنجلس</span></li>
+						<li><i class="fas fa-phone-alt"></i><span>@Model.PhoneNumber</span></li>
+						<li><i class="fas fa-envelope"></i><span>@Model.Email</span></li>
+						<li><i class="fas fa-map-marker-alt"></i><span>@Model.Address</span></li>
 					</ul>
 				</div>
 				<div class="col-lg-7">
@@ -184,7 +211,7 @@
 						</div>
 						<div class="col-md-4 col-lg-4">
 							<div class="dash-focus dash-rev">
-								<h2>2433</h2>
+								<h2></h2>
 								<p>مجموع نظرات</p>
 							</div>
 						</div>
@@ -195,14 +222,14 @@
 				<div class="col-lg-12">
 					<div class="dash-menu-list">
 						<ul>
-							<li class="navbar-item"><a href="profile.html">پروفایل</a></li>
-							<li class="navbar-item"><a href="my-ads.html">سفارشات من</a></li>
+							<li class="navbar-item"><a asp-controller="Profile" asp-action="Index">پروفایل</a></li>
+							<li class="navbar-item"><a asp-controller="Profile" asp-action="RequestList">سفارشات من</a></li>
 							<li class="navbar-item"><a class="active" href="setting.html">ویرایش مشخصات </a></li>
-							<li class="navbar-item"><a href="#">خروج </a></li>
-							<li class="navbar-item navbar-dropdown">
+							<li class="navbar-item"><a asp-controller="Account" asp-action="Logout">خروج </a></li>
+@* 							<li class="navbar-item navbar-dropdown">
 								<a class="navbar-link"
 								   href="bookmark.html"><span>نشانک </span><span>0</span></a>
-							</li>
+							</li> *@
 						</ul>
 					</div>
 				</div>
@@ -216,7 +243,7 @@
 					<div class="col-lg-6">
 						<div class="form-group">
 							<label asp-for="FirstName" class="form-label">نام  </label><input asp-for="FirstName" type="text"
-																									 class="form-control" placeholder="@Model.FirstName">
+																							  class="form-control" placeholder="@Model.FirstName">
 						</div>
 
 						<span asp-validation-for="FirstName" class="text-danger"></span>
@@ -224,7 +251,7 @@
 					<div class="col-lg-6">
 						<div class="form-group">
 							<label asp-for="LastName" class="form-label">نام خانوادگی </label><input asp-for="LastName" type="text"
-																											class="form-control" placeholder="@Model.LastName">
+																									 class="form-control" placeholder="@Model.LastName">
 						</div>
 						<span asp-validation-for="LastName" class="text-danger"></span>
 					</div>
@@ -232,7 +259,7 @@
 					<div class="col-lg-6">
 						<div class="form-group">
 							<label asp-for="UserName" class="form-label">نام کاربری </label><input asp-for="UserName" type="text"
-																											class="form-control" placeholder="@Model.UserName">
+																								   class="form-control" placeholder="@Model.UserName">
 						</div>
 						<span asp-validation-for="LastName" class="text-danger"></span>
 					</div>
@@ -240,7 +267,7 @@
 					<div class="col-lg-12">
 						<div class="form-group">
 							<label asp-for="Address" class="form-label">آدرس </label><input asp-for="Address" type="text"
-																			  class="form-control" placeholder="@Model.Address">
+																	   class="form-control" placeholder="@Model.Address">
 						</div>
 						<span asp-validation-for="Address" class="text-danger"></span>
 					</div>
@@ -262,14 +289,14 @@
 						<div class="col-lg-6">
 							<div class="form-group">
 								<label asp-for="Email" class="form-label">ایمیل </label><input asp-for="Email" type="email"
-																			  class="form-control" placeholder="@Model.Email">
+																	   class="form-control" placeholder="@Model.Email">
 							</div>
 							<span asp-validation-for="Email" class="text-danger"></span>
 						</div>
 						<div class="col-lg-6">
 							<div class="form-group">
 								<label asp-for="PhoneNumber" class="form-label">شماره </label><input asp-for="PhoneNumber" type="text"
-															   class="form-control" placeholder="@Model.PhoneNumber">
+																			 class="form-control" placeholder="@Model.PhoneNumber">
 							</div>
 							<span asp-validation-for="PhoneNumber" class="text-danger"></span>
 						</div>
@@ -284,9 +311,9 @@
 						</div>
 						<div class="col-lg-6">
 							<div class="form-group">
-								<label asp-for="Balance" class="form-label">موجودی</label><input asp-for="Balance" type="number"
-																	   step="100000" class="form-control" placeholder="@Model.Balance">
+								<label asp-for="Balance" class="form-label">موجودی</label><input asp-for="Balance" type="number" min="0" step="100000" class="form-control" placeholder="@Model.Balance" value="@Model.Balance">
 							</div>
+							<span asp-validation-for="Balance" class="text-danger"></span>
 						</div>
 
 

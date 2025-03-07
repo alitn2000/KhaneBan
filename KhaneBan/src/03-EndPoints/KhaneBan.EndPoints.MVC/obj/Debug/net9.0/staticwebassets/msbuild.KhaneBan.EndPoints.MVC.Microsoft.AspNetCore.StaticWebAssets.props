@@ -4104,6 +4104,60 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Categories\tamizkari.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Customers\16d9149b-bc8c-4547-b115-69d60ab77d74Screenshot 2024-12-13 164301.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>KhaneBan.EndPoints.MVC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/KhaneBan.EndPoints.MVC</BasePath>
+      <RelativePath>Images/Customers/16d9149b-bc8c-4547-b115-69d60ab77d74Screenshot 2024-12-13 164301.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>dsr6m2yfdy</Fingerprint>
+      <Integrity>LdBoNMDleXslsHGOx8ftA+0/IzvfKDkXe2yMzJbaHcY=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Customers\16d9149b-bc8c-4547-b115-69d60ab77d74Screenshot 2024-12-13 164301.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Customers\2e2a3d35-581b-4c6a-ac46-b05e1640926dScreenshot 2023-12-08 195459.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>KhaneBan.EndPoints.MVC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/KhaneBan.EndPoints.MVC</BasePath>
+      <RelativePath>Images/Customers/2e2a3d35-581b-4c6a-ac46-b05e1640926dScreenshot 2023-12-08 195459.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>vcefrw3wx6</Fingerprint>
+      <Integrity>b6GR2d+1tVhceb/9zNPAB0HugTk5WuWfwrsGY5PZLY4=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Customers\2e2a3d35-581b-4c6a-ac46-b05e1640926dScreenshot 2023-12-08 195459.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Customers\4acd59ef-990c-42ec-a2a7-0361f3a7ff02Screenshot 2024-12-13 164301.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>KhaneBan.EndPoints.MVC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/KhaneBan.EndPoints.MVC</BasePath>
+      <RelativePath>Images/Customers/4acd59ef-990c-42ec-a2a7-0361f3a7ff02Screenshot 2024-12-13 164301.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>dsr6m2yfdy</Fingerprint>
+      <Integrity>LdBoNMDleXslsHGOx8ftA+0/IzvfKDkXe2yMzJbaHcY=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Customers\4acd59ef-990c-42ec-a2a7-0361f3a7ff02Screenshot 2024-12-13 164301.png'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Customers\783c55f7-a3ed-4103-9029-378dc7c2e8bbScreenshot 2024-11-30 145050.png'))">
       <SourceType>Package</SourceType>
       <SourceId>KhaneBan.EndPoints.MVC</SourceId>
@@ -4139,6 +4193,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Customers\94f46bed-f6c1-48a7-bd54-efe8d43c1eceScreenshot 2024-07-23 145928.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Customers\b609054d-2bc4-42f4-b158-91df11a9d4a8Screenshot 2023-12-08 195459.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>KhaneBan.EndPoints.MVC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/KhaneBan.EndPoints.MVC</BasePath>
+      <RelativePath>Images/Customers/b609054d-2bc4-42f4-b158-91df11a9d4a8Screenshot 2023-12-08 195459.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>vcefrw3wx6</Fingerprint>
+      <Integrity>b6GR2d+1tVhceb/9zNPAB0HugTk5WuWfwrsGY5PZLY4=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Customers\b609054d-2bc4-42f4-b158-91df11a9d4a8Screenshot 2023-12-08 195459.png'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Customers\b7475052-77b6-42f3-aed7-12b2dc82dc07Screenshot 2024-12-13 164301.png'))">
       <SourceType>Package</SourceType>

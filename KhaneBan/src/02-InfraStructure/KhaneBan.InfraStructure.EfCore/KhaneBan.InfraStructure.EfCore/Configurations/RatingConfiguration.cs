@@ -40,6 +40,7 @@ public class RatingConfiguration : IEntityTypeConfiguration<Rating>
                CustomerId = 1,
                Title="تایتل",
                ExpertId = 1,
+               ReqId = 1,
                Comment = "اوکی",
                IsDeleted = false,
                RegisterDate = new DateTime(2025, 2, 2, 0, 0, 0)
@@ -50,6 +51,7 @@ public class RatingConfiguration : IEntityTypeConfiguration<Rating>
                 Id = 2,
                 Rate = 5,
                 Title = "تایتل",
+                ReqId =2,
                 CustomerId = 2,
                 ExpertId = 1,
                 Comment = "اوکی",

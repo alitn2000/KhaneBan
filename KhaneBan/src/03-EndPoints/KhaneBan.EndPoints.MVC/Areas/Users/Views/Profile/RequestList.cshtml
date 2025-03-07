@@ -138,14 +138,7 @@
         </div>
     </div>
 
-    @if(TempData["ResultMessage"] is not null)
-    {
-        <div class="alert alert-info">@TempData["PaymentResult"]</div>
-    }
-    @if (TempData["PaymentResult"] is not null)
-    {
-        <div class="alert alert-info">@TempData["PaymentResult"]</div>
-    }
+   
     <div class="sidebar-part">
         <div class="sidebar-body">
             <div class="sidebar-header">
@@ -294,6 +287,14 @@
             </div>
         </div>
     </section>
+    @if (TempData["ResultMessage"] is not null)
+    {
+        <div class="alert alert-info">@TempData["PaymentResult"]</div>
+    }
+    @if (TempData["PaymentResult"] is not null)
+    {
+        <div class="alert alert-info">@TempData["PaymentResult"]</div>
+    }
     <section class="compare-part">
         <div class="container">
             <div class="row">
@@ -342,7 +343,7 @@
                                                 {
                                                    <a asp-action="Payment" asp-route-id="@request.WinnerId" class="btn btn-warning">پرداخت هزینه</a>
                                                 }
-                                                else if (request.RequestStatus == StatusEnum.WorkPaidByCustomer)
+                                                else if (request.RequestStatus == StatusEnum.WorkPaidByCustomer && request.RatingId == null)
                                                 {
                                                     <a asp-action="SetRating" asp-controller="Profile" asp-route-requestId="@request.Id" asp-route-expertId="@request.WinnerId" class="btn btn-success">ثبت نظر</a>
                                                 }

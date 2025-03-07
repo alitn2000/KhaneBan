@@ -24,5 +24,7 @@ namespace KhaneBan.Domain.Core.Entites.DTOs;
 
     [Required(ErrorMessage = "شناسه کارشناس الزامی است.")]
     public int CustomerId { get; set; }
+
+   
 }
 

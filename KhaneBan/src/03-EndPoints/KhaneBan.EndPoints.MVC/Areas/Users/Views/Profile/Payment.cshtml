@@ -148,7 +148,7 @@
                                 </div>
 
                                 
-                                <div class="form-check mt-2">
+                               @*  <div class="form-check mt-2">
                                     <input class="form-check-input" type="radio" name="selectedAmount" id="customAmount"
                                            value="" onclick="toggleInput(true)">
                                     <label class="form-check-label" for="customAmount">
@@ -161,11 +161,11 @@
                                     <input type="number" class="form-control" id="customAmountInput" name="customAmount"
                                            placeholder="مبلغ را وارد کنید" disabled>
                                    
-                                </div>
+                                </div> *@
 
                                 <div class="d-flex justify-content-between align-items-center pt-3">
                                     <a asp-action="RequestList" asp-controller="Profile" class="text-muted">بازگشت</a>
-                                    <button type="submit" class="btn btn-primary">پرداخت</button>
+                                    <button type="submit" class="btn btn-primary"> پرداخت </button>
                                 </div>
 
                                 <input type="hidden" name="minPrice" value="@ViewBag.Price" />

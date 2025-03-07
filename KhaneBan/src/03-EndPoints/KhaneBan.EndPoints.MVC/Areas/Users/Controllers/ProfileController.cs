@@ -60,7 +60,7 @@ public class ProfileController : Controller
     }
 
 
-    public async  Task<IActionResult> UpdateCustomerProfile(CancellationToken cancellationToken)
+    public async Task<IActionResult> UpdateCustomerProfile(CancellationToken cancellationToken)
     {
         var cities = await _cityAppService.GetCitiesAsync(cancellationToken);
         ViewBag.Cities = cities.Select(sc => new SelectListItem
@@ -83,7 +83,8 @@ public class ProfileController : Controller
             ImagePath = onlineUser.PicturePath,
             PhoneNumber = onlineUser.PhoneNumber,
             CityId = onlineUser.CityId,
-            UserName = onlineUser.UserName
+            UserName = onlineUser.UserName, 
+            Balance = onlineUser.Balance
         };
 
         return View(model);
@@ -115,6 +116,15 @@ public class ProfileController : Controller
         if (onlineUser is null)
             return RedirectToAction("Login", "Account");
 
+
+        if (model.ImageFile is null)
+        {
+            model.ImagePath = onlineUser.PicturePath;
+        }
+        else
+        {
+            model.ImagePath = await _pictureAppService.UploadImage(model.ImageFile!, "Customers", cancellationToken);
+        }
         onlineUser.FirstName = model.FirstName;
         onlineUser.LastName = model.LastName;
         onlineUser.Email = model.Email;
@@ -123,6 +133,7 @@ public class ProfileController : Controller
         onlineUser.PhoneNumber = model.PhoneNumber;
         onlineUser.CityId = model.CityId;
         onlineUser.UserName = model.UserName;
+        onlineUser.Balance = model.Balance;
         ///////password ro ham update konim
        var result = await _customerAppService.UpdateAsync(onlineUser);
 
@@ -234,7 +245,7 @@ public class ProfileController : Controller
         return View(onlineUser);
     }
     [HttpPost]
-    public async Task<IActionResult> Payment(int SuggestionId, int RequestId, double minPrice,string selectedAmount, string customAmount, CancellationToken cancellationToken)
+    public async Task<IActionResult> Payment(int SuggestionId, int RequestId, double minPrice,string selectedAmount, CancellationToken cancellationToken)
     {
         var onlineUser = await _userManager.GetUserAsync(User);
         if (onlineUser == null)
@@ -242,16 +253,8 @@ public class ProfileController : Controller
 
         double price = 0;
 
-        if (!string.IsNullOrEmpty(customAmount) && double.TryParse(customAmount, out double customMoney) && customMoney > 0)
-        {
-            if (customMoney < minPrice)
-            {
-                ModelState.AddModelError("customAmount", $"حداقل مبلغ پرداختی {minPrice} تومان است.");
-                return View(onlineUser); 
-            }
-            price = customMoney;
-        }
-        else if (!string.IsNullOrEmpty(selectedAmount) && double.TryParse(selectedAmount, out double defaultMoney))
+      
+        if(!string.IsNullOrEmpty(selectedAmount) && double.TryParse(selectedAmount, out double defaultMoney))
         {
             price = defaultMoney;
         }
@@ -281,7 +284,7 @@ public class ProfileController : Controller
 
             }
         }
-        TempData["PaymentResult"] = "خطا در پرداخت وجه: تغییر وضعیت پیشنهاد صورت نگرفت";
+        TempData["ResultMessage"] = "خطا در پرداخت وجه: تغییر وضعیت پیشنهاد صورت نگرفت";
 
         return RedirectToAction("RequestList");
     }

@@ -30,7 +30,7 @@ public class SubCategoryRepository : ISubCategoryRepository
         var subcategories = _memoryCach.Get<List<SubCategory>>("GetAllsubsAsync");
         if (subcategories is null)
         {
-            await _context.SubCategories.ToListAsync(cancellationToken);
+            subcategories = await _context.SubCategories.ToListAsync(cancellationToken);
         }
 
 

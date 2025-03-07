@@ -909,12 +909,28 @@
       "PackagePath": "staticwebassets\\Images\\Categories\\tamizkari.jpg"
     },
     {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\Images\\Customers\\16d9149b-bc8c-4547-b115-69d60ab77d74Screenshot 2024-12-13 164301.png",
+      "PackagePath": "staticwebassets\\Images\\Customers\\16d9149b-bc8c-4547-b115-69d60ab77d74Screenshot 2024-12-13 164301.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\Images\\Customers\\2e2a3d35-581b-4c6a-ac46-b05e1640926dScreenshot 2023-12-08 195459.png",
+      "PackagePath": "staticwebassets\\Images\\Customers\\2e2a3d35-581b-4c6a-ac46-b05e1640926dScreenshot 2023-12-08 195459.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\Images\\Customers\\4acd59ef-990c-42ec-a2a7-0361f3a7ff02Screenshot 2024-12-13 164301.png",
+      "PackagePath": "staticwebassets\\Images\\Customers\\4acd59ef-990c-42ec-a2a7-0361f3a7ff02Screenshot 2024-12-13 164301.png"
+    },
+    {
       "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\Images\\Customers\\783c55f7-a3ed-4103-9029-378dc7c2e8bbScreenshot 2024-11-30 145050.png",
       "PackagePath": "staticwebassets\\Images\\Customers\\783c55f7-a3ed-4103-9029-378dc7c2e8bbScreenshot 2024-11-30 145050.png"
     },
     {
       "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\Images\\Customers\\94f46bed-f6c1-48a7-bd54-efe8d43c1eceScreenshot 2024-07-23 145928.png",
       "PackagePath": "staticwebassets\\Images\\Customers\\94f46bed-f6c1-48a7-bd54-efe8d43c1eceScreenshot 2024-07-23 145928.png"
+    },
+    {
+      "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\Images\\Customers\\b609054d-2bc4-42f4-b158-91df11a9d4a8Screenshot 2023-12-08 195459.png",
+      "PackagePath": "staticwebassets\\Images\\Customers\\b609054d-2bc4-42f4-b158-91df11a9d4a8Screenshot 2023-12-08 195459.png"
     },
     {
       "Id": "D:\\c#\\KhaneBan\\KhaneBan\\src\\03-EndPoints\\KhaneBan.EndPoints.MVC\\wwwroot\\Images\\Customers\\b7475052-77b6-42f3-aed7-12b2dc82dc07Screenshot 2024-12-13 164301.png",

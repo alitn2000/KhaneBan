@@ -26,7 +26,7 @@ public class HomeServiceRepository : IHomeServiceRepository
         var homeservices = _memoryCach.Get<List<HomeService>>("GetAllhomesAsync");
         if (homeservices is null)
         {
-            await  _context.HomeServices
+            homeservices = await _context.HomeServices
             .Include(x => x.SubCategory)
             .ToListAsync(cancellationToken);
         }

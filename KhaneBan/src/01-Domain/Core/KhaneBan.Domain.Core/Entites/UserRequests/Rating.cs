@@ -14,6 +14,7 @@ public class Rating
     public bool IsDeleted { get; set; } = false;
     public int CustomerId { get; set; }
     public int ExpertId { get; set; }
+    public int ReqId { get; set; }
     #endregion
 
     #region NavigationProperties

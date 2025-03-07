@@ -35,13 +35,13 @@ public class UpdateCustomerInfoViewModel
     public string PhoneNumber { get; set; }
 
     [Display(Name = "تصویر پروفایل")]
-    [Required(ErrorMessage = "تصویر پروفایل اجباری است")]
     public IFormFile? ImageFile { get; set; }
 
 
     public string? ImagePath { get; set; }
 
     [Display(Name = " موجودی")]
+    [Range(0,9999999999999999999,ErrorMessage ="مقدار پول نمیتواند منفی باشد")]
     //[Required(ErrorMessage = " موجودی اجباری است")]
     public double Balance { get; set; }
 
