@@ -1,6 +1,7 @@
 ﻿using KhaneBan.Domain.Core.Contracts.AppService;
 using KhaneBan.Domain.Core.Contracts.Service;
 using KhaneBan.Domain.Core.Entites.DTOs;
+using KhaneBan.Domain.Core.Entites.User;
 using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
@@ -24,4 +25,7 @@ public class AccountAppService : IAccountAppService
 
     public Task Logout()
         => _accountService.Logout();
+
+    public async Task<IdentityResult> RegisterAsync(User user, string pass, string role, CancellationToken cancellationToken)
+        => await _accountService.RegisterAsync(user, pass, role, cancellationToken);
 }

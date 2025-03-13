@@ -1,5 +1,6 @@
 ﻿using KhaneBan.Domain.Core.Contracts.Repository;
 using KhaneBan.Domain.Core.Contracts.Service;
+using KhaneBan.Domain.Core.Entites.DTOs;
 using KhaneBan.Domain.Core.Entites.User;
 using KhaneBan.InfraStructure.EfCore.Repositories;
 using Microsoft.AspNetCore.Identity;
@@ -86,5 +87,8 @@ namespace KhaneBan.Domain.Services
         public async Task<bool> UpdateAsync(Expert expert, CancellationToken cancellationToken)
 
           => await _expertRepository.UpdateAsync(expert, cancellationToken);
+
+        public async Task<ExpertProfileDTO?> GetExpertProfileByIdAsync(int id, CancellationToken cancellationToken)
+            => await _expertRepository.GetExpertProfileByIdAsync(id, cancellationToken);
     }
 }

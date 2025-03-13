@@ -1,6 +1,8 @@
 ﻿using KhaneBan.Domain.Core.Contracts.Repository;
 using KhaneBan.Domain.Core.Entites.BaseEntities;
+using KhaneBan.Domain.Core.Entites.DTOs;
 using KhaneBan.Domain.Core.Entites.User;
+using KhaneBan.Domain.Core.Enums;
 using KhaneBan.InfraStructure.EfCore.Common;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
@@ -12,7 +14,7 @@ using System.Threading.Tasks;
 
 namespace KhaneBan.InfraStructure.EfCore.Repositories;
 
-public class ExpertRepository : IExpertRepository
+public class ExpertRepository :   IExpertRepository
 {
     private readonly AppDbContext _appDbContext;
     private readonly ILogger<ExpertRepository> _logger;
@@ -51,15 +53,61 @@ public class ExpertRepository : IExpertRepository
         .Include(e => e.Suggestions)
         .ToListAsync(cancellationToken);
 
-    public async Task<Expert?> GetExpertByIdWithDetailsAsync(int id, CancellationToken cancellationToken)
-        => await _appDbContext
-        .Experts
-        .Include(e => e.User)
-        .Include(e => e.HomeServices)
-        .ThenInclude(e => e.SubCategory)
-        .ThenInclude(e => e.Category)
-        .Include(e => e.Suggestions)
-        .FirstOrDefaultAsync(e => e.Id == id, cancellationToken);
+    public async Task<ExpertProfileDTO?> GetExpertProfileByIdAsync(int id, CancellationToken cancellationToken)
+    {
+        var expert = await _appDbContext.Experts
+     .Where(e => e.UserId == id)
+     .Include(e => e.User)
+     .Include(e => e.HomeServices) 
+     .Include(e => e.Suggestions)
+     .Include(e => e.Ratings)
+     .ThenInclude(r => r.Customer) 
+     .ThenInclude(c => c.User) 
+     .Select(e => new ExpertProfileDTO
+     {
+         Id = e.Id,
+         FirstName = e.User.FirstName,
+         LastName = e.User.LastName,
+         Email = e.User.Email,
+         PhoneNumber = e.User.PhoneNumber,
+         Address = e.User.Address,
+         PicturePath = e.User.PicturePath ?? "/images/default.png",
+         CityTitle = e.User.City.Title,
+         Balance = e.User.Balance,
+         IsDeleted = e.User.IsDeleted,
+         RegisterDate = e.User.RegisterDate,
+
+         HomeServices = e.HomeServices != null ? e.HomeServices.Select(hs => new ServiceDto
+         {
+             Id = hs.Id,
+             Title = hs.Title,
+             PicturePath = hs.PicturePath ?? "/images/no-image.png"
+         }).ToList() : new List<ServiceDto>(),
+
+         Suggestions = e.Suggestions.Select(s => new SuggestionDto
+         {
+             Id = s.Id,
+             Description = s.Description,
+             Price = s.Price,
+             SuggestionStatus = s.SuggestionStatus
+         }).ToList(),
+
+         Ratings = e.Ratings.Select(r => new RatingDto
+         {
+             Rate = r.Rate,
+             Title = r.Title,
+             CustomerUserName = r.Customer.User.UserName,
+             CustomerPicturePath = r.Customer.User.PicturePath ?? "/images/default-avatar.png",
+             Comment = r.Comment,
+             RegisterDate = r.RegisterDate
+         }).ToList()
+     })
+     .FirstOrDefaultAsync(cancellationToken);
+
+        return expert;
+    }
+
+
 
     public async Task<int> GetCountExpertAsync(CancellationToken cancellationToken)
        => await _appDbContext
@@ -140,6 +188,7 @@ public class ExpertRepository : IExpertRepository
             existExpert.User.Address = expert.User.Address;
             existExpert.User.FirstName = expert.User.FirstName;
             existExpert.User.LastName = expert.User.LastName;
+            existExpert.User.UserName = expert.User.UserName;
             existExpert.User.Email = expert.User.Email;
             existExpert.User.CityId = expert.User.CityId;
             existExpert.User.PicturePath = expert.User.PicturePath;

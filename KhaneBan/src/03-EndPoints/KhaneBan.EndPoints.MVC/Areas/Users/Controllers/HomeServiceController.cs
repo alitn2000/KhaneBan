@@ -7,15 +7,18 @@ namespace KhaneBan.EndPoints.MVC.Areas.Users.Controllers;
 public class HomeServiceController : Controller
 {
     private readonly IHomeServiceAppService _homeServiceAppService;
+    private readonly IHomeServiceDapperAppService _homeServiceDapperAppService;
 
-    public HomeServiceController(IHomeServiceAppService homeServiceAppService)
+    public HomeServiceController(IHomeServiceAppService homeServiceAppService,
+        IHomeServiceDapperAppService homeServiceDapperAppService)
     {
         _homeServiceAppService = homeServiceAppService;
+        _homeServiceDapperAppService = homeServiceDapperAppService;
     }
     public async Task<IActionResult> HomeServiceList(int subCategoryId, CancellationToken cancellationToken)
     {
 
-        var homeServices = await _homeServiceAppService.GetHomeServicesBySubCategoryId(subCategoryId, cancellationToken);
+        var homeServices = await _homeServiceDapperAppService.GetHomeServicesBySubCategoryId(subCategoryId, cancellationToken);
 
         if (homeServices == null || !homeServices.Any())
         {

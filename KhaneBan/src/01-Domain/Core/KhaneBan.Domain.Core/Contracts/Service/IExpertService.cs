@@ -1,4 +1,5 @@
-﻿using KhaneBan.Domain.Core.Entites.User;
+﻿using KhaneBan.Domain.Core.Entites.DTOs;
+using KhaneBan.Domain.Core.Entites.User;
 using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
@@ -19,5 +20,6 @@ namespace KhaneBan.Domain.Core.Contracts.Service
         Task<IdentityResult> RegisterAsync(User user, string pass);
         Task<bool> UpdateAsync(Expert expert, CancellationToken cancellationToken);
         Task<IdentityResult> UpdateAsync(User user);
+        Task<ExpertProfileDTO?> GetExpertProfileByIdAsync(int id, CancellationToken cancellationToken);
     }
 }

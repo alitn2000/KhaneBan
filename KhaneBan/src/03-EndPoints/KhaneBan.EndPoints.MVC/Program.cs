@@ -11,6 +11,8 @@ using KhaneBan.Domain.AppServices;
 using KhaneBan.Domain.Services;
 using KhaneBan.Domain.Core.Contracts.AppService;
 using Microsoft.Extensions.Options;
+using KhaneBan.InfraStructure.Dapper.Common;
+using KhaneBan.InfraStructure.Dapper.DapperRepositories;
 
 
 
@@ -57,7 +59,7 @@ try
         });
     });
 
-
+    builder.Services.AddSingleton<DapperAppDbContext>();
 
 
     // repository
@@ -71,6 +73,10 @@ try
     builder.Services.AddScoped<IRequestRepository, RequestRepository>();
     builder.Services.AddScoped<ISubCategoryRepository, SubCategoryRepository>();
     builder.Services.AddScoped<ISuggestionRepository, SuggestionRepository>();
+    builder.Services.AddScoped<ICityDapperRepository, CityDapperRepository>();
+    builder.Services.AddScoped<ICategoryDapperRepository, CategoryDapperRepository>();
+    builder.Services.AddScoped<ISubCategoryDapperRepository, SubCategoryDapperRepository>();
+    builder.Services.AddScoped<IHomeServiceDapperRepository,  HomeServiceDapperRepository>();
 
     //service
     builder.Services.AddScoped<IAdminAccountService, AdminAccountService>();
@@ -101,6 +107,16 @@ try
     builder.Services.AddScoped<IPictureAppService, PictureAppService>();
     builder.Services.AddScoped<IAccountAppService, AccountAppService>();
 
+    builder.Services.AddScoped<IHomeServiceDapperService, HomeServiceDapperService>();
+    builder.Services.AddScoped<ISubCategoryDapperService, SubCategoryDapperService>();
+    builder.Services.AddScoped<ICategoryDapperService, CategoryDapperService>();
+
+
+    builder.Services.AddScoped<IHomeServiceDapperAppService, HomeServiceDapperAppService>();
+    builder.Services.AddScoped<ISubCategoryDapperAppService, SubCategoryDapperAppService>();
+    builder.Services.AddScoped<ICategoryDapperAppService, CategoryDapperAppService>();
+
+
     builder.Services.AddIdentity<User, IdentityRole<int>>
         (options =>
         {
@@ -116,7 +132,7 @@ try
 
     builder.Services.ConfigureApplicationCookie(options =>
     {
-        options.LoginPath = "/Admin/Admin/Login";
+        options.LoginPath = "/Users/Account/Login";
     });
 
 

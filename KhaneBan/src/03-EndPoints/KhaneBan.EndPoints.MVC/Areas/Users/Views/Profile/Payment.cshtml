@@ -96,7 +96,7 @@
 									<li><a class="dropdown-link" href="cities.html">آگهی توسط شهرها</a></li>
 									@* 									<li><a class="dropdown-link" href="price.html">قیمت گذاری</a></li>
 									<li><a class="dropdown-link" href="user-form.html">فرم کاربر</a></li> *@
-									<li><a asp-controller="َAccount" asp-action="Logout" class="dropdown-link">خروج</a></li>
+									<li><a asp-controller="Account" asp-action="Logout" class="dropdown-link">خروج</a></li>
 								</ul>
 							</li>
 							<li class="navbar-item navbar-dropdown">
@@ -133,7 +133,7 @@
                             <hr />
 
                             
-                            <div asp-validation-summary="All" class="alert alert-danger"></div>
+                            <div asp-validation-summary="All" class="alert alert-danger d-none"></div>
 
                             <form asp-action="Payment" asp-controller="Profile" method="post">
                                 <input type="hidden" asp-for="@Model.Id" />

@@ -29,16 +29,16 @@ namespace KhaneBan.Domain.AppServices
 
           => await _homeServiceService.DeleteAsync(id, cancellationToken);
 
-        public async Task<List<HomeService>> GetAllAsync(CancellationToken cancellationToken)
+        //public async Task<List<HomeService>> GetAllAsync(CancellationToken cancellationToken)
 
-          => await _homeServiceService.GetAllAsync(cancellationToken);
+        //  => await _homeServiceService.GetAllAsync(cancellationToken);
 
         public async Task<HomeService> GetByIdAsync(int id, CancellationToken cancellationToken)
 
          => await _homeServiceService.GetByIdAsync(id, cancellationToken);
 
-        public async Task<List<HomeService>> GetHomeServicesBySubCategoryId(int subCategoryId, CancellationToken cancellationToken)
-            => await _homeServiceService.GetHomeServicesBySubCategoryId(subCategoryId, cancellationToken);
+        //public async Task<List<HomeService>> GetHomeServicesBySubCategoryId(int subCategoryId, CancellationToken cancellationToken)
+        //    => await _homeServiceService.GetHomeServicesBySubCategoryId(subCategoryId, cancellationToken);
 
         public async Task<bool> UpdateAsync(HomeService homeService, CancellationToken cancellationToken)
 

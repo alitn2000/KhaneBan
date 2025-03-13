@@ -1,4 +1,5 @@
 ﻿using KhaneBan.Domain.Core.Entites.DTOs;
+using KhaneBan.Domain.Core.Entites.User;
 using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
@@ -12,4 +13,5 @@ public interface IAccountService
 {
     Task<SignInResult> Login(UserLoginDTO dto);
     Task Logout();
+    Task<IdentityResult> RegisterAsync(User user, string pass, string role,CancellationToken cancellationToken);
 }

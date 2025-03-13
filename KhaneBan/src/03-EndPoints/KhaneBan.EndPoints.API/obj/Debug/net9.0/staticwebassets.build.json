@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "RRDJBjV8j9Dpas6V3ETezZM+Gbx/8/6/xNAzCH+pGrY=",
+  "Source": "KhaneBan.EndPoints.API",
+  "BasePath": "_content/KhaneBan.EndPoints.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

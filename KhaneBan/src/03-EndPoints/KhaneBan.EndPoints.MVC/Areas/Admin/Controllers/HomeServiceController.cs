@@ -14,28 +14,34 @@ public class HomeServiceController : Controller
     private readonly IHomeServiceAppService _homeServiceAppService;
     private readonly ISubCategoryAppService _subCategoryAppService;
     private readonly IPictureAppService _PictureAppService;
+    private readonly ISubCategoryDapperAppService _subCategoryDapperAppService;
+    private readonly IHomeServiceDapperAppService _homeServiceDapperAppService;
 
 
-
-    public HomeServiceController(IHomeServiceAppService homeServiceAppService, ISubCategoryAppService subCategoryAppService, IPictureAppService PictureAppService)
+    public HomeServiceController(IHomeServiceAppService homeServiceAppService,
+        ISubCategoryAppService subCategoryAppService,
+        IPictureAppService PictureAppService,
+        ISubCategoryDapperAppService subCategoryDapperAppService,
+        IHomeServiceDapperAppService homeServiceDapperAppService)
     {
         _homeServiceAppService = homeServiceAppService;
         _subCategoryAppService = subCategoryAppService;
         _PictureAppService = PictureAppService;
-
+        _subCategoryDapperAppService = subCategoryDapperAppService;
+        _homeServiceDapperAppService = homeServiceDapperAppService;
 
     }
 
     public async Task<IActionResult> HomeServiceList(CancellationToken cancellationToken)
     {
-        var homeServices = await _homeServiceAppService.GetAllAsync(cancellationToken);
+        var homeServices = await _homeServiceDapperAppService.GetAllAsync(cancellationToken);
         return View(homeServices);
     }
 
     [HttpGet]
     public async Task<IActionResult> Create(CancellationToken cancellationToken)
     {
-        var subCategories = await _subCategoryAppService.GetAllAsync(cancellationToken);
+        var subCategories = await _subCategoryDapperAppService.GetAllAsync(cancellationToken);
         ViewBag.SubCategories = subCategories.Select(c => new SelectListItem
         {
             Value = c.Id.ToString(),
@@ -51,7 +57,7 @@ public class HomeServiceController : Controller
 
         if (!ModelState.IsValid)
         {
-            ViewBag.SubCategories = await _subCategoryAppService.GetAllAsync(cancellationToken);
+            ViewBag.SubCategories = await _subCategoryDapperAppService.GetAllAsync(cancellationToken);
             return View(model);
         }
         if (model.ImageFile is not null)
@@ -70,7 +76,7 @@ public class HomeServiceController : Controller
         if (!result)
         {
             ModelState.AddModelError("", "ارور در منطق برنامه.");
-            ViewBag.SubCategories = await _subCategoryAppService.GetAllAsync(cancellationToken);
+            ViewBag.SubCategories = await _subCategoryDapperAppService.GetAllAsync(cancellationToken);
             return View(model);
         }
 
@@ -85,7 +91,7 @@ public class HomeServiceController : Controller
         if (homeService == null)
             return NotFound();
 
-        var subCategories = await _subCategoryAppService.GetAllAsync(cancellationToken);
+        var subCategories = await _subCategoryDapperAppService.GetAllAsync(cancellationToken);
         ViewBag.SubCategories = subCategories.Select(sc => new SelectListItem
         {
             Value = sc.Id.ToString(),
@@ -109,7 +115,7 @@ public class HomeServiceController : Controller
     {
         if (!ModelState.IsValid)
         {
-            ViewBag.Subcategories = await _subCategoryAppService.GetAllAsync(cancellationToken);
+            ViewBag.Subcategories = await _subCategoryDapperAppService.GetAllAsync(cancellationToken);
             return View(model);
         }
 
@@ -131,7 +137,7 @@ public class HomeServiceController : Controller
         if (!result)
         {
             ModelState.AddModelError("", "ارور در منطق برنامه.");
-            ViewBag.subCategories = await _subCategoryAppService.GetAllAsync(cancellationToken);
+            ViewBag.subCategories = await _subCategoryDapperAppService.GetAllAsync(cancellationToken);
             return View(model);
         }
 

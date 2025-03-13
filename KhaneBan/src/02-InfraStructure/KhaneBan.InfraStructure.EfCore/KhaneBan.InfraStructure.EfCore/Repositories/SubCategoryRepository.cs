@@ -25,20 +25,20 @@ public class SubCategoryRepository : ISubCategoryRepository
         _logger = logger;
         _memoryCach = memoryCach;
     }
-    public async Task<List<SubCategory>> GetAllAsync(CancellationToken cancellationToken)
-    {
-        var subcategories = _memoryCach.Get<List<SubCategory>>("GetAllsubsAsync");
-        if (subcategories is null)
-        {
-            subcategories = await _context.SubCategories.ToListAsync(cancellationToken);
-        }
+    //public async Task<List<SubCategory>> GetAllAsync(CancellationToken cancellationToken)
+    //{
+    //    var subcategories = _memoryCach.Get<List<SubCategory>>("GetAllsubsAsync");
+    //    if (subcategories is null)
+    //    {
+    //        subcategories = await _context.SubCategories.ToListAsync(cancellationToken);
+    //    }
 
 
-        _memoryCach.Set("GetAllsubsAsync", subcategories, TimeSpan.FromMinutes(1));
+    //    _memoryCach.Set("GetAllsubsAsync", subcategories, TimeSpan.FromMinutes(1));
 
-        return subcategories;
+    //    return subcategories;
 
-    }
+    //}
 
 
 
@@ -135,8 +135,7 @@ public class SubCategoryRepository : ISubCategoryRepository
 
     }
 
-    public async Task<List<SubCategory>> GetAllSubCategoriesAsync(CancellationToken cancellationToken)
-
-        => await _context.SubCategories.ToListAsync(cancellationToken);
+    //public async Task<List<SubCategory>> GetAllSubCategoriesAsync(CancellationToken cancellationToken)
+    //    => await _context.SubCategories.ToListAsync(cancellationToken);
 
 }

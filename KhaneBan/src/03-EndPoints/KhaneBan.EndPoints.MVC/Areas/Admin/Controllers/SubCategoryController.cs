@@ -14,18 +14,23 @@ public class SubCategoryController : Controller
     private readonly ISubCategoryAppService _subCategoryAppService;
     private readonly IPictureAppService _pictureAppService;
     private readonly ICategoryAppService _categoryAppService;
+    private readonly ICategoryDapperAppService _categoryDapperAppService;
 
 
-    public SubCategoryController(ICategoryAppService categoryAppService, ISubCategoryAppService subCategoryAppService, IPictureAppService pictureAppService)
+    public SubCategoryController(ICategoryAppService categoryAppService,
+        ISubCategoryAppService subCategoryAppService,
+        IPictureAppService pictureAppService,
+        ICategoryDapperAppService categoryDapperAppService)
     {
         _subCategoryAppService = subCategoryAppService;
         _pictureAppService = pictureAppService;
         _categoryAppService = categoryAppService;
+        _categoryDapperAppService = categoryDapperAppService;
     }
 
     public async Task<IActionResult> SubCategoryList(CancellationToken cancellationToken)
     {
-        var categories = await _categoryAppService.GetAllAsync(cancellationToken);
+        var categories = await _categoryDapperAppService.GetAllAsync(cancellationToken);
 
         ViewData["categories"] = categories.Select(c => new SelectListItem
         {
@@ -33,7 +38,7 @@ public class SubCategoryController : Controller
             Text = c.Title
         }).ToList();
 
-        var subCategories = await _subCategoryAppService.GetAllAsync(cancellationToken);
+        var subCategories = await _categoryDapperAppService.GetAllAsync(cancellationToken);
 
         return View(subCategories);
 
@@ -42,7 +47,7 @@ public class SubCategoryController : Controller
 
     public async Task<IActionResult> Create(CancellationToken cancellationToken)
     {
-        var categories = await _categoryAppService.GetAllAsync(cancellationToken);
+        var categories = await _categoryDapperAppService.GetAllAsync(cancellationToken);
 
         ViewBag.Categories = categories;
         return View();
@@ -54,7 +59,7 @@ public class SubCategoryController : Controller
 
         if (!ModelState.IsValid)
         {
-            ViewBag.Categories = await _categoryAppService.GetAllAsync(cancellationToken);
+            ViewBag.Categories = await _categoryDapperAppService.GetAllAsync(cancellationToken);
             return View(viewModel);
         }
 
@@ -74,7 +79,7 @@ public class SubCategoryController : Controller
         if (!result)
         {
             ModelState.AddModelError("", "ارور در منطق برنامه.");
-            ViewBag.Categories = await _categoryAppService.GetAllAsync(cancellationToken);
+            ViewBag.Categories = await _categoryDapperAppService.GetAllAsync(cancellationToken);
             return View(viewModel);
         }
 
@@ -121,7 +126,7 @@ public class SubCategoryController : Controller
             CategoryId = subCategory.CategoryId,
             ImagePath = subCategory.PicturePath
         };
-        var categories = await _categoryAppService.GetAllAsync(cancellationToken);
+        var categories = await _categoryDapperAppService.GetAllAsync(cancellationToken);
         ViewBag.Categories = categories;
 
 
@@ -136,7 +141,7 @@ public class SubCategoryController : Controller
     {
         if (!ModelState.IsValid)
         {
-            ViewBag.Categories = await _categoryAppService.GetAllAsync(cancellationToken);
+            ViewBag.Categories = await _categoryDapperAppService.GetAllAsync(cancellationToken);
             return View(model);
         }
 
@@ -158,7 +163,7 @@ public class SubCategoryController : Controller
         if (!result)
         {
             ModelState.AddModelError("", "ارور در منطقه برنامه.");
-            ViewBag.Categories = await _categoryAppService.GetAllAsync(cancellationToken);
+            ViewBag.Categories = await _categoryDapperAppService.GetAllAsync(cancellationToken);
             return View(model);
         }
 

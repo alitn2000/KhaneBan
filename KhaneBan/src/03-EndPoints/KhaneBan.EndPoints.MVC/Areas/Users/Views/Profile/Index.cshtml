@@ -111,7 +111,7 @@
                                     <li><a class="dropdown-link" href="cities.html">آگهی توسط شهرها</a></li>
                                     @* 									<li><a class="dropdown-link" href="price.html">قیمت گذاری</a></li>
 									<li><a class="dropdown-link" href="user-form.html">فرم کاربر</a></li> *@
-                                    <li><a asp-controller="َAccount" asp-action="Logout" class="dropdown-link">خروج</a></li>
+                                    <li><a asp-controller="Account" asp-action="Logout" class="dropdown-link">خروج</a></li>
                                 </ul>
                             </li>
                             <li class="navbar-item navbar-dropdown">
@@ -242,10 +242,7 @@
                                     <h6>مجموع سفارش:</h6>
                                     <p>@Model.Requests.Count()</p>
                                 </li>
-                                <li>
-                                    <h6>لغو سفارش:</h6>
-                                    <p>انجام ندادم :(</p>
-                                </li>
+                               
                                 <li>
                                     <h6>موجودی:</h6>
                                     <p>@Model.User.Balance</p>
@@ -279,9 +276,7 @@
                             </li>
                             <li>
                                 <h6>تلفن:</h6>
-                                <p>
-                                    @Model.User.PhoneNumber
-                                </p>
+                                <p>@Model.User.PhoneNumber</p>
                             </li>
                             
                         </ul>

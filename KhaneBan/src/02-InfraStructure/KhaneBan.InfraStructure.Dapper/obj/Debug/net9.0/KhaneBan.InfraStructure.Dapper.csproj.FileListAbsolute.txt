@@ -1,0 +1,16 @@
+D:\c#\KhaneBan\KhaneBan\src\02-InfraStructure\KhaneBan.InfraStructure.Dapper\bin\Debug\net9.0\KhaneBan.InfraStructure.Dapper.deps.json
+D:\c#\KhaneBan\KhaneBan\src\02-InfraStructure\KhaneBan.InfraStructure.Dapper\bin\Debug\net9.0\KhaneBan.InfraStructure.Dapper.dll
+D:\c#\KhaneBan\KhaneBan\src\02-InfraStructure\KhaneBan.InfraStructure.Dapper\bin\Debug\net9.0\KhaneBan.InfraStructure.Dapper.pdb
+D:\c#\KhaneBan\KhaneBan\src\02-InfraStructure\KhaneBan.InfraStructure.Dapper\bin\Debug\net9.0\KhaneBan.Domain.Core.dll
+D:\c#\KhaneBan\KhaneBan\src\02-InfraStructure\KhaneBan.InfraStructure.Dapper\bin\Debug\net9.0\KhaneBan.Domain.Core.pdb
+D:\c#\KhaneBan\KhaneBan\src\02-InfraStructure\KhaneBan.InfraStructure.Dapper\obj\Debug\net9.0\KhaneBan.InfraStructure.Dapper.csproj.AssemblyReference.cache
+D:\c#\KhaneBan\KhaneBan\src\02-InfraStructure\KhaneBan.InfraStructure.Dapper\obj\Debug\net9.0\KhaneBan.InfraStructure.Dapper.GeneratedMSBuildEditorConfig.editorconfig
+D:\c#\KhaneBan\KhaneBan\src\02-InfraStructure\KhaneBan.InfraStructure.Dapper\obj\Debug\net9.0\KhaneBan.InfraStructure.Dapper.AssemblyInfoInputs.cache
+D:\c#\KhaneBan\KhaneBan\src\02-InfraStructure\KhaneBan.InfraStructure.Dapper\obj\Debug\net9.0\KhaneBan.InfraStructure.Dapper.AssemblyInfo.cs
+D:\c#\KhaneBan\KhaneBan\src\02-InfraStructure\KhaneBan.InfraStructure.Dapper\obj\Debug\net9.0\KhaneBan.InfraStructure.Dapper.csproj.CoreCompileInputs.cache
+D:\c#\KhaneBan\KhaneBan\src\02-InfraStructure\KhaneBan.InfraStructure.Dapper\obj\Debug\net9.0\KhaneBan.InfraStructure.Dapper.sourcelink.json
+D:\c#\KhaneBan\KhaneBan\src\02-InfraStructure\KhaneBan.InfraStructure.Dapper\obj\Debug\net9.0\KhaneBan.12A42857.Up2Date
+D:\c#\KhaneBan\KhaneBan\src\02-InfraStructure\KhaneBan.InfraStructure.Dapper\obj\Debug\net9.0\KhaneBan.InfraStructure.Dapper.dll
+D:\c#\KhaneBan\KhaneBan\src\02-InfraStructure\KhaneBan.InfraStructure.Dapper\obj\Debug\net9.0\refint\KhaneBan.InfraStructure.Dapper.dll
+D:\c#\KhaneBan\KhaneBan\src\02-InfraStructure\KhaneBan.InfraStructure.Dapper\obj\Debug\net9.0\KhaneBan.InfraStructure.Dapper.pdb
+D:\c#\KhaneBan\KhaneBan\src\02-InfraStructure\KhaneBan.InfraStructure.Dapper\obj\Debug\net9.0\ref\KhaneBan.InfraStructure.Dapper.dll

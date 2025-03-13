@@ -4,6 +4,7 @@ using KhaneBan.Domain.Core.Entites.DTOs;
 using KhaneBan.Domain.Core.Entites.User;
 using KhaneBan.Domain.Core.Enums;
 using KhaneBan.EndPoints.MVC.Areas.Users.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -12,6 +13,7 @@ using System.Security.Claims;
 namespace KhaneBan.EndPoints.MVC.Areas.Users;
 
 [Area("Users")]
+[Authorize(Roles ="Customer")]
 public class ProfileController : Controller
 {
     private readonly UserManager<User> _userManager;
@@ -41,9 +43,9 @@ public class ProfileController : Controller
     }
 
 
-    public async Task<IActionResult> Index(CancellationToken cancellationToken)
+    public async Task<IActionResult> Index( CancellationToken cancellationToken)
     {
-        var onlineUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);                    //////////////amaliyat haye tekrari baresi shavad
+        var onlineUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);                    
 
 
         if (onlineUserId is null)
@@ -51,7 +53,7 @@ public class ProfileController : Controller
 
         int userId = int.Parse(onlineUserId);
 
-      var userInfo =  await _customerAppService.GetCustomerByIdWithDetailsAsync(userId, cancellationToken);
+        var userInfo = await _customerAppService.GetCustomerByIdWithDetailsAsync(userId, cancellationToken);
 
 
         return View(userInfo);
@@ -140,7 +142,7 @@ public class ProfileController : Controller
         if (result.Succeeded)
         {
             ViewBag.UpdateMessage = "ویرایش اطلاعات با موفقیت انجام شد";
-            return RedirectToAction("UpdateCustomerProfile");
+            return RedirectToAction("Index");
         }
         ViewBag.UpdateMessage = "ویرایش اطلاعات انجام نشد";
 
@@ -335,6 +337,12 @@ public class ProfileController : Controller
 
         await _ratingAppService.CreateAsync(model, cancellationToken);
 
+        var request = await _requestAppService.GetRequestByIdAsync(model.RequestId, cancellationToken);
+        if (request != null)
+        {
+            request.IsReviewd = true;
+            await _requestAppService.UpdateAsync(request, cancellationToken);
+        }
         TempData["ResultMessage"] = "your comment succefully registerd.";
         return RedirectToAction("RequestList");
     }

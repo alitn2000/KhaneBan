@@ -1,4 +1,5 @@
-﻿using KhaneBan.Domain.Core.Entites.User;
+﻿using KhaneBan.Domain.Core.Entites.DTOs;
+using KhaneBan.Domain.Core.Entites.User;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +13,7 @@ namespace KhaneBan.Domain.Core.Contracts.Repository
         Task<List<Expert>> GetExpertsAsync(CancellationToken cancellationToken);
         Task<Expert?> GetExpertByIdAsync(int id, CancellationToken cancellationToken);
         Task<List<Expert>> GetExpertsWithDetailsAsync(CancellationToken cancellationToken);
-        Task<Expert?> GetExpertByIdWithDetailsAsync(int id, CancellationToken cancellationToken);
+        Task<ExpertProfileDTO?> GetExpertProfileByIdAsync(int id, CancellationToken cancellationToken);
         Task<List<Expert>> GetExpertInfoAsync(CancellationToken cancellationToken);
         Task<bool> CreateAsync(Expert expert, CancellationToken cancellationToken);
         Task<bool> DeleteAsync(int userId, CancellationToken cancellationToken);
@@ -20,6 +21,5 @@ namespace KhaneBan.Domain.Core.Contracts.Repository
         Task<bool> UpdateAsync(Expert expert, CancellationToken cancellationToken);
         Task<int> GetCountExpertAsync(CancellationToken cancellationToken);
         Task<Expert?> GetExpertInfoByIdAsync(int id, CancellationToken cancellationToken);
-
     }
 }

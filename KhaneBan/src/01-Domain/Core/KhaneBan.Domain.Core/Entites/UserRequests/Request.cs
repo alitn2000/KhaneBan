@@ -15,6 +15,7 @@ public class Request
     public DateTime RequestedDate { get; set; }
     public StatusEnum RequestStatus { get; set; } = StatusEnum.WatingExpertOffer;
     public bool IsDeleted { get; set; } = false;
+    public bool IsReviewd { get; set; } = false;
     public int CityId { get; set; }
     public int? RatingId { get; set; }
     public int CustomerId { get; set; }

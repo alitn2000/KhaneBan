@@ -111,7 +111,7 @@
                                     <li><a class="dropdown-link" href="cities.html">آگهی توسط شهرها</a></li>
                                     @* 									<li><a class="dropdown-link" href="price.html">قیمت گذاری</a></li>
 									<li><a class="dropdown-link" href="user-form.html">فرم کاربر</a></li> *@
-                                    <li><a asp-controller="َAccount" asp-action="Logout" class="dropdown-link">خروج</a></li>
+                                    <li><a asp-controller="Account" asp-action="Logout" class="dropdown-link">خروج</a></li>
                                 </ul>
                             </li>
                             <li class="navbar-item navbar-dropdown">
@@ -339,13 +339,16 @@
                                             <td><a asp-action="SuggestionList" asp-route-id="@request.Id" class="btn btn-primary">پیشنهادات</a></td>
                                              <td>
                                                 @if (request.RequestStatus == StatusEnum.WorkStarted)
-
                                                 {
-                                                   <a asp-action="Payment" asp-route-id="@request.WinnerId" class="btn btn-warning">پرداخت هزینه</a>
+                                                    <a asp-action="Payment" asp-route-id="@request.WinnerId" class="btn btn-warning">پرداخت هزینه</a>
                                                 }
-                                                else if (request.RequestStatus == StatusEnum.WorkPaidByCustomer && request.RatingId == null)
+                                                else
                                                 {
-                                                    <a asp-action="SetRating" asp-controller="Profile" asp-route-requestId="@request.Id" asp-route-expertId="@request.WinnerId" class="btn btn-success">ثبت نظر</a>
+                                                    if (request.RequestStatus == StatusEnum.WorkPaidByCustomer && !request.IsReviewd)
+                                                    {
+                                                        <a asp-action="SetRating" asp-controller="Profile" asp-route-requestId="@request.Id" asp-route-expertId="@request.WinnerId" class="btn btn-success">ثبت نظر</a>
+                                                    }
+
                                                 }
                                             </td> 
                                             

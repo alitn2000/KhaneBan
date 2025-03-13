@@ -1,16 +1,10 @@
 ﻿using KhaneBan.Domain.Core.Entites.BaseEntities;
 using KhaneBan.Domain.Core.Entites.User;
 using KhaneBan.Domain.Core.Entites.UserRequests;
+using KhaneBan.InfraStructure.EfCore.Configurations;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using KhaneBan.InfraStructure.EfCore.Configurations;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static System.Net.Mime.MediaTypeNames;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 
 namespace KhaneBan.InfraStructure.EfCore.Common;
@@ -58,6 +52,6 @@ public class AppDbContext : IdentityDbContext<User, IdentityRole<int>, int>
     public DbSet<Request> Requests { get; set; }
     public DbSet<Rating> Ratings { get; set; }
     public DbSet<SubCategory> SubCategories { get; set; }
-    
+
 }
 

@@ -30,6 +30,7 @@
     <ProjectReference Include="..\..\00-FrameWork\FrameWork\FrameWork.csproj" />
     <ProjectReference Include="..\..\01-Domain\Core\KhaneBan.Domain.Core\KhaneBan.Domain.Core.csproj" />
     <ProjectReference Include="..\..\01-Domain\Services\KhaneBan.Domain.AppServices\KhaneBan.Domain.AppServices.csproj" />
+    <ProjectReference Include="..\..\02-InfraStructure\KhaneBan.InfraStructure.Dapper\KhaneBan.InfraStructure.Dapper.csproj" />
     <ProjectReference Include="..\..\02-InfraStructure\KhaneBan.InfraStructure.EfCore\KhaneBan.InfraStructure.EfCore\KhaneBan.InfraStructure.EfCore.csproj" />
   </ItemGroup>
 

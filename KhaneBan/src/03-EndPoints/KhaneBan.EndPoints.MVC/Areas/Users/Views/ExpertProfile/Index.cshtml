@@ -1,0 +1,351 @@
+﻿
+
+ @using KhaneBan.Domain.Core.Enums  
+ @model KhaneBan.Domain.Core.Entites.DTOs.ExpertProfileDTO
+
+<!DOCTYPE html>  
+  <html lang="en">  
+
+  <head>  
+      <meta charset="UTF-8">  
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  
+      <meta name="author" content="Mironcoder">  
+      <meta name="email" content="mironcoder@gmail.com">  
+      <meta name="profile" content="https://www.rtl-theme.com/author/tn_plugin">  
+      <meta name="name" content="Classicads">  
+      <meta name="type" content="Classified Advertising">  
+      <meta name="title" content="Classicads - Classified Ads HTML Template">  
+      <meta name="keywords"  
+            content="classicads, classified, ads, classified ads, listing, business, directory, jobs, marketing, portal, advertising, local, posting, ad listing, ad posting,">  
+      <title>کلاسیک ادز - پروفایل</title>  
+      <link rel="icon" href="~/UsersTemplate/images/favicon.png">  
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">  
+      <link rel="stylesheet" href="~/UsersTemplate/css/vendor/bootstrap.min.css">  
+      <link rel="stylesheet" href="~/UsersTemplate/css/custom/main.css">  
+      <link rel="stylesheet" href="~/UsersTemplate/css/custom/profile.css">
+    <style>
+        .skills-container {
+            max-height: 200px; /* تنظیم ارتفاع برای جلوگیری از خروج محتوا */
+            overflow-y: auto; /* اسکرول در صورت نیاز */
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            background: #f9f9f9;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap; /* جلوگیری از خروج مهارت‌ها از کادر */
+            gap: 10px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .skill-item {
+            background: #007bff;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 14px;
+            white-space: nowrap; /* جلوگیری از شکست متن */
+        }
+    </style>
+
+  </head>  
+  <body>  
+      
+
+
+      <meta http-equiv="content-type" content="text/html;charset=utf-8" />  
+      <header class="header-part">  
+          <div class="container">  
+              <div class="header-content">  
+                  <div class="header-left">  
+                      <ul class="header-widget">  
+                          <li><button type="button" class="header-menu"><i class="fas fa-align-left"></i></button></li>  
+                          <li><a asp-area="Users" asp-controller="Home" asp-action="Index" class="header-logo"><img src="~/UsersTemplate/images/logo.png" alt="logo"></a></li>  
+                          <li>  
+                              <a href="user-form.html" class="header-user">  
+                                  <i class="fas fa-user"></i><span>ورود</span>  
+                              </a>  
+                          </li>  
+                          <li><button type="button" class="header-src"><i class="fas fa-search"></i></button></li>  
+                      </ul>  
+                  </div>  
+
+
+              </div>  
+          </div>  
+      </header>  
+      <div class="sidebar-part">  
+          <div class="sidebar-body">  
+              <div class="sidebar-header">  
+                  <a asp-area="Users" asp-controller="Home" asp-action="Index" class="sidebar-logo">  
+                      <img src="~/UsersTemplate/images/logo.png"  
+                           alt="logo">  
+                  </a><button class="sidebar-cross"><i class="fas fa-times"></i></button>  
+              </div>  
+              <div class="sidebar-content">  
+                  <div class="sidebar-profile">  
+                      <a href="#" class="sidebar-avatar">  
+                          <img src="~/UsersTemplate/images/avatar/01.jpg"  
+                               alt="avatar">  
+                      </a>  
+                      <h4><a href="#" class="sidebar-name">جکسون هندرسون</a></h4><a href="ad-post.html"  
+                                                                                    class="btn btn-inline sidebar-btn">  
+                          <i class="fas fa-plus-circle"></i><span>  
+                              تبلیغ خود را ارسال  
+                              کنید  
+                          </span>  
+                      </a>  
+                  </div>  
+                  <div class="sidebar-menu">  
+                      <ul class="nav nav-tabs">  
+                          <li><a href="#main-menu" class="nav-link active" data-toggle="tab">منوی اصلی </a></li>  
+
+                      </ul>  
+                      <div class="tab-pane active" id="main-menu">  
+                          <ul class="navbar-list">  
+
+                              <li class="navbar-item navbar-dropdown">  
+                                  <a class="navbar-link" href="#">  
+                                      <span>  
+                                          دسته  
+                                          بندی  
+                                      </span><i class="fas fa-plus"></i>  
+                                  </a>  
+                                  <ul class="dropdown-list">  
+                                      <li><a class="dropdown-link" href="category-list.html">تمیزکاری</a></li>  
+                                      <li><a class="dropdown-link" href="category-list.html">ساختمان</a></li>  
+                                      <li><a class="dropdown-link" href="category-list.html">تعمیرات اشیا</a></li>  
+                                      <li><a class="dropdown-link" href="category-list.html">اسباب کشی و حمل بار</a></li>  
+                                      <li><a class="dropdown-link" href="category-list.html">خودرو</a></li>  
+                                      <li><a class="dropdown-link" href="category-list.html">سلامت و زیبایی</a></li>  
+                                      <li><a class="dropdown-link" href="category-list.html">سازمان ها و مجتمع ها</a></li>  
+                                      <li><a class="dropdown-link" href="category-list.html">سایر</a></li>  
+
+                                  </ul>  
+                              </li>  
+
+
+                              <li class="navbar-item navbar-dropdown">  
+                                  <a class="navbar-link" href="#">  
+                                      <span>صفحات</span><i class="fas fa-plus"></i>  
+                                  </a>  
+                                  <ul class="dropdown-list">  
+                                      <li><a asp-controller="Home" asp-action="Index" class="dropdown-link">صفحه اصلی</a></li>  
+                                      <li><a asp-controller="Profile" asp-action="Index" class="dropdown-link">پروفایل</a></li>  
+                                      <li><a asp-controller="Account" asp-action="Login" class="dropdown-link">ورود</a></li>  
+                                      <li><a class="dropdown-link" href="cities.html">آگهی توسط شهرها</a></li>  
+                                        									<li><a class="dropdown-link" href="price.html">قیمت گذاری</a></li>  
+  									<li><a class="dropdown-link" href="user-form.html">فرم کاربر</a></li>   
+                                      <li><a asp-controller="Account" asp-action="Logout" class="dropdown-link">خروج</a></li>  
+                                  </ul>  
+                              </li>  
+                              <li class="navbar-item navbar-dropdown">  
+                                  <a class="navbar-link" href="#">  
+                                      <span>  
+                                          وبلاگ  
+                                      </span><i class="fas fa-plus"></i>  
+                                  </a>  
+                                  <ul class="dropdown-list">  
+                                      <li><a class="dropdown-link" href="blog-list.html">وبلاگ لیستی </a></li>  
+                                      <li><a class="dropdown-link" href="blog-details.html">جزئیات وبلاگ</a></li>  
+                                  </ul>  
+                              </li>  
+                              <li class="navbar-item"><a class="navbar-link" href="contact.html">تماس با ما</a></li>  
+                          </ul>  
+                      </div>  
+
+                  </div>  
+                  <div class="sidebar-footer">  
+                      <p>کلیه حقوق محفوظ است توسط <a href="#"> کلاسیک ادز </a></p>  
+                      <p>طراحی توسط <a href="https://www.rtl-theme.com/author/tn_plugin">جعفر عباسی خان </a></p>  
+                  </div>  
+              </div>  
+          </div>  
+      </div>  
+
+      <div class="btmbar-part">  
+          <div class="container">  
+              <ul class="btmbar-widget">  
+                  <li><a href="user-form.html"><i class="fas fa-user"></i></a></li>  
+                  <li><a href="#"><i class="fas fa-star"></i></a></li>  
+                  <li>  
+                      <a class="plus-btn" href="ad-post.html">  
+                          <i class="fas fa-plus"></i><span>  
+                              پست خود را تبلیغ کنید  
+                          </span>  
+                      </a>  
+                  </li>  
+
+              </ul>  
+          </div>  
+      </div>  
+      <section class="single-banner">  
+          <div class="container">  
+              <div class="row">  
+                  <div class="col-lg-12">  
+                      <div class="single-content">  
+                          <h2>پروفایل</h2>  
+                          <ol class="breadcrumb">  
+                              <li class="breadcrumb-item"><a href="index.html">صفحه اصلی</a></li>  
+                              <li class="breadcrumb-item active" aria-current="page">پروفایل</li>  
+                          </ol>  
+                      </div>  
+                  </div>  
+              </div>  
+          </div>  
+      </section>  
+      <section class="dash-header-part">  
+          <div class="container">  
+              <div class="row">  
+                  <div class="col-sm-4 col-md-3 col-lg-2">  
+                      <div class="dash-avatar"><a href="#"><img src="@Model.PicturePath" alt="avatar"></a></div>  
+                  </div>  
+                  <div class="col-sm-8 col-md-9 col-lg-3">  
+                      <div class="dash-intro">  
+                          <h4><a href="#">@($"{Model.FirstName} {Model.LastName}")</a></h4>  
+                          <h5>فروشنده جدید</h5>  
+                      </div>  
+                      <ul class="dash-meta">  
+                          <li><i class="fas fa-phone-alt"></i><span>@Model.PhoneNumber</span></li>  
+                          <li><i class="fas fa-envelope"></i><span>@Model.Email</span></li>  
+                          <li><i class="fas fa-map-marker-alt"></i><span>@Model.CityTitle</span></li>  
+                      </ul>  
+                  </div>  
+                  <div class="col-lg-7">  
+                      <div class="row">  
+                          <div class="col-md-4 col-lg-4">  
+                              <div class="dash-focus dash-list">  
+                              @*     <h2>@Model.Suggestions.Count()</h2>   *@
+                                  <p>تعداد درخواست ها </p>  
+                              </div>  
+                          </div>  
+                          <div class="col-md-4 col-lg-4">  
+                              <div class="dash-focus dash-book">  
+                                @*   <h2>@Model.Suggestions.Where(r => r.SuggestionStatus == StatusEnum.WorkPaidByCustomer).Count()</h2>  *@ 
+                                  <p>درخواست های انجام شده </p>  
+                              </div>  
+                          </div>  
+                          <div class="col-md-4 col-lg-4">  
+                              <div class="dash-focus dash-rev">  
+                                 @*  <h2>@Model.Ratings.Count()</h2>   *@
+                                  <p>مجموع نظرات</p>  
+                              </div>  
+                          </div>  
+                      </div>  
+                  </div>  
+              </div>  
+              <div class="row">  
+                  <div class="col-lg-12">  
+                      <div class="dash-menu-list">  
+                          <ul>  
+                              <li class="navbar-item"><a asp-controller="Profile" asp-action="Index" class="navbar-link active">پروفایل</a></li>  
+                              <li class="navbar-item"><a asp-controller="Profile" asp-action="RequestList" class="navbar-link">سفارشات من</a></li>  
+                              <li class="navbar-item"><a class="navbar-link" asp-controller="Profile" asp-action="UpdateCustomerProfile">ویرایش مشخصات </a></li>  
+                              <li class="navbar-item"><a class="navbar-link" asp-controller="Account" asp-action="Logout">خروج </a></li>  
+                          </ul>  
+                      </div>  
+                  </div>  
+              </div>  
+          </div>  
+      </section>  
+      <section class="profile-part">  
+          <div class="container">  
+              <div class="row">  
+                  <div class="col-lg-6">  
+                      <div class="account-card">  
+                          <div class="account-title">  
+                              <h3>مقدمه </h3>  
+                          </div>  
+                          <div class="profile-intro">  
+                              <div class="profile-author">  
+                                  <a href="#"><img src="@Model.PicturePath" alt="avatar"></a>  
+                                  <h4>@($"{Model.FirstName} {Model.LastName}")</h4>  
+                                  <p><span>عضو شده:</span>@Model.RegisterDate</p>  
+                              </div>  
+                              <ul class="account-list">  
+                                  <li>  
+                                      <h6>مجموع سفارش:</h6>  
+                                @*       <p>@Model.Suggestions.Count()</p>   *@
+                                  </li>  
+
+                                  <li>  
+                                      <h6>موجودی:</h6>  
+                                      <p>@Model.Balance</p>  
+                                  </li>  
+
+                              </ul>  
+                          </div>  
+                      </div>  
+                  </div>  
+                  <div class="col-lg-6">  
+                      <div class="account-card">  
+                          <div class="account-title">  
+                              <h3>اطلاعات مشتری </h3>  
+                          </div>  
+                          <ul class="account-list">  
+
+                              <li>  
+                                  <h6>استان:</h6>  
+                                  <p>@Model.CityTitle</p>  
+                              </li>  
+
+                              <li>  
+                                  <h6>آدرس:</h6>  
+                                  <p>@Model.Address</p>  
+                              </li>  
+
+
+                              <li>  
+                                  <h6>ایمیل:</h6>  
+                                  <p>@Model.Email</p>  
+                              </li>  
+                              <li>  
+                                  <h6>تلفن:</h6>  
+                                  <p>@Model.PhoneNumber</p>  
+                              </li>  
+
+                          </ul>  
+                      </div>  
+                  </div>  
+
+              </div>  
+          </div>  
+      </section>
+
+    <section class="profile-part">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="account-card">
+                        <div class="account-title">
+                            <h3>مهارت‌ها</h3>
+                        </div>
+                        <div class="skills-container">
+                            @if (Model.HomeServices.Any())
+                            {
+                                <ul class="skills-list">
+                                    @foreach (var service in Model.HomeServices)
+                                    {
+                                        <li class="skill-item">@service.Title</li>
+                                    }
+                                </ul>
+                            }
+                            else
+                            {
+                                <p>مهارتی ثبت نشده است.</p>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</body>  
+
+  </html>  

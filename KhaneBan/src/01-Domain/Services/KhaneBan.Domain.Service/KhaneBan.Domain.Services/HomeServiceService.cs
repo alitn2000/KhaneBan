@@ -26,10 +26,10 @@ public class HomeServiceService : IHomeServiceService
 
         => await _homeServiceRepository.DeleteAsync(id, cancellationToken);
 
-    public async Task<List<HomeService>> GetAllAsync(CancellationToken cancellationToken)
+    //public async Task<List<HomeService>> GetAllAsync(CancellationToken cancellationToken)
 
-       => await _homeServiceRepository.GetAllAsync(cancellationToken)
-        ;
+    //   => await _homeServiceRepository.GetAllAsync(cancellationToken);
+        
     public async Task<HomeService> GetByIdAsync(int id, CancellationToken cancellationToken)
 
       => await _homeServiceRepository.GetByIdAsync(id, cancellationToken);
@@ -51,7 +51,7 @@ public class HomeServiceService : IHomeServiceService
         return false;
     }
 
-    public async Task<List<HomeService>> GetHomeServicesBySubCategoryId(int subCategoryId, CancellationToken cancellationToken)
-        => await _homeServiceRepository.GetHomeServicesBySubCategoryId(subCategoryId, cancellationToken);
+    //public async Task<List<HomeService>> GetHomeServicesBySubCategoryId(int subCategoryId, CancellationToken cancellationToken)
+    //    => await _homeServiceRepository.GetHomeServicesBySubCategoryId(subCategoryId, cancellationToken);
 }
 

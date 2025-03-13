@@ -1,0 +1,94 @@
+[
+  {
+    "ContainingType": "KhaneBan.EndPoints.API.Controllers.CategoryController",
+    "Method": "CategoryList",
+    "RelativePath": "Category/List",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[KhaneBan.Domain.Core.Entites.UserRequests.Category, KhaneBan.Domain.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "KhaneBan.EndPoints.API.Controllers.CustomerController",
+    "Method": "AddCustomer",
+    "RelativePath": "Customer/Add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "KhaneBan.EndPoints.API.ViewModels.AddCustomerViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KhaneBan.EndPoints.API.Controllers.ExpertController",
+    "Method": "AddExpert",
+    "RelativePath": "Expert/Add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "KhaneBan.EndPoints.API.ViewModels.AddCustomerViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KhaneBan.EndPoints.API.Controllers.HomeServiceController",
+    "Method": "CategoryList",
+    "RelativePath": "HomeService/List",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[KhaneBan.Domain.Core.Entites.UserRequests.HomeService, KhaneBan.Domain.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "KhaneBan.EndPoints.API.Controllers.SubCategoryController",
+    "Method": "SubCategoryList",
+    "RelativePath": "SubCategory/List",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[KhaneBan.Domain.Core.Entites.UserRequests.SubCategory, KhaneBan.Domain.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

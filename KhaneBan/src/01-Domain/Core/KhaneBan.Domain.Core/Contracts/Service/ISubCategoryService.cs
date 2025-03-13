@@ -9,7 +9,7 @@ namespace KhaneBan.Domain.Core.Contracts.Service;
 
 public interface ISubCategoryService
 {
-    Task<List<SubCategory>> GetAllAsync(CancellationToken cancellationToken);
+    //Task<List<SubCategory>> GetAllAsync(CancellationToken cancellationToken);
     Task<SubCategory> GetByIdAsync(int id, CancellationToken cancellationToken);
     Task<bool> CreateAsync(SubCategory subCategory, CancellationToken cancellationToken);
     Task<bool> UpdateAsync(SubCategory subCategory, CancellationToken cancellationToken);

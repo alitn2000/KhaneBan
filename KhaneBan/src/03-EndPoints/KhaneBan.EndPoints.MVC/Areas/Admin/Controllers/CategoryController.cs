@@ -15,9 +15,9 @@ public class CategoryController : Controller
 
     private readonly ICategoryAppService _categoryAppService;
     private readonly IPictureAppService _pictureAppService ;
+    private readonly ICategoryDapperAppService _categoryDapperAppService;
 
-
-    public CategoryController(ICategoryAppService categoryAppService, IPictureAppService pictureAppService)
+    public CategoryController(ICategoryAppService categoryAppService, IPictureAppService pictureAppService, ICategoryDapperAppService categoryDapperAppService)
     {
         _categoryAppService = categoryAppService;
         _pictureAppService = pictureAppService;
@@ -25,7 +25,7 @@ public class CategoryController : Controller
 
     public async Task<IActionResult> CategoryList(CancellationToken cancellationToken)
     {
-        var categories = await _categoryAppService.GetAllAsync(cancellationToken);
+        var categories = await _categoryDapperAppService.GetAllAsync(cancellationToken);
         return View(categories);
     }
 

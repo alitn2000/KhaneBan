@@ -41,12 +41,12 @@ public class CategoryService : ICategoryService
 
         => await _categoryRepository.DeleteAsync(id, cancellationToken);
 
-    public async Task<List<Category>> GetAllAsync(CancellationToken cancellationToken)
+    //public async Task<List<Category>> GetAllAsync(CancellationToken cancellationToken)
 
-        => await _categoryRepository.GetAllAsync(cancellationToken);
+    //    => await _categoryRepository.GetAllAsync(cancellationToken);
 
-    public async Task<List<Category>> GetAllWithDetailsAsync(CancellationToken cancellationToken)
-        => await _categoryRepository.GetAllWithDetailsAsync(cancellationToken);
+    //public async Task<List<Category>> GetAllWithDetailsAsync(CancellationToken cancellationToken)
+    //    => await _categoryRepository.GetAllWithDetailsAsync(cancellationToken);
 
     public async Task<Category> GetByIdAsync(int id, CancellationToken cancellationToken)
 

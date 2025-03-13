@@ -1,0 +1,277 @@
+﻿@using KhaneBan.Domain.Core.Entites.DTOs
+@using KhaneBan.Domain.Core.Enums
+@model ExpertProfileDTO
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+	<title>خانه بان - مشخصات کارشناس</title>
+	<link rel="icon" href="~/UsersTemplate/images/favicon.png">
+	<link rel="stylesheet" href="~/UsersTemplate/css/vendor/jquery-ui.min.css">
+	<link rel="stylesheet" href="~/UsersTemplatecss/vendor/slick.min.css">
+	<link rel="stylesheet" href="~/UsersTemplate/css/custom/leftbar-details.css">
+</head>
+
+<body>
+
+
+	<div class="btmbar-part">
+		<div class="container">
+			<ul class="btmbar-widget">
+				<li><a href="user-form.html"><i class="fas fa-user"></i></a></li>
+				<li><a href="#"><i class="fas fa-star"></i><sup>0</sup></a></li>
+				<li>
+					<a class="plus-btn" href="ad-post.html">
+						<i class="fas fa-plus"></i><span>
+							پست خود را تبلیغ کنید
+						</span>
+					</a>
+				</li>
+				<li><a href="#"><i class="fas fa-bell"></i><sup>0</sup></a></li>
+				<li><a href="#"><i class="fas fa-envelope"></i><sup>0</sup></a></li>
+			</ul>
+		</div>
+	</div>
+	<section class="single-banner">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="single-content">
+						<h2>جزئیات نوار راست</h2>
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="index.html">صفحه اصلی</a></li>
+							<li class="breadcrumb-item"><a href="leftbar-list.html">لیست نوار راست</a></li>
+							<li class="breadcrumb-item active" aria-current="page">جزئیات نوار راست</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="ad-details-part">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="ad-details-price">
+						<h5>23000 تومان</h5><span>/ توافقی</span><i class="flaticon-bargain"></i>
+					</div><button class="ad-details-number">
+						<i class="fas fa-phone-alt"></i><span>
+							برای نشان دادن شماره
+							کلیک کنید
+						</span>
+					</button>
+					<div class="ad-details-card">
+						<div class="ad-details-title">
+							<h5>اطلاعات کارشناس </h5>
+						</div>
+						<div class="ad-details-profile">
+							<div class="author-img">
+								<a href="#">
+									<img src="@Model.PicturePath" alt="avatar"><span class="author-status"></span>
+								</a>
+							</div>
+							<div class="author-intro">
+								<h4><a href="#">@Model.FirstName @Model.LastName</a></h4>
+
+								<p>
+									لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+									گرافیک است. .
+								</p>
+							</div>
+
+							<ul class="author-list">
+								<li>
+									<h6>مجموع پیشنهادات ثبت شده</h6>
+									<p>@Model.Suggestions.Count()</p>
+								</li>
+								<li>
+									<h6>مجموع پیشنهادات انجام شده</h6>
+									<p>@Model.Suggestions.Where(s => s.SuggestionStatus == StatusEnum.WorkPaidByCustomer).Count()</p>
+								</li>
+								@* <li> *@
+								@*     <h6>نشان </h6> *@
+								@*     <p>56</p> *@
+								@* </li> *@
+							</ul>
+							<div class="author-details">
+								<h6>عضو شده:@Model.RegisterDate.Year</h6>
+								<h6>آدرس: @Model.Address</h6>
+							</div>
+						</div>
+					</div>
+
+
+
+				
+				</div>
+				<div class="col-lg-8">
+					<div class="ad-details-card">
+						<div class="ad-details-breadcrumb">
+							<ol class="breadcrumb">
+								<li><span class="flat-badge sale">برای فروش ویژه</span></li>
+								<li class="breadcrumb-item"><a href="#">ویژگی </a></li>
+								<li class="breadcrumb-item active" aria-current="page">خانه </li>
+							</ol>
+						</div>
+						<div class="ad-details-heading">
+							<h2>
+								<a href="#">
+									لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+									طراحان گرافیک است.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+									استفاده از طراحان گرافیک است..
+								</a>
+							</h2>
+						</div>
+
+						@if (Model?.HomeServices != null && Model.HomeServices.Any())
+						{
+							<div class="ad-details-slider slider-arrow">
+								@foreach (var service in Model.HomeServices)
+								{
+									<div><img src="@service.PicturePath" alt="details"></div>
+								}
+							</div>
+
+							<div class="ad-thumb-slider">
+								@foreach (var service in Model.HomeServices)
+								{
+									<div><img src="@service.PicturePath" alt="details"></div>
+								}
+							</div>
+						}
+						else
+						{
+							<p>هیچ خدمتی ثبت نشده است.</p>
+						}
+
+					</div>
+					<div class="ad-details-card">
+						<div class="ad-details-title">
+							<h5>مشخصات </h5>
+						</div>
+						<div class="ad-details-specific">
+							<ul>
+								<li>
+									<h6>نام: </h6>
+									<p>@Model.FirstName</p>
+								</li>
+								<li>
+									<h6>نام خانوادگی:</h6>
+									<p>@Model.LastName </p>
+								</li>
+								<li>
+									<h6>شماره تماس:</h6>
+									<p>@Model.PhoneNumber </p>
+								</li>
+								<li>
+									<h6>ایمیل: </h6>
+									<p>@Model.Email</p>
+								</li>
+								<li>
+									<h6>استان:</h6>
+									<p>@Model.CityTitle </p>
+								</li>
+								<li>
+									<h6>وضعیت:</h6>
+									@if (Model.IsDeleted)
+									{
+										<p>غیرفعال</p>
+									}
+									else
+									{
+										<p>فعال</p>
+									}
+								</li>
+								<li>
+									<h6>نوع قیمت:</h6>
+									<p>قابل معامله </p>
+								</li>
+								<li>
+									<h6>نوع تبلیغ:</h6>
+									<p>ویژه</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="ad-details-card">
+						<div class="ad-details-title">
+							<h5>توضیخات </h5>
+						</div>
+						<div class="ad-details-descrip">
+							<p>
+								
+							<span>
+									دhbjhgiuiuhiuhui.
+								</span>
+							</p>
+						</div>
+					</div>
+					<div class="ad-details-card">
+						<div class="ad-details-title">
+							<h5>نظر (@Model.Ratings.Count())</h5>
+						</div>
+						<div class="ad-details-review">
+							<ul class="review-list">
+								@foreach (var rate in Model.Ratings)
+								{
+									<li class="review-item">
+										<div class="review-author">
+											<div class="review-avatar">
+
+												<img src="@rate.CustomerPicturePath"
+													 alt="review">
+
+											</div>
+											<div class="review-meta">
+												<h6><a href="#">@rate.CustomerUserName</a> <span>@rate.RegisterDate.Date</span></h6>
+												<ul>
+													
+
+													@for (int i = 1; i <= 5; i++)
+													{
+														if (i <= rate.Rate)
+														{
+															<li><i class="fas fa-star active"></i></li> 
+														}
+														else
+														{
+															<li><i class="fas fa-star"></i></li> 
+														}
+													}
+													<li>
+														<h5>@rate.Title</h5>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="review-content">
+											<p>@rate.Comment</p>
+										</div>
+									</li>
+								}
+
+							</ul>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<script src="~/UsersTemplate/js/vendor/jquery-1.12.4.min.js"></script>
+	<script src="~/UsersTemplate/js/vendor/popper.min.js"></script>
+	<script src="~/UsersTemplate/js/vendor/bootstrap.min.js"></script>
+	<script src="~/UsersTemplate/js/vendor/jquery-ui.min.js"></script>
+	<script src="~/UsersTemplate/js/custom/price-range.js"></script>
+	<script src="~/UsersTemplate/js/vendor/slick.min.js"></script>
+	<script src="~/UsersTemplate/js/custom/slick.js"></script>
+	<script src="~/UsersTemplate/js/custom/main.js"></script>
+</body>
+
+</html>

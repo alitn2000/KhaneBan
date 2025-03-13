@@ -1,5 +1,6 @@
 ﻿using KhaneBan.Domain.Core.Contracts.AppService;
 using KhaneBan.Domain.Core.Contracts.Service;
+using KhaneBan.Domain.Core.Entites.DTOs;
 using KhaneBan.Domain.Core.Entites.User;
 using KhaneBan.Domain.Services;
 using Microsoft.AspNetCore.Identity;
@@ -46,4 +47,7 @@ public class ExpertAppService : IExpertAppService
 
     public Task<IdentityResult> UpdateAsync(User user)
         => _expertService.UpdateAsync(user);
+
+    public async Task<ExpertProfileDTO?> GetExpertProfileByIdAsync(int id, CancellationToken cancellationToken)
+        => await _expertService.GetExpertProfileByIdAsync(id, cancellationToken);
 }

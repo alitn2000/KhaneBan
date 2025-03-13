@@ -103,7 +103,7 @@
                                     <li><a class="dropdown-link" href="cities.html">آگهی توسط شهرها</a></li>
                                     @* 									<li><a class="dropdown-link" href="price.html">قیمت گذاری</a></li>
 									<li><a class="dropdown-link" href="user-form.html">فرم کاربر</a></li> *@
-                                    <li><a asp-controller="َAccount" asp-action="Logout" class="dropdown-link">خروج</a></li>
+                                    <li><a asp-controller="Account" asp-action="Logout" class="dropdown-link">خروج</a></li>
                                 </ul>
                             </li>
                             <li class="navbar-item navbar-dropdown">
@@ -173,7 +173,7 @@
 									{
 										<tr>
 											<td>@sug.Id</td>
-											<td>@sug.Expert.User.FirstName @sug.Expert.User.LastName </td>
+                                            <td><a asp-controller="ExpertProfile" asp-action="ExpertDetail" asp-route-expertId=@sug.Expert.User.Id>@sug.Expert.User.FirstName @sug.Expert.User.LastName </a></td>
 											<td>@sug.Price</td>
 											<td>@sug.RegisterDate</td>
 											<td>@sug.StartDate</td>
@@ -192,7 +192,7 @@
 												}
 											</td>
 											<td>
-												<a asp-action="SuggestionsDetail" asp-route-id="@sug.RequestId" class="btn btn-primary">جزئیات پیشنهاد</a>
+												<a asp-action="SuggestionsDetail" asp-route-id="@sug.Id" class="btn btn-primary">جزئیات پیشنهاد</a>
 
 												@if (!winner && !done && sug.SuggestionStatus != StatusEnum.WorkPaidByCustomer &&
 																				sug.SuggestionStatus != StatusEnum.WorkDoneByExpert &&

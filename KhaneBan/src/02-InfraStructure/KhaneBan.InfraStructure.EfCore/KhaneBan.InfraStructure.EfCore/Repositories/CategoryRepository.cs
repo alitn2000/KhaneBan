@@ -25,35 +25,35 @@ public class CategoryRepository : ICategoryRepository
         _memoryCach = memoryCach;
     }
 
-    public async Task<List<Category>> GetAllAsync(CancellationToken cancellationToken)
-    {
-        var categories = _memoryCach.Get<List<Category>>("GetAllAsync");
-        if(categories is null)
-        {
-           categories = await _context.Categories.ToListAsync(cancellationToken);
-        }
-        _memoryCach.Set("GetAllAsync", categories, TimeSpan.FromMinutes(1));
+    //public async Task<List<Category>> GetAllAsync(CancellationToken cancellationToken)
+    //{
+    //    var categories = _memoryCach.Get<List<Category>>("GetAllAsync");
+    //    if(categories is null)
+    //    {
+    //       categories = await _context.Categories.ToListAsync(cancellationToken);
+    //    }
+    //    _memoryCach.Set("GetAllAsync", categories, TimeSpan.FromMinutes(1));
 
-        return categories;
-    }
+    //    return categories;
+    //}
 
 
-    public async Task<List<Category>> GetAllWithDetailsAsync(CancellationToken cancellationToken)
-    {
-        var categories = _memoryCach.Get<List<Category>>("GetAllWithDetailsAsync");
-        if (categories is null)
-        {
-            categories= await _context.Categories
-         .Where(c => !c.IsDeleted)
-         .Include(c => c.SubCategories.Where(s => !s.IsDeleted))
-         .ToListAsync(cancellationToken);
+    //public async Task<List<Category>> GetAllWithDetailsAsync(CancellationToken cancellationToken)
+    //{
+    //    var categories = _memoryCach.Get<List<Category>>("GetAllWithDetailsAsync");
+    //    if (categories is null)
+    //    {
+    //        categories= await _context.Categories
+    //     .Where(c => !c.IsDeleted)
+    //     .Include(c => c.SubCategories.Where(s => !s.IsDeleted))
+    //     .ToListAsync(cancellationToken);
 
-        }
+    //    }
 
-        _memoryCach.Set("GetAllWithDetailsAsync", categories, TimeSpan.FromMinutes(1));
+    //    _memoryCach.Set("GetAllWithDetailsAsync", categories, TimeSpan.FromMinutes(1));
  
-        return categories;
-    }
+    //    return categories;
+    //}
 
 
 
@@ -67,7 +67,6 @@ public class CategoryRepository : ICategoryRepository
 
         => await _context
              .Categories
-
              .Include(c => c.SubCategories)
              .ThenInclude(c => c.HomeServices)
              .FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
