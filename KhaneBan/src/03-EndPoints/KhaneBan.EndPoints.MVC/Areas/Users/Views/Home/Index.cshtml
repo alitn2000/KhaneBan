@@ -2,26 +2,26 @@
 @model List<Category>
 <head>
 
-    <link rel="stylesheet" href="~/UsersTemplate/css/custom/category-list.css">
+	<link rel="stylesheet" href="~/UsersTemplate/css/custom/category-list.css">
 
-    <style>
-        .row {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: stretch;
-        }
+	<style>
+		.row {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: stretch;
+		}
 
-        .category-card {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            height: 100%;
-        }
+		.category-card {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 100%;
+		}
 
-        .category-list {
-            flex-grow: 1;
-        }
-    </style>
+		.category-list {
+		flex-grow: 1;
+		}
+	</style>
 
 
 
@@ -37,11 +37,22 @@
 					<ul class="header-widget">
 						<li><button type="button" class="header-menu"><i class="fas fa-align-left"></i></button></li>
 						<li><a asp-area="Users" asp-controller="Home" asp-action="Index" class="header-logo"><img src="~/UsersTemplate/images/logo.png" alt="logo"></a></li>
-						<li>
-							<a href="user-form.html" class="header-user">
-								<i class="fas fa-user"></i><span>ورود</span>
-							</a>
-						</li>
+						@if (User.Identity.IsAuthenticated)
+						{
+							<li>
+								<a asp-area="Users" asp-controller="Account" asp-action="Logout" class="header-user">
+									<i class="fas fa-user"></i><span>خروج</span>
+								</a>
+							</li>
+						}
+						else
+						{
+							<li>
+								<a asp-area="Users" asp-controller="Account" asp-action="Login" class="header-user">
+									<i class="fas fa-user"></i><span>ورود</span>
+								</a>
+							</li>
+						}
 						<li><button type="button" class="header-src"><i class="fas fa-search"></i></button></li>
 					</ul>
 				</div>
@@ -55,17 +66,17 @@
 			<div class="sidebar-header">
 				<a asp-area="Users" asp-controller="Home" asp-action="Index" class="sidebar-logo">
 					<img src="~/UsersTemplate/images/logo.png"
-						 alt="logo">
+					alt="logo">
 				</a><button class="sidebar-cross"><i class="fas fa-times"></i></button>
 			</div>
 			<div class="sidebar-content">
 				<div class="sidebar-profile">
 					<a href="#" class="sidebar-avatar">
 						<img src="~/UsersTemplate/images/avatar/01.jpg"
-							 alt="avatar">
+						alt="avatar">
 					</a>
 					<h4><a href="#" class="sidebar-name">جکسون هندرسون</a></h4><a href="ad-post.html"
-																   class="btn btn-inline sidebar-btn">
+					class="btn btn-inline sidebar-btn">
 						<i class="fas fa-plus-circle"></i><span>
 							تبلیغ خود را ارسال
 							کنید
@@ -107,7 +118,15 @@
 								</a>
 								<ul class="dropdown-list">
 									<li><a asp-controller="Home" asp-action="Index" class="dropdown-link">صفحه اصلی</a></li>
-									<li><a asp-controller="Profile" asp-action="Index" class="dropdown-link">پروفایل</a></li>
+									@if (User.IsInRole("Expert"))
+									{
+										<li><a asp-controller="ExpertProfile" asp-action="Index" class="dropdown-link">پروفایل</a></li>
+									}
+									else
+									{
+										<li><a asp-controller="Profile" asp-action="Index" class="dropdown-link">پروفایل</a></li>
+									}
+									
 									<li><a asp-controller="Account" asp-action="Login" class="dropdown-link">ورود</a></li>
 									<li><a class="dropdown-link" href="cities.html">آگهی توسط شهرها</a></li>
 									@* 									<li><a class="dropdown-link" href="price.html">قیمت گذاری</a></li>

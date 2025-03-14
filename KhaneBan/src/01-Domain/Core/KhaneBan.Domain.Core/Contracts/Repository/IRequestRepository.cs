@@ -28,5 +28,6 @@ public interface IRequestRepository
     Task<bool> UpdateStatus(Request request, StatusEnum newStatus, CancellationToken cancellationToken);
     Task<bool> SetWinner(Request request, int suggestionId, CancellationToken cancellationToken);
     Task<int> GetPaidByCustomerOrderCountAsync(int userId, CancellationToken cancellationToken);
-
+    Task<int?> GetWinnerExpertIdAsync(int requestId, CancellationToken cancellationToken);
+    Task<List<Request>> GetRequestsByHomeServices(List<int> homeServiceIds, int cityId, CancellationToken cancellationToken);
 }

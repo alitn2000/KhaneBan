@@ -91,6 +91,17 @@ public class RequestRepository : IRequestRepository
            .Include(r => r.Suggestions)
            .FirstOrDefaultAsync(r => r.CustomerId == customerId && r.Id == requestId, cancellationToken);
 
+    public async Task<int?> GetWinnerExpertIdAsync(int requestId, CancellationToken cancellationToken)
+    {
+        return await _appDbContext.Requests
+            .Where(r => r.Id == requestId)
+            .Select(r => r.Suggestions
+                .Where(s => s.Id == r.WinnerId)
+                .Select(s => (int?)s.ExpertId)
+                .FirstOrDefault())
+            .FirstOrDefaultAsync(cancellationToken);
+    }
+
     public async Task ChangeStatus(int requestId, StatusEnum status, CancellationToken cancellationToken)
     {
         try
@@ -243,6 +254,13 @@ public class RequestRepository : IRequestRepository
         return await _appDbContext.Requests
         .Include(x => x.Customer.UserId == userId)
         .CountAsync(r => r.RequestStatus == StatusEnum.WorkPaidByCustomer, cancellationToken);
+    }
+
+    public async Task<List<Request>> GetRequestsByHomeServices(List<int> homeServiceIds, int cityId, CancellationToken cancellationToken)
+    {
+        return await _appDbContext.Requests
+            .Where(x => homeServiceIds.Contains(x.HomeServiceId) && x.CityId == cityId && x.RequestStatus == StatusEnum.WatingExpertOffer)
+            .ToListAsync(cancellationToken);
     }
 
 }

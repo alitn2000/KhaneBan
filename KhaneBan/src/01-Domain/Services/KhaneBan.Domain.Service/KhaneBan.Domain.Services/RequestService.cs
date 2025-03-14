@@ -94,4 +94,10 @@ public class RequestService : IRequestService
 
     public async Task<int> GetPaidByCustomerOrderCountAsync(int userId, CancellationToken cancellationToken)
         => await _requestRepository.GetPaidByCustomerOrderCountAsync(userId, cancellationToken);
+
+    public async Task<int?> GetWinnerExpertIdAsync(int requestId, CancellationToken cancellationToken)
+        => await _requestRepository.GetWinnerExpertIdAsync(requestId, cancellationToken);
+
+    public async Task<List<Request>> GetRequestsByHomeServices(List<int> homeServiceIds, int cityId, CancellationToken cancellationToken)
+        => await _requestRepository.GetRequestsByHomeServices(homeServiceIds, cityId, cancellationToken);
 }

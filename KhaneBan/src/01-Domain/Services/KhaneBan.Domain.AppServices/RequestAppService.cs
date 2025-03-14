@@ -45,10 +45,16 @@ public class RequestAppService : IRequestAppService
     public async Task<Request?> GetRequestByIdAsync(int requestId, CancellationToken cancellationToken)
         => await _requestService.GetRequestByIdAsync(requestId, cancellationToken);
 
+    public async Task<List<Request>> GetRequestsByHomeServices(List<int> homeServiceIds, int cityId, CancellationToken cancellationToken)
+        => await _requestService.GetRequestsByHomeServices(homeServiceIds, cityId, cancellationToken);
+
     public async Task<List<Request>> GetRequestsInfo(CancellationToken cancellationToken)
     {
         return await _requestService.GetRequestsInfo(cancellationToken);
     }
+
+    public async Task<int?> GetWinnerExpertIdAsync(int requestId, CancellationToken cancellationToken)
+        => await _requestService.GetWinnerExpertIdAsync(requestId, cancellationToken);
 
     public async Task<Result> SetWinner(int requestId, int suggestionId, CancellationToken cancellationToken)
         => await _requestService.SetWinner(requestId, suggestionId, cancellationToken);

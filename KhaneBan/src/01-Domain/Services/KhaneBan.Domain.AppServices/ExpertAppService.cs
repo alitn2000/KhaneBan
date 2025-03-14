@@ -36,8 +36,8 @@ public class ExpertAppService : IExpertAppService
     public async Task<Expert?> GetExpertInfoByIdAsync(int id, CancellationToken cancellationToken)
         => await _expertService.GetExpertInfoByIdAsync(id, cancellationToken);
 
-    public async Task<bool> UpdateAsync(Expert expert, CancellationToken cancellationToken)
-       => await _expertService.UpdateAsync(expert, cancellationToken);
+    public async Task<bool> UpdateAsync(Expert expert, List<int> selectedHomeServiceIds, CancellationToken cancellationToken)
+       => await _expertService.UpdateAsync(expert, selectedHomeServiceIds, cancellationToken);
 
     public async Task<bool> ActiveExpertAsync(int userId, CancellationToken cancellationToken)
         => await _expertService.ActiveExpertAsync(userId, cancellationToken);
@@ -50,4 +50,10 @@ public class ExpertAppService : IExpertAppService
 
     public async Task<ExpertProfileDTO?> GetExpertProfileByIdAsync(int id, CancellationToken cancellationToken)
         => await _expertService.GetExpertProfileByIdAsync(id, cancellationToken);
+
+    public async Task<Expert?> GetByIdAsync(int id, CancellationToken cancellationToken)
+        => await _expertService.GetByIdAsync(id, cancellationToken);
+
+    public async Task<Expert?> GetExpertByIdWithDetailsAsync(int id, CancellationToken cancellationToken)
+        => await _expertService.GetExpertByIdWithDetailsAsync(id, cancellationToken);
 }

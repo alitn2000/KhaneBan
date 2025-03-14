@@ -1,5 +1,25 @@
 [
   {
+    "ContainingType": "KhaneBan.EndPoints.API.Controllers.RequestController",
+    "Method": "RequestList",
+    "RelativePath": "api/Request/List",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[KhaneBan.Domain.Core.Entites.UserRequests.Request, KhaneBan.Domain.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "KhaneBan.EndPoints.API.Controllers.CategoryController",
     "Method": "CategoryList",
     "RelativePath": "Category/List",

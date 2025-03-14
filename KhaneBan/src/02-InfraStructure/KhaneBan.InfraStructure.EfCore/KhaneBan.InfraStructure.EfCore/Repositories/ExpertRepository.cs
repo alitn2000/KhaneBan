@@ -52,6 +52,17 @@ public class ExpertRepository :   IExpertRepository
         .ThenInclude(e => e.Category)
         .Include(e => e.Suggestions)
         .ToListAsync(cancellationToken);
+    public async Task<Expert?> GetExpertByIdWithDetailsAsync(int id, CancellationToken cancellationToken)
+
+    => await _appDbContext
+    .Experts
+    .Include(x => x.User)
+    .ThenInclude(x => x.City)
+    .Include(x => x.HomeServices)
+    .ThenInclude(x => x.SubCategory)
+    .ThenInclude(x => x.Category)
+    .Include(x => x.Suggestions)
+    .FirstOrDefaultAsync(x => x.UserId == id, cancellationToken);
 
     public async Task<ExpertProfileDTO?> GetExpertProfileByIdAsync(int id, CancellationToken cancellationToken)
     {
@@ -113,7 +124,9 @@ public class ExpertRepository :   IExpertRepository
        => await _appDbContext
        .Experts.AsNoTracking().CountAsync(cancellationToken);
 
+    public async Task<Expert?> GetByIdAsync(int id, CancellationToken cancellationToken)
 
+         => await _appDbContext.Experts.Include(x => x.User).FirstOrDefaultAsync(x => x.UserId == id, cancellationToken);     
 
     public async Task<bool> CreateAsync(Expert expert, CancellationToken cancellationToken)
     {
@@ -176,14 +189,28 @@ public class ExpertRepository :   IExpertRepository
         }
     }
 
-    public async Task<bool> UpdateAsync(Expert expert, CancellationToken cancellationToken)
+   
+
+    public async Task<bool> UpdateAsync(Expert expert, List<int> selectedHomeServiceIds, CancellationToken cancellationToken)
     {
         try
         {
-            var existExpert = await _appDbContext.Experts.Include(a => a.User).FirstOrDefaultAsync(c => c.Id == expert.Id, cancellationToken);
+            if (expert == null || expert.UserId == null)
+            {
+                _logger.LogError("Expert or Expert.UserId is null.");
+                return false;
+            }
+
+            var existExpert = await _appDbContext.Experts
+                .Include(x => x.User)
+                .Include(x => x.HomeServices)
+                .FirstOrDefaultAsync(x => x.UserId == expert.UserId, cancellationToken);
 
             if (existExpert == null)
+            {
+                _logger.LogWarning($"Expert with UserId {expert.UserId} not found.");
                 return false;
+            }
 
             existExpert.User.Address = expert.User.Address;
             existExpert.User.FirstName = expert.User.FirstName;
@@ -194,14 +221,44 @@ public class ExpertRepository :   IExpertRepository
             existExpert.User.PicturePath = expert.User.PicturePath;
             existExpert.User.PhoneNumber = expert.User.PhoneNumber;
 
+            if (selectedHomeServiceIds != null)
+            {
+                if (existExpert.HomeServices != null)
+                {
+                    existExpert.HomeServices.RemoveAll(hs => !selectedHomeServiceIds.Contains(hs.Id));
+
+                    var newHomeServices = await _appDbContext.HomeServices
+                        .Where(hs => selectedHomeServiceIds.Contains(hs.Id))
+                        .ToListAsync(cancellationToken);
+
+                    foreach (var newHomeService in newHomeServices)
+                    {
+                        if (!existExpert.HomeServices.Any(hs => hs.Id == newHomeService.Id))
+                        {
+                            existExpert.HomeServices.Add(newHomeService);
+                        }
+                    }
+                }
+                else
+                {
+                    _logger.LogWarning("existExpert.HomeServices is null.");
+                }
+
+            }
+            else if (existExpert.HomeServices != null)
+            {
+                existExpert.HomeServices.Clear();
+            }
+
             await _appDbContext.SaveChangesAsync(cancellationToken);
-            _logger.LogInformation(" update expert Succesfully");
+            _logger.LogInformation("Expert updated successfully.");
             return true;
         }
         catch (Exception ex)
         {
-            _logger.LogError("Error in expert repository=======================>>>>>>>>>>>{ErrorMessage}", ex.Message);
+            _logger.LogError($"Error updating expert: {ex.Message}");
             return false;
         }
     }
+
 }

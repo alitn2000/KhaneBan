@@ -20,6 +20,9 @@ public class SuggestionAppService : ISuggestionAppService
         _suggestionService = suggestionService;
     }
 
+    public Task<bool> CreateAsync(Suggestion suggestion, CancellationToken cancellationToken)
+        => _suggestionService.CreateAsync(suggestion, cancellationToken);
+
     public async Task<Suggestion?> GetByIdAsync(int suggestionId, CancellationToken cancellationToken)
         => await _suggestionService.GetByIdAsync(suggestionId, cancellationToken);
 

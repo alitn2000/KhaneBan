@@ -18,7 +18,7 @@ public class HomeServiceController : Controller
     public async Task<IActionResult> HomeServiceList(int subCategoryId, CancellationToken cancellationToken)
     {
 
-        var homeServices = await _homeServiceDapperAppService.GetHomeServicesBySubCategoryId(subCategoryId, cancellationToken);
+        var homeServices = await _homeServiceAppService.GetHomeServicesBySubCategoryId(subCategoryId, cancellationToken);
 
         if (homeServices == null || !homeServices.Any())
         {

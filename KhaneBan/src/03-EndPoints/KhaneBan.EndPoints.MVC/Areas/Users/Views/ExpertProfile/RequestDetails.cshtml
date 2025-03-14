@@ -1,0 +1,287 @@
+﻿
+@using FrameWork
+@using KhaneBan.Domain.Core.Entites.UserRequests
+@using KhaneBan.Domain.Core.Enums
+@model Request
+
+
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+<head>
+	<title>جزئیات ریکوئست</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 20px;
+		}
+
+		h1 {
+			color: #333;
+			margin-bottom: 20px;
+		}
+
+		.detail-item {
+			margin-bottom: 15px;
+			border-bottom: 1px solid #eee;
+			padding-bottom: 10px;
+		}
+
+			.detail-item strong {
+				display: block;
+				margin-bottom: 5px;
+				color: #555;
+			}
+
+		.image-container {
+			display: flex;
+			flex-wrap: wrap;
+			margin-top: 10px;
+		}
+
+			.image-container img {
+				margin: 10px;
+				max-width: 200px;
+				height: auto;
+				border: 1px solid #ddd;
+				border-radius: 4px;
+			}
+
+		.back-link {
+			display: inline-block;
+			margin-top: 20px;
+			padding: 10px 20px;
+			background-color: #007bff;
+			color: white;
+			text-decoration: none;
+			border-radius: 5px;
+		}
+	</style>
+
+
+	<title>جزئیات ریکوئست</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 20px;
+		}
+
+		table {
+			width: 100%;
+			border-collapse: collapse;
+			margin-top: 20px;
+		}
+
+		th, td {
+			border: 1px solid #ddd;
+			padding: 10px;
+			text-align: center;
+		}
+
+		th {
+			background-color: #f4f4f4;
+		}
+
+		.image-container img {
+			max-width: 100px;
+			height: auto;
+			border: 1px solid #ddd;
+			border-radius: 4px;
+		}
+
+		.back-link {
+			display: inline-block;
+			margin-top: 20px;
+			padding: 10px 20px;
+			background-color: #007bff;
+			color: white;
+			text-decoration: none;
+			border-radius: 5px;
+		}
+	</style>
+</head>
+<body>
+
+
+
+
+	<header class="header-part">
+		<div class="container">
+			<div class="header-content">
+				<div class="header-left">
+					<ul class="header-widget">
+						<li><button type="button" class="header-menu"><i class="fas fa-align-left"></i></button></li>
+						<li><a asp-area="Users" asp-controller="Home" asp-action="Index" class="header-logo"><img src="~/UsersTemplate/images/logo.png" alt="logo"></a></li>
+						<li>
+							<a href="user-form.html" class="header-user">
+
+							</a>
+						</li>
+						<li><button type="button" class="header-src"><i class="fas fa-search"></i></button></li>
+					</ul>
+				</div>
+
+
+			</div>
+		</div>
+	</header>
+	<div class="sidebar-part">
+		<div class="sidebar-body">
+			<div class="sidebar-header">
+				<a asp-area="Users" asp-controller="Home" asp-action="Index" class="sidebar-logo">
+					<img src="~/UsersTemplate/images/logo.png"
+						 alt="logo">
+				</a><button class="sidebar-cross"><i class="fas fa-times"></i></button>
+			</div>
+			<div class="sidebar-content">
+				<div class="sidebar-profile">
+					<a href="#" class="sidebar-avatar">
+						<img src="~/UsersTemplate/images/avatar/01.jpg"
+							 alt="avatar">
+					</a>
+					<h4><a href="#" class="sidebar-name">جکسون هندرسون</a></h4><a href="ad-post.html"
+																   class="btn btn-inline sidebar-btn">
+						<i class="fas fa-plus-circle"></i><span>
+							تبلیغ خود را ارسال
+							کنید
+						</span>
+					</a>
+				</div>
+				<div class="sidebar-menu">
+					<ul class="nav nav-tabs">
+						<li><a href="#main-menu" class="nav-link active" data-toggle="tab">منوی اصلی </a></li>
+
+					</ul>
+					<div class="tab-pane active" id="main-menu">
+						<ul class="navbar-list">
+
+							<li class="navbar-item navbar-dropdown">
+								<a class="navbar-link" href="#">
+									<span>
+										دسته
+										بندی
+									</span><i class="fas fa-plus"></i>
+								</a>
+								<ul class="dropdown-list">
+									<li><a class="dropdown-link" href="category-list.html">تمیزکاری</a></li>
+									<li><a class="dropdown-link" href="category-list.html">ساختمان</a></li>
+									<li><a class="dropdown-link" href="category-list.html">تعمیرات اشیا</a></li>
+									<li><a class="dropdown-link" href="category-list.html">اسباب کشی و حمل بار</a></li>
+									<li><a class="dropdown-link" href="category-list.html">خودرو</a></li>
+									<li><a class="dropdown-link" href="category-list.html">سلامت و زیبایی</a></li>
+									<li><a class="dropdown-link" href="category-list.html">سازمان ها و مجتمع ها</a></li>
+									<li><a class="dropdown-link" href="category-list.html">سایر</a></li>
+
+								</ul>
+							</li>
+
+
+							<li class="navbar-item navbar-dropdown">
+								<a class="navbar-link" href="#">
+									<span>صفحات</span><i class="fas fa-plus"></i>
+								</a>
+								<ul class="dropdown-list">
+									<li><a asp-area="Users" asp-controller="Home" asp-action="Index" class="dropdown-link">صفحه اصلی</a></li>
+									<li><a asp-area="Users" asp-controller="ExpertProfile" asp-action="Index" class="dropdown-link">پروفایل کارشناس</a></li>
+									<li><a asp-area="Users" asp-controller="Account" asp-action="Login" class="dropdown-link">ورود</a></li>
+									<li><a asp-area="Users" asp-controller="Account" asp-action="Logout" class="dropdown-link">خروج</a></li>
+
+								</ul>
+							</li>
+							<li class="navbar-item navbar-dropdown">
+								<a class="navbar-link" href="#">
+									<span>
+										وبلاگ
+									</span><i class="fas fa-plus"></i>
+								</a>
+								<ul class="dropdown-list">
+									<li><a class="dropdown-link" href="blog-list.html">وبلاگ لیستی </a></li>
+									<li><a class="dropdown-link" href="blog-details.html">جزئیات وبلاگ</a></li>
+								</ul>
+							</li>
+							<li class="navbar-item"><a class="navbar-link" href="contact.html">تماس با ما</a></li>
+						</ul>
+					</div>
+
+				</div>
+				<div class="sidebar-footer">
+					<p>کلیه حقوق محفوظ است توسط <a href="#"> کلاسیک ادز </a></p>
+					<p>طراحی توسط <a href="https://www.rtl-theme.com/author/tn_plugin">جعفر عباسی خان </a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<section class="single-banner">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="single-content">
+						<h2>فهرست مقایسه تبلیغ </h2>
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="index.html">صفحه اصلی</a></li>
+							<li class="breadcrumb-item"><a href="leftbar-list.html">لیست نوار راست</a></li>
+							<li class="breadcrumb-item active" aria-current="page">مقایسه </li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<h1>جزئیات ریکوئست</h1>
+
+	<table>
+		<thead>
+			<tr>
+				<th>شناسه سفارش</th>
+				<th>تصاویر</th>
+				<th>وضعیت</th>
+				<th>توضیحات</th>
+				<th>تاریخ و ساعت ثبت</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>@Model.Id</td>
+				<td>
+					@if (Model.RequestImages != null && Model.RequestImages.Any())
+					{
+						<div class="image-container">
+							@foreach (var imagePath in Model.RequestImages)
+							{
+								<img src="@imagePath" alt="تصویر ریکوئست" />
+							}
+						</div>
+					}
+					else
+					{
+						<p>تصویری یافت نشد</p>
+					}
+				</td>
+				<td>
+					@if (Model.RequestStatus != null)
+					{
+						<span class="badge
+							  @(Model.RequestStatus ==StatusEnum.WatingExpertOffer ? "badge-secondary" :
+								Model.RequestStatus == StatusEnum.WaitingCustomerToChoose ? "badge-warning" :
+								Model.RequestStatus == StatusEnum.WorkStarted ? "badge-primary" :
+								Model.RequestStatus == StatusEnum.WorkDoneByExpert ? "badge-success" :
+								Model.RequestStatus == StatusEnum.Canceled ? "badge-danger" :
+								Model.RequestStatus == StatusEnum.WorkPaidByCustomer ? "badge-success" : "badge-light")">
+							@Model.RequestStatus.GetEnumDisplayName()
+						</span>
+					}
+				</td>
+				<td>@Model.Description</td>
+				<td>@Model.RequestedDate</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<a asp-action="RequestList" class="back-link">بازگشت به لیست</a>
+</body>
+</html>

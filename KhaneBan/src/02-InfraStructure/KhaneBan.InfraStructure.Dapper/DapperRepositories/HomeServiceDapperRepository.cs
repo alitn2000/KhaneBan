@@ -28,14 +28,14 @@ public class HomeServiceDapperRepository : IHomeServiceDapperRepository
         }
     }
 
-    public async Task<List<HomeService>> GetHomeServicesBySubCategoryId(int subCategoryId, CancellationToken cancellationToken)
-    {
-        var query = "SELECT hs.* FROM HomeServices hs JOIN SubCategories sc ON hs.SubCategoryId = sc.Id JOIN Categories c ON sc.CategoryId = c.Id WHERE hs.SubCategoryId = @subCategoryId;";
-        var connection = _context.CreateConnection();
-        using (connection)
-        {
-            var homeServices = await connection.QueryAsync<HomeService>(query, cancellationToken);
-            return homeServices.ToList();
-        }
-    }
+    //public async Task<List<HomeService>> GetHomeServicesBySubCategoryId(int subCategoryId, CancellationToken cancellationToken)
+    //{
+    //    var query = "SELECT hs.* FROM HomeServices hs JOIN SubCategories sc ON hs.SubCategoryId = sc.Id JOIN Categories c ON sc.CategoryId = c.Id WHERE hs.SubCategoryId = @subCategoryId;";
+    //    var connection = _context.CreateConnection();
+    //    using (connection)
+    //    {
+    //        var homeServices = await connection.QueryAsync<HomeService>(query, new { subCategoryId });
+    //        return homeServices.ToList();
+    //    }
+    //}
 }

@@ -30,15 +30,38 @@ public class CategoryDapperRepository : ICategoryDapperRepository
         }
     }
 
-    public async Task<List<Category>> GetAllWithDetailsAsync(CancellationToken cancellationToken)
-    {
-        var query = "SELECT c.Id AS CategoryId, c.Title AS CategoryTitle, c.IsDeleted AS CategoryIsDeleted, sc.Id AS SubCategoryId, sc.Title AS SubCategoryTitle, sc.IsDeleted AS SubCategoryIsDeleted FROM Categories c LEFT JOIN SubCategories sc ON c.Id = sc.CategoryId WHERE c.IsDeleted = 0 AND (sc.Id IS NULL OR sc.IsDeleted = 0);";
-        var connection = _context.CreateConnection();
-        using (connection)
-        {
-            var categories = await connection.QueryAsync<Category>(query, cancellationToken); ;
-            return categories.ToList();
-        }
+    //public async Task<List<Category>> GetAllWithDetailsAsync(CancellationToken cancellationToken)
+    //{
+    //    var query = "SELECT \r\n    c.Id, c.Title, c.IsDeleted, \r\n    sc.Id, sc.Title, sc.IsDeleted \r\nFROM Categories c  \r\nJOIN SubCategories sc ON c.Id = sc.CategoryId  \r\nWHERE c.IsDeleted = 0 AND sc.IsDeleted = 0;";
+    //    var connection = _context.CreateConnection();
+    //    using (connection)
+    //    {
+    //        var categoryDictionary = new Dictionary<int, Category>();
 
-    }
+    //        var categoriesWithSubCategories = connection.Query<Category, SubCategory, Category>(
+    //            query,
+    //            (category, subCategory) =>
+    //            {
+    //                if (!categoryDictionary.TryGetValue(category.Id, out var currentCategory))
+    //                {
+    //                    currentCategory = category;
+    //                    currentCategory.SubCategories = new List<SubCategory>();
+    //                    categoryDictionary.Add(currentCategory.Id, currentCategory);
+    //                }
+
+    //                if (subCategory != null)
+    //                {
+    //                    currentCategory.SubCategories.Add(subCategory);
+    //                }
+
+    //                return currentCategory;
+    //            },
+    //            splitOn: "Id"
+    //        ).Distinct().ToList();
+
+    //        // OUTPUT
+    //        return categoriesWithSubCategories;
+    //    }
+
+    //}
 }

@@ -140,6 +140,22 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcnNcVmlld3NcRXhwZXJ0UHJvZmlsZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/c\#/KhaneBan/KhaneBan/src/03-EndPoints/KhaneBan.EndPoints.MVC/Areas/Users/Views/ExpertProfile/RequestDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcnNcVmlld3NcRXhwZXJ0UHJvZmlsZVxSZXF1ZXN0RGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/c\#/KhaneBan/KhaneBan/src/03-EndPoints/KhaneBan.EndPoints.MVC/Areas/Users/Views/ExpertProfile/SendSuggestion.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcnNcVmlld3NcRXhwZXJ0UHJvZmlsZVxTZW5kU3VnZ2VzdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/c\#/KhaneBan/KhaneBan/src/03-EndPoints/KhaneBan.EndPoints.MVC/Areas/Users/Views/ExpertProfile/ShowRequests.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcnNcVmlld3NcRXhwZXJ0UHJvZmlsZVxTaG93UmVxdWVzdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/c\#/KhaneBan/KhaneBan/src/03-EndPoints/KhaneBan.EndPoints.MVC/Areas/Users/Views/ExpertProfile/UpdateExpertProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcnNcVmlld3NcRXhwZXJ0UHJvZmlsZVxVcGRhdGVFeHBlcnRQcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/c\#/KhaneBan/KhaneBan/src/03-EndPoints/KhaneBan.EndPoints.MVC/Areas/Users/Views/HomeService/HomeServiceList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcnNcVmlld3NcSG9tZVNlcnZpY2VcSG9tZVNlcnZpY2VMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

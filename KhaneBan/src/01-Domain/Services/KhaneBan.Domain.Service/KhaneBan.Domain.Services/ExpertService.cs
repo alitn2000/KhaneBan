@@ -84,11 +84,17 @@ namespace KhaneBan.Domain.Services
 
           => await _expertRepository.GetExpertInfoByIdAsync(id, cancellationToken);
 
-        public async Task<bool> UpdateAsync(Expert expert, CancellationToken cancellationToken)
+        public async Task<bool> UpdateAsync(Expert expert, List<int> selectedHomeServiceIds, CancellationToken cancellationToken)
 
-          => await _expertRepository.UpdateAsync(expert, cancellationToken);
+          => await _expertRepository.UpdateAsync(expert, selectedHomeServiceIds, cancellationToken);
 
         public async Task<ExpertProfileDTO?> GetExpertProfileByIdAsync(int id, CancellationToken cancellationToken)
             => await _expertRepository.GetExpertProfileByIdAsync(id, cancellationToken);
+
+        public async Task<Expert?> GetByIdAsync(int id, CancellationToken cancellationToken)
+            => await _expertRepository.GetByIdAsync(id, cancellationToken);
+
+        public async Task<Expert?> GetExpertByIdWithDetailsAsync(int id, CancellationToken cancellationToken)
+            => await _expertRepository.GetExpertByIdWithDetailsAsync(id, cancellationToken);
     }
 }

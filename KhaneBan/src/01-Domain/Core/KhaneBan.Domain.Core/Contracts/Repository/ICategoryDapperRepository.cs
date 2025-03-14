@@ -10,5 +10,5 @@ namespace KhaneBan.Domain.Core.Contracts.Repository;
 public interface ICategoryDapperRepository
 {
     Task<List<Category>> GetAllAsync(CancellationToken cancellationToken);
-    Task<List<Category>> GetAllWithDetailsAsync(CancellationToken cancellationToken);
+    //Task<List<Category>> GetAllWithDetailsAsync(CancellationToken cancellationToken);
 }

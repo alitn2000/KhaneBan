@@ -21,5 +21,6 @@ public interface IRequestAppService
     Task<Result> UpdateStatusAsync(int requestId, StatusEnum newStatus, CancellationToken cancellationToken);
     Task<Result> SetWinner(int requestId, int suggestionId, CancellationToken cancellationToken);
     Task<int> GetPaidByCustomerOrderCountAsync(int userId, CancellationToken cancellationToken);
-
+    Task<int?> GetWinnerExpertIdAsync(int requestId, CancellationToken cancellationToken);
+    Task<List<Request>> GetRequestsByHomeServices(List<int> homeServiceIds, int cityId, CancellationToken cancellationToken);
     }

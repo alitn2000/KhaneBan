@@ -21,6 +21,6 @@ public class CategoryDapperAppService : ICategoryDapperAppService
     public async Task<List<Category>> GetAllAsync(CancellationToken cancellationToken)
         => await _categoryDapperService.GetAllAsync(cancellationToken);
 
-    public async Task<List<Category>> GetAllWithDetailsAsync(CancellationToken cancellationToken)
-        => await _categoryDapperService.GetAllWithDetailsAsync(cancellationToken);
+    //public async Task<List<Category>> GetAllWithDetailsAsync(CancellationToken cancellationToken)
+    //    => await _categoryDapperService.GetAllWithDetailsAsync(cancellationToken);
 }

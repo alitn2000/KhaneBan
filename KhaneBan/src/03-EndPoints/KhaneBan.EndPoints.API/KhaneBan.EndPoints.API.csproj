@@ -19,8 +19,4 @@
     <ProjectReference Include="..\..\02-InfraStructure\KhaneBan.InfraStructure.EfCore\KhaneBan.InfraStructure.EfCore\KhaneBan.InfraStructure.EfCore.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="WebFrameWork\ActionFilters\" />
-  </ItemGroup>
-
 </Project>

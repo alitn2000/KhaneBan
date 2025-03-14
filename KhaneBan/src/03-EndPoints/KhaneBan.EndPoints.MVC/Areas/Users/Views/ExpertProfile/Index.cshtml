@@ -25,8 +25,8 @@
       <link rel="stylesheet" href="~/UsersTemplate/css/custom/profile.css">
     <style>
         .skills-container {
-            max-height: 200px; /* تنظیم ارتفاع برای جلوگیری از خروج محتوا */
-            overflow-y: auto; /* اسکرول در صورت نیاز */
+            max-height: 200px; 
+            overflow-y: auto; 
             border: 1px solid #ddd;
             border-radius: 5px;
             padding: 10px;
@@ -35,7 +35,7 @@
 
         .skills-list {
             display: flex;
-            flex-wrap: wrap; /* جلوگیری از خروج مهارت‌ها از کادر */
+            flex-wrap: wrap; 
             gap: 10px;
             list-style: none;
             padding: 0;
@@ -48,7 +48,7 @@
             padding: 5px 10px;
             border-radius: 20px;
             font-size: 14px;
-            white-space: nowrap; /* جلوگیری از شکست متن */
+            white-space: nowrap;
         }
     </style>
 
@@ -58,26 +58,37 @@
 
 
       <meta http-equiv="content-type" content="text/html;charset=utf-8" />  
-      <header class="header-part">  
-          <div class="container">  
-              <div class="header-content">  
-                  <div class="header-left">  
-                      <ul class="header-widget">  
-                          <li><button type="button" class="header-menu"><i class="fas fa-align-left"></i></button></li>  
-                          <li><a asp-area="Users" asp-controller="Home" asp-action="Index" class="header-logo"><img src="~/UsersTemplate/images/logo.png" alt="logo"></a></li>  
-                          <li>  
-                              <a href="user-form.html" class="header-user">  
-                                  <i class="fas fa-user"></i><span>ورود</span>  
-                              </a>  
-                          </li>  
-                          <li><button type="button" class="header-src"><i class="fas fa-search"></i></button></li>  
-                      </ul>  
-                  </div>  
+    <header class="header-part">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-left">
+                    <ul class="header-widget">
+                        <li><button type="button" class="header-menu"><i class="fas fa-align-left"></i></button></li>
+                        <li><a asp-area="Users" asp-controller="Home" asp-action="Index" class="header-logo"><img src="~/UsersTemplate/images/logo.png" alt="logo"></a></li>
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li>
+                                <a asp-area="Users" asp-controller="Account" asp-action="Logout" class="header-user">
+                                    <i class="fas fa-user"></i><span>خروج</span>
+                                </a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li>
+                                <a asp-area="Users" asp-controller="Account" asp-action="Login" class="header-user">
+                                    <i class="fas fa-user"></i><span>ورود</span>
+                                </a>
+                            </li>
+                        }
+                        <li><button type="button" class="header-src"><i class="fas fa-search"></i></button></li>
+                    </ul>
+                </div>
 
 
-              </div>  
-          </div>  
-      </header>  
+            </div>
+        </div>
+    </header>
       <div class="sidebar-part">  
           <div class="sidebar-body">  
               <div class="sidebar-header">  
@@ -135,7 +146,7 @@
                                   </a>  
                                   <ul class="dropdown-list">  
                                       <li><a asp-controller="Home" asp-action="Index" class="dropdown-link">صفحه اصلی</a></li>  
-                                      <li><a asp-controller="Profile" asp-action="Index" class="dropdown-link">پروفایل</a></li>  
+                                      <li><a asp-controller="ExpertProfile" asp-action="Index" class="dropdown-link">پروفایل</a></li>  
                                       <li><a asp-controller="Account" asp-action="Login" class="dropdown-link">ورود</a></li>  
                                       <li><a class="dropdown-link" href="cities.html">آگهی توسط شهرها</a></li>  
                                         									<li><a class="dropdown-link" href="price.html">قیمت گذاری</a></li>  
@@ -219,19 +230,19 @@
                       <div class="row">  
                           <div class="col-md-4 col-lg-4">  
                               <div class="dash-focus dash-list">  
-                              @*     <h2>@Model.Suggestions.Count()</h2>   *@
-                                  <p>تعداد درخواست ها </p>  
+                                   <h2>@Model.Suggestions.Count()</h2>   
+                                  <p>تعداد پیشنهاد ها </p>  
                               </div>  
                           </div>  
                           <div class="col-md-4 col-lg-4">  
                               <div class="dash-focus dash-book">  
-                                @*   <h2>@Model.Suggestions.Where(r => r.SuggestionStatus == StatusEnum.WorkPaidByCustomer).Count()</h2>  *@ 
+                                   <h2>@Model.Suggestions.Where(r => r.SuggestionStatus == StatusEnum.WorkPaidByCustomer).Count()</h2>  
                                   <p>درخواست های انجام شده </p>  
                               </div>  
                           </div>  
                           <div class="col-md-4 col-lg-4">  
                               <div class="dash-focus dash-rev">  
-                                 @*  <h2>@Model.Ratings.Count()</h2>   *@
+                                   <h2>@Model.Ratings.Count()</h2>   
                                   <p>مجموع نظرات</p>  
                               </div>  
                           </div>  
@@ -242,9 +253,9 @@
                   <div class="col-lg-12">  
                       <div class="dash-menu-list">  
                           <ul>  
-                              <li class="navbar-item"><a asp-controller="Profile" asp-action="Index" class="navbar-link active">پروفایل</a></li>  
-                              <li class="navbar-item"><a asp-controller="Profile" asp-action="RequestList" class="navbar-link">سفارشات من</a></li>  
-                              <li class="navbar-item"><a class="navbar-link" asp-controller="Profile" asp-action="UpdateCustomerProfile">ویرایش مشخصات </a></li>  
+                              <li class="navbar-item"><a asp-controller="ExpertProfile" asp-action="Index" class="navbar-link active">پروفایل</a></li>
+                            <li class="navbar-item"><a asp-controller="ExpertProfile" asp-action="ShowRequests" class="navbar-link">لیست سفارشات</a></li>
+                            <li class="navbar-item"><a class="navbar-link" asp-controller="ExpertProfile" asp-action="UpdateExpertProfile">ویرایش مشخصات </a></li>  
                               <li class="navbar-item"><a class="navbar-link" asp-controller="Account" asp-action="Logout">خروج </a></li>  
                           </ul>  
                       </div>  
@@ -269,7 +280,7 @@
                               <ul class="account-list">  
                                   <li>  
                                       <h6>مجموع سفارش:</h6>  
-                                @*       <p>@Model.Suggestions.Count()</p>   *@
+                                       <p>@Model.Suggestions.Count()</p>   
                                   </li>  
 
                                   <li>  

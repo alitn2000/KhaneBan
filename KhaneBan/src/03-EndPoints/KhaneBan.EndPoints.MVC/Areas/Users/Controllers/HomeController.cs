@@ -17,7 +17,7 @@ public class HomeController : Controller
     }
     public async Task<IActionResult> Index(CancellationToken cancellationToken)
     {
-        var categories = await _categoryDapperAppService.GetAllWithDetailsAsync(cancellationToken);
+        var categories = await _categoryAppService.GetAllWithDetailsAsync(cancellationToken);
         return View(categories);
     }
 }

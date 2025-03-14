@@ -21,6 +21,6 @@ public class HomeServiceDapperAppService : IHomeServiceDapperAppService
     public async Task<List<HomeService>> GetAllAsync(CancellationToken cancellationToken)
         => await _homeServiceDapperService.GetAllAsync(cancellationToken);
 
-    public async Task<List<HomeService>> GetHomeServicesBySubCategoryId(int subCategoryId, CancellationToken cancellationToken)  
-        => await _homeServiceDapperService.GetHomeServicesBySubCategoryId(subCategoryId, cancellationToken);
+    //public async Task<List<HomeService>> GetHomeServicesBySubCategoryId(int subCategoryId, CancellationToken cancellationToken)  
+    //    => await _homeServiceDapperService.GetHomeServicesBySubCategoryId(subCategoryId, cancellationToken);
 }

@@ -51,7 +51,7 @@ public class HomeServiceService : IHomeServiceService
         return false;
     }
 
-    //public async Task<List<HomeService>> GetHomeServicesBySubCategoryId(int subCategoryId, CancellationToken cancellationToken)
-    //    => await _homeServiceRepository.GetHomeServicesBySubCategoryId(subCategoryId, cancellationToken);
+    public async Task<List<HomeService>> GetHomeServicesBySubCategoryId(int subCategoryId, CancellationToken cancellationToken)
+        => await _homeServiceRepository.GetHomeServicesBySubCategoryId(subCategoryId, cancellationToken);
 }
 

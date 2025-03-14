@@ -15,5 +15,5 @@ public interface ICategoryService
     Task<bool> UpdateAsync(Category category, CancellationToken cancellationToken);
     Task<bool> DeleteAsync(int id, CancellationToken cancellationToken);
     Task<bool> ActiveCategoryAsync(int categoryId, CancellationToken cancellationToken);
-    //Task<List<Category>> GetAllWithDetailsAsync(CancellationToken cancellationToken);
+    Task<List<Category>> GetAllWithDetailsAsync(CancellationToken cancellationToken);
 }

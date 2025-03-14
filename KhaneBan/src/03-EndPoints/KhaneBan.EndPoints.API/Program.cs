@@ -4,6 +4,7 @@ using KhaneBan.Domain.Core.Contracts.Repository;
 using KhaneBan.Domain.Core.Contracts.Service;
 using KhaneBan.Domain.Core.Entites.User;
 using KhaneBan.Domain.Services;
+using KhaneBan.EndPoints.API.WebFrameWork.ActionFilters;
 using KhaneBan.InfraStructure.Dapper.Common;
 using KhaneBan.InfraStructure.Dapper.DapperRepositories;
 using KhaneBan.InfraStructure.EfCore.Common;
@@ -37,17 +38,26 @@ builder.Services.AddScoped<ICategoryDapperAppService, CategoryDapperAppService>(
 
 builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
 builder.Services.AddScoped<IExpertRepository, ExpertRepository>();
-
+builder.Services.AddScoped<IRequestRepository, RequestRepository>();
 
 builder.Services.AddScoped<IAccountService, AccountService>();
 builder.Services.AddScoped<IAccountAppService, AccountAppService>();
 builder.Services.AddScoped<ICustomerService, CustomerService>();
 builder.Services.AddScoped<IExpertService, ExpertService>();
+builder.Services.AddScoped<IRequestService, RequestService>();
+
+builder.Services.AddScoped<IRequestAppService, RequestAppService>();
 //appservice
 
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.Preserve;
+    });
 
+builder.Services.AddScoped<DapperAppDbContext>();
 
-builder.Services.AddScoped<DapperAppDbContext>();  
+builder.Services.AddSingleton<ApiKeyCheck>();
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<AppDbContext>(options =>
@@ -57,7 +67,6 @@ builder.Services.AddDbContext<AppDbContext>(options =>
         sqlOptions.CommandTimeout(60); // Set timeout to 180 seconds
     });
 });
-builder.Services.AddScoped<DapperAppDbContext>();
 builder.Services.AddIdentity<User, IdentityRole<int>>
        (options =>
        {

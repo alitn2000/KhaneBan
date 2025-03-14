@@ -1,0 +1,219 @@
+﻿@using KhaneBan.EndPoints.MVC.Areas.Users.Models
+@model UpdateExpertViewModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<style>
+		.circular-image {
+			width: 150px;
+			height: 150px;
+			border-radius: 50%;
+			overflow: hidden;
+		}
+
+			.circular-image img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+	</style>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<title>آچاره - ویرایش</title>
+	<link rel="stylesheet" href="~/UsersTemplate/css/custom/setting.css">
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+</head>
+<body>
+	<section class="dash-header-part">
+		<div class="container">
+			<div class="row">
+				@* <div class="col-sm-4 col-md-3 col-lg-2"> *@
+				@* 	<div class="dash-avatar"><a href="#"><img src="@Model.PicturePath" alt="avatar"></a></div> *@
+				@* </div> *@
+				<div class="col-sm-8 col-md-9 col-lg-3">
+					<div class="dash-intro">
+						<h4><a href="#">@($"{Model.FirstName} {Model.LastName}")</a></h4>
+						<h5>فروشنده جدید</h5>
+					</div>
+					<ul class="dash-meta">
+						<li><i class="fas fa-phone-alt"></i><span>@Model.PhoneNumber</span></li>
+						<li><i class="fas fa-envelope"></i><span>@Model.Email</span></li>
+						@* <li><i class="fas fa-map-marker-alt"></i><span>@Model.cit</span></li> *@
+					</ul>
+				</div>
+				<div class="col-lg-7">
+					<div class="row">
+						<div class="col-md-4 col-lg-4">
+							<div class="dash-focus dash-list">
+								@*     <h2>@Model.Suggestions.Count()</h2>   *@
+								<p>تعداد درخواست ها </p>
+							</div>
+						</div>
+						<div class="col-md-4 col-lg-4">
+							<div class="dash-focus dash-book">
+								@*   <h2>@Model.Suggestions.Where(r => r.SuggestionStatus == StatusEnum.WorkPaidByCustomer).Count()</h2>  *@ 
+								  <p>درخواست های انجام شده </p>
+							</div>
+						</div>
+						<div class="col-md-4 col-lg-4">
+							<div class="dash-focus dash-rev">
+								@*  <h2>@Model.Ratings.Count()</h2>   *@
+								<p>مجموع نظرات</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="dash-menu-list">
+						<ul>
+							<li class="navbar-item"><a asp-controller="ExpertProfile" asp-action="Index" class="navbar-link active">پروفایل</a></li>
+							<li class="navbar-item"><a asp-controller="ExpertProfile" asp-action="ShowRequests" class="navbar-link">لیست سفارشات</a></li>
+							<li class="navbar-item"><a class="navbar-link" asp-controller="ExpertProfile" asp-action="UpdateExpertProfile">ویرایش مشخصات </a></li>
+							<li class="navbar-item"><a class="navbar-link" asp-controller="Account" asp-action="Logout">خروج </a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="setting-part">
+		<div class="container">
+			<form class="setting-form" asp-controller="ExpertProfile" asp-action="UpdateExpertProfile" method="post" enctype="multipart/form-data">
+				<div class="row">
+					<input asp-for="Id" type="hidden">
+
+					<div class="col-lg-6">
+						<div class="form-group">
+							<label asp-for="FirstName" class="form-label">نام</label>
+							<input asp-for="FirstName" type="text" class="form-control" placeholder="@Model.FirstName">
+						</div>
+						<span asp-validation-for="FirstName" class="text-danger"></span>
+					</div>
+
+					<div class="col-lg-6">
+						<div class="form-group">
+							<label asp-for="LastName" class="form-label">نام خانوادگی</label>
+							<input asp-for="LastName" type="text" class="form-control" placeholder="@Model.LastName">
+						</div>
+						<span asp-validation-for="LastName" class="text-danger"></span>
+					</div>
+
+					<div class="col-lg-6">
+						<div class="form-group">
+							<label asp-for="UserName" class="form-label">نام کاربری</label>
+							<input asp-for="UserName" type="text" class="form-control" placeholder="@Model.UserName">
+						</div>
+						<span asp-validation-for="UserName" class="text-danger"></span>
+					</div>
+					<div id="selected-skills-container"></div>
+					<div class="col-lg-6">
+						<div class="form-group">
+							<label asp-for="Skills" class="form-label">مهارت ها</label>
+							<select asp-for="Skills" multiple class="form-select select2">
+								@foreach (var item in ViewBag.HomeServices as List<SelectListItem>)
+								{
+									<option value="@item.Value">@item.Text</option>
+								}
+							</select>
+							<span asp-validation-for="Skills" class="text-danger"></span>
+						</div>
+					</div>
+
+					<div class="col-lg-12">
+						<div class="form-group">
+							<label asp-for="Address" class="form-label">آدرس</label>
+							<input asp-for="Address" type="text" class="form-control" placeholder="@Model.Address">
+						</div>
+						<span asp-validation-for="Address" class="text-danger"></span>
+					</div>
+
+					<div class="col-lg-6">
+						<div class="form-group">
+							<label asp-for="CityId" class="form-label">استان ها</label>
+							<select asp-for="CityId" class="form-select">
+								<option value="">انتخاب کنید...</option>
+								@foreach (var item in ViewBag.Cities as List<SelectListItem>)
+								{
+									<option value="@item.Value">@item.Text</option>
+								}
+							</select>
+							<span asp-validation-for="CityId" class="text-danger"></span>
+						</div>
+					</div>
+
+					<div class="col-lg-6">
+						<div class="form-group">
+							<label asp-for="Email" class="form-label">ایمیل</label>
+							<input asp-for="Email" type="email" class="form-control" placeholder="@Model.Email">
+						</div>
+						<span asp-validation-for="Email" class="text-danger"></span>
+					</div>
+
+					<div class="col-lg-6">
+						<div class="form-group">
+							<label asp-for="PhoneNumber" class="form-label">شماره</label>
+							<input asp-for="PhoneNumber" type="text" class="form-control" placeholder="@Model.PhoneNumber">
+						</div>
+						<span asp-validation-for="PhoneNumber" class="text-danger"></span>
+					</div>
+
+					<div class="col-lg-6">
+						<div class="form-group">
+							<label asp-for="Price" class="form-label">موجودی</label>
+							<input asp-for="Price" type="number" step="100000" class="form-control" placeholder="@Model.Price">
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="form-group">
+							<label class="form-label">آپلود عکس جدید</label>
+							<input type="file" asp-for="ImageFile" class="form-control" />
+
+						</div>
+						<span asp-validation-for="ImageFile" class="text-danger"></span>
+					</div>
+					<div class="col-lg-12">
+						<div class="form-group text-center mt-5">
+							<button class="btn btn-inline">
+								<i class="fas fa-user-check"></i><span>ثبت اطلاعات</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	@section Scripts
+ {
+		<partial name="_ValidationScriptsPartial" />
+		<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+		<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+		<script>
+			$(document).ready(function () {
+				$('.select2').select2({
+					placeholder: "انتخاب مهارت ها",
+					allowClear: true
+				});
+
+				var initialSkills = [];
+			@if (Model.Skills != null)
+			{
+				foreach (var skill in Model.Skills)
+				{
+					@:initialSkills.push("@skill");
+				}
+			}
+				$('.select2').val(initialSkills).trigger('change');
+			});
+		</script>
+
+
+
+	}
+
+</body>
+</html>

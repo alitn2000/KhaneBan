@@ -35,10 +35,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\Images\Customers\" />
     <Folder Include="wwwroot\Images\Experts\" />
     <Folder Include="wwwroot\Images\Categories\" />
     <Folder Include="wwwroot\Images\HomeServices\" />
+    <Folder Include="wwwroot\Images\Customers\" />
     <Folder Include="wwwroot\Images\Requests\" />
     <Folder Include="wwwroot\Images\SubCategories\" />
   </ItemGroup>

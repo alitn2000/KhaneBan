@@ -291,17 +291,18 @@ public class ProfileController : Controller
         return RedirectToAction("RequestList");
     }
 
-    public async Task<IActionResult> SetRating(int requestId, int expertId)
+    public async Task<IActionResult> SetRating(int requestId, int winnerId, CancellationToken cancellationToken)
     {
         var onlineUser = await _userManager.GetUserAsync(User);
 
         if (onlineUser is null)
             return RedirectToAction("Login", "Account");
+        var expertId = await _requestAppService.GetWinnerExpertIdAsync(requestId, cancellationToken);
 
         var model = new CreateRatingDTO
         {
             RequestId = requestId,
-            ExpertId = expertId
+            ExpertId = expertId ?? 0
         };
 
         ViewBag.UserName = $"{onlineUser.FirstName} {onlineUser.LastName}";

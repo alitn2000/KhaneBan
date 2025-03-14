@@ -10,5 +10,5 @@ namespace KhaneBan.Domain.Core.Contracts.Repository;
 public interface IHomeServiceDapperRepository
 {
     Task<List<HomeService>> GetAllAsync(CancellationToken cancellationToken);
-    Task<List<HomeService>> GetHomeServicesBySubCategoryId(int subCategoryId, CancellationToken cancellationToken);
+    //Task<List<HomeService>> GetHomeServicesBySubCategoryId(int subCategoryId, CancellationToken cancellationToken);
 }

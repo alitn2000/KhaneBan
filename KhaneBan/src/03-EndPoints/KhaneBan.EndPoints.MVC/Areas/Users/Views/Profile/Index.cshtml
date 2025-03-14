@@ -36,11 +36,22 @@
                     <ul class="header-widget">
                         <li><button type="button" class="header-menu"><i class="fas fa-align-left"></i></button></li>
                         <li><a asp-area="Users" asp-controller="Home" asp-action="Index" class="header-logo"><img src="~/UsersTemplate/images/logo.png" alt="logo"></a></li>
-                        <li>
-                            <a href="user-form.html" class="header-user">
-                                <i class="fas fa-user"></i><span>ورود</span>
-                            </a>
-                        </li>
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li>
+                                <a asp-area="Users" asp-controller="Account" asp-action="Logout" class="header-user">
+                                    <i class="fas fa-user"></i><span>خروج</span>
+                                </a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li>
+                                <a asp-area="Users" asp-controller="Account" asp-action="Login" class="header-user">
+                                    <i class="fas fa-user"></i><span>ورود</span>
+                                </a>
+                            </li>
+                        }
                         <li><button type="button" class="header-src"><i class="fas fa-search"></i></button></li>
                     </ul>
                 </div>

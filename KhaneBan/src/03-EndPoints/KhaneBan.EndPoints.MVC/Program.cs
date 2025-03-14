@@ -86,6 +86,7 @@ try
     builder.Services.AddScoped<ICustomerService, CustomerService>();
     builder.Services.AddScoped<IExpertService, ExpertService>();
     builder.Services.AddScoped<ICityService, CityService>();
+    builder.Services.AddScoped<ICityDapperService, CityDapperService>();
     builder.Services.AddScoped<IRequestService, RequestService>();
     builder.Services.AddScoped<ISuggestionService, SuggestionService>();
     builder.Services.AddScoped<IRatingService, RatingService>();
@@ -101,6 +102,7 @@ try
     builder.Services.AddScoped<ISubCategoryAppService, SubCategoryAppService>();
     builder.Services.AddScoped<IHomeServiceAppService, HomeServiceAppService>();
     builder.Services.AddScoped<ICityAppService, CityAppService>();
+    builder.Services.AddScoped<ICityDapperAppService, CityDapperAppService>();
     builder.Services.AddScoped<IRequestAppService, RequestAppService>();
     builder.Services.AddScoped<ISuggestionAppService, SuggestionAppService>();
     builder.Services.AddScoped<IRatingAppService, RatingAppService>();

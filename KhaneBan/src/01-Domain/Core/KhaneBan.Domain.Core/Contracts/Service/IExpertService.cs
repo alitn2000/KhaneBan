@@ -18,8 +18,10 @@ namespace KhaneBan.Domain.Core.Contracts.Service
         Task<Expert?> GetExpertInfoByIdAsync(int id, CancellationToken cancellationToken);
         Task<bool> ActiveExpertAsync(int userId, CancellationToken cancellationToken);
         Task<IdentityResult> RegisterAsync(User user, string pass);
-        Task<bool> UpdateAsync(Expert expert, CancellationToken cancellationToken);
+        Task<bool> UpdateAsync(Expert expert, List<int> selectedHomeServiceIds, CancellationToken cancellationToken);
         Task<IdentityResult> UpdateAsync(User user);
         Task<ExpertProfileDTO?> GetExpertProfileByIdAsync(int id, CancellationToken cancellationToken);
+        Task<Expert?> GetByIdAsync(int id, CancellationToken cancellationToken);
+        Task<Expert?> GetExpertByIdWithDetailsAsync(int id, CancellationToken cancellationToken);
     }
 }
