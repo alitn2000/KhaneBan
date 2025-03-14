@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KhaneBan.Domain.Services")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f63ec4ac3f3627c499b6a48d1024285fbce616f9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d3120df6c606091a121db334e667be74a73552c6")]
 [assembly: System.Reflection.AssemblyProductAttribute("KhaneBan.Domain.Services")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KhaneBan.Domain.Services")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

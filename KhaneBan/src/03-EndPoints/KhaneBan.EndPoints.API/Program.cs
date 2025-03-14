@@ -47,6 +47,12 @@ builder.Services.AddScoped<IExpertService, ExpertService>();
 builder.Services.AddScoped<IRequestService, RequestService>();
 
 builder.Services.AddScoped<IRequestAppService, RequestAppService>();
+
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+builder.Services.AddScoped<ICategoryService, CategoryService>();
+
+builder.Services.AddScoped<ICategoryAppService, CategoryAppService>();
+builder.Services.AddMemoryCache();
 //appservice
 
 builder.Services.AddControllers()

@@ -5328,6 +5328,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Requests\6035fc83-ab3e-49c1-b912-93eccf1da169Screenshot 2024-12-13 164301.png'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Requests\65efea00-27f0-4a04-946e-cfdbbce6d846Screenshot 2024-12-13 164301.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>KhaneBan.EndPoints.MVC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/KhaneBan.EndPoints.MVC</BasePath>
+      <RelativePath>Images/Requests/65efea00-27f0-4a04-946e-cfdbbce6d846Screenshot 2024-12-13 164301.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>dsr6m2yfdy</Fingerprint>
+      <Integrity>LdBoNMDleXslsHGOx8ftA+0/IzvfKDkXe2yMzJbaHcY=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Requests\65efea00-27f0-4a04-946e-cfdbbce6d846Screenshot 2024-12-13 164301.png'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Requests\8a9cdd3a-7520-45f9-bbd7-8da67ff96501Screenshot 2024-12-13 164301.png'))">
       <SourceType>Package</SourceType>
       <SourceId>KhaneBan.EndPoints.MVC</SourceId>
