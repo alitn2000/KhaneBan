@@ -16,4 +16,5 @@ public interface IHomeServiceAppService
     Task<bool> DeleteAsync(int id, CancellationToken cancellationToken);
     Task<bool> ActiveHomeServiceAsync(int homeServiceId, CancellationToken cancellationToken);
     Task<List<HomeService>> GetHomeServicesBySubCategoryId(int subCategoryId, CancellationToken cancellationToken);
+    Task<double> GetBasePriceByRequestId(int requestId, CancellationToken cancellationToken);
 }

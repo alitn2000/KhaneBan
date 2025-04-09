@@ -53,5 +53,8 @@ public class HomeServiceService : IHomeServiceService
 
     public async Task<List<HomeService>> GetHomeServicesBySubCategoryId(int subCategoryId, CancellationToken cancellationToken)
         => await _homeServiceRepository.GetHomeServicesBySubCategoryId(subCategoryId, cancellationToken);
+
+    public async Task<double> GetBasePriceByRequestId(int requestId, CancellationToken cancellationToken)
+        => await _homeServiceRepository.GetBasePriceByRequestId(requestId, cancellationToken);
 }
 

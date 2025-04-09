@@ -137,5 +137,13 @@ public class HomeServiceRepository : IHomeServiceRepository
 
     }
 
+    public async Task<double> GetBasePriceByRequestId(int requestId, CancellationToken cancellationToken)
+    {
+        return await _context.Requests
+            .Where(r => r.Id == requestId)
+            .Select(r => r.HomeService.BasePrice)
+            .FirstOrDefaultAsync(cancellationToken);
+    }
+
 
 }

@@ -25,12 +25,28 @@
 	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 </head>
 <body>
+
+	<section class="single-banner">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="single-content">
+						<h2>پروفایل</h2>
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="index.html">صفحه اصلی</a></li>
+							<li class="breadcrumb-item active" aria-current="page">پروفایل</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 	<section class="dash-header-part">
 		<div class="container">
 			<div class="row">
-				@* <div class="col-sm-4 col-md-3 col-lg-2"> *@
-				@* 	<div class="dash-avatar"><a href="#"><img src="@Model.PicturePath" alt="avatar"></a></div> *@
-				@* </div> *@
+				 <div class="col-sm-4 col-md-3 col-lg-2">
+					<div class="dash-avatar"><a href="#"><img src="@Model.ImagePath" alt="avatar"></a></div>
+				</div> 
 				<div class="col-sm-8 col-md-9 col-lg-3">
 					<div class="dash-intro">
 						<h4><a href="#">@($"{Model.FirstName} {Model.LastName}")</a></h4>
@@ -39,31 +55,9 @@
 					<ul class="dash-meta">
 						<li><i class="fas fa-phone-alt"></i><span>@Model.PhoneNumber</span></li>
 						<li><i class="fas fa-envelope"></i><span>@Model.Email</span></li>
-						@* <li><i class="fas fa-map-marker-alt"></i><span>@Model.cit</span></li> *@
 					</ul>
 				</div>
-				<div class="col-lg-7">
-					<div class="row">
-						<div class="col-md-4 col-lg-4">
-							<div class="dash-focus dash-list">
-								@*     <h2>@Model.Suggestions.Count()</h2>   *@
-								<p>تعداد درخواست ها </p>
-							</div>
-						</div>
-						<div class="col-md-4 col-lg-4">
-							<div class="dash-focus dash-book">
-								@*   <h2>@Model.Suggestions.Where(r => r.SuggestionStatus == StatusEnum.WorkPaidByCustomer).Count()</h2>  *@ 
-								  <p>درخواست های انجام شده </p>
-							</div>
-						</div>
-						<div class="col-md-4 col-lg-4">
-							<div class="dash-focus dash-rev">
-								@*  <h2>@Model.Ratings.Count()</h2>   *@
-								<p>مجموع نظرات</p>
-							</div>
-						</div>
-					</div>
-				</div>
+				
 			</div>
 			<div class="row">
 				<div class="col-lg-12">

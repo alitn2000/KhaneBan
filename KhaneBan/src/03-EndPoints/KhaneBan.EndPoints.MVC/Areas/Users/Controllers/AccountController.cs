@@ -1,8 +1,5 @@
 ﻿using KhaneBan.Domain.Core.Contracts.AppService;
 using KhaneBan.Domain.Core.Entites.DTOs;
-using KhaneBan.EndPoints.MVC.Areas.Users.Models;
-using KhaneBan.EndPoints.MVC.Models;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace KhaneBan.EndPoints.MVC.Areas.Users.Controllers;
@@ -17,8 +14,8 @@ public class AccountController : Controller
     }
 
     [HttpGet]
-    public IActionResult Login()                                         
-                                                                           
+    public IActionResult Login()
+
     {
         return View();
     }
@@ -34,7 +31,7 @@ public class AccountController : Controller
         var result = await _accountAppService.Login(dto);
 
         if (result.Succeeded)
-           return RedirectToAction("Index", "Home");
+            return RedirectToAction("Index", "Home");
 
         ViewBag.LoginMessage = "ایمیل یا رمزعبور اشتباه است";
         return View(dto);
@@ -46,5 +43,13 @@ public class AccountController : Controller
         await _accountAppService.Logout();
         return RedirectToAction("Index", "Home");
     }
+
+    [HttpGet]
+    public IActionResult RegisterAsync()
+    {
+        return View();
+    }
+
+
 
 }

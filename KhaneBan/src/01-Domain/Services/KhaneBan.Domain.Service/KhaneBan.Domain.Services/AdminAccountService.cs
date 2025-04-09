@@ -32,12 +32,14 @@ public class AdminAccountService : IAdminAccountService
     {
 
         var user = await _userManager.FindByNameAsync(userName);
-        if (user != null && await _userManager.IsInRoleAsync(user, "Admin"))
-        {
-            return await _signInManager.PasswordSignInAsync(userName, pass, false, false);
-        }
+        if (user == null)
+            return (SignInResult.Failed);
 
-        return SignInResult.Failed;
+        if (!await _userManager.IsInRoleAsync(user, "Admin"))
+            return (SignInResult.Failed);
+
+        var result = await _signInManager.PasswordSignInAsync(user, pass, false, false);
+        return result;
 
     }
 }

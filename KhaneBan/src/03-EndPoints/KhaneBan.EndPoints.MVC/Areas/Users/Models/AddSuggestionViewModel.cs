@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using KhaneBan.EndPoints.MVC.Validations;
+using System.ComponentModel.DataAnnotations;
 
 namespace KhaneBan.EndPoints.MVC.Areas.Users.Models;
 
@@ -12,7 +13,7 @@ public class AddSuggestionViewModel
     [Display(Name = "قیمت پیشنهادی")]
     public int SuggestedPrice { get; set; }
 
-
+    [DateValidation(ErrorMessage = "تاریخ وارد شده قدیمی است")]
     [Required(ErrorMessage = "تاریخ پیشنهادی الزامی است.")]
     [Display(Name = "تاریخ تحویل")]
     [DataType(DataType.Date)]

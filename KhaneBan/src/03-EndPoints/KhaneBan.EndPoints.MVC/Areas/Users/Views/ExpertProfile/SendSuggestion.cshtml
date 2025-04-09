@@ -266,9 +266,19 @@
 					</tbody>
 				</table>
 				<div id="reviewMessage" style="display: none;"></div>
+				@if (ViewBag.PriceError != null)
+				{
+					<div class="alert alert-info">@ViewBag.PriceError</div>
+				}
+
+
 			</div>
 		</div>
 	</div>
 </body>
 
 </html>
+@section Scripts
+{
+	<partial name="_validationScriptsPartial" />
+			}

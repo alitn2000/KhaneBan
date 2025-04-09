@@ -22,6 +22,7 @@ public class RequestController : ControllerBase
     [HttpGet("List")]
     public async Task<List<Request>> RequestList(CancellationToken cancellationToken)
     {
-        return await _requestAppService.GetRequestsInfo(cancellationToken);
+        var r = await _requestAppService.GetRequestsInfo(cancellationToken);
+        return r;
     }
 }

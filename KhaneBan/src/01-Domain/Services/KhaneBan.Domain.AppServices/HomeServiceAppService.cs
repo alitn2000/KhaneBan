@@ -43,5 +43,8 @@ namespace KhaneBan.Domain.AppServices
         public async Task<bool> UpdateAsync(HomeService homeService, CancellationToken cancellationToken)
 
         => await _homeServiceService.UpdateAsync(homeService, cancellationToken);
+
+        public async Task<double> GetBasePriceByRequestId(int requestId, CancellationToken cancellationToken)
+            => await _homeServiceService.GetBasePriceByRequestId(requestId, cancellationToken);
     }
 }

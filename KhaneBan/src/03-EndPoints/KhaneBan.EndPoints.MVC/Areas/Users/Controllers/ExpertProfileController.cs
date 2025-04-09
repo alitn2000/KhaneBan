@@ -2,6 +2,7 @@
 using KhaneBan.Domain.Core.Contracts.AppService;
 using KhaneBan.Domain.Core.Entites.User;
 using KhaneBan.Domain.Core.Entites.UserRequests;
+using KhaneBan.Domain.Core.Enums;
 using KhaneBan.EndPoints.MVC.Areas.Users.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -23,13 +24,16 @@ public class ExpertProfileController : Controller
     private readonly IPictureAppService _pictureAppService;
     private readonly IRequestAppService _requestAppService;
     private readonly ISuggestionAppService _suggestionAppService;
+    private readonly IHomeServiceAppService _homeServiceAppService;
+
     public ExpertProfileController(IExpertAppService expertAppService,
         UserManager<User> userManager,
         ICityDapperAppService cityDapperAppService,
         IHomeServiceDapperAppService homeServiceDapperAppService,
         IPictureAppService pictureAppService,
         IRequestAppService requestAppService,
-        ISuggestionAppService suggestionAppService)
+        ISuggestionAppService suggestionAppService,
+        IHomeServiceAppService homeServiceAppService)
     {
         _expertAppService = expertAppService;
         _userManager = userManager;
@@ -38,6 +42,7 @@ public class ExpertProfileController : Controller
         _pictureAppService = pictureAppService;
         _requestAppService = requestAppService;
         _suggestionAppService = suggestionAppService;
+        _homeServiceAppService = homeServiceAppService;
     }
 
     public async Task<IActionResult> Index(CancellationToken cancellationToken)
@@ -217,7 +222,12 @@ public class ExpertProfileController : Controller
             return RedirectToAction("Login", "Account");
 
         int expertId = int.Parse(onlineUserId);
-
+        double servicePrice = await _homeServiceAppService.GetBasePriceByRequestId(model.RequestId, cancellationToken);
+        if (model.SuggestedPrice < servicePrice)
+        {
+            ViewBag.PriceError = "قیمت پیشنهادی پایین تر از قیمت پایه است";
+            return View(model);
+        }
         var newOffer = new Suggestion
         {
             ExpertId = model.ExpertId,
@@ -234,7 +244,12 @@ public class ExpertProfileController : Controller
             ModelState.AddModelError("", "خطا رخ داده است.");
             return View(model);
         }
-
+        var requestResult = await _requestAppService.UpdateStatusAsync(newOffer.RequestId,StatusEnum.WaitingCustomerToChoose,cancellationToken);
+        if (!requestResult.Flag)
+        {
+            ModelState.AddModelError("", "خطا رخ داده است.");
+            return View(model);
+        }
         return RedirectToAction("ShowRequests","ExpertProfile");
 
     }
