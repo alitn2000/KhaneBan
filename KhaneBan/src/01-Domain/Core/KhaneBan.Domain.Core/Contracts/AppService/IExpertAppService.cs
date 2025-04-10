@@ -23,5 +23,6 @@ public interface IExpertAppService
     Task<ExpertProfileDTO?> GetExpertProfileByIdAsync(int id, CancellationToken cancellationToken);
     Task<Expert?> GetByIdAsync(int id, CancellationToken cancellationToken);
     Task<Expert?> GetExpertByIdWithDetailsAsync(int id, CancellationToken cancellationToken);
+    Task<bool> PlusMoney(string userId, double amount, CancellationToken cancellationToken);
 }
 

@@ -6,7 +6,7 @@ namespace KhaneBan.EndPoints.MVC.Areas.Admin.Controllers;
 
 
 [Area("Admin")]
-[Authorize]
+[Authorize(Roles = "Admin")]
 public class HomeController : Controller
 {
     private readonly ICustomerAppService _customerAppService;

@@ -29,9 +29,9 @@ public class SubCategoryAppService : ISubCategoryAppService
 
         => await _subCategoryService.DeleteAsync(id, cancellationToken);
 
-    //public async Task<List<SubCategory>> GetAllAsync(CancellationToken cancellationToken)
+    public async Task<List<SubCategory>> GetAllAsync(CancellationToken cancellationToken)
 
-    //     => await _subCategoryService.GetAllAsync(cancellationToken);
+         => await _subCategoryService.GetAllAsync(cancellationToken);
 
     public async Task<SubCategory> GetByIdAsync(int id, CancellationToken cancellationToken)
 

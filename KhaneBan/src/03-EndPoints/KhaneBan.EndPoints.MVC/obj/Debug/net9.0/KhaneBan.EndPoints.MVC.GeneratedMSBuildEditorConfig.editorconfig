@@ -132,6 +132,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcnNcVmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/c\#/KhaneBan/KhaneBan/src/03-EndPoints/KhaneBan.EndPoints.MVC/Areas/Users/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcnNcVmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/c\#/KhaneBan/KhaneBan/src/03-EndPoints/KhaneBan.EndPoints.MVC/Areas/Users/Views/ExpertProfile/ExpertDetail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcnNcVmlld3NcRXhwZXJ0UHJvZmlsZVxFeHBlcnREZXRhaWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

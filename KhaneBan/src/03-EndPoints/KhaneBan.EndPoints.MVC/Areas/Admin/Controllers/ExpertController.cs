@@ -29,7 +29,27 @@ public class ExpertController : Controller
     public async Task<IActionResult> ExpertList(CancellationToken cancellationToken)
     {
         var experts = await _expertAppService.GetExpertInfoAsync(cancellationToken);
-        return View(experts);
+        List<UserViewModel> users = new List<UserViewModel>();
+
+        foreach (var expert in experts)
+        {
+
+
+
+            users.Add(new UserViewModel()
+            {
+                Id = expert.User.Id,
+                Email = expert.User.Email,
+                FirstName = expert.User.FirstName,
+                LastName = expert.User.LastName,
+                Adress = expert.User.Address,
+                PicturePath = expert.User.PicturePath,
+                PhoneNumber = expert.User.PhoneNumber,
+                IsDeleted = expert.User.IsDeleted,
+
+            });
+        }
+        return View(users);
     }
 
     public async Task<IActionResult> DeleteExpert(int userId, CancellationToken cancellationToken)
@@ -151,16 +171,16 @@ public class ExpertController : Controller
 
     public async Task<IActionResult> UpdateExpert(int userId, CancellationToken cancellationToken)
     {
-        var customer = await _expertAppService.GetExpertInfoByIdAsync(userId, cancellationToken);
-        if (customer == null)
+        var expert = await _expertAppService.GetExpertInfoByIdAsync(userId, cancellationToken);
+        if (expert == null)
             return NotFound();        
 
         var model = new UpdateCustomerViewModel
         {
-            Id = customer.Id,
-            Email = customer.User.Email,
-            FirstName = customer.User.FirstName,
-            LastName = customer.User.LastName
+            Id = expert.Id,
+            Email = expert.User.Email,
+            FirstName = expert.User.FirstName,
+            LastName = expert.User.LastName
 
         };
         return View(model);

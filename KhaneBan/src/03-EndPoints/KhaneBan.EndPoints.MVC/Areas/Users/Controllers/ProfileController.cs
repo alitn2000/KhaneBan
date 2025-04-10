@@ -23,15 +23,17 @@ public class ProfileController : Controller
     private readonly IRequestAppService _requestAppService;
     private readonly ISuggestionAppService _suggestionAppService;
     private readonly IRatingAppService _ratingAppService;
-
-
+    private readonly IExpertAppService _expertAppService;
+    private readonly IAdminAppService _adminAppService;
     public ProfileController(UserManager<User> userManager,
         ICustomerAppService customerAppService,
         ICityAppService cityAppService,
         IPictureAppService pictureAppService,
         IRequestAppService requestAppService,
         ISuggestionAppService suggestionAppService,
-        IRatingAppService ratingAppService)
+        IRatingAppService ratingAppService,
+        IExpertAppService expertAppService,
+        IAdminAppService adminAppService)
     {
         _userManager = userManager;
         _customerAppService = customerAppService;
@@ -40,6 +42,8 @@ public class ProfileController : Controller
         _requestAppService = requestAppService;
         _suggestionAppService = suggestionAppService;
         _ratingAppService = ratingAppService;
+        _expertAppService = expertAppService;
+        _adminAppService = adminAppService;
     }
 
 
@@ -276,17 +280,58 @@ public class ProfileController : Controller
                 var requestResult = await _requestAppService.UpdateStatusAsync(RequestId, StatusEnum.WorkPaidByCustomer, cancellationToken);
                 if (requestResult.Flag)
                 {
+                    var suggestion = await _suggestionAppService.GetByIdAsync(SuggestionId, cancellationToken);
+                    if (suggestion != null)
+                    {
+                        var expert = await _expertAppService.GetExpertInfoByIdAsync(suggestion.ExpertId, cancellationToken);
+                        if (expert != null)
+                        {
+                            double expertShare = price * 0.7;
+                            double adminShare = price * 0.3;
 
-                    TempData["ResultMessage"] = "پرداخت وجه موفقیت امیز بود";
-                    return RedirectToAction("RequestList");
+                            var expertIncreaseResult = await _expertAppService.PlusMoney(expert.Id.ToString(), expertShare, cancellationToken);
+                            if (expertIncreaseResult)
+                            {
+                                double remainingAdminShare = price - expertShare;
+                                var adminIncreaseResult = await _adminAppService.PlusMoney("1", remainingAdminShare, cancellationToken);
+                                if (adminIncreaseResult)
+                                {
+                                    ViewBag.ResultMessage = "پرداخت وجه موفقیت آمیز بود";
+                                    return RedirectToAction("RequestList");
+                                }
+                                else
+                                {
+                                    ViewBag.ResultMessage = "خطا در پرداخت وجه: واریز به حساب ادمین صورت نگرفت";
+                                    return RedirectToAction("RequestList");
+                                }
+                            }
+                            else
+                            {
+                                ViewBag.ResultMessage = "خطا در پرداخت وجه: واریز به حساب کارشناس صورت نگرفت";
+                                return RedirectToAction("RequestList");
+                            }
+                        }
+                        else
+                        {
+                            ViewBag.ResultMessage = "خطا در پرداخت وجه: کارشناس یافت نشد";
+                            return RedirectToAction("RequestList");
+                        }
+                    }
+                    else
+                    {
+                        ViewBag.ResultMessage = "خطا در پرداخت وجه: پیشنهاد یافت نشد";
+                        return RedirectToAction("RequestList");
+                    }
                 }
 
-                TempData["ResultMessage"] = "خطا در پرداخت وجه: تغییر وضعیت درخواست صورت نگرفت";
+                ViewBag.ResultMessage = "خطا در پرداخت وجه: تغییر وضعیت درخواست صورت نگرفت";
                 return RedirectToAction("RequestList");
 
             }
+             ViewBag.ResultMessage = "پرداخت با موفقیت انجام شد";
+                return RedirectToAction("RequestList");
         }
-        TempData["ResultMessage"] = "خطا در پرداخت وجه: تغییر وضعیت پیشنهاد صورت نگرفت";
+        ViewBag.ResultMessage = "خطا در پرداخت وجه: تغییر وضعیت پیشنهاد صورت نگرفت";
 
         return RedirectToAction("RequestList");
     }

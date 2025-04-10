@@ -47,7 +47,7 @@ public class CustomerController : Controller
            
             users.Add(new UserViewModel()
             {
-                Id = customer.Id,
+                Id = customer.User.Id,
                 Email = customer.User.Email,
                 FirstName = customer.User.FirstName,
                 LastName = customer.User.LastName,

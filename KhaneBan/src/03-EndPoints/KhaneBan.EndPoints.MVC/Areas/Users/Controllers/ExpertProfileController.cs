@@ -14,7 +14,7 @@ namespace KhaneBan.EndPoints.MVC.Areas.Users.Controllers;
 
 
 [Area("Users")]
-//[Authorize(Roles = "Expert")]
+
 public class ExpertProfileController : Controller
 {
     private readonly IExpertAppService _expertAppService;
@@ -47,8 +47,7 @@ public class ExpertProfileController : Controller
 
     public async Task<IActionResult> Index(CancellationToken cancellationToken)
      {
-        var expert = User.FindFirstValue(ClaimTypes.NameIdentifier);                    //////////////amaliyat haye tekrari baresi shavad
-
+        var expert = User.FindFirstValue(ClaimTypes.NameIdentifier);                 
         var onlineUser = await _userManager.GetUserAsync(User);
 
         if (onlineUser is null)

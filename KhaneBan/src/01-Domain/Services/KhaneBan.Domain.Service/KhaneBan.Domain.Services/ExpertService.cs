@@ -96,5 +96,8 @@ namespace KhaneBan.Domain.Services
 
         public async Task<Expert?> GetExpertByIdWithDetailsAsync(int id, CancellationToken cancellationToken)
             => await _expertRepository.GetExpertByIdWithDetailsAsync(id, cancellationToken);
+
+        public async Task<bool> PlusMoney(string userId, double amount, CancellationToken cancellationToken)
+            => await _expertRepository.PlusMoney(userId, amount, cancellationToken);
     }
 }

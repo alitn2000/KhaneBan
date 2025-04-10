@@ -17,8 +17,11 @@ public class CategoryController : Controller
     private readonly IPictureAppService _pictureAppService ;
     private readonly ICategoryDapperAppService _categoryDapperAppService;
 
-    public CategoryController(ICategoryAppService categoryAppService, IPictureAppService pictureAppService, ICategoryDapperAppService categoryDapperAppService)
+    public CategoryController(ICategoryAppService categoryAppService,
+        IPictureAppService pictureAppService,
+        ICategoryDapperAppService categoryDapperAppService)
     {
+        _categoryDapperAppService = categoryDapperAppService;
         _categoryAppService = categoryAppService;
         _pictureAppService = pictureAppService;
     }

@@ -41,38 +41,56 @@
 			</div>
 		</div>
 	</section>
-	<section class="dash-header-part">
-		<div class="container">
-			<div class="row">
-				 <div class="col-sm-4 col-md-3 col-lg-2">
-					<div class="dash-avatar"><a href="#"><img src="@Model.ImagePath" alt="avatar"></a></div>
-				</div> 
-				<div class="col-sm-8 col-md-9 col-lg-3">
-					<div class="dash-intro">
-						<h4><a href="#">@($"{Model.FirstName} {Model.LastName}")</a></h4>
-						<h5>فروشنده جدید</h5>
-					</div>
-					<ul class="dash-meta">
-						<li><i class="fas fa-phone-alt"></i><span>@Model.PhoneNumber</span></li>
-						<li><i class="fas fa-envelope"></i><span>@Model.Email</span></li>
-					</ul>
-				</div>
-				
+	<div class="sidebar-part">
+		<div class="sidebar-body">
+			<div class="sidebar-header">
+				<a asp-area="Users" asp-controller="Home" asp-action="Index" class="sidebar-logo">
+					<img src="~/UsersTemplate/images/logo.png"
+						 alt="logo">
+				</a><button class="sidebar-cross"><i class="fas fa-times"></i></button>
 			</div>
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="dash-menu-list">
-						<ul>
-							<li class="navbar-item"><a asp-controller="ExpertProfile" asp-action="Index" class="navbar-link active">پروفایل</a></li>
-							<li class="navbar-item"><a asp-controller="ExpertProfile" asp-action="ShowRequests" class="navbar-link">لیست سفارشات</a></li>
-							<li class="navbar-item"><a class="navbar-link" asp-controller="ExpertProfile" asp-action="UpdateExpertProfile">ویرایش مشخصات </a></li>
-							<li class="navbar-item"><a class="navbar-link" asp-controller="Account" asp-action="Logout">خروج </a></li>
+			<div class="sidebar-content">
+
+				<div class="sidebar-menu">
+					<ul class="nav nav-tabs">
+						<li><a href="#main-menu" class="nav-link active" data-toggle="tab">منوی اصلی </a></li>
+
+					</ul>
+					<div class="tab-pane active" id="main-menu">
+						<ul class="navbar-list">
+
+							<li class="navbar-item navbar-dropdown">
+								<a class="navbar-link" href="#">
+									<span>صفحات</span><i class="fas fa-plus"></i>
+								</a>
+								<ul class="dropdown-list">
+									<li><a asp-controller="Home" asp-action="Index" class="dropdown-link">صفحه اصلی</a></li>
+									@if (User.IsInRole("Expert"))
+									{
+										<li><a asp-controller="ExpertProfile" asp-action="Index" class="dropdown-link">پروفایل</a></li>
+									}
+									else
+									{
+										<li><a asp-controller="Profile" asp-action="Index" class="dropdown-link">پروفایل</a></li>
+									}
+
+									<li><a asp-controller="Account" asp-action="Login" class="dropdown-link">ورود</a></li>
+
+									<li><a asp-controller="Account" asp-action="Logout" class="dropdown-link">خروج</a></li>
+								</ul>
+							</li>
+
 						</ul>
 					</div>
+
+				</div>
+				<div class="sidebar-footer">
+					<p>کلیه حقوق محفوظ است توسط <a href="#"> کلاسیک ادز </a></p>
+					<p>طراحی توسط <a href="https://www.rtl-theme.com/author/tn_plugin">جعفر عباسی خان </a></p>
 				</div>
 			</div>
 		</div>
-	</section>
+	</div>
 
 	<div class="setting-part">
 		<div class="container">

@@ -78,19 +78,7 @@
 				</a><button class="sidebar-cross"><i class="fas fa-times"></i></button>
 			</div>
 			<div class="sidebar-content">
-				<div class="sidebar-profile">
-					<a href="#" class="sidebar-avatar">
-						<img src="~/UsersTemplate/images/avatar/01.jpg"
-							 alt="avatar">
-					</a>
-					<h4><a href="#" class="sidebar-name">جکسون هندرسون</a></h4><a href="ad-post.html"
-																   class="btn btn-inline sidebar-btn">
-						<i class="fas fa-plus-circle"></i><span>
-							تبلیغ خود را ارسال
-							کنید
-						</span>
-					</a>
-				</div>
+
 				<div class="sidebar-menu">
 					<ul class="nav nav-tabs">
 						<li><a href="#main-menu" class="nav-link active" data-toggle="tab">منوی اصلی </a></li>
@@ -101,51 +89,25 @@
 
 							<li class="navbar-item navbar-dropdown">
 								<a class="navbar-link" href="#">
-									<span>
-										دسته
-										بندی
-									</span><i class="fas fa-plus"></i>
-								</a>
-								<ul class="dropdown-list">
-									<li><a class="dropdown-link" href="category-list.html">تمیزکاری</a></li>
-									<li><a class="dropdown-link" href="category-list.html">ساختمان</a></li>
-									<li><a class="dropdown-link" href="category-list.html">تعمیرات اشیا</a></li>
-									<li><a class="dropdown-link" href="category-list.html">اسباب کشی و حمل بار</a></li>
-									<li><a class="dropdown-link" href="category-list.html">خودرو</a></li>
-									<li><a class="dropdown-link" href="category-list.html">سلامت و زیبایی</a></li>
-									<li><a class="dropdown-link" href="category-list.html">سازمان ها و مجتمع ها</a></li>
-									<li><a class="dropdown-link" href="category-list.html">سایر</a></li>
-
-								</ul>
-							</li>
-
-
-							<li class="navbar-item navbar-dropdown">
-								<a class="navbar-link" href="#">
 									<span>صفحات</span><i class="fas fa-plus"></i>
 								</a>
 								<ul class="dropdown-list">
 									<li><a asp-controller="Home" asp-action="Index" class="dropdown-link">صفحه اصلی</a></li>
-									<li><a asp-controller="Profile" asp-action="Index" class="dropdown-link">پروفایل</a></li>
+									@if (User.IsInRole("Expert"))
+									{
+										<li><a asp-controller="ExpertProfile" asp-action="Index" class="dropdown-link">پروفایل</a></li>
+									}
+									else
+									{
+										<li><a asp-controller="Profile" asp-action="Index" class="dropdown-link">پروفایل</a></li>
+									}
+
 									<li><a asp-controller="Account" asp-action="Login" class="dropdown-link">ورود</a></li>
-									<li><a class="dropdown-link" href="cities.html">آگهی توسط شهرها</a></li>
-									@* 									<li><a class="dropdown-link" href="price.html">قیمت گذاری</a></li>
-									<li><a class="dropdown-link" href="user-form.html">فرم کاربر</a></li> *@
+
 									<li><a asp-controller="Account" asp-action="Logout" class="dropdown-link">خروج</a></li>
 								</ul>
 							</li>
-							<li class="navbar-item navbar-dropdown">
-								<a class="navbar-link" href="#">
-									<span>
-										وبلاگ
-									</span><i class="fas fa-plus"></i>
-								</a>
-								<ul class="dropdown-list">
-									<li><a class="dropdown-link" href="blog-list.html">وبلاگ لیستی </a></li>
-									<li><a class="dropdown-link" href="blog-details.html">جزئیات وبلاگ</a></li>
-								</ul>
-							</li>
-							<li class="navbar-item"><a class="navbar-link" href="contact.html">تماس با ما</a></li>
+
 						</ul>
 					</div>
 

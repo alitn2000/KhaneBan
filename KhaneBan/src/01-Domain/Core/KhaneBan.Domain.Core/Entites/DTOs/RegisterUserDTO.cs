@@ -13,4 +13,12 @@ public class RegisterUserDTO
     [Compare("Password", ErrorMessage = "رمز عبور با تکرار آن یکی نمیباشد")]
     public string ConfirmPassword { get; set; }
 
+    [Required(ErrorMessage = "نقش اجباری است")]
+    [Display(Name = "نقش ")]
+    public string Role { get; set; }
+
+    [Required(ErrorMessage = " شهر اجباری است")]
+    [Display(Name = "شهر ")]
+    public int CityId { get; set; }
+
 }

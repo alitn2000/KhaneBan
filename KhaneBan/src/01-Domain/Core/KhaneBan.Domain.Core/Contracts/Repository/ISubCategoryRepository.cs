@@ -15,5 +15,5 @@ public interface ISubCategoryRepository
     Task<SubCategory> GetByIdAsync(int id, CancellationToken cancellationToken);
     Task<bool> UpdateAsync(SubCategory subCategory, CancellationToken cancellationToken);
     Task ActiveSubCategoryAsync(int subCategoryId, CancellationToken cancellationToken);
-
+    Task<List<SubCategory>> GetAllAsync(CancellationToken cancellationToken);
 }

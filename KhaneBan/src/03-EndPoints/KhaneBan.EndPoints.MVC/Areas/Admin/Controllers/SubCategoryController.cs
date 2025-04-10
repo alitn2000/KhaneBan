@@ -15,17 +15,19 @@ public class SubCategoryController : Controller
     private readonly IPictureAppService _pictureAppService;
     private readonly ICategoryAppService _categoryAppService;
     private readonly ICategoryDapperAppService _categoryDapperAppService;
-
+    private readonly ISubCategoryDapperAppService _subCategoryDapperAppService;
 
     public SubCategoryController(ICategoryAppService categoryAppService,
         ISubCategoryAppService subCategoryAppService,
         IPictureAppService pictureAppService,
-        ICategoryDapperAppService categoryDapperAppService)
+        ICategoryDapperAppService categoryDapperAppService,
+        ISubCategoryDapperAppService subCategoryDapperAppService)
     {
         _subCategoryAppService = subCategoryAppService;
         _pictureAppService = pictureAppService;
         _categoryAppService = categoryAppService;
         _categoryDapperAppService = categoryDapperAppService;
+        _subCategoryDapperAppService = subCategoryDapperAppService;
     }
 
     public async Task<IActionResult> SubCategoryList(CancellationToken cancellationToken)
@@ -38,7 +40,7 @@ public class SubCategoryController : Controller
             Text = c.Title
         }).ToList();
 
-        var subCategories = await _categoryDapperAppService.GetAllAsync(cancellationToken);
+        var subCategories = await _subCategoryAppService.GetAllAsync(cancellationToken);
 
         return View(subCategories);
 

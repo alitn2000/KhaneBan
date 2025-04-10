@@ -1,0 +1,185 @@
+﻿@using KhaneBan.Domain.Core.Entites.DTOs
+
+@model RegisterUserDTO
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="keywords" content="classicads, classified, ads, classified ads, listing, business, directory, jobs, marketing, portal, advertising, local, posting, ad listing, ad posting,">
+    <title> فرم کاربر</title>
+    <link rel="stylesheet" href="~/UsersTemplate/css/custom/user-form.css">
+</head>
+
+<body>
+    <header class="header-part">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-left">
+                    <ul class="header-widget">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="user-form-part">
+        <div class="user-form-banner">
+            <div class="user-form-content">
+                <a href="#"><img src="~/UsersTemplate/images/logo.png" alt="logo"></a>
+                <h1> خدمات آنلاین و تعمیرات<span> در منزل با آچاره</span></h1>
+                <p>بزرگترین سایت خدمات منزل آنلاین در ایران.</p>
+            </div>
+        </div>
+        <div class="user-form-category">
+            <div class="user-form-header">
+                <a><img src="~/UsersTemplate/images/logo.png" alt="logo"></a><a asp-controller="Account" asp-action="Register">
+                    <i class="fas fa-arrow-left"></i>
+                </a>
+            </div>
+            <div class="user-form-category-btn">
+                <ul class="nav nav-tabs">
+                    <li><a href="#login-tab" class="nav-link active" data-toggle="tab">ورود</a></li>
+                    <li><a href="#register-tab" class="nav-link" data-toggle="tab">ثبت نام</a></li>
+                </ul>
+            </div>
+
+            <!-- Tab Content -->
+            <div class="tab-content">
+                <!-- Tab Login -->
+                <div class="tab-pane active" id="login-tab">
+                    <div class="user-form-title">
+                        <h2>خوش آمدید!</h2>
+                        <p>برای دسترسی به حساب خود وارد شوید.</p>
+                    </div>
+                    <form asp-area="Users" asp-controller="Account" method="post" asp-action="Login">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="ایمیل" asp-for="Email">
+                                    <small class="form-alert">لطفاً این مثال را دنبال کنید - 01example@@gmail.com</small>
+                                </div>
+                                <span class="bg-color-danger alert" asp-validation-for="Email"></span>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="pass" placeholder="رمز عبور" asp-for="Password">
+                                    <button type="button" class="form-icon">
+                                        <i class="eye fas fa-eye"></i>
+                                    </button><small class="form-alert">
+                                        رمز ورود باید 6
+                                        حرف باشد
+                                    </small>
+                                </div>
+                                <span class="bg-color-danger alert" asp-validation-for="Password"></span>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="role">نقش خود را انتخاب کنید:</label>
+                                    <select asp-for="Role" class="form-control" id="role">
+                                        <option value="">انتخاب کنید...</option>
+                                        <option value="Customer">مشتری</option>
+                                        <option value="Expert">کارشناس</option>
+                                    </select>
+                                </div>
+                                <span class="bg-color-danger alert" asp-validation-for="Role"></span>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-inline">
+                                        <i class="fas fa-unlock"></i><span>حساب خود را وارد کنید</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Tab Register -->
+                <div class="tab-pane" id="register-tab">
+                    <div class="user-form-title">
+                        <h2>ثبت نام کاربر جدید</h2>
+                        <p>اطلاعات خود را وارد کنید.</p>
+                    </div>
+                    <form asp-area="Users" asp-controller="Account" method="post" asp-action="Register">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="ایمیل" asp-for="Email">
+                                    <small class="form-alert">لطفاً این مثال را دنبال کنید - 01example@@gmail.com</small>
+                                </div>
+                                <span class="bg-color-danger alert" asp-validation-for="Email"></span>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="pass" placeholder="رمز عبور" asp-for="Password">
+                                    <button type="button" class="form-icon">
+                                        <i class="eye fas fa-eye"></i>
+                                    </button><small class="form-alert">
+                                        رمز ورود باید 6
+                                        حرف باشد
+                                    </small>
+                                </div>
+                                <span class="bg-color-danger alert" asp-validation-for="Password"></span>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="pass" placeholder="تکرار رمز عبور" asp-for="ConfirmPassword">
+                                    <button type="button" class="form-icon">
+                                        <i class="eye fas fa-eye"></i>
+                                    </button><small class="form-alert">
+                                        تکرار رمز با رمز باید یکی باشد
+                                    </small>
+                                </div>
+                                <span class="bg-color-danger alert" asp-validation-for="ConfirmPassword"></span>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="role">نقش خود را انتخاب کنید:</label>
+                                    <select asp-for="Role" class="form-control" id="role">
+                                        <option value="">انتخاب کنید...</option>
+                                        <option value="Customer">مشتری</option>
+                                        <option value="Expert">کارشناس</option>
+                                    </select>
+                                </div>
+                                <span class="bg-color-danger alert" asp-validation-for="Role"></span>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="CityId" class="form-label">شهر</label>
+                                    <select id="CityId" name="CityId" class="form-control" required>
+                                        <option value="">لطفا یک شهر انتخاب کنید</option>
+                                        @foreach (var city in (List<SelectListItem>)ViewData["Cities"])
+                                        {
+                                            <option value="@city.Value">@city.Text</option>
+                                        }
+                                    </select>
+                                    <small class="form-alert">انتخاب شهر الزامی است</small>
+                                </div>
+                                <span class="bg-color-danger alert" asp-validation-for="CityId"></span>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-inline">
+                                        <i class="fas fa-unlock"></i><span>ثبت نام</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+@section Scripts
+{
+    <partial name="_validationScriptsPartial" />
+}

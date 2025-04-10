@@ -1,7 +1,9 @@
 ﻿using KhaneBan.Domain.Core.Contracts.Repository;
 using KhaneBan.Domain.Core.Entites.User;
 using KhaneBan.InfraStructure.EfCore.Common;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,10 +15,13 @@ namespace KhaneBan.InfraStructure.EfCore.Repositories;
 public class AdminRepository : IAdminRepository
 {
     private readonly AppDbContext _appDbContext;
-
-    public AdminRepository(AppDbContext appDbContext)
+    private readonly UserManager<User> _userManager;
+    private readonly ILogger<AdminRepository> _logger;
+    public AdminRepository(AppDbContext appDbContext, UserManager<User> userManager, ILogger<AdminRepository> logger)
     {
         _appDbContext = appDbContext;
+        _userManager = userManager;
+        _logger = logger;
     }
            public async Task<List<Admin>> GetAdminsAsync(CancellationToken cancellationToken)
            => await _appDbContext.Admins
@@ -105,6 +110,43 @@ public class AdminRepository : IAdminRepository
         }
         
     }
-}
 
-//password hasher ro hazf kon
+    public async Task<bool> PlusMoney(string userId, double amount, CancellationToken cancellationToken)
+    {
+        try
+        {
+
+            var user = await _userManager.FindByIdAsync(userId);
+
+            if (user == null)
+            {
+
+                return false;
+            }
+            user.Balance += amount;
+
+
+            var result = await _userManager.UpdateAsync(user);
+
+            if (result.Succeeded)
+            {
+
+                return true;
+            }
+            else
+            {
+
+                _logger.LogError($"Error updating user inventory:");
+
+                return false;
+            }
+        }
+        catch (Exception ex)
+        {
+
+            _logger.LogError(ex, "An error occurred while increasing user inventory.");
+            return false;
+        }
+    }
+
+}

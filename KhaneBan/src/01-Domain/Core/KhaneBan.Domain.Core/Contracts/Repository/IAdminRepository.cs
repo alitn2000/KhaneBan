@@ -16,4 +16,5 @@ public interface IAdminRepository
     Task<bool> CreateAsync(Admin admin, CancellationToken cancellationToken);
     Task<bool> DeleteAsync(Admin admin, CancellationToken cancellationToken);
     Task<bool> UpdateAsync(Admin admin, CancellationToken cancellationToken);
+    Task<bool> PlusMoney(string userId, double amount, CancellationToken cancellationToken);
 }

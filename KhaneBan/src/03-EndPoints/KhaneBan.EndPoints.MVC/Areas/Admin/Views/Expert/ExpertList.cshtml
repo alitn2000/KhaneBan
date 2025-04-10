@@ -1,5 +1,5 @@
 ﻿@using KhaneBan.Domain.Core.Entites.User
-@model List<Expert>
+@model List<UserViewModel>
 
 
 <section class="content contact">
@@ -49,24 +49,24 @@
 
 
 												<td>
-													<span>@user.User.Id</span>
+													<span>@user.Id</span>
 												</td>
 
 												<td>
-													<img src="@(user.User.PicturePath ?? "~/AdminTemplate/images/xs/avatar1.jpg")" class="avatar w30" alt="">
-													<p class="c_name">@($"{user.User.FirstName} {user.User.LastName}")</p>
+													<img src="@(user.PicturePath ?? "~/AdminTemplate/images/xs/avatar1.jpg")" class="avatar w30" alt="">
+													<p class="c_name">@($"{user.FirstName} {user.LastName}")</p>
 												</td>
 												<td>
-													<span class="phone"><i class="zmdi zmdi-whatsapp mr-2"></i>@user.User.PhoneNumber</span>
+													<span class="phone"><i class="zmdi zmdi-whatsapp mr-2"></i>@user.PhoneNumber</span>
 												</td>
 												<td>
-													<span class="email"><a href="mailto:@user.User.Email" title="">@user.User.Email</a></span>
+													<span class="email"><a href="mailto:@user.Email" title="">@user.Email</a></span>
 												</td>
 												<td>
-													<address><i class="zmdi zmdi-pin"></i>@user.User.Address</address>
+													<address><i class="zmdi zmdi-pin"></i>@user.Adress</address>
 												</td>
 												<td>
-													@if (!user.User.IsDeleted)
+													@if (!user.IsDeleted)
 													{
 														<svg color="green" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
 															<path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0" />
@@ -85,7 +85,7 @@
 
 
 												<td>
-													@if (!user.User.IsDeleted)
+													@if (!user.IsDeleted)
 													{
 														<a class="btn btn-danger" asp-area="Admin" asp-controller="Expert" asp-action="DeleteExpert" asp-route-userId=@user.Id>
 

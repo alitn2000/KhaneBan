@@ -41,7 +41,8 @@
                         </div>
                     </div>
                 </li>
-                <li><a href="index.html"><i class="zmdi zmdi-home"></i><span>داشبورد</span></a></li>
+                <li><a asp-area="Admin" asp-controller="Home" asp-action="Index"><i class="zmdi zmdi-home"></i><span>داشبورد</span></a></li>
+
                 <li>
                     <a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-apps"></i><span>مدیریت کاربران</span></a>
                     <ul class="ml-menu">
@@ -68,7 +69,11 @@
                     </ul>
                 </li>
 
-
+                <li>
+                    <a asp-area="Admin" asp-controller="Admin" asp-action="Logout"><i class="zmdi zmdi-home"></i><span>خروج</span></a>
+                    <ul class="ml-menu">
+                    </ul>
+                </li>
 
 
             </ul>
@@ -77,9 +82,8 @@
 
 
     <!-- Jquery Core Js -->
-    <script src="~/AdminTemplate/bundles/libscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js -->
-    <script src="~/AdminTemplate/bundles/vendorscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js -->
-
+    <script src="~/AdminTemplate/bundles/libscripts.bundle.js"></script> 
+    <script src="~/AdminTemplate/bundles/vendorscripts.bundle.js"></script> 
     <script src="~/AdminTemplate/bundles/morrisscripts.bundle.js"></script> <!-- Morris Plugin Js -->
     <script src="~/AdminTemplate/bundles/jvectormap.bundle.js"></script> <!-- JVectorMap Plugin Js -->
     <script src="~/AdminTemplate/bundles/sparkline.bundle.js"></script> <!-- Sparkline Plugin Js -->

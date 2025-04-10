@@ -79,7 +79,7 @@ public class AdminController : Controller
     public async Task<IActionResult> Logout()
     {
         await _signInManager.SignOutAsync();
-        return RedirectToAction("Login", "Admin");
+        return RedirectToAction("Index", "Home");
     }
     #endregion
 
@@ -105,11 +105,11 @@ public class AdminController : Controller
         {
             if (await _ratingAppService.Accept(ratingId, cancellationToken))
             {
-                TempData["UpdateStatus"] = "تغییر وضعیت با موفقییت ثبت شد";
+               ViewBag.UpdateStatus = "تغییر وضعیت با موفقییت ثبت شد";
                 return RedirectToAction("RatingList");
             }
 
-            TempData["UpdateStatus"] = "نظر مشتری یافت نشد";
+            ViewBag.UpdateStatus = "نظر مشتری یافت نشد";
             return RedirectToAction("RatingList");
         }
 
@@ -117,13 +117,13 @@ public class AdminController : Controller
         {
             if (await _ratingAppService.Reject(ratingId, cancellationToken))
             {
-                TempData["UpdateStatus"] = "نظر مشتری رد صلاحیت شد و حذف شد";
+                ViewBag.UpdateStatus = "نظر مشتری رد صلاحیت شد و حذف شد";
                 return RedirectToAction("RatingList");
             }
 
 
 
-            TempData["UpdateStatus"] = "نظر مشتری یافت نشد";
+            ViewBag.UpdateStatus = "نظر مشتری یافت نشد";
             return RedirectToAction("RatingList");
         }
         

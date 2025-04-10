@@ -96,7 +96,8 @@ public class HomeServiceController : Controller
         {
             Value = sc.Id.ToString(),
             Text = sc.Title
-        }).ToList();
+        }).ToList(); 
+
 
         var model = new EditHomeServiceViewModel
         {
@@ -115,7 +116,13 @@ public class HomeServiceController : Controller
     {
         if (!ModelState.IsValid)
         {
-            ViewBag.Subcategories = await _subCategoryDapperAppService.GetAllAsync(cancellationToken);
+            var subCategories = await _subCategoryDapperAppService.GetAllAsync(cancellationToken);
+            ViewBag.SubCategories = subCategories.Select(sc => new SelectListItem
+            {
+                Value = sc.Id.ToString(),
+                Text = sc.Title
+            }).ToList();
+
             return View(model);
         }
 

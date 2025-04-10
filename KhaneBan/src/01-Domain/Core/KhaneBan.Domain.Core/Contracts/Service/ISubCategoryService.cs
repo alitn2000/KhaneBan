@@ -15,4 +15,5 @@ public interface ISubCategoryService
     Task<bool> UpdateAsync(SubCategory subCategory, CancellationToken cancellationToken);
     Task<bool> DeleteAsync(int id, CancellationToken cancellationToken);
     Task<bool> ActiveSubCategoryAsync(int subCategoryId, CancellationToken cancellationToken);
+    Task<List<SubCategory>> GetAllAsync(CancellationToken cancellationToken);
 }

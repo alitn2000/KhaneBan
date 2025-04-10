@@ -4,6 +4,7 @@ using KhaneBan.Domain.Core.Entites.DTOs;
 using KhaneBan.Domain.Core.Entites.User;
 using KhaneBan.Domain.Core.Enums;
 using KhaneBan.InfraStructure.EfCore.Common;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using System;
@@ -18,11 +19,13 @@ public class ExpertRepository :   IExpertRepository
 {
     private readonly AppDbContext _appDbContext;
     private readonly ILogger<ExpertRepository> _logger;
+    private readonly UserManager<User> _userManager;
 
-    public ExpertRepository(AppDbContext appDbContext, ILogger<ExpertRepository> logger)
+    public ExpertRepository(AppDbContext appDbContext, ILogger<ExpertRepository> logger, UserManager<User> userManager)
     {
         _appDbContext = appDbContext;
         _logger = logger;
+        _userManager = userManager;
     }
 
     public async Task<List<Expert>> GetExpertsAsync(CancellationToken cancellationToken)
@@ -36,7 +39,7 @@ public class ExpertRepository :   IExpertRepository
      => await _appDbContext
      .Experts
      .Include(c => c.User)
-     .FirstOrDefaultAsync(c => c.Id == id, cancellationToken);
+     .FirstOrDefaultAsync(c => c.UserId == id, cancellationToken);
 
     public async Task<Expert?> GetExpertByIdAsync(int id, CancellationToken cancellationToken)
      => await _appDbContext
@@ -257,6 +260,48 @@ public class ExpertRepository :   IExpertRepository
         catch (Exception ex)
         {
             _logger.LogError($"Error updating expert: {ex.Message}");
+            return false;
+        }
+
+
+    }
+
+    public async Task<bool> PlusMoney(string userId, double amount, CancellationToken cancellationToken)
+    {
+        try
+        {
+
+            var user = await _userManager.FindByIdAsync(userId);
+
+            if (user == null)
+            {
+
+                return false;
+            }
+            user.Balance += amount;
+
+
+            var result = await _userManager.UpdateAsync(user);
+
+            if (result.Succeeded)
+            {
+
+                return true;
+            }
+            else
+            {
+
+                foreach (var error in result.Errors)
+                {
+                    _logger.LogError($"Error updating user inventory: {error.Code} - {error.Description}");
+                }
+                return false;
+            }
+        }
+        catch (Exception ex)
+        {
+
+            _logger.LogError(ex, "An error occurred while increasing user inventory.");
             return false;
         }
     }

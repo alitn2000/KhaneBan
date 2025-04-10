@@ -56,4 +56,7 @@ public class ExpertAppService : IExpertAppService
 
     public async Task<Expert?> GetExpertByIdWithDetailsAsync(int id, CancellationToken cancellationToken)
         => await _expertService.GetExpertByIdWithDetailsAsync(id, cancellationToken);
+
+    public async Task<bool> PlusMoney(string userId, double amount, CancellationToken cancellationToken)
+        => await _expertService.PlusMoney(userId, amount, cancellationToken);
 }

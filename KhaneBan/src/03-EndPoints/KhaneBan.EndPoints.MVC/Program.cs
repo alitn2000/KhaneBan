@@ -80,6 +80,7 @@ try
 
     //service
     builder.Services.AddScoped<IAdminAccountService, AdminAccountService>();
+    builder.Services.AddScoped<IAdminService, AdminService>();
     builder.Services.AddScoped<ICategoryService, CategoryService>();
     builder.Services.AddScoped<ISubCategoryService, SubCategoryService>();
     builder.Services.AddScoped<IHomeServiceService, HomeServiceService>();
@@ -96,6 +97,7 @@ try
 
     //appservice
     builder.Services.AddScoped<IAdminAccountAppService, AdminAccountAppService>();
+    builder.Services.AddScoped<IAdminAppService, AdminAppService>();
     builder.Services.AddScoped<ICustomerAppService, CustomerAppService>();
     builder.Services.AddScoped<IExpertAppService, ExpertAppService>();
     builder.Services.AddScoped<ICategoryAppService, CategoryAppService>();

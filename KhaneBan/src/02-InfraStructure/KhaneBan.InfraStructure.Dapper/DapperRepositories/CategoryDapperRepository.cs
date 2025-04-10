@@ -25,7 +25,7 @@ public class CategoryDapperRepository : ICategoryDapperRepository
         var connection = _context.CreateConnection();
         using (connection)
         {
-            var categories = await connection.QueryAsync<Category>(query, cancellationToken); ;
+            var categories = await connection.QueryAsync<Category>(query, cancellationToken);
             return categories.ToList();
         }
     }

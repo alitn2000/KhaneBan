@@ -430,7 +430,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@GMAIL.COM",
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAIAAYagAAAAED/hmwWVOwFc5Kd7iw8um3IAGlAbEu12B5vesDMOiyiTxLiTYdq89qaI3QM3BwAM2A==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEKuWJAtylmF4+92IWEXhBepTVgruzZ9vcEYwrymmoqJXE6LBILHKe1levq9TLbWg/g==",
                             PhoneNumber = "09102123542",
                             PhoneNumberConfirmed = false,
                             PicturePath = "desktop",
@@ -455,7 +455,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "ALITN2000@GMAIL.COM",
                             NormalizedUserName = "ALITN2000",
-                            PasswordHash = "AQAAAAIAAYagAAAAEBOlw53xK3Xs+WYddJ2qsbqH7TPx4klxlkKWUeuTgNZBN2sKvQjd4+NpwnngkYSIIg==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEC+fFMl6mhIt1BAxBNONTlHxg5jE65CHHK8vlqtpOZmriMnb7mASsLsSrolEn25yUQ==",
                             PhoneNumber = "09022004453",
                             PhoneNumberConfirmed = false,
                             PicturePath = "desktop1",
@@ -480,7 +480,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "REZA2000@GMAIL.COM",
                             NormalizedUserName = "REZA2000",
-                            PasswordHash = "AQAAAAIAAYagAAAAENPV4R45QP7HH5fhB2XkcV2v+fETTneFWlgp5nolRf8WAmrukeJlxCNZ74DYSBpn4A==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEEK4zJZvIfNdYtlt3c8y3klrV0ga0sipXLqJ6X9Lpy56IPDtSl8htaqMVbSPK96q9A==",
                             PhoneNumber = "09102123543",
                             PhoneNumberConfirmed = false,
                             PicturePath = "desktop2",
@@ -505,7 +505,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "SARA2000@GMAIL.COM",
                             NormalizedUserName = "SARA2000",
-                            PasswordHash = "AQAAAAIAAYagAAAAEAUNU5J3Re6ywg7bMTSqlS7QWOECJxd51MSmoCjs8aVmHICxvs8itBd7tet9hsDbVQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEGT8NtI4Ii1tHSYujwkWe6tqdizUMl5Q0T1dRFNtMFNm9n6cZ1y+pg0dO6mBOw21Cg==",
                             PhoneNumber = "09102123545",
                             PhoneNumberConfirmed = false,
                             PicturePath = "desktop3",
@@ -530,7 +530,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = " EXPERT12000@GMAIL.COM",
                             NormalizedUserName = "EXPERT12000",
-                            PasswordHash = "AQAAAAIAAYagAAAAEPY96iT0T0Wh+TjquDZoLOLeblsUj73ZR1HF35w0f9zq+4n7ZQLtuWRXIPajjg0aeg==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEHZisJ9GFhoVs35P/5q6fe6sGf/qC1iE8PQHG95LjvXGVm+GsBQkMK9SF5EuR8O3ZA==",
                             PhoneNumber = "09102123541",
                             PhoneNumberConfirmed = false,
                             PicturePath = "desktop1",
@@ -555,7 +555,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = " EXPERT22000@GMAIL.COM",
                             NormalizedUserName = "EXPERT22000",
-                            PasswordHash = "AQAAAAIAAYagAAAAEIPqBJv8XCFdXF46iGArQX0tgZeypjBHY+TyG1kk+6PsY3T7/sdwvhJ2pTYIsfVq3g==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEEztaz8p58wVJzkcxWn5nK2kgE4E/1sp+bYdRlzbsK79qusKb2XPgvB8qZui2AmUTg==",
                             PhoneNumber = "09102123542",
                             PhoneNumberConfirmed = false,
                             PicturePath = "desktop1",
@@ -580,7 +580,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "CUSTOMER12000@GMAIL.COM",
                             NormalizedUserName = "CUSTOMER12000",
-                            PasswordHash = "AQAAAAIAAYagAAAAEHGhlAKxbZGdynobu0zBqOH4QJjbUZGQbEWvo9xxpen3P4g6UzqTZiihS18mJ20plw==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEHue7KaFvI2h3msrNyg1QUye3UjQYtj3hFI2B435/zpz/1OXfQvtOn/8Any2tfi3cA==",
                             PhoneNumber = "09102123555",
                             PhoneNumberConfirmed = false,
                             PicturePath = "desktop1",
@@ -1663,7 +1663,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             Id = 1,
                             CategoryId = 1,
                             IsDeleted = false,
-                            PicturePath = "/images/subcategpries/nezafat_pazirayi.jpg",
+                            PicturePath = "/images/SubCategories/nezafat_pazirayi.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "نظافت و پذیرایی"
                         },
@@ -1672,7 +1672,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             Id = 2,
                             CategoryId = 1,
                             IsDeleted = false,
-                            PicturePath = "/images/subcategpries/shostosho.jpg",
+                            PicturePath = "/images/SubCategories/shostosho.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "شستشو"
                         },
@@ -1681,7 +1681,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             Id = 3,
                             CategoryId = 1,
                             IsDeleted = false,
-                            PicturePath = "/images/subsubcategpriescategory/karvash_detailing",
+                            PicturePath = "/images/SubCategories/karvash_detailing.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "کارواش و دیتیلینگ"
                         },
@@ -1690,7 +1690,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             Id = 4,
                             CategoryId = 2,
                             IsDeleted = false,
-                            PicturePath = "/images/subcategpries/sarmayesh_garmayesh",
+                            PicturePath = "/images/SubCategories/sarmayesh_garmayesh.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "سرمایش و گرمایش"
                         },
@@ -1699,7 +1699,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             Id = 5,
                             CategoryId = 2,
                             IsDeleted = false,
-                            PicturePath = "/images/subcategpries/tamirat_sakhteman",
+                            PicturePath = "/images/SubCategories/tamirat_sakhteman.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "تعمیرات ساختمان"
                         },
@@ -1708,7 +1708,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             Id = 6,
                             CategoryId = 2,
                             IsDeleted = false,
-                            PicturePath = "/images/subcategpries/lolekeshi",
+                            PicturePath = "/images/SubCategories/lolekeshi",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "لوله کشی"
                         },
@@ -1717,7 +1717,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             Id = 7,
                             CategoryId = 2,
                             IsDeleted = false,
-                            PicturePath = "/images/subcategpries/tarahi_bazsazi.jpg",
+                            PicturePath = "/images/SubCategories/tarahi_bazsazi.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "طراحی و بازسازی ساختمان"
                         },
@@ -1726,7 +1726,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             Id = 8,
                             CategoryId = 2,
                             IsDeleted = false,
-                            PicturePath = "/images/subcategpries/baqbani_fazayesabz.jpg",
+                            PicturePath = "/images/SubCategories/baqbani_fazayesabz.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "باغبانی و فضای سبز"
                         },
@@ -1735,7 +1735,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             Id = 9,
                             CategoryId = 2,
                             IsDeleted = false,
-                            PicturePath = "/images/subcategpries/choob_kabinet.jpg",
+                            PicturePath = "/images/SubCategories/choob_kabinet.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "چوب و کابینت"
                         },
@@ -1744,7 +1744,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             Id = 10,
                             CategoryId = 3,
                             IsDeleted = false,
-                            PicturePath = "/images/subcategpries/nasab_tamir_lavazem.jpg",
+                            PicturePath = "/images/SubCategories/nasab_tamir_lavazem.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "نصب و تعمیر لوازم خانگی"
                         },
@@ -1753,7 +1753,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             Id = 11,
                             CategoryId = 3,
                             IsDeleted = false,
-                            PicturePath = "/images/subcategpries/khadamt_cp.jpg",
+                            PicturePath = "/images/SubCategories/khadamt_cp.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "خدمات کامپیوتری"
                         },
@@ -1762,7 +1762,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             Id = 12,
                             CategoryId = 3,
                             IsDeleted = false,
-                            PicturePath = "/images/subcategpries/tamirat_mobile.jpg",
+                            PicturePath = "/images/SubCategories/tamirat_mobile.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "تعمیرات موبایل"
                         },
@@ -1771,7 +1771,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             Id = 13,
                             CategoryId = 4,
                             IsDeleted = false,
-                            PicturePath = "/images/subcategpries/barbari_jabejayi.jpg",
+                            PicturePath = "/images/SubCategories/barbari_jabejayi.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "باربری و جابجایی"
                         },
@@ -1780,7 +1780,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             Id = 14,
                             CategoryId = 5,
                             IsDeleted = false,
-                            PicturePath = "/images/subcategpries/khadamat_khodro.jpg",
+                            PicturePath = "/images/SubCategories/khadamat_khodro.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "خدمات و تعمیرات خودرو"
                         },
@@ -1789,7 +1789,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             Id = 15,
                             CategoryId = 6,
                             IsDeleted = false,
-                            PicturePath = "/images/subcategpries/zibayi_banovan.jpg",
+                            PicturePath = "/images/SubCategories/zibayi_banovan.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "زیبایی بانوان"
                         },
@@ -1798,7 +1798,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             Id = 16,
                             CategoryId = 6,
                             IsDeleted = false,
-                            PicturePath = "/images/subcategpries/pezeshki_parastari.jpg",
+                            PicturePath = "/images/SubCategories/pezeshki_parastari.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "پزشکی و پرستاری"
                         },
@@ -1807,7 +1807,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             Id = 17,
                             CategoryId = 6,
                             IsDeleted = false,
-                            PicturePath = "/images/subcategpries/heyvanat_khanegi.jpg",
+                            PicturePath = "/images/SubCategories/heyvanat_khanegi.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "حیوانات خانگی"
                         },
@@ -1816,7 +1816,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             Id = 18,
                             CategoryId = 6,
                             IsDeleted = false,
-                            PicturePath = "/images/subcategpries/tandorosti_varzesh.jpg",
+                            PicturePath = "/images/SubCategories/tandorosti_varzesh.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "تندرستی و ورزش"
                         },
@@ -1825,7 +1825,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             Id = 19,
                             CategoryId = 7,
                             IsDeleted = false,
-                            PicturePath = "/images/subcategpries/khadamat_sherkati.jpg",
+                            PicturePath = "/images/SubCategories/khadamat_sherkati.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "خدمات شرکتی"
                         },
@@ -1834,7 +1834,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             Id = 20,
                             CategoryId = 7,
                             IsDeleted = false,
-                            PicturePath = "/images/subcategpries/tamin_niroye_ensani.jpg",
+                            PicturePath = "/images/SubCategories/tamin_niroye_ensani.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "تامین نیروی انسانی"
                         },
@@ -1843,7 +1843,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             Id = 21,
                             CategoryId = 8,
                             IsDeleted = false,
-                            PicturePath = "/images/subcategpries/khayati_tamirat.jpg",
+                            PicturePath = "/images/SubCategories/khayati_tamirat.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "خیاطی و تعمیرات لباس"
                         },
@@ -1852,7 +1852,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             Id = 22,
                             CategoryId = 8,
                             IsDeleted = false,
-                            PicturePath = "/images/subcategpries/majales_roydad.jpg",
+                            PicturePath = "/images/SubCategories/majales_roydad.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "مجالس و رویدادها"
                         },
@@ -1861,7 +1861,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             Id = 23,
                             CategoryId = 8,
                             IsDeleted = false,
-                            PicturePath = "/images/subcategpries/amozesh.jpg",
+                            PicturePath = "/images/SubCategories/amozesh.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "آموزش"
                         },
@@ -1870,7 +1870,7 @@ namespace KhaneBan.InfraStructure.EfCore.Migrations
                             Id = 24,
                             CategoryId = 8,
                             IsDeleted = false,
-                            PicturePath = "/images/subcategpries/kodak.jpg",
+                            PicturePath = "/images/SubCategories/kodak.jpg",
                             RegisterAt = new DateTime(2025, 2, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "کودک"
                         });

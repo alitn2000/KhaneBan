@@ -79,7 +79,7 @@
 
 		</div>
 	</section>
-@if (TempData["UpdateStatus"] != null)
+@if (ViewBag.UpdateStatus != null)
 {
-	<div class="alert alert-info">@TempData["UpdateStatus"]</div>
+	<div class="alert alert-info">@ViewBag.UpdateStatus</div>
 }
